@@ -1,8 +1,8 @@
 {
   "store.home": {
     "blocks": [
-      // "link#video-banner-home-1",
       "video#video-banner-home-1",
+      "flex-layout.row#categorias",
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
@@ -12,21 +12,11 @@
       "flex-layout.row#blog-home"
     ],
     "parent": {
-      "header": "header#topo-home"
+      "header": "header"
     }
   },
 
-
-  "link#video-banner-home-1":{
-    "props": {
-      "href": "/#",
-      "blockClass": "link-banner-home"
-    },
-    "children": [
-      "video#video-banner-home-1"
-    ]
-  },
-  "video#video-banner-home-1":{
+  "video#video-banner-home-1": {
     "props": {
       "blockClass": "video-banner-home",
       "src": "https://stermax.com.br/images_idealine/Banner_TEASER-Black-Summer-Madu-1.mp4",
@@ -38,6 +28,162 @@
       "alt": "Black summer"
     }
   },
+  "flex-layout.row#categorias": {
+    "props": {
+      "blockClass": "categorias-madu",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.col#carrinhos",
+      "flex-layout.col#armarios",
+      "flex-layout.col#estantes",
+      "flex-layout.col#acessorios",
+      "flex-layout.col#lancamentos",
+      "flex-layout.col#feira-hospitalar"
+    ]
+  },
+  "flex-layout.col#carrinhos": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#carrinho",
+      "rich-text#carrinho"
+    ]
+  },
+  "flex-layout.col#armarios": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#armarios",
+      "rich-text#armarios"
+    ]
+  },
+  "flex-layout.col#estantes": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#estantes",
+      "rich-text#estantes"
+    ]
+  },
+  "flex-layout.col#acessorios": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#acessorios",
+      "rich-text#acessorios"
+    ]
+  },
+  "flex-layout.col#lancamentos": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#lancamentos",
+      "rich-text#lancamentos"
+    ]
+  },
+  "flex-layout.col#feira-hospitalar": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#feira-hospitalar",
+      "rich-text#feira-hospitalar"
+    ]
+  },
+  // imagens categorias
+  "image#carrinho":{
+    "props": {
+      "src": "assets/cat-carrinho.webp",
+      "alt": "imagem categoria",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  "image#armarios":{
+    "props": {
+      "src": "assets/cat-armarios.webp",
+      "alt": "imagem categoria",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  "image#estantes":{
+    "props": {
+      "src": "assets/cat-estante.webp",
+      "alt": "imagem categoria",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  "image#acessorios":{
+    "props": {
+      "src": "assets/cat-acessorios.webp",
+      "alt": "imagem categoria",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  "image#lancamentos":{
+    "props": {
+      "src": "assets/ico-novidades-1-400x400.webp",
+      "alt": "imagem categoria",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  "image#feira-hospitalar":{
+    "props": {
+      "src": "assets/ico-hospitalar-400x400.webp",
+      "alt": "imagem categoria",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  // titulo categorias
+   "rich-text#carrinho":{
+    "props": {
+      "text": "Carrinhos",
+      "blockClass": "titulo-categorias"
+    }
+   },
+   "rich-text#armarios":{
+    "props": {
+      "text": "Armários",
+      "blockClass": "titulo-categorias"
+    }
+   },
+   "rich-text#estantes":{
+    "props": {
+      "text": "Estantes",
+      "blockClass": "titulo-categorias"
+    }
+   },
+   "rich-text#acessorios":{
+    "props": {
+      "text": "Acessórios",
+      "blockClass": "titulo-categorias"
+    }
+   },
+   "rich-text#lancamentos":{
+    "props": {
+      "text": "Lançamentos",
+      "blockClass": "titulo-categorias"
+    }
+   },
+   "rich-text#feira-hospitalar":{
+    "props": {
+      "text": "Feira Hospitalar",
+      "blockClass": "titulo-categorias"
+    }
+   },
+
+
 
   "rich-text#shelf-title": {
     "props": {
@@ -71,7 +217,7 @@
     }
   },
 
-  "flex-layout.row#mosaico-home":{
+  "flex-layout.row#mosaico-home": {
     "children": [
       "flex-layout.col#mosaico-home-1",
       "flex-layout.col#mosaico-home-2"
@@ -80,12 +226,12 @@
       "blockClass": "mosaico-home"
     }
   },
-  "flex-layout.col#mosaico-home-1":{
+  "flex-layout.col#mosaico-home-1": {
     "children": [
       "info-card#home-1"
     ],
     "props": {
-      "blockClass":"mosaico-home"
+      "blockClass": "mosaico-home"
     }
   },
   "info-card#home-1": {
@@ -94,31 +240,31 @@
       "isFullModeStyle": true,
       "textPosition": "left",
       "imageUrl": "assets/mosaico-home-1.png",
-      "mobileImageUrl":"assets/mosaico-home-1-mobile.png",
+      "mobileImageUrl": "assets/mosaico-home-1-mobile.png",
       "headline": "Encontre o seu <span>Sneakers</span>",
       "callToActionText": "Próximo Lançamento",
       "callToActionUrl": "/lancamento",
-      "blockClass": ["mosaico-home","mosaico-home-1"],
+      "blockClass": ["mosaico-home", "mosaico-home-1"],
       "textAlignment": "left"
     }
   },
-  "flex-layout.col#mosaico-home-2":{
+  "flex-layout.col#mosaico-home-2": {
     "children": [
       "image#mosaico-home",
       "info-card#home-2"
     ],
     "props": {
-      "blockClass":"mosaico-home"
+      "blockClass": "mosaico-home"
     }
   },
-  "image#mosaico-home":{
+  "image#mosaico-home": {
     "props": {
       "src": "assets/mosaico-home-2.png",
       "alt": "Leggings",
       "link": {
         "url": "/leggings"
       },
-      "blockClass":"mosaico-home"
+      "blockClass": "mosaico-home"
     }
   },
   "info-card#home-2": {
@@ -130,7 +276,7 @@
       "headline": "Novidades <span>Camisetas</span>",
       "callToActionText": "Shop now",
       "callToActionUrl": "/novidades",
-      "blockClass": ["mosaico-home","mosaico-home-2"],
+      "blockClass": ["mosaico-home", "mosaico-home-2"],
       "textAlignment": "left"
     }
   },
@@ -144,7 +290,7 @@
     },
     "title": "Título do instagram"
   },
-  "flex-layout.row#instagram-home":{
+  "flex-layout.row#instagram-home": {
     "children": [
       "image#instagram-1",
       "image#instagram-2",
@@ -156,44 +302,44 @@
       "blockClass": "instagram-home"
     }
   },
-  "image#instagram-1":{
+  "image#instagram-1": {
     "props": {
       "src": "assets/instagram-1.png",
       "alt": "Instagram 1"
     }
   },
-  "image#instagram-2":{
+  "image#instagram-2": {
     "props": {
       "src": "assets/instagram-2.png",
       "alt": "Instagram 2"
     }
   },
-  "image#instagram-3":{
+  "image#instagram-3": {
     "props": {
       "src": "assets/instagram-3.png",
       "alt": "Instagram 3"
     }
   },
-  "image#instagram-4":{
+  "image#instagram-4": {
     "props": {
       "src": "assets/instagram-4.png",
       "alt": "Instagram 4"
     }
   },
 
-  "flex-layout.row#blog-home":{
+  "flex-layout.row#blog-home": {
     "children": [
       "blog-latest-posts-preview.wordpress-latest-posts-preview"
     ]
   },
-  "blog-latest-posts-preview.wordpress-latest-posts-preview":{
-    "props":{
+  "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+    "props": {
       "useTextOverlays": false,
-      "showExcerpts":true,
-      "showDates":false,
-      "showCategories":false,
-      "absoluteLinks":true,
-      "numberOfPosts":3
+      "showExcerpts": true,
+      "showDates": false,
+      "showCategories": false,
+      "absoluteLinks": true,
+      "numberOfPosts": 3
     }
   }
 }

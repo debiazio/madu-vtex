@@ -12,6 +12,28 @@
   display:block;
 }
 
+.imageElement--icone-telefone{
+  width: 1.5rem;
+  border-radius: 5px;
+  background-color: white;
+
+}
+
+.imageElement--icone-notification{
+  width: 1.5rem;
+}
+
+/* CATEGORIAS */
+.imageElement--imagem-categorias{
+  width: 83%;
+  transition: .3s;
+}
+
+.imageElement--imagem-categorias:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
+
 /* INSTITUCIONAIS */
 /* QUEM SOMOS */
 .imageElement--imagem-quem-somos{

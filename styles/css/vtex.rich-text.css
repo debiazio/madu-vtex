@@ -1,8 +1,7 @@
 /* TOPO */
-.paragraph--notification{
-  color:#000;
+.paragraph--texto-notification-bar{
+  color:white;
   font-size:12px;
-  margin:0;
   line-height:1;
 }
 
@@ -16,6 +15,8 @@
   color:#3A3434;
   margin:18px 0 24px;
 }
+
+
 
 /* INSTITUCIONAIS */
 /* QUEM SOMOS */

@@ -13,7 +13,7 @@ html{scroll-behavior:smooth;}
 :global(input):focus-visible{outline:0;}
 
 /* remove background do autocomplete chrome */
-input:-webkit-autofill { 
+input:-webkit-autofill {
   -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
   -webkit-transition-delay: 9999s;
 }
@@ -338,4 +338,10 @@ input:-webkit-autofill {
     font-size: 10px;
   }
   :global(.vtex-my-orders-app-3-x-productInfo){display:flex;}
+}
+
+
+/* categorias */
+.flexColChild--colunas-categorias {
+  height: 100%!important;
 }
