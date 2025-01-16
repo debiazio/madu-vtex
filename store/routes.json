@@ -1,0 +1,23 @@
+{
+  "store.custom#quem-somos": {
+    "path": "/quem-somos"
+  },
+  "store.custom#contato": {
+    "path": "/contato"
+  },
+  "store.custom#guia-de-tamanhos": {
+    "path": "/guia-de-tamanhos"
+  },
+  "store.custom#trocas-e-devolucoes": {
+    "path": "/trocas-e-devolucoes"
+  },
+  "store.custom#cancelamento": {
+    "path": "/cancelamento"
+  },
+  "store.custom#politica-de-privacidade": {
+    "path": "/politica-de-privacidade"
+  },
+  "store.custom#perguntas-frequentes": {
+    "path": "/perguntas-frequentes"
+  }
+}

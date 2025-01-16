@@ -1,0 +1,199 @@
+{
+  "store.home": {
+    "blocks": [
+      // "link#video-banner-home-1",
+      "video#video-banner-home-1",
+      "__fold__",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#mosaico-home",
+      "link#instagram-title",
+      "flex-layout.row#instagram-home",
+      "flex-layout.row#blog-home"
+    ],
+    "parent": {
+      "header": "header#topo-home"
+    }
+  },
+
+
+  "link#video-banner-home-1":{
+    "props": {
+      "href": "/#",
+      "blockClass": "link-banner-home"
+    },
+    "children": [
+      "video#video-banner-home-1"
+    ]
+  },
+  "video#video-banner-home-1":{
+    "props": {
+      "blockClass": "video-banner-home",
+      "src": "https://stermax.com.br/images_idealine/Banner_TEASER-Black-Summer-Madu-1.mp4",
+      "autoPlay": true,
+      "width": "100%",
+      "height": "100%",
+      "loop": true,
+      "title": "Black summer",
+      "alt": "Black summer"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Recomendamos para você",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Título da primeira prateleira"
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#prateleira-home"]
+  },
+  "list-context.product-list#prateleira-home": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#prateleira-home"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#prateleira-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#mosaico-home":{
+    "children": [
+      "flex-layout.col#mosaico-home-1",
+      "flex-layout.col#mosaico-home-2"
+    ],
+    "props": {
+      "blockClass": "mosaico-home"
+    }
+  },
+  "flex-layout.col#mosaico-home-1":{
+    "children": [
+      "info-card#home-1"
+    ],
+    "props": {
+      "blockClass":"mosaico-home"
+    }
+  },
+  "info-card#home-1": {
+    "props": {
+      "id": "mosaico-home-1",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/mosaico-home-1.png",
+      "mobileImageUrl":"assets/mosaico-home-1-mobile.png",
+      "headline": "Encontre o seu <span>Sneakers</span>",
+      "callToActionText": "Próximo Lançamento",
+      "callToActionUrl": "/lancamento",
+      "blockClass": ["mosaico-home","mosaico-home-1"],
+      "textAlignment": "left"
+    }
+  },
+  "flex-layout.col#mosaico-home-2":{
+    "children": [
+      "image#mosaico-home",
+      "info-card#home-2"
+    ],
+    "props": {
+      "blockClass":"mosaico-home"
+    }
+  },
+  "image#mosaico-home":{
+    "props": {
+      "src": "assets/mosaico-home-2.png",
+      "alt": "Leggings",
+      "link": {
+        "url": "/leggings"
+      },
+      "blockClass":"mosaico-home"
+    }
+  },
+  "info-card#home-2": {
+    "props": {
+      "id": "mosaico-home-2",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/mosaico-home-3.png",
+      "headline": "Novidades <span>Camisetas</span>",
+      "callToActionText": "Shop now",
+      "callToActionUrl": "/novidades",
+      "blockClass": ["mosaico-home","mosaico-home-2"],
+      "textAlignment": "left"
+    }
+  },
+
+  "link#instagram-title": {
+    "props": {
+      "label": "@summershop",
+      "href": "http://instagram.com.br",
+      "target": "_blank",
+      "blockClass": "instagramTitle"
+    },
+    "title": "Título do instagram"
+  },
+  "flex-layout.row#instagram-home":{
+    "children": [
+      "image#instagram-1",
+      "image#instagram-2",
+      "image#instagram-3",
+      "image#instagram-4"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "instagram-home"
+    }
+  },
+  "image#instagram-1":{
+    "props": {
+      "src": "assets/instagram-1.png",
+      "alt": "Instagram 1"
+    }
+  },
+  "image#instagram-2":{
+    "props": {
+      "src": "assets/instagram-2.png",
+      "alt": "Instagram 2"
+    }
+  },
+  "image#instagram-3":{
+    "props": {
+      "src": "assets/instagram-3.png",
+      "alt": "Instagram 3"
+    }
+  },
+  "image#instagram-4":{
+    "props": {
+      "src": "assets/instagram-4.png",
+      "alt": "Instagram 4"
+    }
+  },
+
+  "flex-layout.row#blog-home":{
+    "children": [
+      "blog-latest-posts-preview.wordpress-latest-posts-preview"
+    ]
+  },
+  "blog-latest-posts-preview.wordpress-latest-posts-preview":{
+    "props":{
+      "useTextOverlays": false,
+      "showExcerpts":true,
+      "showDates":false,
+      "showCategories":false,
+      "absoluteLinks":true,
+      "numberOfPosts":3
+    }
+  }
+}

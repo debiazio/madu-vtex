@@ -1,0 +1,322 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-principal"
+    },
+    "children": [
+      "menu-item#produtos",
+      "menu-item#nossas-linhas",
+      "menu-item#made-for-you",
+      "menu-item#catalogo",
+      "menu-item#contato"
+    ]
+  },
+  "menu-item#produtos": {
+    "props": {
+      "id": "menu-item-produtos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos",
+        "noFollow": false,
+        "tagTitle": "PRODUTOS",
+        "text": "PRODUTOS"
+      },
+      "blockClass": "menu-principal-item"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#produtos"
+    ]
+  },
+  "vtex.menu@2.x:submenu#produtos": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#produtos"
+    ]
+  },
+  "vtex.menu@2.x:menu#produtos": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#camisetas",
+      "menu-item#calcas",
+      "menu-item#jardineiras",
+      "menu-item#salopetes",
+      "menu-item#bodies",
+      "menu-item#tapa-fralda",
+      "menu-item#ver-tudo"
+    ]
+  },
+  "menu-item#camisetas": {
+    "props": {
+      "id": "menu-item-camisetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos/camisetas",
+        "noFollow": false,
+        "tagTitle": "Camisetas",
+        "text": "Camisetas"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+  "menu-item#calcas": {
+    "props": {
+      "id": "menu-item-calcas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos/calcas",
+        "noFollow": false,
+        "tagTitle": "Calças",
+        "text": "Calças"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+  "menu-item#jardineiras": {
+    "props": {
+      "id": "menu-item-jardineiras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos/jardineiras",
+        "noFollow": false,
+        "tagTitle": "Jardineiras",
+        "text": "Jardineiras"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+  "menu-item#salopetes": {
+    "props": {
+      "id": "menu-item-salopetes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos/salopetes",
+        "noFollow": false,
+        "tagTitle": "Salopetes",
+        "text": "Salopetes"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+  "menu-item#bodies": {
+    "props": {
+      "id": "menu-item-bodies",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos/bodies",
+        "noFollow": false,
+        "tagTitle": "Bodies",
+        "text": "Bodies"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+  "menu-item#tapa-fralda": {
+    "props": {
+      "id": "menu-item-tapa-fralda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos/tapa-fralda",
+        "noFollow": false,
+        "tagTitle": "Tapa Fralda",
+        "text": "Tapa Fralda"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+  "menu-item#ver-tudo": {
+    "props": {
+      "id": "menu-item-ver-tudo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos",
+        "noFollow": false,
+        "tagTitle": "Ver tudo",
+        "text": "Ver tudo"
+      },
+      "blockClass": "menu-principal-subitem"
+    }
+  },
+
+  "menu-item#nossas-linhas": {
+    "props": {
+      "id": "menu-item-nossas-linhas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao",
+        "noFollow": false,
+        "tagTitle": "NOSSAS LINHAS",
+        "text": "NOSSAS LINHAS"
+      },
+      "blockClass": "menu-principal-item"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#nossas-linhas"
+    ]
+  },
+  "vtex.menu@2.x:submenu#nossas-linhas":{
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#nossas-linhas"
+    ]
+  },
+  "vtex.menu@2.x:menu#nossas-linhas":{
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#camisetas",
+      "menu-item#calcas",
+      "menu-item#jardineiras",
+      "menu-item#salopetes",
+      "menu-item#bodies",
+      "menu-item#tapa-fralda",
+      "menu-item#ver-tudo"
+    ]
+  },
+
+  "menu-item#made-for-you": {
+    "props": {
+      "id": "menu-item-made-for-you",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/made-for-you",
+        "noFollow": true,
+        "tagTitle": "MADE FOR YOU",
+        "text": "MADE FOR YOU"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  "menu-item#catalogo": {
+    "props": {
+      "id": "menu-item-catalogo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/catalogo",
+        "noFollow": true,
+        "tagTitle": "CATÁLOGO",
+        "text": "CATÁLOGO"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  "menu-item#contato": {
+    "props": {
+      "id": "menu-item-contato",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contato",
+        "noFollow": true,
+        "tagTitle": "CONTATO",
+        "text": "CONTATO"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+
+
+
+  "vtex.menu@2.x:menu#category-menu-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-principal-mobile"
+    },
+    "children": [
+      "menu-item#produtos-mobile",
+      "menu-item#nossas-linhas",
+      "menu-item#made-for-you",
+      "menu-item#catalogo",
+      "menu-item#contato"
+    ]
+  },
+  "menu-item#produtos-mobile": {
+    "props": {
+      "id": "menu-item-produtos-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos",
+        "noFollow": false,
+        "tagTitle": "PRODUTOS",
+        "text": "PRODUTOS"
+      },
+      "blockClass": "menu-principal-item"
+    },
+    "blocks": [
+      "submenu.accordion#produtos"
+    ]
+  },
+  "submenu.accordion#produtos":{
+    "props":{
+      "width":"100%",
+      "blockClass": "produtos-mobile"
+    },
+    "children":["vtex.menu@2.x:menu#produtos-mobile"]
+  },
+  "vtex.menu@2.x:menu#produtos-mobile":{
+    "children": [
+      "flex-layout.col#produtos-mobile"
+    ]
+  },
+  "flex-layout.col#produtos-mobile":{
+    "children": [
+      "menu-item#camisetas",
+      "menu-item#calcas",
+      "menu-item#jardineiras",
+      "menu-item#salopetes",
+      "menu-item#bodies",
+      "menu-item#tapa-fralda",
+      "menu-item#ver-tudo"
+    ]
+  }
+}

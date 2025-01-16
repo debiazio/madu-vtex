@@ -1,0 +1,431 @@
+{
+  "vtex.menu@2.x:menu#institucional": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#lancamentos",
+      "menu-item#summershop",
+      "menu-item#contato"
+    ]
+  },
+  "menu-item#lancamentos": {
+    "props": {
+      "id": "menu-item-lancamentos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/lancamentos",
+        "noFollow": false,
+        "tagTitle": "Lançamentos",
+        "text": "Lançamentos"
+      }
+    }
+  },
+  "menu-item#summershop": {
+    "props": {
+      "id": "menu-item-summershop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/summershop",
+        "noFollow": false,
+        "tagTitle": "Summershop",
+        "text": "Summershop"
+      }
+    }
+  },
+  "menu-item#contato": {
+    "props": {
+      "id": "menu-item-contato",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contato",
+        "noFollow": false,
+        "tagTitle": "Contato",
+        "text": "Contato"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#ajuda": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer"
+    },
+    "children": [
+      "menu-item#guia-de-tamanhos",
+      "menu-item#trocas-e-devolucoes",
+      "menu-item#cancelamento",
+      "menu-item#politica-de-privacidade",
+      "menu-item#perguntas-frequentes"
+    ]
+  },
+  "menu-item#guia-de-tamanhos": {
+    "props": {
+      "id": "menu-item-guia-de-tamanhos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/guia-de-tamanhos",
+        "noFollow": true,
+        "tagTitle": "Guia de Tamanhos",
+        "text": "Guia de Tamanhos"
+      }
+    }
+  },
+  "menu-item#cancelamento": {
+    "props": {
+      "id": "menu-item-cancelamento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cancelamento",
+        "noFollow": true,
+        "tagTitle": "Cancelamento",
+        "text": "Cancelamento"
+      }
+    }
+  },
+  "menu-item#politica-de-privacidade": {
+    "props": {
+      "id": "menu-item-politica-de-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-privacidade",
+        "noFollow": true,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      }
+    }
+  },
+  "menu-item#perguntas-frequentes": {
+    "props": {
+      "id": "menu-item-perguntas-frequentes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/perguntas-frequentes",
+        "noFollow": true,
+        "tagTitle": "Perguntas Frequentes",
+        "text": "Perguntas Frequentes"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#produtos": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer"
+    },
+    "children": [
+      "menu-item#produtos-footer",
+      "menu-item#colecao-footer",
+      "menu-item#feminino-footer",
+      "menu-item#acessorios-footer",
+      "menu-item#clube-footer",
+      "menu-item#summer-sale-footer"
+    ]
+  },
+  "menu-item#produtos-footer": {
+    "props": {
+      "id": "menu-item-produtos-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos",
+        "noFollow": true,
+        "tagTitle": "Produtos",
+        "text": "Produtos"
+      }
+    }
+  },
+  "menu-item#colecao-footer": {
+    "props": {
+      "id": "menu-item-colecao-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao",
+        "noFollow": true,
+        "tagTitle": "Coleção",
+        "text": "Coleção"
+      }
+    }
+  },
+  "menu-item#feminino-footer": {
+    "props": {
+      "id": "menu-item-feminino-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/feminino",
+        "noFollow": true,
+        "tagTitle": "Feminino",
+        "text": "Feminino"
+      }
+    }
+  },
+  "menu-item#acessorios-footer": {
+    "props": {
+      "id": "menu-item-acessorios-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios",
+        "noFollow": true,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      }
+    }
+  },
+  "menu-item#clube-footer": {
+    "props": {
+      "id": "menu-item-clube-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clube",
+        "noFollow": true,
+        "tagTitle": "Clube",
+        "text": "Clube"
+      }
+    }
+  },
+  "menu-item#summer-sale-footer": {
+    "props": {
+      "id": "menu-item-summer-sale-footer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/summer-sale",
+        "noFollow": true,
+        "tagTitle": "Summer Sale",
+        "text": "Summer Sale"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-mobile"
+    },
+    "children": [
+      "menu-item#institucional-mobile",
+      "flex-layout.row#footer-2-desktop-1",
+      "menu-item#ajuda-mobile",
+      "menu-item#produtos-mobile",
+      "menu-item#contato-mobile",
+      "disclosure-layout#footer-payments",
+      "disclosure-layout#footer-security"
+    ]
+  },
+
+  "menu-item#institucional-mobile": {
+    "props": {
+      "id": "menu-item-institucional-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#institucional-mobile": {
+    "children": ["vtex.menu@2.x:menu#institucional-mobile"]
+  },
+  "vtex.menu@2.x:menu#institucional-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#lancamentos",
+      "menu-item#summershop",
+      "menu-item#contato"
+    ]
+  },
+
+  "menu-item#ajuda-mobile": {
+    "props": {
+      "id": "menu-item-ajuda-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Ajuda",
+        "text": "Ajuda"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ajuda-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ajuda-mobile": {
+    "children": ["vtex.menu@2.x:menu#ajuda-mobile"]
+  },
+  "vtex.menu@2.x:menu#ajuda-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#guia-de-tamanhos",
+      "menu-item#trocas-e-devolucoes",
+      "menu-item#cancelamento",
+      "menu-item#politica-de-privacidade",
+      "menu-item#perguntas-frequentes"
+    ]
+  },
+
+  "menu-item#produtos-mobile": {
+    "props": {
+      "id": "menu-item-produtos-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Produtos",
+        "text": "Produtos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#produtos-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#produtos-mobile": {
+    "children": ["vtex.menu@2.x:menu#produtos-mobile"]
+  },
+  "vtex.menu@2.x:menu#produtos-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#produtos-footer",
+      "menu-item#colecao-footer",
+      "menu-item#feminino-footer",
+      "menu-item#acessorios-footer",
+      "menu-item#clube-footer",
+      "menu-item#summer-sale-footer"
+    ]
+  },
+
+  "menu-item#contato-mobile": {
+    "props": {
+      "id": "menu-item-contato-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Contato",
+        "text": "Contato"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#contato-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#contato-mobile": {
+    "children": ["vtex.menu@2.x:menu#contato-mobile"]
+  },
+  "vtex.menu@2.x:menu#contato-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "link#fone-footer",
+      "link#e-mail-footer"
+    ]
+  },
+
+  "disclosure-layout#footer-payments":{
+    "children": [
+      "disclosure-trigger#footer-payments",
+      "disclosure-content#footer-payments"
+    ],
+    "props": {
+      "blockClass":"footer-payments"
+    }
+  },
+  "disclosure-trigger#footer-payments":{
+    "children": [
+      "rich-text#title-footer-5"
+    ],
+    "props": {
+      "blockClass":"footer-payments"
+    }
+  },
+  "disclosure-content#footer-payments":{
+    "children": [
+      "image#payments"
+    ],
+    "props": {
+      "blockClass":"footer-payments"
+    }
+  },
+
+  "disclosure-layout#footer-security":{
+    "children": [
+      "disclosure-trigger#footer-security",
+      "disclosure-content#footer-security"
+    ],
+    "props": {
+      "blockClass":"footer-payments"
+    }
+  },
+  "disclosure-trigger#footer-security":{
+    "children": [
+      "rich-text#title-footer-6"
+    ],
+    "props": {
+      "blockClass":"footer-payments"
+    }
+  },
+  "disclosure-content#footer-security":{
+    "children": [
+      "flex-layout.row#footer-2-desktop-6"
+    ],
+    "props": {
+      "blockClass":"footer-payments"
+    }
+  }
+}

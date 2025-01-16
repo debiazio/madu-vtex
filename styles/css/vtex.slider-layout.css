@@ -1,0 +1,61 @@
+/* HOME */
+/* BANNER */
+.paginationDotsContainer--carousel{
+  margin:0 0 25px;
+  align-items:center;
+}
+.paginationDot--carousel{
+  width:9px !important;
+  height:9px !important;
+  background:#fff;
+}
+.paginationDot--carousel--isActive{
+  background:url(assets/dots-active.png) no-repeat transparent;
+  width:21px !important;
+  height:21px !important;
+}
+
+/* PRATELEIRA */
+.sliderLayoutContainer--shelf{
+  margin-bottom:70px;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.paginationDotsContainer--shelf{
+  bottom:-70px;
+  margin:41px 0 29px;
+}
+.paginationDot--shelf{
+  width:32px !important;
+  height:7px !important;
+  background:#D7D7D7;
+  border-radius:10px;
+}
+.paginationDot--shelf--isActive{
+  background:#F1A1A3;
+}
+.sliderArrows--shelf{
+  background:#fff !important;
+  border-radius:50%;
+  margin:0;
+  padding:11px 11px 12px 17px;
+  border:1px solid #E2E2E2;
+  top:28%;
+}
+.caretIcon--shelf{
+  width:16px;
+  height:21px;
+}
+.sliderLeftArrow--shelf{
+  left:-10px;
+}
+.sliderRightArrow--shelf{
+  right:-10px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+  .sliderTrack--shelf{
+    gap:10px;
+  }
+}

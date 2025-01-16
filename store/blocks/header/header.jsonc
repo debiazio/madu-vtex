@@ -1,0 +1,249 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header#topo-home": {
+    "blocks": ["header-layout.desktop#topo-home", "header-layout.mobile"]
+  },
+  "header-layout.desktop#topo-home": {
+    "children": [
+      "sticky-layout#3-desktop"
+    ]
+  },
+
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",
+      "sticky-layout#3-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "slider-layout#notification-bar"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "notification"
+    }
+  },
+  "slider-layout#notification-bar": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "autoplay":{
+        "timeout":5000,
+        "stopOnHover":false
+      },
+      "blockClass": "notification"
+    },
+    "children": [
+      "rich-text#notification-bar-1",
+      "rich-text#notification-bar-2",
+      "rich-text#notification-bar-3"
+    ]
+  },
+  "rich-text#notification-bar-1":{
+    "props": {
+      "text": "Ganhe 15% OFF válido para as 100 primeiras compras! Use o cupom **SUMMER100**",
+      "blockClass": "notification"
+    }
+  },
+  "rich-text#notification-bar-2":{
+    "props": {
+      "text": "Ganhe 15% OFF válido para as 100 primeiras compras! Use o cupom **SUMMER100**",
+      "blockClass": "notification"
+    }
+  },
+  "rich-text#notification-bar-3":{
+    "props": {
+      "text": "Ganhe 15% OFF válido para as 100 primeiras compras! Use o cupom **SUMMER100**",
+      "blockClass": "notification"
+    }
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "sticky-layout#3-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#3-desktop"]
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer",
+      "search-bar"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Summer",
+      "href": "/",
+      "url": "assets/logo-madu.webp",
+      "width": "233",
+      "height": "92"
+    }
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder":"Buscar..."
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"],
+    "props": {
+      "maxSuggestedProducts": 2,
+      "productLayout": "HORIZONTAL"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "sticky-layout#2-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "slider-layout#notification-bar-mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "notification"
+    }
+  },
+  "slider-layout#notification-bar-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "autoplay":{
+        "timeout":5000,
+        "stopOnHover":false
+      },
+      "blockClass": "notification"
+    },
+    "children": [
+      "rich-text#notification-bar-1-mobile",
+      "rich-text#notification-bar-2-mobile",
+      "rich-text#notification-bar-3-mobile"
+    ]
+  },
+  "rich-text#notification-bar-1-mobile":{
+    "props": {
+      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
+      "blockClass": "notification"
+    }
+  },
+  "rich-text#notification-bar-2-mobile":{
+    "props": {
+      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
+      "blockClass": "notification"
+    }
+  },
+  "rich-text#notification-bar-3-mobile":{
+    "props": {
+      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
+      "blockClass": "notification"
+    }
+  },
+  "sticky-layout#2-mobile": {
+    "children": [
+      "flex-layout.row#2-mobile",
+      "flex-layout.row#3-mobile"
+    ]
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "search-bar",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#3-mobile": {
+    "children": [
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "drawer"
+    ],
+    "props": {
+      "blockClass": ["main-header-mobile", "main-header-mobile-2"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Summer",
+      "href": "/",
+      "url": "assets/logo-madu.webp",
+      "width": "146",
+      "height": "57"
+    }
+  },
+
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  }
+}
