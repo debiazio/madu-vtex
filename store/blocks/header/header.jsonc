@@ -82,200 +82,201 @@
       "src": "assets/mail.svg",
       "alt": "Ícone whatsapp",
       "blockClass": "icone-notification"
-  }
-},
-"rich-text#0800": {
-  "props": {
-    "text": "0800 721 8533",
-    "blockClass": "texto-notification-bar"
-  }
-},
-"rich-text#numero-whatsapp": {
-  "props": {
-    "text": "(41) 99687-8783",
-    "blockClass": "texto-notification-bar"
-  }
-},
-"rich-text#email": {
-  "props": {
-    "text": "comercial@madumfm.com.br",
-    "blockClass": "texto-notification-bar"
-  }
-},
+    }
+  },
+  "rich-text#0800": {
+    "props": {
+      "text": "0800 721 8533",
+      "blockClass": "texto-notification-bar"
+    }
+  },
+  "rich-text#numero-whatsapp": {
+    "props": {
+      "text": "(41) 99687-8783",
+      "blockClass": "texto-notification-bar"
+    }
+  },
+  "rich-text#email": {
+    "props": {
+      "text": "comercial@madumfm.com.br",
+      "blockClass": "texto-notification-bar"
+    }
+  },
 
 
-"flex-layout.col#spacer": {
-  "props": {
-    "width": "grow"
-  }
-},
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
 
-"sticky-layout#3-desktop": {
-  "props": {
-    "blockClass": "sticky-header"
-  },
-  "children": ["flex-layout.row#3-desktop"]
-},
-"flex-layout.row#3-desktop": {
-  "props": {
-    "blockClass": "main-header",
-    "horizontalAlign": "center",
-    "verticalAlign": "center",
-    "preventHorizontalStretch": true,
-    "preventVerticalStretch": true,
-    "fullWidth": true
-  },
-  "children": [
-    "flex-layout.col#logo-desktop",
-    "flex-layout.col#category-menu",
-    "flex-layout.col#spacer",
-    "search-bar"
-  ]
-},
-"flex-layout.col#logo-desktop": {
-  "props": {
-    "verticalAlign": "middle"
-  },
-  "children": ["logo#desktop"]
-},
-"logo#desktop": {
-  "props": {
-    "title": "Summer",
-    "href": "/",
-    "url": "assets/logo-madu.webp",
-    "width": "233",
-    "height": "92"
-  }
-},
-"flex-layout.col#category-menu": {
-  "props": {
-    "verticalAlign": "middle"
-  },
-  "children": ["vtex.menu@2.x:menu#category-menu"]
-},
-"search-bar": {
-  "blocks": ["autocomplete-result-list.v2"],
-  "props": {
-    "openAutocompleteOnFocus": true,
-    "placeholder": "Buscar..."
-  }
-},
-"autocomplete-result-list.v2": {
-  "blocks": ["product-summary"],
-  "props": {
-    "maxSuggestedProducts": 2,
-    "productLayout": "HORIZONTAL"
-  }
-},
 
-"header-layout.mobile": {
-  "children": [
-    "flex-layout.row#1-mobile",
-    "sticky-layout#2-mobile"
-  ]
-},
-"flex-layout.row#1-mobile": {
-  "children": [
-    "slider-layout#notification-bar-mobile"
-  ],
-  "props": {
-    "fullWidth": true,
-    "blockClass": "notification"
-  }
-},
-"slider-layout#notification-bar-mobile": {
-  "props": {
-    "itemsPerPage": {
-      "desktop": 1,
-      "tablet": 1,
-      "phone": 1
+
+  "sticky-layout#3-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
     },
-    "infinite": true,
-    "showNavigationArrows": "never",
-    "showPaginationDots": "never",
-    "autoplay": {
-      "timeout": 5000,
-      "stopOnHover": false
-    },
-    "blockClass": "notification"
+    "children": ["flex-layout.row#3-desktop"]
   },
-  "children": [
-    "rich-text#notification-bar-1-mobile",
-    "rich-text#notification-bar-2-mobile",
-    "rich-text#notification-bar-3-mobile"
-  ]
-},
-"rich-text#notification-bar-1-mobile": {
-  "props": {
-    "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
-    "blockClass": "notification"
-  }
-},
-"rich-text#notification-bar-2-mobile": {
-  "props": {
-    "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
-    "blockClass": "notification"
-  }
-},
-"rich-text#notification-bar-3-mobile": {
-  "props": {
-    "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
-    "blockClass": "notification"
-  }
-},
-"sticky-layout#2-mobile": {
-  "children": [
-    "flex-layout.row#2-mobile",
-    "flex-layout.row#3-mobile"
-  ]
-},
-"flex-layout.row#2-mobile": {
-  "children": [
-    "search-bar",
-    "login",
-    "minicart.v2"
-  ],
-  "props": {
-    "blockClass": "main-header-mobile",
-    "preventHorizontalStretch": true,
-    "preserveLayoutOnMobile": true,
-    "fullWidth": true
-  }
-},
-"flex-layout.row#3-mobile": {
-  "children": [
-    "logo#mobile",
-    "flex-layout.col#spacer",
-    "drawer"
-  ],
-  "props": {
-    "blockClass": ["main-header-mobile", "main-header-mobile-2"],
-    "preventHorizontalStretch": true,
-    "preserveLayoutOnMobile": true,
-    "fullWidth": true
-  }
-},
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
 
-"logo#mobile": {
-  "props": {
-    "title": "Summer",
-    "href": "/",
-    "url": "assets/logo-madu.webp",
-    "width": "146",
-    "height": "57"
-  }
-},
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Summer",
+      "href": "/",
+      "url": "assets/logo-madu.webp",
+      "width": "233",
+      "height": "92"
+    }
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Buscar..."
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"],
+    "props": {
+      "maxSuggestedProducts": 2,
+      "productLayout": "HORIZONTAL"
+    }
+  },
 
-"drawer": {
-  "children": ["menu#drawer"]
-},
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "sticky-layout#2-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "slider-layout#notification-bar-mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "notification"
+    }
+  },
+  "slider-layout#notification-bar-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      },
+      "blockClass": "notification"
+    },
+    "children": [
+      "rich-text#notification-bar-1-mobile",
+      "rich-text#notification-bar-2-mobile",
+      "rich-text#notification-bar-3-mobile"
+    ]
+  },
+  "rich-text#notification-bar-1-mobile": {
+    "props": {
+      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
+      "blockClass": "notification"
+    }
+  },
+  "rich-text#notification-bar-2-mobile": {
+    "props": {
+      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
+      "blockClass": "notification"
+    }
+  },
+  "rich-text#notification-bar-3-mobile": {
+    "props": {
+      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
+      "blockClass": "notification"
+    }
+  },
+  "sticky-layout#2-mobile": {
+    "children": [
+      "flex-layout.row#2-mobile",
+      "flex-layout.row#3-mobile"
+    ]
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "search-bar",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#3-mobile": {
+    "children": [
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "drawer"
+    ],
+    "props": {
+      "blockClass": ["main-header-mobile", "main-header-mobile-2"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
 
-"menu#drawer": {
-  "children": [
-    "vtex.menu@2.x:menu#category-menu-mobile"
-  ],
-  "props": {
-    "orientation": "vertical"
+  "logo#mobile": {
+    "props": {
+      "title": "Summer",
+      "href": "/",
+      "url": "assets/logo-madu.webp",
+      "width": "146",
+      "height": "57"
+    }
+  },
+
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
   }
-}
 }
