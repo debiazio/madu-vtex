@@ -3,26 +3,34 @@
   background: #181818;
 }
 
+.flexRow--notification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.flexRowContent--notification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+}
+
 .flexRow--topbar {
   padding: 8px 0 6px;
   border-bottom: 1px solid #181818;
 }
 
-.flexCol--notif-col-esquerda,
-.flexCol--notif-col-direita {
+.flexCol--coluna-tel-notif,
+.flexColChild--coluna-tel-notif {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
-.flexColChild--notif-col-direita {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5px 0 5px;
-}
 
 /* CATEGORIAS */
 .flexColChild--colunas-categorias {

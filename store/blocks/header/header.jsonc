@@ -24,23 +24,18 @@
 
   "flex-layout.row#1-desktop": {
     "children": [
-      "flex-layout.col#notification-bar-col-esquerda",
-      "flex-layout.col#notification-bar-col-direita"
+      "rich-text#notification-bar",
+      "flex-layout.col#spacer",
+      "flex-layout.col#tel",
+      "flex-layout.col#whatsapp",
+      "flex-layout.col#email"
 
     ],
     "props": {
       "fullWidth": true,
-      "blockClass": "notification"
+      "blockClass": "notification",
+      "preventHorizontalStretch": true
     }
-  },
-  "flex-layout.col#notification-bar-col-esquerda": {
-    "props": {
-      "blockClass": "notif-col-esquerda",
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "rich-text#notification-bar"
-    ]
   },
   "rich-text#notification-bar": {
     "props": {
@@ -48,21 +43,39 @@
       "blockClass": "texto-notification-bar"
     }
   },
-
-  "flex-layout.col#notification-bar-col-direita": {
+  "flex-layout.row#spacer": {
     "props": {
-      "blockClass": "notif-col-direita",
-      "preventVerticalStretch": true
+      "blockClass": "spacer-header-notification"
+    }
+  },
+  "flex-layout.col#tel": {
+    "props": {
+      "blockClass": "coluna-tel-notif"
     },
     "children": [
       "image#telefone",
-      "rich-text#0800",
+      "rich-text#0800"
+    ]
+  },
+  "flex-layout.col#whatsapp": {
+    "props": {
+      "blockClass": "coluna-tel-notif"
+    },
+    "children": [
       "image#whatsapp",
-      "rich-text#numero-whatsapp",
+      "rich-text#numero-whatsapp"
+    ]
+  },
+  "flex-layout.col#email": {
+    "props": {
+      "blockClass": "coluna-tel-notif"
+    },
+    "children": [
       "image#email",
       "rich-text#email"
     ]
   },
+
   "image#telefone": {
     "props": {
       "src": "assets/phone-call.svg",

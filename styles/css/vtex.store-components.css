@@ -13,15 +13,16 @@
 }
 
 .imageElement--icone-telefone{
-  width: 1em;
-  height: 1em;
+  width: 0.8em;
+  /* height: 1em; */
   border-radius: 5px;
   background-color: white;
-
 }
 
+
 .imageElement--icone-notification{
-  width: 1em;
+  width: 1.5em;
+  padding: 1.5px;
 }
 
 /* CATEGORIAS */
