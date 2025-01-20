@@ -27,6 +27,11 @@ input:-webkit-autofill {
 }
 
 /* MINHA CONTA */
+.container :global(.vtex-button__label){
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 :global(.vtex-account) > div{
   max-width:1300px;
   padding-left:0;

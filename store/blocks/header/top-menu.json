@@ -13,7 +13,8 @@
   },
   "flex-layout.row#linha-meio-desktop": {
     "props": {
-      "blockClass": "header-logo-pesquisa-account"
+      "blockClass": "header-logo-pesquisa-account",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -90,7 +91,7 @@
   },
   "login": {
     "props": {
-      "iconLabel": "Entre ou cadastre-se",
+      "iconLabel": "Minha Conta",
       "showIconProfile":true,
       "optionsTitle":"Acesse sua conta",
       "emailAndPasswordTitle": "Login",
@@ -98,7 +99,8 @@
       "emailPlaceholder": "E-mail",
       "passwordPlaceholder": "Senha",
       "accessCodePlaceholder":"Insira o código de acesso",
-      "showPasswordVerificationIntoTooltip": true
+      "showPasswordVerificationIntoTooltip": true,
+      "blockClass": "minha-conta"
     }
   }
 }

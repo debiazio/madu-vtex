@@ -19,8 +19,13 @@
 }
 
 .flexRow--topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 8px 0 6px;
   border-bottom: 1px solid #181818;
+  justify-content: center;
+  margin: 0;
 }
 
 .flexCol--coluna-tel-notif,
@@ -29,6 +34,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.flexCol--logo-desktop{
+  width: 4%;
+}
+
+.flexColChild--topbar{
+  margin: 0;
 }
 
 
