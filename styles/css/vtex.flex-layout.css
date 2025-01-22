@@ -10,6 +10,7 @@
   justify-content: center;
 
 }
+
 .flexRowContent--notification {
   display: flex;
   flex-direction: row;
@@ -36,12 +37,18 @@
   justify-content: center;
 }
 
-.flexCol--logo-desktop{
+.flexCol--logo-desktop {
   width: 4%;
 }
 
-.flexColChild--topbar{
+.flexColChild--topbar {
   margin: 0;
+}
+
+.flexColChild--topbar-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 

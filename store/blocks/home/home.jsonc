@@ -4,12 +4,9 @@
       "video#video-banner-home-1",
       "flex-layout.row#categorias",
       "__fold__",
+      "image#logo-madu-one",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "flex-layout.row#mosaico-home",
-      "link#instagram-title",
-      "flex-layout.row#instagram-home",
-      "flex-layout.row#blog-home"
+      "flex-layout.row#shelf"
     ],
     "parent": {
       "header": "header"
@@ -183,11 +180,17 @@
     }
    },
 
-
+   "image#logo-madu-one":{
+    "props": {
+      "src": "assets/madu-one-icon.webp",
+      "alt": "Logo Madu one",
+      "blockClass": "logo-madu-one "
+    }
+   },
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Recomendamos para você",
+      "text": "## É a nossa Linha Premium. Nela você encontrará milhares de combinações possíveis com o que há de melhor em tecnologia e soluções de design.",
       "blockClass": "shelfTitle"
     },
     "title": "Título da primeira prateleira"
@@ -200,7 +203,7 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#prateleira-home"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByNameASC"
     }
   },
   "slider-layout#prateleira-home": {
@@ -214,132 +217,6 @@
       "fullWidth": false,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "shelf"
-    }
-  },
-
-  "flex-layout.row#mosaico-home": {
-    "children": [
-      "flex-layout.col#mosaico-home-1",
-      "flex-layout.col#mosaico-home-2"
-    ],
-    "props": {
-      "blockClass": "mosaico-home"
-    }
-  },
-  "flex-layout.col#mosaico-home-1": {
-    "children": [
-      "info-card#home-1"
-    ],
-    "props": {
-      "blockClass": "mosaico-home"
-    }
-  },
-  "info-card#home-1": {
-    "props": {
-      "id": "mosaico-home-1",
-      "isFullModeStyle": true,
-      "textPosition": "left",
-      "imageUrl": "assets/mosaico-home-1.png",
-      "mobileImageUrl": "assets/mosaico-home-1-mobile.png",
-      "headline": "Encontre o seu <span>Sneakers</span>",
-      "callToActionText": "Próximo Lançamento",
-      "callToActionUrl": "/lancamento",
-      "blockClass": ["mosaico-home", "mosaico-home-1"],
-      "textAlignment": "left"
-    }
-  },
-  "flex-layout.col#mosaico-home-2": {
-    "children": [
-      "image#mosaico-home",
-      "info-card#home-2"
-    ],
-    "props": {
-      "blockClass": "mosaico-home"
-    }
-  },
-  "image#mosaico-home": {
-    "props": {
-      "src": "assets/mosaico-home-2.png",
-      "alt": "Leggings",
-      "link": {
-        "url": "/leggings"
-      },
-      "blockClass": "mosaico-home"
-    }
-  },
-  "info-card#home-2": {
-    "props": {
-      "id": "mosaico-home-2",
-      "isFullModeStyle": true,
-      "textPosition": "left",
-      "imageUrl": "assets/mosaico-home-3.png",
-      "headline": "Novidades <span>Camisetas</span>",
-      "callToActionText": "Shop now",
-      "callToActionUrl": "/novidades",
-      "blockClass": ["mosaico-home", "mosaico-home-2"],
-      "textAlignment": "left"
-    }
-  },
-
-  "link#instagram-title": {
-    "props": {
-      "label": "@summershop",
-      "href": "http://instagram.com.br",
-      "target": "_blank",
-      "blockClass": "instagramTitle"
-    },
-    "title": "Título do instagram"
-  },
-  "flex-layout.row#instagram-home": {
-    "children": [
-      "image#instagram-1",
-      "image#instagram-2",
-      "image#instagram-3",
-      "image#instagram-4"
-    ],
-    "props": {
-      "colSizing": "auto",
-      "blockClass": "instagram-home"
-    }
-  },
-  "image#instagram-1": {
-    "props": {
-      "src": "assets/instagram-1.png",
-      "alt": "Instagram 1"
-    }
-  },
-  "image#instagram-2": {
-    "props": {
-      "src": "assets/instagram-2.png",
-      "alt": "Instagram 2"
-    }
-  },
-  "image#instagram-3": {
-    "props": {
-      "src": "assets/instagram-3.png",
-      "alt": "Instagram 3"
-    }
-  },
-  "image#instagram-4": {
-    "props": {
-      "src": "assets/instagram-4.png",
-      "alt": "Instagram 4"
-    }
-  },
-
-  "flex-layout.row#blog-home": {
-    "children": [
-      "blog-latest-posts-preview.wordpress-latest-posts-preview"
-    ]
-  },
-  "blog-latest-posts-preview.wordpress-latest-posts-preview": {
-    "props": {
-      "useTextOverlays": false,
-      "showExcerpts": true,
-      "showDates": false,
-      "showCategories": false,
-      "absoluteLinks": true,
-      "numberOfPosts": 3
     }
   }
 }
