@@ -6,7 +6,15 @@
       "__fold__",
       "image#logo-madu-one",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf"
+      "flex-layout.row#shelf",
+      "link#shelf-ver-mais",
+      "image#logo-madu-extra",
+      "rich-text#shelf-title-extra",
+      "flex-layout.row#shelf-extra",
+      "link#shelf-ver-mais-extra",
+      "image#combinam",
+      "flex-layout.row#shelf-final",
+      "flex-layout.row#banner-final"
     ],
     "parent": {
       "header": "header"
@@ -100,42 +108,42 @@
     ]
   },
   // imagens categorias
-  "image#carrinho":{
+  "image#carrinho": {
     "props": {
       "src": "assets/cat-carrinho.webp",
       "alt": "imagem categoria",
       "blockClass": "imagem-categorias"
     }
   },
-  "image#armarios":{
+  "image#armarios": {
     "props": {
       "src": "assets/cat-armarios.webp",
       "alt": "imagem categoria",
       "blockClass": "imagem-categorias"
     }
   },
-  "image#estantes":{
+  "image#estantes": {
     "props": {
       "src": "assets/cat-estante.webp",
       "alt": "imagem categoria",
       "blockClass": "imagem-categorias"
     }
   },
-  "image#acessorios":{
+  "image#acessorios": {
     "props": {
       "src": "assets/cat-acessorios.webp",
       "alt": "imagem categoria",
       "blockClass": "imagem-categorias"
     }
   },
-  "image#lancamentos":{
+  "image#lancamentos": {
     "props": {
       "src": "assets/ico-novidades-1-400x400.webp",
       "alt": "imagem categoria",
       "blockClass": "imagem-categorias"
     }
   },
-  "image#feira-hospitalar":{
+  "image#feira-hospitalar": {
     "props": {
       "src": "assets/ico-hospitalar-400x400.webp",
       "alt": "imagem categoria",
@@ -143,50 +151,50 @@
     }
   },
   // titulo categorias
-   "rich-text#carrinho":{
+  "rich-text#carrinho": {
     "props": {
       "text": "Carrinhos",
       "blockClass": "titulo-categorias"
     }
-   },
-   "rich-text#armarios":{
+  },
+  "rich-text#armarios": {
     "props": {
       "text": "Armários",
       "blockClass": "titulo-categorias"
     }
-   },
-   "rich-text#estantes":{
+  },
+  "rich-text#estantes": {
     "props": {
       "text": "Estantes",
       "blockClass": "titulo-categorias"
     }
-   },
-   "rich-text#acessorios":{
+  },
+  "rich-text#acessorios": {
     "props": {
       "text": "Acessórios",
       "blockClass": "titulo-categorias"
     }
-   },
-   "rich-text#lancamentos":{
+  },
+  "rich-text#lancamentos": {
     "props": {
       "text": "Lançamentos",
       "blockClass": "titulo-categorias"
     }
-   },
-   "rich-text#feira-hospitalar":{
+  },
+  "rich-text#feira-hospitalar": {
     "props": {
       "text": "Feira Hospitalar",
       "blockClass": "titulo-categorias"
     }
-   },
+  },
 
-   "image#logo-madu-one":{
+  "image#logo-madu-one": {
     "props": {
       "src": "assets/madu-one-icon.webp",
       "alt": "Logo Madu one",
       "blockClass": "logo-madu-one "
     }
-   },
+  },
 
   "rich-text#shelf-title": {
     "props": {
@@ -218,5 +226,335 @@
       "showNavigationArrows": "desktopOnly",
       "blockClass": "shelf"
     }
+  },
+  "link#shelf-ver-mais": {
+    "props": {
+      "label": "ver mais da MAD.U ONE"
+    }
+  },
+  "image#logo-madu-extra": {
+    "props": {
+      "src": "assets/madu-extra-icon.webp",
+      "alt": "Logo Madu Extra",
+      "blockClass": "logo-madu-one "
+    }
+  },
+  "rich-text#shelf-title-extra": {
+    "props": {
+      "text": "## Essa é a nossa linha básica. Para quem procura uma solução leve, simples e prática. Qualidade e durabilidade numa linha extremamente competitiva.",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Título da primeira prateleira"
+  },
+  "flex-layout.row#shelf-extra": {
+    "children": ["list-context.product-list#prateleira-home-extra"]
+  },
+  "list-context.product-list#prateleira-home-extra": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#prateleira-home-extra"],
+    "props": {
+      "orderBy": "OrderByNameASC"
+    }
+  },
+  "slider-layout#prateleira-home-extra": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelf"
+    }
+  },
+  "link#shelf-ver-mais-extra": {
+    "props": {
+      "label": "ver mais da MAD.U EXTRA"
+    }
+  },
+  "image#combinam": {
+    "props": {
+      "src": "assets/madu-combinam-se-combinam.webp",
+      "alt": "Combinam e se combinam"
+    }
+  },
+  "flex-layout.row#shelf-final": {
+    "children": ["list-context.product-list#prateleira-home-final"]
+  },
+  "list-context.product-list#prateleira-home-final": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#prateleira-home-final"],
+    "props": {
+      "orderBy": "OrderByNameASC"
+    }
+  },
+  "slider-layout#prateleira-home-final": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#banner-final": {
+    "props": {
+      "blockClass": "categorias-madu",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.col#inovacao",
+      "flex-layout.col#qualidade",
+      "flex-layout.col#tecnologia"
+    ]
+  },
+  // COLUNAS
+  "flex-layout.col#inovacao": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#inovacao",
+      "rich-text#titulo-inovacao",
+      "rich-text#texto-inovacao",
+      "modal-trigger#saiba-mais-inovacao"
+    ]
+  },
+  "flex-layout.col#qualidade": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#qualidade",
+      "rich-text#titulo-qualidade",
+      "rich-text#texto-qualidade",
+      "modal-trigger#saiba-mais-qualidade"
+    ]
+  },
+  "flex-layout.col#tecnologia": {
+    "props": {
+      "blockClass": "colunas-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#tecnologia",
+      "rich-text#titulo-tecnologia",
+      "rich-text#texto-tecnologia",
+      "modal-trigger#saiba-mais-tecnologia"
+    ]
+  },
+  // imagens banner final
+  "image#inovacao": {
+    "props": {
+      "src": "assets/Carrinho-Explodido 2.webp",
+      "alt": "Imagem inovação",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  "image#qualidade": {
+    "props": {
+      "src": "assets/qualidade.webp",
+      "alt": "Imagem qualidade",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  "image#tecnologia": {
+    "props": {
+      "src": "assets/tecnologia.webp",
+      "alt": "Imagem tecnologia",
+      "blockClass": "imagem-categorias"
+    }
+  },
+  // TITULOS BANNER FINAL
+  "rich-text#titulo-inovacao": {
+    "props": {
+      "text": "Inovação",
+      "blockClass": "titulo-categorias"
+    }
+  },
+  "rich-text#titulo-qualidade": {
+    "props": {
+      "text": "Qualidade",
+      "blockClass": "titulo-categorias"
+    }
+  },
+  "rich-text#titulo-tecnologia": {
+    "props": {
+      "text": "Tecnologia",
+      "blockClass": "titulo-categorias"
+    }
+  },
+  // TEXTOS BANNER FINAL
+  "rich-text#texto-inovacao": {
+    "props": {
+      "text": "",
+      "blockClass": "texto-banner-final"
+    }
+  },
+  "rich-text#texto-qualidade": {
+    "props": {
+      "text": "",
+      "blockClass": "texto-banner-final"
+    }
+  },
+  "rich-text#texto-tecnologia": {
+    "props": {
+      "text": "",
+      "blockClass": "texto-banner-final"
+    }
+  },
+  // MODAIS
+  //  MODAL INOVAÇÃO
+  "modal-trigger#saiba-mais-inovacao": {
+    "props": {
+      "blockClass": "modal-layout-trigger"
+    },
+    "children": [
+      "rich-text#titulo-modal-inovacao",
+      "modal-layout#inovacao"
+    ]
+  },
+  "rich-text#titulo-modal-inovacao": {
+    "props": {
+      "text": "SAIBA MAIS",
+      "blockClass": "titulo-modal"
+    }
+  },
+  // JANELA MODAL
+  "modal-layout#inovacao": {
+    "props": {
+      "scroll": "body",
+      "blockClass": "modal-layout-content"
+    },
+    "children": [
+      "modal-header#close",
+      "flex-layout.row#linha-inovacao"
+    ]
+  },
+  "modal-header#close": {
+    "props": {
+      "showCloseButton": true
+    }
+  },
+  "flex-layout.row#linha-inovacao": {
+    "children": [
+      "image#inovacao",
+      "flex-layout.col#coluna-inovacao"
+
+    ]
+  },
+  "flex-layout.col#coluna-inovacao": {
+    "props": {
+      "blockClass": "coluna-modal"
+    },
+    "children": [
+      "rich-text#modal-inovacao"
+    ]
+  },
+  "rich-text#modal-inovacao": {
+    "props": {
+      "blockClass": "texto-modal",
+      "text": "# Inovação #\n**Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!**\n\nA maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São **milhares** de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e **múltiplas utilizações** de acordo com a necessidade de cada cliente.\n\nA MAD.U inova nos mínimos detalhes. **Como num jogo de blocos de montar** os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para **novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.**"
+    }
+  },
+  // MODAL QUALIDADE
+  "modal-trigger#saiba-mais-qualidade": {
+    "children": [
+      "rich-text#titulo-modal-qualidade",
+      "modal-layout#qualidade"
+    ]
+  },
+  "rich-text#titulo-modal-qualidade": {
+    "props": {
+      "text": "SAIBA MAIS",
+      "blockClass": "titulo-modal"
+    }
+  },
+  // JANELA MODAL
+  "modal-layout#qualidade": {
+    "props": {
+      "scroll": "body",
+      "blockClass": "modal-layout-content"
+    },
+    "children": [
+      "modal-header#close",
+      "flex-layout.row#linha-qualidade"
+    ]
+  },
+  "flex-layout.row#linha-qualidade": {
+    "children": [
+      "image#qualidade",
+      "flex-layout.col#coluna-qualidade"
+    ]
+  },
+  "flex-layout.col#coluna-qualidade": {
+    "props": {
+      "blockClass": "coluna-modal"
+    },
+    "children": [
+      "rich-text#modal-qualidade"
+    ]
+  },
+  "rich-text#modal-qualidade": {
+    "props": {
+      "blockClass": "texto-modal",
+      "text": "## Qualidade ##\n**Mobiliário técnico feito 100% no Brasil, com a melhor qualidade disponível no Mundo.**\n\nA MAD.U tem sua própria infraestrutura de indústria dominando a cadeia produtiva desde o projeto inicial até sua fabricação final.\n\nTodos os componentes são desenvolvidos para uso específico, sem a utilização de partes genéricas ou adaptadas.\n\nPartes plásticas produzidas por injeção em polímeros de engenharia de altíssima durabilidade, totalmente imunes à oxidação ou ferrugem, elevada resistência ao impacto, agentes químicos, raios ultravioletas ou outras intempéries. Com aditivo antimicrobiano para proteção contra a proliferação de microrganismos e diminuição da contaminação cruzada.\n\nPartes metálicas com chassi totalmente em aço anticorrosivo ou aço inoxidável, as peças sujeitas ao manejo constante estão recobertas por componentes plásticos projetados para facilitar a limpeza e promover elevada resistência ao uso evitando corrosão.\n\nCada componente e seus materiais foram pensados e especificados para o seu melhor uso."
+    }
+  },
+  // MODAL TECNOLOGIA
+  "modal-trigger#saiba-mais-tecnologia": {
+    "props": {
+
+    },
+    "children": [
+      "rich-text#titulo-modal-tecnologia",
+      "modal-layout#tecnologia"
+    ]
+  },
+  "rich-text#titulo-modal-tecnologia": {
+    "props": {
+      "text": "SAIBA MAIS",
+      "blockClass": "titulo-modal"
+    }
+  },
+  // JANELA MODAL
+  "modal-layout#tecnologia": {
+    "props": {
+      "scroll": "body",
+      "blockClass": "modal-layout-content"
+    },
+    "children": [
+      "modal-header#close",
+      "flex-layout.row#linha-tecnologia"
+    ]
+  },
+  "flex-layout.row#linha-tecnologia": {
+    "children": [
+      "image#tecnologia",
+      "flex-layout.col#coluna-tecnologia"
+    ]
+  },
+  "flex-layout.col#coluna-tecnologia": {
+    "props": {
+      "blockClass": "coluna-modal"
+    },
+    "children": [
+      "rich-text#modal-tecnologia"
+    ]
+  },
+  "rich-text#modal-tecnologia": {
+    "props": {
+      "blockClass": "texto-modal",
+      "text": "## Tecnologia ##\n\n**A MAIOR linha de mobiliário técnico do mundo também merece a MELHOR tecnologia do mundo.**\n\nCada parte foi estritamente pensada e desenvolvida para o uso específico e resistente permitindo a agilidade na manutenção e eventual substituição de peças.\n\nRodízios especialmente desenvolvidos para uso extra silencioso e de alta durabilidade, com rotação e translação 360°. Bandas de rodagem com perfil reduzido para evitar o arrasto de contaminantes.\n\nGavetas com trilhos imunes à oxidação ou ferrugem, auto lubrificados e com exclusivo sistema de interferência de abertura escalonada para maior segurança nos deslocamentos.\n\nDiversas opções de tampos, hastes, suportes, rodas, travas, pés, para-choques, prateleiras e outros.\n\n**Tudo feito para você.**"
+    }
   }
+
 }

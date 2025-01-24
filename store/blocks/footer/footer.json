@@ -28,7 +28,7 @@
   },
   "rich-text#title-newsletter":{
     "props": {
-      "text": "#### Se inscreva e fique por dentro das nossas novidades",
+      "text": "#### RECEBA NOVIDADES E PROMOÇÕES DA MAD.U",
       "blockClass":"title-newsletter"
     }
   },
@@ -41,12 +41,12 @@
   },
   "newsletter-input-name":{
     "props": {
-      "placeholderText": "Seu nome"
+      "placeholderText": "Nome"
     }
   },
   "newsletter-input-email":{
     "props": {
-      "placeholderText": "Seu email"
+      "placeholderText": "E-mail"
     }
   },
   "newsletter-submit":{
