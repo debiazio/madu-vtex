@@ -4,15 +4,9 @@
       "video#video-banner-home-1",
       "flex-layout.row#categorias",
       "__fold__",
-      "image#logo-madu-one",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "link#shelf-ver-mais",
-      "image#logo-madu-extra",
-      "rich-text#shelf-title-extra",
-      "flex-layout.row#shelf-extra",
-      "link#shelf-ver-mais-extra",
-      "image#combinam",
+      "flex-layout.row#madu-one",
+      "flex-layout.row#madu-extra",
+      "flex-layout.row#combinam",
       "flex-layout.row#shelf-final",
       "flex-layout.row#banner-final"
     ],
@@ -20,6 +14,7 @@
       "header": "header"
     }
   },
+
 
   "video#video-banner-home-1": {
     "props": {
@@ -188,18 +183,32 @@
     }
   },
 
+  // MADU ONE
+  "flex-layout.row#madu-one": {
+    "props": {
+      "blockClass": "content-madu-cat",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#logo-madu-one",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "link#shelf-ver-mais"
+    ]
+  },
+
   "image#logo-madu-one": {
     "props": {
+      "blockClass": "logo-madu-cat",
       "src": "assets/madu-one-icon.webp",
-      "alt": "Logo Madu one",
-      "blockClass": "logo-madu-one "
+      "alt": "Logo Madu one"
     }
   },
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## É a nossa Linha Premium. Nela você encontrará milhares de combinações possíveis com o que há de melhor em tecnologia e soluções de design.",
-      "blockClass": "shelfTitle"
+      "text": "É a nossa **Linha Premium**. Nela você encontrará milhares de combinações possíveis com o que há de **melhor em**\n **tecnologia e soluções de design**.",
+      "blockClass": "texto-madu-cat"
     },
     "title": "Título da primeira prateleira"
   },
@@ -229,20 +238,34 @@
   },
   "link#shelf-ver-mais": {
     "props": {
-      "label": "ver mais da MAD.U ONE"
+      "label": "Ver mais da MAD.U ONE",
+      "blockClass": "link-ver-mais"
     }
+  },
+
+  "flex-layout.row#madu-extra": {
+    "props": {
+      "blockClass": "content-madu-cat",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#logo-madu-extra",
+      "rich-text#shelf-title-extra",
+      "flex-layout.row#shelf-extra",
+      "link#shelf-ver-mais-extra"
+    ]
   },
   "image#logo-madu-extra": {
     "props": {
       "src": "assets/madu-extra-icon.webp",
       "alt": "Logo Madu Extra",
-      "blockClass": "logo-madu-one "
+      "blockClass": "logo-madu-cat"
     }
   },
   "rich-text#shelf-title-extra": {
     "props": {
-      "text": "## Essa é a nossa linha básica. Para quem procura uma solução leve, simples e prática. Qualidade e durabilidade numa linha extremamente competitiva.",
-      "blockClass": "shelfTitle"
+      "text": "Essa é a nossa linha básica. Para quem procura uma solução leve, simples e prática. **Qualidade e durabilidade numa**\n **linha extremamente competitiva.**",
+      "blockClass": "texto-madu-cat"
     },
     "title": "Título da primeira prateleira"
   },
@@ -271,13 +294,23 @@
   },
   "link#shelf-ver-mais-extra": {
     "props": {
-      "label": "ver mais da MAD.U EXTRA"
+      "label": "ver mais da MAD.U EXTRA",
+      "blockClass": "link-ver-mais"
     }
+  },
+  "flex-layout.row#combinam":{
+    "props": {
+      "blockClass": "linha-combinam"
+    },
+    "children": [
+      "image#combinam"
+    ]
   },
   "image#combinam": {
     "props": {
       "src": "assets/madu-combinam-se-combinam.webp",
-      "alt": "Combinam e se combinam"
+      "alt": "Combinam e se combinam",
+      "blockClass": "se-combinam"
     }
   },
   "flex-layout.row#shelf-final": {
@@ -293,13 +326,13 @@
   "slider-layout#prateleira-home-final": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 8,
         "tablet": 2,
         "phone": 2
       },
       "infinite": false,
       "fullWidth": false,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "never",
       "blockClass": "shelf"
     }
   },

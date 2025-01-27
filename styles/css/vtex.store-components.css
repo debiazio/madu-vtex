@@ -188,6 +188,22 @@
   padding-bottom: 105px;
 }
 
+/* LINHA MADU ONE  */
+.imageElement--logo-madu-cat{
+  width: 237px;
+  transition: .3s;
+}
+
+.imageElement--logo-madu-cat:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+/* SE COMBINAM  */
+.imageElement--se-combinam{
+  padding: 50px;
+}
+
 /* PLP */
 .imageElement--banner-dpto {
   width: 100%;

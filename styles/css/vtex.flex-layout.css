@@ -53,6 +53,10 @@
 
 
 /* CATEGORIAS */
+.flexCol--colunas-categorias {
+  background-color: white;
+}
+
 .flexColChild--colunas-categorias {
   display: flex;
   flex-direction: column;
@@ -62,6 +66,10 @@
 
 .flexRow--categorias-madu {
   margin: 40px 0 20px 0;
+}
+
+.flexRowContent--categorias-madu {
+  gap: 10px
 }
 
 /* MINICART */
@@ -131,6 +139,20 @@
 
 .flexCol--mosaico-home {
   gap: 32px;
+}
+
+/* LINHA MADU ONE  */
+.flexRow--content-madu-cat{
+  margin-top: 20px;
+}
+.flexRowContent--content-madu-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  padding: 30px 30px 30px 30px;
 }
 
 /* INSTAGRAM HOME */

@@ -27,6 +27,12 @@
   color: white;
 }
 
+/* MADU ONE  */
+.container--texto-madu-cat{
+  font-size: 18px;
+  text-align: center;
+}
+
 /* INSTITUCIONAIS */
 /* QUEM SOMOS */
 .heading--titulo-institucionais {
