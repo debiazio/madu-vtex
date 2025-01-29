@@ -76,12 +76,13 @@
 }
 
 .flexRowContent--categorias-madu {
-  gap: 50px
+  gap: 20px
 }
 
 .flexRowContent--categorias {
   display: flex;
   justify-content: center;
+  gap: 50px
 }
 
 /* MINICART */

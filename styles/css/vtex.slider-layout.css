@@ -22,8 +22,9 @@
   padding-right:0 !important;
 }
 .paginationDotsContainer--shelf{
-  bottom:-70px;
-  margin:41px 0 29px;
+  display: none;
+  /* bottom:-70px;
+  margin:41px 0 29px; */
 }
 .paginationDot--shelf{
   width:32px !important;

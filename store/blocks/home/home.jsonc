@@ -122,7 +122,7 @@
   },
   "image#estantes": {
     "props": {
-      "src": "assets/cat-estante.webp",
+      "src": "assets/estantes.webp",
       "alt": "imagem categoria",
       "blockClass": "imagem-categorias"
     }
@@ -136,7 +136,7 @@
   },
   "image#lancamentos": {
     "props": {
-      "src": "assets/ico-novidades-1-400x400.webp",
+      "src": "assets/kids.webp",
       "alt": "imagem categoria",
       "blockClass": "imagem-categorias"
     }
@@ -478,19 +478,19 @@
   "rich-text#titulo-inovacao": {
     "props": {
       "text": "Inovação",
-      "blockClass": "titulo-categorias"
+      "blockClass": "categorias-final"
     }
   },
   "rich-text#titulo-qualidade": {
     "props": {
       "text": "Qualidade",
-      "blockClass": "titulo-categorias"
+      "blockClass": "categorias-final"
     }
   },
   "rich-text#titulo-tecnologia": {
     "props": {
       "text": "Tecnologia",
-      "blockClass": "titulo-categorias"
+      "blockClass": "categorias-final"
     }
   },
   // TEXTOS BANNER FINAL

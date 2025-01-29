@@ -1,57 +1,68 @@
-.newsletterForm{
-    display:flex;
-    gap:8px;
-    justify-content:center;
+.newsletterForm {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
+
+.nameInputContainer,
+.emailInputContainer {
+  width: 400px;
+}
+
+.formSubmitContainer :global(.vtex-button){
+  width: 200px;
+}
+
 .nameInputContainer :global(.vtex-input-prefix__group),
 .emailInputContainer :global(.vtex-input-prefix__group),
-.formSubmitContainer :global(.vtex-button){
-    min-height:auto;
-    border:0;
-    border-radius:0;
+.formSubmitContainer :global(.vtex-button) {
+  min-height: auto;
+  border: 0;
+  border-radius: 0;
 }
+
 .nameInputContainer :global(.vtex-styleguide-9-x-input),
-.emailInputContainer :global(.vtex-styleguide-9-x-input){
-    background:transparent;
-    border:1px solid #fff;
-    color:#fff;
-    border-radius:20px;
-    padding:10px;
-    font-size:14px;
-    line-height:1;
-    width:271px;
+.emailInputContainer :global(.vtex-styleguide-9-x-input) {
+  background-color: #fff;
+  border-color: #BEBEBE;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 30px 30px 30px 30px;
 }
+
 .nameInputContainer :global(.vtex-styleguide-9-x-input)::placeholder,
-.emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder{
-    color:#fff;
+.emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #000;
 }
-.formSubmitContainer :global(.vtex-button__label){
-    padding:13px 30px !important;
-    background-color: #000;
-    font-family: "Montserrat";
-    font-weight: 600;
-    fill: #FFF;
-    color: #FFF;
-    border-radius: 30px 30px 30px 30px;
-    padding: 14px;
-    font-size: 13px;
+
+.formSubmitContainer :global(.vtex-button__label) {
+  padding: 13px 30px !important;
+  background-color: #000;
+  font-family: "Montserrat";
+  font-weight: 600;
+  fill: #FFF;
+  color: #FFF;
+  border-radius: 30px 30px 30px 30px;
+  padding: 14px;
+  font-size: 13px;
 }
-.newsletterForm :global(.vtex-input__error){
-    color:#fff;
-    text-align:center;
-    font-size:12px;
+
+.newsletterForm :global(.vtex-input__error) {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
 }
+
 .defaultErrorMessage,
-.defaultSuccessMessage{
-    text-align:center;
-    color:#fff;
+.defaultSuccessMessage {
+  text-align: center;
+  color: #fff;
 }
 
 /* MOBILE */
-@media screen and (max-width: 1024px){
-    .newsletterForm{
-        flex-direction:column;
-        align-items:center;
-        gap:20px;
-    }
+@media screen and (max-width: 1024px) {
+  .newsletterForm {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }

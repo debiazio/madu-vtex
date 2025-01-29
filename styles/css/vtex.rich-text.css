@@ -34,12 +34,18 @@
 }
 
 /* CATEGORIAS FINAL HOME  */
-.paragraph--titulo-categorias {
+.paragraph--categorias-final {
   font-family: "Montserrat Bold";
   font-size: 25px;
   font-weight: 700;
   letter-spacing: -.6px;
   color: #000;
+}
+
+  .paragraph--titulo-categorias{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1em;
 }
 
 .paragraph--texto-modal {
