@@ -22,15 +22,47 @@
   text-wrap-mode: nowrap;
 }
 
-.link--texto-notification-bar{
+.link--texto-notification-bar {
   text-decoration: none;
   color: white;
 }
 
 /* MADU ONE  */
-.container--texto-madu-cat{
+.container--texto-madu-cat {
   font-size: 18px;
   text-align: center;
+}
+
+/* CATEGORIAS FINAL HOME  */
+.paragraph--titulo-categorias {
+  font-family: "Montserrat Bold";
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -.6px;
+  color: #000;
+}
+
+.paragraph--texto-modal {
+  font-size: 16px;
+  font-family: "Montserrat Semibold";
+  text-align: center;
+  margin: 0;
+}
+
+.container--titulo-modal {
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph--titulo-modal {
+  background-color: #000;
+  font-family: "Montserrat";
+  font-weight: 600;
+  fill: #FFF;
+  color: #FFF;
+  border-radius: 30px 30px 30px 30px;
+  padding: 14px;
+  font-size: 13px;
 }
 
 /* INSTITUCIONAIS */
@@ -54,9 +86,10 @@
 }
 
 .heading--title-newsletter {
-  margin: 0 0 35px;
-  font-size: 25px;
-  color: #fff;
+  font-family: "Montserrat Semibold";
+  font-size: 18px;
+  letter-spacing: -.6px;
+  color: #242424;
 }
 
 .container--credits {
@@ -72,7 +105,7 @@
 .paragraph--title-footer {
   margin: 0 0 14px;
   color: #3A3434;
-  font: 14px "Amiko Semibold";
+  font: 14px "Montserrat Semibold";
   text-transform: uppercase;
 }
 
@@ -142,7 +175,7 @@
   gap: 16px;
   margin: 5px 0;
   border-left: 5px solid transparent;
-  font: 13px "Amiko Semibold";
+  font: 13px "Montserrat Semibold";
 }
 
 .link--item-menu-institucionais-active {
@@ -201,7 +234,7 @@
   }
 
   .paragraph--title-footer {
-    font: 12px "Amiko Semibold";
+    font: 12px "Montserrat Semibold";
     text-transform: uppercase;
     color: #3A3434;
     margin: 0;

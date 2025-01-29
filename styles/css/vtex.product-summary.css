@@ -1,5 +1,10 @@
-.image{
+/* .image{
   box-shadow:0 4px 8px #ccc;
+} */
+
+.image{
+  height: 100%!important;
+  border-radius: 50px;
 }
 .nameContainer{
   margin:19px 0 10px;
@@ -17,9 +22,9 @@
   display:block;
   overflow:hidden;
 }
-.element:hover :global(.vtex-stack-layout-0-x-stackItem--add-to-cart-summary){
+/* .element:hover :global(.vtex-stack-layout-0-x-stackItem--add-to-cart-summary){
   display:block;
-}
+} */
 .SKUSelectorContainer{
   margin-bottom:5px;
 }

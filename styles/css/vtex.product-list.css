@@ -13,12 +13,12 @@
     margin-bottom:9px;
 }
 .productPrice{
-    color:#F1A1A3;
-    font:14px "Amiko Semibold";
+    color:#D9D8D7;
+    font:14px "Montserrat Semibold";
 }
 .quantityDropdownContainer :global(.vtex-dropdown__container){
     border-radius:5px;
-    border:1px solid #F1A1A3;
+    border:1px solid #D9D8D7;
     height:auto;
 }
 .quantityDropdownContainer :global(.vtex-dropdown__button){

@@ -68,14 +68,26 @@
   margin: 40px 0 20px 0;
 }
 
+.flexRow--categorias {
+  background-color: white;
+  margin-top: 20px;
+  margin: 20px 0 0 0;
+  padding-bottom: 50px;
+}
+
 .flexRowContent--categorias-madu {
-  gap: 10px
+  gap: 50px
+}
+
+.flexRowContent--categorias {
+  display: flex;
+  justify-content: center;
 }
 
 /* MINICART */
 .flexRow--minicart-content {
   padding: 14px 0;
-  border-bottom: 1px solid #F1A1A3;
+  border-bottom: 1px solid #D9D8D7;
 }
 
 .flexCol--minicart-image {
@@ -142,9 +154,10 @@
 }
 
 /* LINHA MADU ONE  */
-.flexRow--content-madu-cat{
+.flexRow--content-madu-cat {
   margin-top: 20px;
 }
+
 .flexRowContent--content-madu-cat {
   display: flex;
   flex-direction: column;
@@ -164,7 +177,7 @@
 
 /* RODAPÉ */
 .flexRow--newsletter-row {
-  background: #F1A1A3;
+  background: #D9D8D7;
   padding: 43px 0 50px;
 }
 
@@ -173,7 +186,7 @@
 }
 
 .flexRow--credits {
-  border-top: 1px solid #F1A1A3;
+  border-top: 1px solid #D9D8D7;
 }
 
 .flexColChild--footer-2-desktop {
@@ -244,7 +257,7 @@
 }
 
 .flexRowContent--product-description {
-  border-bottom: 1px solid #F1A1A3;
+  border-bottom: 1px solid #D9D8D7;
 }
 
 .flexRowContent--productSpecification {
@@ -264,7 +277,7 @@
 }
 
 .flexCol--menu-institucionais {
-  background: #F1A1A3;
+  background: #D9D8D7;
   padding: 25px 0;
   height: fit-content;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);

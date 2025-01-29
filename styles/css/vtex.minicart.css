@@ -29,7 +29,7 @@
     padding:10px;
 }
 .minicartTitle{
-    background:#F1A1A3;
+    background:#D9D8D7;
     padding:16px 0 17px;
     text-align:center;
     color: #3a3434;
@@ -38,7 +38,7 @@
 }
 .minicartTitle::before{
     content:"Meu Carrinho";
-    font:15px "Amiko Semibold";
+    font:15px "Montserrat Semibold";
 }
 .minicartProductListContainer{
     padding:0 19px;
@@ -54,7 +54,7 @@
     border-radius:100px;
     min-height:auto;
     border:0;
-    background:#F1A1A3;
+    background:#D9D8D7;
     text-transform: none;
 }
 .minicartCheckoutButton :global(.vtex-button__label) {

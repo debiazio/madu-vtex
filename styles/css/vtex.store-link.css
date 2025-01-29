@@ -17,11 +17,14 @@
 /* MADU ONE  */
 .link--link-ver-mais{
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .label--link-ver-mais{
   background-color: #000;
-  font-family: "Montserrat", Sans-serif;
+  font-family: "Montserrat";
   font-weight: 600;
   fill: #FFF;
   color: #FFF;

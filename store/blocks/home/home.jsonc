@@ -8,6 +8,9 @@
       "flex-layout.row#madu-extra",
       "flex-layout.row#combinam",
       "flex-layout.row#shelf-final",
+      "flex-layout.row#shelf-final-1",
+      "flex-layout.row#shelf-final-2",
+      "flex-layout.row#ver-mais-final",
       "flex-layout.row#banner-final"
     ],
     "parent": {
@@ -313,6 +316,7 @@
       "blockClass": "se-combinam"
     }
   },
+  // PRATELEIRA 1
   "flex-layout.row#shelf-final": {
     "children": ["list-context.product-list#prateleira-home-final"]
   },
@@ -326,19 +330,83 @@
   "slider-layout#prateleira-home-final": {
     "props": {
       "itemsPerPage": {
-        "desktop": 8,
+        "desktop": 4,
         "tablet": 2,
         "phone": 2
       },
       "infinite": false,
       "fullWidth": false,
       "showNavigationArrows": "never",
-      "blockClass": "shelf"
+      "blockClass": "shelf-prateleira-final"
     }
   },
+// PRATELEIRA 2
+"flex-layout.row#shelf-final-1": {
+  "children": ["list-context.product-list#prateleira-home-final-1"]
+},
+"list-context.product-list#prateleira-home-final-1": {
+  "blocks": ["product-summary.shelf"],
+  "children": ["slider-layout#prateleira-home-final-1"],
+  "props": {
+    "orderBy": "OrderByNameDESC"
+  }
+},
+"slider-layout#prateleira-home-final-1": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 4,
+      "tablet": 2,
+      "phone": 2
+    },
+    "infinite": false,
+    "fullWidth": false,
+    "showNavigationArrows": "never",
+    "blockClass": "shelf-prateleira-final"
+  }
+},
+// PRATELEIRA 2
+"flex-layout.row#shelf-final-2": {
+  "children": ["list-context.product-list#prateleira-home-final-2"]
+},
+"list-context.product-list#prateleira-home-final-2": {
+  "blocks": ["product-summary.shelf"],
+  "children": ["slider-layout#prateleira-home-final-2"],
+  "props": {
+    "orderBy": "OrderByPriceDESC"
+  }
+},
+"slider-layout#prateleira-home-final-2": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 4,
+      "tablet": 2,
+      "phone": 2
+    },
+    "infinite": false,
+    "fullWidth": false,
+    "showNavigationArrows": "never",
+    "blockClass": "shelf-prateleira-final"
+  }
+},
+"flex-layout.row#ver-mais-final":{
+  "props": {
+    "blockClass": "content-ver-mais-final"
+  },
+  "children": [
+    "link#ver-mais-final"
+  ]
+},
+"link#ver-mais-final":{
+  "props": {
+    "label": "Ver todos os produtos",
+    "blockClass": "link-ver-mais"
+  }
+},
+
+
   "flex-layout.row#banner-final": {
     "props": {
-      "blockClass": "categorias-madu",
+      "blockClass": ["categorias-madu", "categorias"],
       "preventHorizontalStretch": true
     },
     "children": [
@@ -451,9 +519,16 @@
       "blockClass": "modal-layout-trigger"
     },
     "children": [
+      "rich-text#texto-modal-inovacao",
       "rich-text#titulo-modal-inovacao",
       "modal-layout#inovacao"
     ]
+  },
+  "rich-text#texto-modal-inovacao": {
+    "props": {
+      "text": "Inovar é a LIBERDADE para escolher o\n que, onde e principalmente\n QUANDO quiser!",
+      "blockClass": "texto-modal"
+    }
   },
   "rich-text#titulo-modal-inovacao": {
     "props": {
@@ -501,9 +576,16 @@
   // MODAL QUALIDADE
   "modal-trigger#saiba-mais-qualidade": {
     "children": [
+      "rich-text#texto-modal-qualidade",
       "rich-text#titulo-modal-qualidade",
       "modal-layout#qualidade"
     ]
+  },
+  "rich-text#texto-modal-qualidade":{
+    "props": {
+      "text": "Mobiliário técnico feito 100% no Brasil,\n com a melhor qualidade disponível no\n Mundo.",
+      "blockClass": "texto-modal"
+    }
   },
   "rich-text#titulo-modal-qualidade": {
     "props": {
@@ -548,9 +630,16 @@
 
     },
     "children": [
+      "rich-text#texto-modal-tecnologia",
       "rich-text#titulo-modal-tecnologia",
       "modal-layout#tecnologia"
     ]
+  },
+  "rich-text#texto-modal-tecnologia":{
+    "props": {
+      "text": "A MAIOR linha de mobiliário técnico do\n mundo também merece a MELHOR\n tecnologia do mundo.",
+      "blockClass": "texto-modal"
+    }
   },
   "rich-text#titulo-modal-tecnologia": {
     "props": {

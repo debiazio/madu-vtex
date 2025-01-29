@@ -38,7 +38,7 @@
   padding-bottom:16px;
 }
 .filter__container{
-  border-color:#F1A1A3;
+  border-color:#D9D8D7;
 }
 .filterItem :global(.vtex-checkbox__box){
   margin:1px 0 0 1px;
@@ -46,7 +46,7 @@
 .galleryTitle--layout{
   font-size:28px;
   font-weight:400;
-  color:#F1A1A3;
+  color:black;
   margin:0 0 33px;
 }
 .totalProducts--layout{
@@ -73,7 +73,7 @@
 }
 .caretIcon,
 .filterPopupTitle{
-  color:#F1A1A3;
+  color:black;
 }
 .filterPopupTitle {
   text-transform:none;
@@ -82,7 +82,7 @@
   padding:0 0 0 10px;
 }
 .buttonShowMore :global(.vtex-button){
-  border: 1px solid #F1A1A3;
+  border: 1px solid #D9D8D7;
   border-radius: 30px;
   background: #FFF;
   color: #3A3434;
@@ -92,7 +92,7 @@
 }
 .buttonShowMore :global(.vtex-button):hover{
   color: #FFF;
-  background: #F1A1A3;
+  background: #D9D8D7;
   transition: ease all .3s;
 }
 .buttonShowMore :global(.vtex-button__label){
@@ -160,7 +160,7 @@
     text-align: center;
   }
   .filterPopupTitle{
-    color:#F1A1A3;
+    color:#D9D8D7;
   }
   .filterPopupTitle .orderByText{
     color:#251203;
@@ -174,7 +174,7 @@
   .filterAccordionBreadcrumbs{
     height:auto;
     padding:18px 0 15px 24px;
-    background:#F1A1A3;
+    background:#D9D8D7;
   }
   .filterBreadcrumbsContent--filterCol,
   .filterBreadcrumbsItem--filterCol{
@@ -182,7 +182,7 @@
   }
   .filterBreadcrumbsText--filterCol{
     color:#fff;
-    font:15px "Amiko Semibold";
+    font:15px "Montserrat Semibold";
     text-transform:uppercase;
     display:flex;
     align-items:center;
@@ -197,7 +197,7 @@
   }
   .filterBreadcrumbsItemName--filterCol{
     color:#fff;
-    font:15px "Amiko Semibold";
+    font:15px "Montserrat Semibold";
     text-transform:uppercase;
   }
   .filterAccordionBreadcrumbs .caretIcon{
@@ -232,7 +232,7 @@
   }
   .filterApplyButtonWrapper--filterCol :global(.vtex-button),
   .filterClearButtonWrapper--filterCol :global(.vtex-button){
-    border:1px solid #F1A1A3;
+    border:1px solid #D9D8D7;
     border-radius:30px;
     min-height:auto;
     padding:10px;

@@ -32,14 +32,16 @@
 
 /* CATEGORIAS */
 .imageElement--imagem-categorias {
-  width: 83%;
+  width: 300px;
   transition: .3s;
+  padding: 20px;
 }
 
 .imageElement--imagem-categorias:hover {
   transform: scale(1.1);
   transition: .3s;
 }
+
 
 /* INSTITUCIONAIS */
 /* QUEM SOMOS */
@@ -128,7 +130,7 @@
 }
 
 .infoCardHeadline--mosaico-home-1 {
-  font: 400 29px "Amiko";
+  font: 400 29px "Montserrat";
   color: #251203;
   margin-top: 0;
 }
@@ -162,7 +164,7 @@
 
 .infoCardHeadline--mosaico-home-2 {
   margin: 0 0 0 16px;
-  font: 400 29px "Amiko";
+  font: 400 29px "Montserrat";
   color: #fff;
 }
 
@@ -243,7 +245,7 @@
 }
 
 .skuSelectorItem--selected {
-  border: 1px solid #F1A1A3;
+  border: 1px solid #D9D8D7;
   opacity: 1;
 }
 
@@ -327,7 +329,7 @@
 }
 
 .shippingContainer :global(.vtex-input-prefix__group) {
-  border: 1px solid #F1A1A3;
+  border: 1px solid #D9D8D7;
   border-radius: 30px;
   width: 191px;
   height: 34px;
@@ -347,12 +349,12 @@
 .shippingContainer :global(.vtex-button__label) {
   font-size: 0;
   padding: 7px 10px 8px !important;
-  border-left: 1px solid #F1A1A3;
+  border-left: 1px solid #D9D8D7;
 }
 
 .shippingContainer :global(.vtex-button__label)::before {
   content: "OK";
-  font: 13px "Amiko Semibold";
+  font: 13px "Montserrat Semibold";
   color: #43483B;
 }
 
@@ -444,7 +446,7 @@
 }
 
 .subscriberContainer .input {
-  border: 1px solid #F1A1A3;
+  border: 1px solid #D9D8D7;
   border-radius: 5px;
   margin: 0;
   height: 37px;
@@ -471,7 +473,7 @@
 .subscriberContainer :global(.vtex-button) {
   border: 0;
   border-radius: 5px;
-  background: #F1A1A3;
+  background: #D9D8D7;
   color: #fff;
   height: 37px;
 }
@@ -578,6 +580,6 @@
   }
 
   .swiperBullet--active {
-    background: #F1A1A3;
+    background: #D9D8D7;
   }
 }

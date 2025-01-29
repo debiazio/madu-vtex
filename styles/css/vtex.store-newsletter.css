@@ -26,11 +26,15 @@
     color:#fff;
 }
 .formSubmitContainer :global(.vtex-button__label){
-    background:#fff;
-    color:#F1A1A3;
-    border-radius:20px;
     padding:13px 30px !important;
-    font-size:14px;
+    background-color: #000;
+    font-family: "Montserrat";
+    font-weight: 600;
+    fill: #FFF;
+    color: #FFF;
+    border-radius: 30px 30px 30px 30px;
+    padding: 14px;
+    font-size: 13px;
 }
 .newsletterForm :global(.vtex-input__error){
     color:#fff;

@@ -1,5 +1,5 @@
 .summarySmallContent {
-    border-top:1px solid #F1A1A3;
+    border-top:1px solid #D9D8D7;
 }
 .summarySmallDisclaimer{
     display:none;
@@ -12,6 +12,6 @@
     color:#3A3434;
 }
 .price{
-    color:#F1A1A3;
-    font:16px "Amiko Semibold";
+    color:#D9D8D7;
+    font:16px "Montserrat Semibold";
 }

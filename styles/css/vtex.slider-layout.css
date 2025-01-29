@@ -32,7 +32,7 @@
   border-radius:10px;
 }
 .paginationDot--shelf--isActive{
-  background:#F1A1A3;
+  background:#D9D8D7;
 }
 .sliderArrows--shelf{
   background:#fff !important;
@@ -51,6 +51,24 @@
 }
 .sliderRightArrow--shelf{
   right:-10px;
+}
+
+.paginationDotsContainer--shelf-prateleira-final{
+  display: none;
+}
+
+.sliderTrack--shelf-prateleira-final{
+  gap: 35px;
+  padding: 20px 0;
+}
+
+.slide--shelf-prateleira-final--visible{
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #D7D7D7;
+}
+.slide--shelf-prateleira-final--visible:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* MOBILE */
