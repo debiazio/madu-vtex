@@ -43,6 +43,12 @@
 }
 
 
+/* CATEGORIA IMAGENS MODAL */
+.imageElement--imagem-categorias-modal {
+  width: 70%;
+  padding: 0 0 50px 50px;
+}
+
 /* INSTITUCIONAIS */
 /* QUEM SOMOS */
 .imageElement--imagem-quem-somos {

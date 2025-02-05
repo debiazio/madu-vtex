@@ -21,10 +21,11 @@
 
 .flexRow--topbar {
   display: flex;
+  background-color: white;
   flex-direction: row;
   align-items: center;
   padding: 8px 0 6px;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid #C7C7C7;
   justify-content: center;
   margin: 0;
 }
@@ -43,6 +44,12 @@
 
 .flexColChild--topbar {
   margin: 0;
+}
+
+.flexRowContent--main-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .flexColChild--topbar-right {
@@ -83,6 +90,11 @@
   display: flex;
   justify-content: center;
   gap: 50px
+}
+
+/* MODAL  */
+.flexCol--coluna-modal{
+  margin-right: 50px;
 }
 
 /* MINICART */

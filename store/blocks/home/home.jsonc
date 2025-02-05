@@ -18,7 +18,6 @@
     }
   },
 
-
   "video#video-banner-home-1": {
     "props": {
       "blockClass": "video-banner-home",
@@ -553,8 +552,12 @@
     }
   },
   "flex-layout.row#linha-inovacao": {
+    "props": {
+      "blockClass": "linha-modal",
+      "preventHorizontalStretch": true
+    },
     "children": [
-      "image#inovacao",
+      "image#inovacao-modal",
       "flex-layout.col#coluna-inovacao"
 
     ]
@@ -569,7 +572,7 @@
   },
   "rich-text#modal-inovacao": {
     "props": {
-      "blockClass": "texto-modal",
+      "blockClass": "texto-modal-modal",
       "text": "# Inovação #\n**Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!**\n\nA maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São **milhares** de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e **múltiplas utilizações** de acordo com a necessidade de cada cliente.\n\nA MAD.U inova nos mínimos detalhes. **Como num jogo de blocos de montar** os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para **novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.**"
     }
   },
@@ -605,8 +608,12 @@
     ]
   },
   "flex-layout.row#linha-qualidade": {
+    "props": {
+      "blockClass": "linha-modal",
+      "preventHorizontalStretch": true
+    },
     "children": [
-      "image#qualidade",
+      "image#qualidade-modal",
       "flex-layout.col#coluna-qualidade"
     ]
   },
@@ -620,7 +627,7 @@
   },
   "rich-text#modal-qualidade": {
     "props": {
-      "blockClass": "texto-modal",
+      "blockClass": "texto-modal-modal",
       "text": "## Qualidade ##\n**Mobiliário técnico feito 100% no Brasil, com a melhor qualidade disponível no Mundo.**\n\nA MAD.U tem sua própria infraestrutura de indústria dominando a cadeia produtiva desde o projeto inicial até sua fabricação final.\n\nTodos os componentes são desenvolvidos para uso específico, sem a utilização de partes genéricas ou adaptadas.\n\nPartes plásticas produzidas por injeção em polímeros de engenharia de altíssima durabilidade, totalmente imunes à oxidação ou ferrugem, elevada resistência ao impacto, agentes químicos, raios ultravioletas ou outras intempéries. Com aditivo antimicrobiano para proteção contra a proliferação de microrganismos e diminuição da contaminação cruzada.\n\nPartes metálicas com chassi totalmente em aço anticorrosivo ou aço inoxidável, as peças sujeitas ao manejo constante estão recobertas por componentes plásticos projetados para facilitar a limpeza e promover elevada resistência ao uso evitando corrosão.\n\nCada componente e seus materiais foram pensados e especificados para o seu melhor uso."
     }
   },
@@ -659,8 +666,12 @@
     ]
   },
   "flex-layout.row#linha-tecnologia": {
+    "props": {
+      "blockClass": "linha-modal",
+      "preventHorizontalStretch": true
+    },
     "children": [
-      "image#tecnologia",
+      "image#tecnologia-modal",
       "flex-layout.col#coluna-tecnologia"
     ]
   },
@@ -674,8 +685,30 @@
   },
   "rich-text#modal-tecnologia": {
     "props": {
-      "blockClass": "texto-modal",
+      "blockClass": "texto-modal-modal",
       "text": "## Tecnologia ##\n\n**A MAIOR linha de mobiliário técnico do mundo também merece a MELHOR tecnologia do mundo.**\n\nCada parte foi estritamente pensada e desenvolvida para o uso específico e resistente permitindo a agilidade na manutenção e eventual substituição de peças.\n\nRodízios especialmente desenvolvidos para uso extra silencioso e de alta durabilidade, com rotação e translação 360°. Bandas de rodagem com perfil reduzido para evitar o arrasto de contaminantes.\n\nGavetas com trilhos imunes à oxidação ou ferrugem, auto lubrificados e com exclusivo sistema de interferência de abertura escalonada para maior segurança nos deslocamentos.\n\nDiversas opções de tampos, hastes, suportes, rodas, travas, pés, para-choques, prateleiras e outros.\n\n**Tudo feito para você.**"
+    }
+  },
+  // IMAGENS MODAL
+  "image#inovacao-modal": {
+    "props": {
+      "src": "assets/Carrinho-Explodido 2.webp",
+      "alt": "Imagem inovação",
+      "blockClass": "imagem-categorias-modal"
+    }
+  },
+  "image#qualidade-modal": {
+    "props": {
+      "src": "assets/qualidade.webp",
+      "alt": "Imagem qualidade",
+      "blockClass": "imagem-categorias-modal"
+    }
+  },
+  "image#tecnologia-modal": {
+    "props": {
+      "src": "assets/tecnologia.webp",
+      "alt": "Imagem tecnologia",
+      "blockClass": "imagem-categorias-modal"
     }
   }
 

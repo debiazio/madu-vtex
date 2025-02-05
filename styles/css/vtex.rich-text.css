@@ -55,6 +55,10 @@
   margin: 0;
 }
 
+.paragraph--texto-modal{
+  text-align: justify;
+}
+
 .container--titulo-modal {
   display: flex;
   justify-content: center;

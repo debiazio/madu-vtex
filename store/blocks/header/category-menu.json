@@ -16,7 +16,11 @@
     "props": {
       "id": "menu-item-produtos",
       "type": "custom",
-      "iconId": null,
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "hpa-menu",
+        "isActive": true
+      },
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -46,104 +50,103 @@
       "blockClass": "menu-principal-submenu"
     },
     "children": [
-      "menu-item#camisetas",
-      "menu-item#calcas",
-      "menu-item#jardineiras",
-      "menu-item#salopetes",
-      "menu-item#bodies",
-      "menu-item#tapa-fralda",
-      "menu-item#ver-tudo"
+      "menu-item#armarios",
+      "menu-item#acessorios",
+      "menu-item#carrinhos",
+      "menu-item#estantes",
+      "menu-item#modulos",
+      "menu-item#novidades"
     ]
   },
-  "menu-item#camisetas": {
+  "menu-item#armarios": {
     "props": {
-      "id": "menu-item-camisetas",
+      "id": "menu-item-armarios",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos/camisetas",
+        "href": "/produtos/armarios",
         "noFollow": false,
-        "tagTitle": "Camisetas",
-        "text": "Camisetas"
+        "tagTitle": "Armários",
+        "text": "Armários"
       },
       "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#calcas": {
+  "menu-item#acessorios": {
     "props": {
-      "id": "menu-item-calcas",
+      "id": "menu-item-acessorios",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos/calcas",
+        "href": "/produtos/acessorios",
         "noFollow": false,
-        "tagTitle": "Calças",
-        "text": "Calças"
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
       },
       "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#jardineiras": {
+  "menu-item#carrinhos": {
     "props": {
-      "id": "menu-item-jardineiras",
+      "id": "menu-item-carrinhos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos/jardineiras",
+        "href": "/produtos/carrinhos",
         "noFollow": false,
-        "tagTitle": "Jardineiras",
-        "text": "Jardineiras"
+        "tagTitle": "Carrinhos",
+        "text": "Carrinhos"
       },
       "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#salopetes": {
+  "menu-item#estantes": {
     "props": {
-      "id": "menu-item-salopetes",
+      "id": "menu-item-estantes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos/salopetes",
+        "href": "/produtos/estantes",
         "noFollow": false,
-        "tagTitle": "Salopetes",
-        "text": "Salopetes"
+        "tagTitle": "Estantes",
+        "text": "Estantes"
       },
       "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#bodies": {
+  "menu-item#modulos": {
     "props": {
-      "id": "menu-item-bodies",
+      "id": "menu-item-modulos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos/bodies",
+        "href": "/produtos/modulos",
         "noFollow": false,
-        "tagTitle": "Bodies",
-        "text": "Bodies"
+        "tagTitle": "modulos",
+        "text": "modulos"
       },
       "blockClass": "menu-principal-subitem"
     }
   },
-  "menu-item#tapa-fralda": {
+  "menu-item#novidades": {
     "props": {
-      "id": "menu-item-tapa-fralda",
+      "id": "menu-item-novidades",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos/tapa-fralda",
+        "href": "/produtos/novidades",
         "noFollow": false,
         "tagTitle": "Tapa Fralda",
         "text": "Tapa Fralda"
@@ -172,7 +175,11 @@
     "props": {
       "id": "menu-item-nossas-linhas",
       "type": "custom",
-      "iconId": null,
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "hpa-menu",
+        "isActive": true
+      },
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -202,15 +209,84 @@
       "blockClass": "menu-principal-submenu"
     },
     "children": [
-      "menu-item#camisetas",
-      "menu-item#calcas",
-      "menu-item#jardineiras",
-      "menu-item#salopetes",
-      "menu-item#bodies",
-      "menu-item#tapa-fralda",
-      "menu-item#ver-tudo"
+      "menu-item#madu-box",
+      "menu-item#madu-expand",
+      "menu-item#madu-express",
+      "menu-item#madu-extra",
+      "menu-item#madu-one"
     ]
   },
+  "menu-item#madu-box":{
+    "props": {
+      "id": "menu-item-madu-box",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao/madu-box",
+        "noFollow": false,
+        "tagTitle": "MAD.U Box",
+        "text": "MAD.U Box"
+      }
+    }
+  },
+  "menu-item#madu-expand":{
+    "props": {
+      "id": "menu-item-madu-expand",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao/madu-expand",
+        "noFollow": false,
+        "tagTitle": "MAD.U Expand",
+        "text": "MAD.U Expand"
+      }
+    }
+  },
+  "menu-item#madu-express":{
+    "props": {
+      "id": "menu-item-madu-express",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao/madu-express",
+        "noFollow": false,
+        "tagTitle": "MAD.U Express",
+        "text": "MAD.U Express"
+      }
+    }
+  },
+  "menu-item#madu-extra":{
+    "props": {
+      "id": "menu-item-madu-extra",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao/madu-extra",
+        "noFollow": false,
+        "tagTitle": "MAD.U Extra",
+        "text": "MAD.U Extra"
+      }
+    }
+  },
+  "menu-item#madu-one":{
+    "props": {
+      "id": "menu-item-madu-one",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao/madu-one",
+        "noFollow": false,
+        "tagTitle": "MAD.U One",
+        "text": "MAD.U One"
+      }
+    }
+  },
+
 
   "menu-item#made-for-you": {
     "props": {
@@ -310,12 +386,12 @@
   },
   "flex-layout.col#produtos-mobile":{
     "children": [
-      "menu-item#camisetas",
-      "menu-item#calcas",
-      "menu-item#jardineiras",
-      "menu-item#salopetes",
-      "menu-item#bodies",
-      "menu-item#tapa-fralda",
+      "menu-item#armarios",
+      "menu-item#acessorios",
+      "menu-item#carrinhos",
+      "menu-item#estantes",
+      "menu-item#modulos",
+      "menu-item#novidades",
       "menu-item#ver-tudo"
     ]
   }

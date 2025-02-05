@@ -1,3 +1,10 @@
 .container--sticky-header{
-    background:#fff;
+    background:#F7F7F7;
 }
+
+/* .wrapper--sticky-header{
+  display: flex;
+  flex-direction: row;
+  width: 83rem;
+  justify-content: center;
+} */
