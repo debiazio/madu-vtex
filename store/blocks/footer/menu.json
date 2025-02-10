@@ -113,8 +113,7 @@
     "children": [
       "menu-item#institucional-mobile",
       "menu-item#produtos-mobile",
-      "menu-item#contato-mobile",
-      "disclosure-layout#footer-security"
+      "menu-item#contato-mobile"
     ]
   },
 
@@ -233,32 +232,6 @@
   "disclosure-content#footer-payments":{
     "children": [
       "image#payments"
-    ],
-    "props": {
-      "blockClass":"footer-payments"
-    }
-  },
-
-  "disclosure-layout#footer-security":{
-    "children": [
-      "disclosure-trigger#footer-security",
-      "disclosure-content#footer-security"
-    ],
-    "props": {
-      "blockClass":"footer-payments"
-    }
-  },
-  "disclosure-trigger#footer-security":{
-    "children": [
-      "rich-text#title-footer-6"
-    ],
-    "props": {
-      "blockClass":"footer-payments"
-    }
-  },
-  "disclosure-content#footer-security":{
-    "children": [
-      "flex-layout.row#footer-2-desktop-6"
     ],
     "props": {
       "blockClass":"footer-payments"

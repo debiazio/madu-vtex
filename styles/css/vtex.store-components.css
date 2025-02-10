@@ -424,13 +424,13 @@
 .shareSocialButton--facebook {
   width: 9px;
   height: 17px;
-  background: url(assets/facebook-1.png) no-repeat transparent;
+  /* background: url(assets/facebook-1.png) no-repeat transparent; */
 }
 
 .shareSocialButton--twitter {
   width: 16px;
   height: 14px;
-  background: url(assets/twitter.png) no-repeat transparent;
+  /* background: url(assets/twitter.png) no-repeat transparent; */
 }
 
 .shareSocialButton:hover,
@@ -486,6 +486,19 @@
 
 .swiperPaginationClickable {
   display: none;
+}
+
+/* RODAPE  */
+.imageElement--logo-rede-social{
+  width: 1.5rem;
+}
+
+.imageElement--logo-nav-grupo-mfm{
+  width: 8rem;
+}
+
+.imageElement--footer-payment{
+  width: 12rem;
 }
 
 /* MOBILE */

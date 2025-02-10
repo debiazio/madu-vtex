@@ -10,26 +10,21 @@
     ]
   },
   "flex-layout.row#footer-1-desktop": {
-    "children": [
-      "flex-layout.col#footer-1-desktop"
-    ],
+    "children": ["flex-layout.col#footer-1-desktop"],
     "props": {
       "blockClass": "newsletter-row"
     }
   },
-  "flex-layout.col#footer-1-desktop":{
-    "children": [
-      "rich-text#title-newsletter",
-      "newsletter-form"
-    ],
+  "flex-layout.col#footer-1-desktop": {
+    "children": ["rich-text#title-newsletter", "newsletter-form"],
     "props": {
       "blockClass": "newsletter-row"
     }
   },
-  "rich-text#title-newsletter":{
+  "rich-text#title-newsletter": {
     "props": {
       "text": "#### RECEBA NOVIDADES E PROMOÇÕES DA MAD.U",
-      "blockClass":"title-newsletter"
+      "blockClass": "title-newsletter"
     }
   },
   "newsletter-form": {
@@ -39,17 +34,17 @@
       "newsletter-submit"
     ]
   },
-  "newsletter-input-name":{
+  "newsletter-input-name": {
     "props": {
       "placeholderText": "Nome"
     }
   },
-  "newsletter-input-email":{
+  "newsletter-input-email": {
     "props": {
       "placeholderText": "E-mail"
     }
   },
-  "newsletter-submit":{
+  "newsletter-submit": {
     "props": {
       "submitButtonLabel": "Enviar"
     }
@@ -60,43 +55,35 @@
       "flex-layout.col#footer-logo-footer",
       "flex-layout.col#footer-atendimento",
       "flex-layout.col#footer-institucional",
-      "flex-layout.col#footer-siga-nos",
-      "flex-layout.col#grupomfm"
+      "flex-layout.col#footer-siga-nos"
     ],
     "props": {
       "blockClass": "footer-2-desktop",
       "colSizing": "auto"
     }
   },
-  "flex-layout.col#footer-logo-footer":{
-    "children": [
-      "image#logo-branca-footer",
-      "rich-text#subtitle-logo-madu"
-    ],
+  "flex-layout.col#footer-logo-footer": {
+    "children": ["image#logo-branca-footer", "rich-text#subtitle-logo-madu"],
     "props": {
-      "blockClass":"footer-2-desktop"
+      "blockClass": "footer-2-desktop"
     }
   },
-  "image#logo-branca-footer":{
+  "image#logo-branca-footer": {
     "props": {
       "src": "assets/logo-madu-branca.png",
       "alt": "Logo",
-      "blockClass":"logo-branca-footer",
+      "blockClass": "logo-branca-footer",
       "maxWidth": "200px"
     }
   },
-  "rich-text#subtitle-logo-madu":{
+  "rich-text#subtitle-logo-madu": {
     "props": {
       "text": "A maior linha de mobiliário\ntécnico do mundo!",
-      "blockClass":"subtitle-logo-madu"
+      "blockClass": "subtitle-logo-madu"
     }
   },
 
-
-
-
-
-  "flex-layout.col#footer-atendimento":{
+  "flex-layout.col#footer-atendimento": {
     "children": [
       "rich-text#title-footer-4",
       "link#e-mail-footer",
@@ -105,93 +92,98 @@
       "link#fone-telefone-footer"
     ],
     "props": {
-      "blockClass":"footer-2-desktop"
+      "blockClass": "footer-2-desktop"
     }
   },
-  "rich-text#title-footer-4":{
+  "rich-text#title-footer-4": {
     "props": {
       "text": "Atendimento",
-      "blockClass":"title-footer"
+      "blockClass": "title-footer"
     }
   },
-  "link#e-mail-footer":{
+  "link#e-mail-footer": {
     "props": {
       "label": "comercial@madumfm.com.br",
       "href": "mailto:comercial@madumfm.com.br",
       "target": "_blank",
-      "blockClass":"link-footer"
+      "blockClass": "link-footer"
     }
   },
-  "link#fone-footer":{
+  "link#fone-footer": {
     "props": {
       "label": "(41) 99971-0465",
       "href": "https://api.whatsapp.com/send?phone=5541999710465",
       "target": "_blank",
-      "blockClass":"link-footer"
+      "blockClass": "link-footer"
     }
   },
-  "link#endereco-footer":{
+  "link#endereco-footer": {
     "props": {
       "href": "https://www.google.com/maps/dir/?api=1&destination=Rua+Emma+Rohrsetzer,+1011,+Pinhais+-+Grande+Curitiba+-+PR,+83324-190",
-      "blockClass":"link-footer"
+      "blockClass": "link-footer"
     },
-    "children": [
-      "rich-text#endereco"
-    ]
+    "children": ["rich-text#endereco"]
   },
-  "rich-text#endereco":{
+  "rich-text#endereco": {
     "props": {
       "text": "Rua Emma Rohrsetzer, 1011, Pinhais - Grande\n Curitiba - PR, 83324-190",
-      "blockClass":"link-footer"
+      "blockClass": "link-footer"
     }
   },
-  "link#fone-telefone-footer":{
+  "link#fone-telefone-footer": {
     "props": {
       "label": "0800 721 8533",
       "href": "tel:08007218533",
-      "blockClass":"link-footer"
+      "blockClass": "link-footer"
     }
   },
-"flex-layout.col#footer-institucional":{
+  "flex-layout.col#footer-institucional": {
     "children": [
       "rich-text#title-footer-3",
       "vtex.menu@2.x:menu#institucional"
     ],
     "props": {
-      "blockClass":"footer-2-desktop"
+      "blockClass": "footer-2-desktop"
     }
   },
-  "rich-text#title-footer-3":{
+  "rich-text#title-footer-3": {
     "props": {
       "text": "Institucional teste",
-      "blockClass":"title-footer"
+      "blockClass": "title-footer"
     }
-},
+  },
 
-
-  "flex-layout.col#footer-siga-nos":{
+  "flex-layout.col#footer-siga-nos": {
     "children": [
       "rich-text#title-footer-siga-nos",
-      "image#footer-facebook",
-      "image#footer-instagram",
-      "image#footer-vimeo",
-      "image#footer-linkedin"
-
-
+      "flex-layout.row#redes-sociais",
+      "flex-layout.row#grupomfm"
     ],
     "props": {
       "colSizing": "auto",
       "blockClass": "footer-2-desktop-1"
     }
   },
-  "rich-text#title-footer-siga-nos":{
+  "rich-text#title-footer-siga-nos": {
     "props": {
       "text": "Siga-nos",
-      "blockClass":"title-footer"
+      "blockClass": "title-footer"
     }
   },
-  "image#footer-facebook":{
+  "flex-layout.row#redes-sociais": {
     "props": {
+      "blockClass": "conteiner-redes-sociais"
+    },
+    "children": [
+      "image#footer-facebook",
+      "image#footer-instagram",
+      "image#footer-vimeo",
+      "image#footer-linkedin"
+    ]
+  },
+  "image#footer-facebook": {
+    "props": {
+      "blockClass": "logo-rede-social",
       "src": "assets/facebook-logo-in-circular-shape.png",
       "alt": "Facebook",
       "link": {
@@ -200,8 +192,9 @@
       }
     }
   },
-  "image#footer-instagram":{
+  "image#footer-instagram": {
     "props": {
+      "blockClass": "logo-rede-social",
       "src": "assets/social.png",
       "alt": "Instagram",
       "link": {
@@ -210,8 +203,9 @@
       }
     }
   },
-  "image#footer-vimeo":{
+  "image#footer-vimeo": {
     "props": {
+      "blockClass": "logo-rede-social",
       "src": "assets/vimeo.png",
       "alt": "Vimeo",
       "link": {
@@ -220,8 +214,9 @@
       }
     }
   },
-  "image#footer-linkedin":{
+  "image#footer-linkedin": {
     "props": {
+      "blockClass": "logo-rede-social",
       "src": "assets/linkedin.png",
       "alt": "Linkedin",
       "link": {
@@ -230,23 +225,18 @@
       }
     }
   },
-  "flex-layout.col#grupomfm":{
+  "flex-layout.row#grupomfm": {
     "props": {
       "blockClass": "logo-grupo-mfm"
     },
-    "children": [
-      "image#logo-grupomfm"
-    ]
+    "children": ["image#logo-grupomfm"]
   },
-  "image#logo-grupomfm":{
+  "image#logo-grupomfm": {
     "props": {
       "src": "assets/logo-nav.png",
       "blockClass": "logo-nav-grupo-mfm"
     }
   },
-
-
-
 
   "flex-layout.row#footer-3-desktop": {
     "children": [
@@ -264,41 +254,32 @@
       "blockClass": "credits"
     }
   },
-  "image#payments":{
+  "image#payments": {
     "props": {
-      "src": "assets/payment.png",
+      "src": "assets/bandeiras-pgto.webp",
       "alt": "Payment",
-      "blockClass":"footer-payment"
+      "blockClass": "footer-payment"
     }
   },
-  "flex-layout.col#footer-seguranca":{
+  "flex-layout.col#footer-seguranca": {
     "children": [
-      "rich-text#title-footer-6",
       "flex-layout.row#footer-2-desktop-6"
     ],
     "props": {
-      "blockClass":"footer-2-desktop",
-      "width":"12%"
+      "blockClass": "footer-2-desktop"
     }
   },
-  "rich-text#title-footer-6":{
-    "props": {
-      "text": "Segurança",
-      "blockClass":"title-footer"
-    }
-  },
-  "flex-layout.row#footer-2-desktop-6":{
+  "flex-layout.row#footer-2-desktop-6": {
     "children": [
       "image#footer-image-1",
-      "image#footer-image-2",
-      "image#footer-image-3"
+      "image#footer-image-2"
     ],
     "props": {
       "blockClass": "footer-2-desktop-6",
       "colSizing": "auto"
     }
   },
-  "image#footer-image-1":{
+  "image#footer-image-1": {
     "props": {
       "src": "assets/VTEX_logo.png",
       "alt": "VTEX",
@@ -308,20 +289,10 @@
       }
     }
   },
-  "image#footer-image-2":{
+  "image#footer-image-2": {
     "props": {
       "src": "assets/lets-encrypt.png",
       "alt": "Let's Encrypt",
-      "link": {
-        "openNewTab": true,
-        "url": "#"
-      }
-    }
-  },
-  "image#footer-image-3":{
-    "props": {
-      "src": "assets/google.png",
-      "alt": "Google Safe Browsing",
       "link": {
         "openNewTab": true,
         "url": "#"
@@ -343,9 +314,7 @@
     }
   },
   "flex-layout.col#footer-2-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-mobile"
-    ],
+    "children": ["vtex.menu@2.x:menu#footer-mobile"],
     "props": {
       "blockClass": "footer-2-mobile"
     }
