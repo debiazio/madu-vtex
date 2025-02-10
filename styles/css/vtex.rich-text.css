@@ -107,6 +107,8 @@
 
 .container--credits {
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .paragraph--credits {

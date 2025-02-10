@@ -148,7 +148,7 @@
   },
   "rich-text#title-footer-3": {
     "props": {
-      "text": "Institucional teste",
+      "text": "Institucional",
       "blockClass": "title-footer"
     }
   },
@@ -266,13 +266,14 @@
       "flex-layout.row#footer-2-desktop-6"
     ],
     "props": {
-      "blockClass": "footer-2-desktop"
+      "blockClass": "footer-seguranca-desktop"
     }
   },
   "flex-layout.row#footer-2-desktop-6": {
     "children": [
       "image#footer-image-1",
-      "image#footer-image-2"
+      "image#footer-image-2",
+      "image#footer-image-3"
     ],
     "props": {
       "blockClass": "footer-2-desktop-6",
@@ -281,6 +282,7 @@
   },
   "image#footer-image-1": {
     "props": {
+      "blockClass": "footer-logos-linha-2",
       "src": "assets/VTEX_logo.png",
       "alt": "VTEX",
       "link": {
@@ -291,8 +293,20 @@
   },
   "image#footer-image-2": {
     "props": {
+      "blockClass": "footer-logos-linha-2",
       "src": "assets/lets-encrypt.png",
       "alt": "Let's Encrypt",
+      "link": {
+        "openNewTab": true,
+        "url": "#"
+      }
+    }
+  },
+  "image#footer-image-3": {
+    "props": {
+      "blockClass": "footer-logos-linha-2",
+      "src": "assets/pagarme.svg",
+      "alt": "Pagar.Me",
       "link": {
         "openNewTab": true,
         "url": "#"

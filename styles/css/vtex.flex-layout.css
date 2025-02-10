@@ -46,7 +46,7 @@
   margin: 0;
 }
 
-.flexRowContent--main-header{
+.flexRowContent--main-header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -93,7 +93,7 @@
 }
 
 /* MODAL  */
-.flexCol--coluna-modal{
+.flexCol--coluna-modal {
   margin-right: 50px;
 }
 
@@ -189,6 +189,17 @@
 }
 
 /* RODAPÉ */
+.flexRowContent--footer-2-desktop-6{
+  gap: 15px;
+}
+
+.flexColChild--footer-seguranca-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .flexRow--newsletter-row {
   background: #D9D8D7;
   padding: 43px 0 50px;
