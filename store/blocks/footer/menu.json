@@ -5,106 +5,35 @@
       "blockClass": "menu-footer"
     },
     "children": [
-      "menu-item#quem-somos",
-      "menu-item#lancamentos",
-      "menu-item#summershop",
-      "menu-item#contato"
-    ]
-  },
-  "menu-item#lancamentos": {
-    "props": {
-      "id": "menu-item-lancamentos",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/lancamentos",
-        "noFollow": false,
-        "tagTitle": "Lançamentos",
-        "text": "Lançamentos"
-      }
-    }
-  },
-  "menu-item#summershop": {
-    "props": {
-      "id": "menu-item-summershop",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/summershop",
-        "noFollow": false,
-        "tagTitle": "Summershop",
-        "text": "Summershop"
-      }
-    }
-  },
-  "menu-item#contato": {
-    "props": {
-      "id": "menu-item-contato",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/contato",
-        "noFollow": false,
-        "tagTitle": "Contato",
-        "text": "Contato"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#ajuda": {
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "menu-footer"
-    },
-    "children": [
-      "menu-item#guia-de-tamanhos",
-      "menu-item#trocas-e-devolucoes",
-      "menu-item#cancelamento",
+      "menu-item#made-for-you-footer",
       "menu-item#politica-de-privacidade",
-      "menu-item#perguntas-frequentes"
+      "menu-item#politica-troca-devol",
+      "menu-item#entregas",
+      "menu-item#formas-pagamento",
+      "menu-item#observacoes"
+
     ]
   },
-  "menu-item#guia-de-tamanhos": {
+  "menu-item#made-for-you-footer": {
     "props": {
-      "id": "menu-item-guia-de-tamanhos",
+      "id": "menu-item-madeforyou-footer-footer",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
+      "blockClass": "menu-item-footer-inst",
       "itemProps": {
         "type": "internal",
-        "href": "/guia-de-tamanhos",
-        "noFollow": true,
-        "tagTitle": "Guia de Tamanhos",
-        "text": "Guia de Tamanhos"
-      }
-    }
-  },
-  "menu-item#cancelamento": {
-    "props": {
-      "id": "menu-item-cancelamento",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cancelamento",
-        "noFollow": true,
-        "tagTitle": "Cancelamento",
-        "text": "Cancelamento"
+        "href": "/made-for-you",
+        "noFollow": false,
+        "tagTitle": "Made For You",
+        "text": "Made For You"
       }
     }
   },
   "menu-item#politica-de-privacidade": {
     "props": {
       "id": "menu-item-politica-de-privacidade",
+      "blockClass": "menu-item-footer-inst",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -115,123 +44,63 @@
       }
     }
   },
-  "menu-item#perguntas-frequentes": {
+  "menu-item#politica-troca-devol": {
     "props": {
-      "id": "menu-item-perguntas-frequentes",
+      "id": "menu-item-politica-troca-devol",
+      "blockClass": "menu-item-footer-inst",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/perguntas-frequentes",
+        "href": "/trocas-e-devolucoes",
         "noFollow": true,
-        "tagTitle": "Perguntas Frequentes",
-        "text": "Perguntas Frequentes"
+        "tagTitle": "Política de Trocas e Devoluções",
+        "text": "Política de Trocas e Devoluções"
       }
     }
   },
-
-  "vtex.menu@2.x:menu#produtos": {
+  "menu-item#entregas": {
     "props": {
-      "orientation": "vertical",
-      "blockClass": "menu-footer"
-    },
-    "children": [
-      "menu-item#produtos-footer",
-      "menu-item#colecao-footer",
-      "menu-item#feminino-footer",
-      "menu-item#acessorios-footer",
-      "menu-item#clube-footer",
-      "menu-item#summer-sale-footer"
-    ]
-  },
-  "menu-item#produtos-footer": {
-    "props": {
-      "id": "menu-item-produtos-footer",
+      "id": "menu-item-entregas",
+      "blockClass": "menu-item-footer-inst",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos",
+        "href": "/politica-de-entregas",
         "noFollow": true,
-        "tagTitle": "Produtos",
-        "text": "Produtos"
+        "tagTitle": "Política de Entregas",
+        "text": "Política de Entregas"
       }
     }
   },
-  "menu-item#colecao-footer": {
+  "menu-item#formas-pagamento": {
     "props": {
-      "id": "menu-item-colecao-footer",
+      "id": "menu-item-formas-pagamento",
+      "blockClass": "menu-item-footer-inst",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/colecao",
+        "href": "/formas-de-pagamento",
         "noFollow": true,
-        "tagTitle": "Coleção",
-        "text": "Coleção"
+        "tagTitle": "Formas de Pagamento",
+        "text": "Formas de Pagamento"
       }
     }
   },
-  "menu-item#feminino-footer": {
+  "menu-item#observacoes": {
     "props": {
-      "id": "menu-item-feminino-footer",
+      "id": "menu-item-observacoes",
+      "blockClass": "menu-item-footer-inst",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/feminino",
+        "href": "/observacoes",
         "noFollow": true,
-        "tagTitle": "Feminino",
-        "text": "Feminino"
-      }
-    }
-  },
-  "menu-item#acessorios-footer": {
-    "props": {
-      "id": "menu-item-acessorios-footer",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/acessorios",
-        "noFollow": true,
-        "tagTitle": "Acessórios",
-        "text": "Acessórios"
-      }
-    }
-  },
-  "menu-item#clube-footer": {
-    "props": {
-      "id": "menu-item-clube-footer",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clube",
-        "noFollow": true,
-        "tagTitle": "Clube",
-        "text": "Clube"
-      }
-    }
-  },
-  "menu-item#summer-sale-footer": {
-    "props": {
-      "id": "menu-item-summer-sale-footer",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/summer-sale",
-        "noFollow": true,
-        "tagTitle": "Summer Sale",
-        "text": "Summer Sale"
+        "tagTitle": "Observações",
+        "text": "Observações"
       }
     }
   },
@@ -243,11 +112,8 @@
     },
     "children": [
       "menu-item#institucional-mobile",
-      "flex-layout.row#footer-2-desktop-1",
-      "menu-item#ajuda-mobile",
       "menu-item#produtos-mobile",
       "menu-item#contato-mobile",
-      "disclosure-layout#footer-payments",
       "disclosure-layout#footer-security"
     ]
   },
@@ -276,44 +142,16 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#quem-somos",
-      "menu-item#lancamentos",
-      "menu-item#summershop",
-      "menu-item#contato"
+      "menu-item#made-for-you-footer",
+      "menu-item#politica-de-privacidade",
+      "menu-item#politica-troca-devol",
+      "menu-item#entregas",
+      "menu-item#formas-pagamento",
+      "menu-item#observacoes"
     ]
   },
 
-  "menu-item#ajuda-mobile": {
-    "props": {
-      "id": "menu-item-ajuda-mobile",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Ajuda",
-        "text": "Ajuda"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#ajuda-mobile"]
-  },
-  "vtex.menu@2.x:submenu.accordion#ajuda-mobile": {
-    "children": ["vtex.menu@2.x:menu#ajuda-mobile"]
-  },
-  "vtex.menu@2.x:menu#ajuda-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#guia-de-tamanhos",
-      "menu-item#trocas-e-devolucoes",
-      "menu-item#cancelamento",
-      "menu-item#politica-de-privacidade",
-      "menu-item#perguntas-frequentes"
-    ]
-  },
+
 
   "menu-item#produtos-mobile": {
     "props": {
@@ -379,7 +217,6 @@
 
   "disclosure-layout#footer-payments":{
     "children": [
-      "disclosure-trigger#footer-payments",
       "disclosure-content#footer-payments"
     ],
     "props": {
@@ -388,7 +225,6 @@
   },
   "disclosure-trigger#footer-payments":{
     "children": [
-      "rich-text#title-footer-5"
     ],
     "props": {
       "blockClass":"footer-payments"

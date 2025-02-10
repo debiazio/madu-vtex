@@ -32,6 +32,11 @@
   padding: 15PX;
 }
 
+/* RODAPÉ  */
+.label--link-footer{
+  color: white;
+}
+
 /* MOBILE */
 @media screen and (max-width: 1024px){
     .link--instagramTitle{

@@ -91,6 +91,9 @@
 }
 
 /* RODAPÉ */
+.paragraph--link-footer{
+  color: white;
+}
 .container--title-newsletter {
   justify-content: center;
 }
@@ -114,9 +117,13 @@
 
 .paragraph--title-footer {
   margin: 0 0 14px;
-  color: #3A3434;
+  color: white;
   font: 14px "Montserrat Semibold";
   text-transform: uppercase;
+}
+
+.paragraph--subtitle-logo-madu{
+  color: white;
 }
 
 /* PLP */
@@ -246,7 +253,7 @@
   .paragraph--title-footer {
     font: 12px "Montserrat Semibold";
     text-transform: uppercase;
-    color: #3A3434;
+    color: white;
     margin: 0;
   }
 

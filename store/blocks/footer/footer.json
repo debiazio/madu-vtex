@@ -57,42 +57,133 @@
 
   "flex-layout.row#footer-2-desktop": {
     "children": [
-      "flex-layout.col#footer-2-desktop-1",
-      "flex-layout.col#footer-2-desktop-2",
-      "flex-layout.col#footer-2-desktop-3",
-      "flex-layout.col#footer-2-desktop-4",
-      "flex-layout.col#footer-2-desktop-5",
-      "flex-layout.col#footer-2-desktop-6"
+      "flex-layout.col#footer-logo-footer",
+      "flex-layout.col#footer-atendimento",
+      "flex-layout.col#footer-institucional",
+      "flex-layout.col#footer-siga-nos"
     ],
     "props": {
       "blockClass": "footer-2-desktop",
       "colSizing": "auto"
     }
   },
-  "flex-layout.col#footer-2-desktop-1":{
+  "flex-layout.col#footer-logo-footer":{
     "children": [
-      "rich-text#title-footer-1",
-      "vtex.menu@2.x:menu#institucional",
-      "flex-layout.row#footer-2-desktop-1"
+      "image#logo-branca-footer",
+      "rich-text#subtitle-logo-madu"
     ],
     "props": {
       "blockClass":"footer-2-desktop"
     }
   },
-  "rich-text#title-footer-1":{
+  "image#logo-branca-footer":{
     "props": {
-      "text": "Institucional",
+      "src": "assets/logo-madu-branca.png",
+      "alt": "Logo",
+      "blockClass":"logo-branca-footer",
+      "maxWidth": "200px"
+    }
+  },
+  "rich-text#subtitle-logo-madu":{
+    "props": {
+      "text": "A maior linha de mobiliário\ntécnico do mundo!",
+      "blockClass":"subtitle-logo-madu"
+    }
+  },
+
+
+
+
+
+  "flex-layout.col#footer-atendimento":{
+    "children": [
+      "rich-text#title-footer-4",
+      "link#e-mail-footer",
+      "link#fone-footer",
+      "link#endereco-footer",
+      "link#fone-telefone-footer"
+    ],
+    "props": {
+      "blockClass":"footer-2-desktop"
+    }
+  },
+  "rich-text#title-footer-4":{
+    "props": {
+      "text": "Atendimento",
       "blockClass":"title-footer"
     }
   },
-  "flex-layout.row#footer-2-desktop-1":{
+  "link#e-mail-footer":{
+    "props": {
+      "label": "comercial@madumfm.com.br",
+      "href": "mailto:comercial@madumfm.com.br",
+      "target": "_blank",
+      "blockClass":"link-footer"
+    }
+  },
+  "link#fone-footer":{
+    "props": {
+      "label": "(41) 99971-0465",
+      "href": "https://api.whatsapp.com/send?phone=5541999710465",
+      "target": "_blank",
+      "blockClass":"link-footer"
+    }
+  },
+  "link#endereco-footer":{
+    "props": {
+      "href": "https://www.google.com/maps/dir/?api=1&destination=Rua+Emma+Rohrsetzer,+1011,+Pinhais+-+Grande+Curitiba+-+PR,+83324-190",
+      "blockClass":"link-footer"
+    },
     "children": [
+      "rich-text#endereco"
+    ]
+  },
+  "rich-text#endereco":{
+    "props": {
+      "text": "Rua Emma Rohrsetzer, 1011, Pinhais - Grande\n Curitiba - PR, 83324-190",
+      "blockClass":"link-footer"
+    }
+  },
+  "link#fone-telefone-footer":{
+    "props": {
+      "label": "0800 721 8533",
+      "href": "tel:08007218533",
+      "blockClass":"link-footer"
+    }
+  },
+"flex-layout.col#footer-institucional":{
+    "children": [
+      "rich-text#title-footer-3",
+      "vtex.menu@2.x:menu#institucional"
+    ],
+    "props": {
+      "blockClass":"footer-2-desktop"
+    }
+  },
+  "rich-text#title-footer-3":{
+    "props": {
+      "text": "Institucional teste",
+      "blockClass":"title-footer"
+    }
+},
+
+
+  "flex-layout.col#footer-siga-nos":{
+    "children": [
+      "rich-text#title-footer-siga-nos",
       "image#footer-facebook",
       "image#footer-instagram"
+
     ],
     "props": {
       "colSizing": "auto",
       "blockClass": "footer-2-desktop-1"
+    }
+  },
+  "rich-text#title-footer-siga-nos":{
+    "props": {
+      "text": "Siga-nos",
+      "blockClass":"title-footer"
     }
   },
   "image#footer-facebook":{
@@ -115,81 +206,25 @@
       }
     }
   },
-  "flex-layout.col#footer-2-desktop-2":{
+
+
+
+
+
+  "flex-layout.row#footer-3-desktop": {
     "children": [
-      "rich-text#title-footer-2",
-      "vtex.menu@2.x:menu#ajuda"
+      "rich-text#footer-3-desktop",
+      "image#payments",
+      "flex-layout.col#footer-seguranca"
     ],
     "props": {
-      "blockClass":"footer-2-desktop"
+      "blockClass": "credits"
     }
   },
-  "rich-text#title-footer-2":{
+  "rich-text#footer-3-desktop": {
     "props": {
-      "text": "Ajuda",
-      "blockClass":"title-footer"
-    }
-  },
-  "flex-layout.col#footer-2-desktop-3":{
-    "children": [
-      "rich-text#title-footer-3",
-      "vtex.menu@2.x:menu#produtos"
-    ],
-    "props": {
-      "blockClass":"footer-2-desktop"
-    }
-  },
-  "rich-text#title-footer-3":{
-    "props": {
-      "text": "Produtos",
-      "blockClass":"title-footer"
-    }
-  },
-  "flex-layout.col#footer-2-desktop-4":{
-    "children": [
-      "rich-text#title-footer-4",
-      "link#fone-footer",
-      "link#e-mail-footer"
-    ],
-    "props": {
-      "blockClass":"footer-2-desktop"
-    }
-  },
-  "rich-text#title-footer-4":{
-    "props": {
-      "text": "Contato",
-      "blockClass":"title-footer"
-    }
-  },
-  "link#fone-footer":{
-    "props": {
-      "label": "(xx) 99999-9999",
-      "href": "https://api.whatsapp.com/send?phone=5511999999999",
-      "target": "_blank",
-      "blockClass":"link-footer"
-    }
-  },
-  "link#e-mail-footer":{
-    "props": {
-      "label": "sac@summershop.com",
-      "href": "mailto:sac@summershop.com",
-      "target": "_blank",
-      "blockClass":"link-footer"
-    }
-  },
-  "flex-layout.col#footer-2-desktop-5":{
-    "children": [
-      "rich-text#title-footer-5",
-      "image#payments"
-    ],
-    "props": {
-      "blockClass":"footer-2-desktop"
-    }
-  },
-  "rich-text#title-footer-5":{
-    "props": {
-      "text": "Pagamento",
-      "blockClass":"title-footer"
+      "text": "Copyright © 2025 - Todos os direitos reservados.",
+      "blockClass": "credits"
     }
   },
   "image#payments":{
@@ -199,7 +234,7 @@
       "blockClass":"footer-payment"
     }
   },
-  "flex-layout.col#footer-2-desktop-6":{
+  "flex-layout.col#footer-seguranca":{
     "children": [
       "rich-text#title-footer-6",
       "flex-layout.row#footer-2-desktop-6"
@@ -254,19 +289,6 @@
         "openNewTab": true,
         "url": "#"
       }
-    }
-  },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer-3-desktop"],
-    "props": {
-      "blockClass": "credits"
-    }
-  },
-  "rich-text#footer-3-desktop": {
-    "props": {
-      "text": "2022 © CodeBlue. Todos os direitos reservados.",
-      "blockClass": "credits"
     }
   },
 
