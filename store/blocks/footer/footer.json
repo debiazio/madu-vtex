@@ -60,7 +60,8 @@
       "flex-layout.col#footer-logo-footer",
       "flex-layout.col#footer-atendimento",
       "flex-layout.col#footer-institucional",
-      "flex-layout.col#footer-siga-nos"
+      "flex-layout.col#footer-siga-nos",
+      "flex-layout.col#grupomfm"
     ],
     "props": {
       "blockClass": "footer-2-desktop",
@@ -172,7 +173,10 @@
     "children": [
       "rich-text#title-footer-siga-nos",
       "image#footer-facebook",
-      "image#footer-instagram"
+      "image#footer-instagram",
+      "image#footer-vimeo",
+      "image#footer-linkedin"
+
 
     ],
     "props": {
@@ -188,7 +192,7 @@
   },
   "image#footer-facebook":{
     "props": {
-      "src": "assets/Facebook.png",
+      "src": "assets/facebook-logo-in-circular-shape.png",
       "alt": "Facebook",
       "link": {
         "openNewTab": true,
@@ -198,7 +202,7 @@
   },
   "image#footer-instagram":{
     "props": {
-      "src": "assets/Instagram.png",
+      "src": "assets/social.png",
       "alt": "Instagram",
       "link": {
         "openNewTab": true,
@@ -206,7 +210,40 @@
       }
     }
   },
-
+  "image#footer-vimeo":{
+    "props": {
+      "src": "assets/vimeo.png",
+      "alt": "Vimeo",
+      "link": {
+        "openNewTab": true,
+        "url": "https://vimeo.com/user154510707"
+      }
+    }
+  },
+  "image#footer-linkedin":{
+    "props": {
+      "src": "assets/linkedin.png",
+      "alt": "Linkedin",
+      "link": {
+        "openNewTab": true,
+        "url": "https://www.linkedin.com/company/madumfm/"
+      }
+    }
+  },
+  "flex-layout.col#grupomfm":{
+    "props": {
+      "blockClass": "logo-grupo-mfm"
+    },
+    "children": [
+      "image#logo-grupomfm"
+    ]
+  },
+  "image#logo-grupomfm":{
+    "props": {
+      "src": "assets/logo-nav.png",
+      "blockClass": "logo-nav-grupo-mfm"
+    }
+  },
 
 
 
