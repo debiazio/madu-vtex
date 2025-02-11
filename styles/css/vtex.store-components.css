@@ -77,21 +77,31 @@
   font-size: 13px;
   border-radius: 0;
   padding-left: 1px;
-  background-color: #EEE;
+  /* background-color: #EEE; */
+  background-color: transparent;
 }
 
-.searchBarContainer .autoCompleteOuterContainer :global(.vtex-styleguide-9-x-input):hover {
-  background-color: #DFDFDF;
+.autoCompleteOuterContainer{
+  background-color: #EEE;
+  border-radius: 40px;
 }
+
+.autoCompleteOuterContainer:hover{
+  background-color: #DFDFDF
+}
+
+/* .searchBarContainer .autoCompleteOuterContainer :global(.vtex-styleguide-9-x-input):hover {
+  background-color: #t;
+} */
 
 .autoCompleteOuterContainer :global(.vtex-input__suffix) {
   padding-right: 0;
-  background-color: #EEE;
+  background-color: transparent;
 }
 
-.searchBarContainer .autoCompleteOuterContainer :global(.vtex-input__suffix):hover {
+/* .searchBarContainer .autoCompleteOuterContainer :global(.vtex-input__suffix):hover {
   background-color: #DFDFDF;
-}
+} */
 
 /* PRATELEIRAS */
 .skuSelectorItem {
@@ -490,11 +500,34 @@
 
 /* RODAPE  */
 .imageElement--logo-rede-social{
+  transition: scale 0.3s ease;
+}
+.imageElement--logo-rede-social:hover{
+  scale: 1.2;
+  transition: scale 0.3s ease-in-out;
+}
+
+.imageElement--logo-branca-footer{
+  width: 140px;
+  transition: scale 0.3s ease-in-out;
+}
+.imageElement--logo-branca-footer:hover{
+  scale: 1.1;
+  transition: scale 0.3s ease-in-out;
+}
+
+.imageElement--logo-rede-social{
   width: 1.5rem;
 }
 
 .imageElement--logo-nav-grupo-mfm{
   width: 8rem;
+  transition: scale 0.3s ease-in-out;
+}
+
+.imageElement--logo-nav-grupo-mfm:hover{
+  scale: 1.2;
+  transition: scale 0.3s ease-in-out;
 }
 
 .imageElement--footer-payment{
