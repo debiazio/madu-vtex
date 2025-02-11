@@ -103,6 +103,11 @@
 /* ROPAPÉ  */
 .styledLinkContent--menu-item-footer-inst{
   color: white;
+  transition: color 0.3s ease;
+}
+.styledLinkContent--menu-item-footer-inst:hover{
+  color: grey;
+  transition: color 0.3s ease;
 }
 
 /* MOBILE */

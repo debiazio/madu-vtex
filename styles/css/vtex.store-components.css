@@ -506,6 +506,11 @@
   width: 4rem;
 }
 
+.imageElement--icones-footer{
+  width: 20px;
+  height: 20px;
+}
+
 /* MOBILE */
 @media screen and (max-width: 1024px) {
   .container .container {

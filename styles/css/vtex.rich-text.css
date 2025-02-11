@@ -91,8 +91,23 @@
 }
 
 /* RODAPÉ */
+.paragraph--subtitle-logo-madu{
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  margin-left: 13px;
+}
+
 .paragraph--link-footer{
   color: white;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.paragraph--link-footer:hover{
+  color: grey;
+  transition: color 0.3s ease;
 }
 .container--title-newsletter {
   justify-content: center;

@@ -189,7 +189,25 @@
 }
 
 /* RODAPÉ */
-.flexRowContent--footer-2-desktop-6{
+.flexRow--content-footer-atendimento{
+  margin-bottom: 10px;
+}
+
+.flexRowContent--content-footer-atendimento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexCol--footer-2-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flexRowContent--footer-2-desktop-6 {
   gap: 15px;
 }
 
