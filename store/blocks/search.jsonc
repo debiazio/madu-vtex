@@ -65,6 +65,7 @@
   },
 
   "search-result-layout": {
+
     "blocks": [
       "search-result-layout.desktop",
       "search-result-layout.mobile",
@@ -74,6 +75,8 @@
 
   "search-result-layout.desktop": {
     "children": [
+      "flex-layout.row#banner-categoria",
+      "flex-layout.row#categorias",
       "flex-layout.row#result"
     ],
     "props": {
@@ -83,6 +86,14 @@
       "blockClass": "busca-desktop",
       "defaultGalleryLayout": "grid"
     }
+  },
+  "flex-layout.row#banner-categoria":{
+    "props": {
+      "blockClass": "banner-categoria"
+    },
+    "children": [
+      "flex-layout.row#banner-dpto"
+    ]
   },
   "flex-layout.row#result": {
     "children": [
@@ -95,7 +106,7 @@
   },
   "flex-layout.col#filter": {
     "children": [
-      "flex-layout.row#searchbread",
+      // "flex-layout.row#searchbread",
       "filter-navigator.v3"
     ],
     "props": {
@@ -124,7 +135,7 @@
   "flex-layout.col#content": {
     "children": [
       "flex-layout.row#searchtitle",
-      "flex-layout.row#banner-dpto",
+
       "flex-layout.row#searchinfo",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
@@ -154,7 +165,7 @@
   },
   "image#banner-dpto":{
     "props": {
-      "src": "assets/banner-dpto.png",
+      "src": "assets/bg-black-1024x578.jpg",
       "alt": "Banner Departamento",
       "blockClass":"banner-dpto"
     }
@@ -304,7 +315,7 @@
       "blockClass": "productCountMobileRow"
     }
   },
-  
+
   "search-not-found-layout": {
     "children": [
       "flex-layout.row#searchbread",

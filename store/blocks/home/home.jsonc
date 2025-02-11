@@ -36,12 +36,21 @@
       "preventHorizontalStretch": true
     },
     "children": [
-      "flex-layout.col#carrinhos",
-      "flex-layout.col#armarios",
-      "flex-layout.col#estantes",
-      "flex-layout.col#acessorios",
-      "flex-layout.col#lancamentos",
-      "flex-layout.col#feira-hospitalar"
+      "link#link-carrinhos",
+      "link#link-armarios",
+      "link#link-estantes",
+      "link#link-acessorios",
+      "link#link-lancamentos",
+      "link#link-feira-hospitalar"
+    ]
+  },
+  "link#link-carrinhos":{
+    "props": {
+      "href": "/mobiliario-tecnico",
+      "blockClass": "link-categorias"
+    },
+    "children": [
+      "flex-layout.col#carrinhos"
     ]
   },
   "flex-layout.col#carrinhos": {
@@ -54,6 +63,16 @@
       "rich-text#carrinho"
     ]
   },
+  "link#link-armarios":{
+    "props": {
+      "href": "/mobiliario-tecnico",
+      "blockClass": "link-categorias"
+    },
+    "children": [
+      "flex-layout.col#armarios"
+    ]
+  },
+
   "flex-layout.col#armarios": {
     "props": {
       "blockClass": "colunas-categorias",
@@ -62,6 +81,15 @@
     "children": [
       "image#armarios",
       "rich-text#armarios"
+    ]
+  },
+  "link#link-estantes":{
+    "props": {
+      "href": "/mobiliario-tecnico",
+      "blockClass": "link-categorias"
+    },
+    "children": [
+      "flex-layout.col#estantes"
     ]
   },
   "flex-layout.col#estantes": {
@@ -74,6 +102,15 @@
       "rich-text#estantes"
     ]
   },
+  "link#link-acessorios":{
+    "props": {
+      "href": "/mobiliario-tecnico",
+      "blockClass": "link-categorias"
+    },
+    "children": [
+      "flex-layout.col#acessorios"
+    ]
+  },
   "flex-layout.col#acessorios": {
     "props": {
       "blockClass": "colunas-categorias",
@@ -84,6 +121,15 @@
       "rich-text#acessorios"
     ]
   },
+  "link#link-lancamentos":{
+    "props": {
+      "href": "/mobiliario-tecnico",
+      "blockClass": "link-categorias"
+    },
+    "children": [
+      "flex-layout.col#lancamentos"
+    ]
+  },
   "flex-layout.col#lancamentos": {
     "props": {
       "blockClass": "colunas-categorias",
@@ -92,6 +138,15 @@
     "children": [
       "image#lancamentos",
       "rich-text#lancamentos"
+    ]
+  },
+  "link#link-feira-hospitalar":{
+    "props": {
+      "href": "/mobiliario-tecnico",
+      "blockClass": "link-categorias"
+    },
+    "children": [
+      "flex-layout.col#feira-hospitalar"
     ]
   },
   "flex-layout.col#feira-hospitalar": {

@@ -60,6 +60,11 @@
 
 
 /* CATEGORIAS */
+.flexRowContent--banner-dpto{
+  height: 250px;
+}
+
+
 .flexCol--colunas-categorias {
   background-color: white;
 }

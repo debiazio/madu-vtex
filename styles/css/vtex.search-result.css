@@ -122,6 +122,18 @@
   padding:0 0 20px;
 }
 
+/* EDICOES MADU */
+.galleryTitle--layout{
+  position: absolute;
+  top: 50px;
+}
+
+.galleryTitle--layout{
+  color: white;
+  font-weight: bold;
+}
+
+
 /* MOBILE */
 @media screen and (max-width: 1024px){
   .searchResultContainer{
