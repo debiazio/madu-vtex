@@ -1,0 +1,130 @@
+{
+  "store.custom#made-for-you": {
+    "blocks": [
+      "flex-layout.row#made-for-you",
+      "flex-layout.row#banner-final",
+      "flex-layout.row#avaliacoes"
+    ]
+  },
+  "flex-layout.row#made-for-you":{
+    "props": {
+      "blockClass": "page-linha-made-for-you"
+    },
+    "children": [
+      "flex-layout.col#page-imagem--made-for-you",
+      "flex-layout.col#page-texto--made-for-you"
+    ]
+  },
+  "flex-layout.col#page-imagem--made-for-you": {
+    "children": [
+      "image#imagem--made-for-you"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "page-imagem--made-for-you"
+    }
+  },
+  "image#imagem--made-for-you":{
+    "props": {
+      "src": "assets/future-mad.webp",
+      "blockClass": "imagem--made-for-you"
+    }
+  },
+  "flex-layout.col#page-texto--made-for-you":{
+    "children": [
+      "rich-text#texto--made-for-you",
+      "link#page-link--made-for-you"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "page-texto--made-for-you"
+    }
+  },
+  "rich-text#texto--made-for-you":{
+    "props": {
+      "text": "A **MAD.U** inova com **a maior linha de mobiliário técnico do mundo**. São milhões de possibilidades de configurações, através de módulos, acessórios e cores, criando o mobiliário perfeito para as mais diversas necessidades.\n\nIntegrante do **Grupo MFM**, que atua a mais de **30 anos** no segmento de fabricação de equipamentos da área de saúde, a **MAD.U** traz ao mercado um produto pensado, desenvolvido e **fabricado 100% no Brasil**.\n\nContamos com uma completa infraestrutura de design, engenharia, produção, qualidade, marketing e demais setores, entregando ao mercado produtos inovadores e fabricados com qualidade assegurada.\n\nUm **mobiliário perfeito** para atender diversas aplicações, podendo ser utilizado através de ambientações completas ou em uso individual. Os produtos **MAD.U** permitem que cada cliente tenha em seu ambiente um **móvel ideal** para sua utilização.\n\nConheça a **MAD.U** e descubra um novo conceito de mobiliário!",
+      "blockClass": "texto--made-for-you"
+    }
+  },
+  "link#page-link--made-for-you":{
+    "props": {
+      "label": "CONHEÇA NOSSAS LINHAS",
+      "href": "/nossas-linhas",
+      "blockClass": "link-ver-mais"
+    }
+  },
+  "flex-layout.row#avaliacoes":{
+    "props": {
+      "blockClass": "avaliacoes"
+    },
+    "children": [
+      "flex-layout.col#imagem",
+      "flex-layout.col#avaliacoes"
+    ]
+  },
+  "flex-layout.col#imagem": {
+    "props": {
+      "width": "100%",
+      "blockClass": "aval-imagem"
+    },
+    "children": [
+      "image#avaliacoes"
+    ]
+  },
+  "image#avaliacoes":{
+    "props": {
+      "src": "assets/color-your-worldwebp.webp",
+      "blockClass": "avaliacoes"
+    }
+  },
+  "flex-layout.col#avaliacoes":{
+    "props": {
+      "width": "100%",
+      "blockClass": "aval-texto"
+    },
+    "children": [
+      "list-context.image-list#avaliacoes"
+    ]
+  },
+  "list-context.image-list#avaliacoes": {
+    "children": [
+      "slider-layout#avaliacoes"
+    ],
+    "props": {"height": 650,
+    "showNavigationArrows": "desktopOnly",
+    "images": [
+      {
+        "image": "assets/instagram-3.png",
+        "description": "teste"
+      },
+      {
+        "image": "assets/instagram-3.png",
+        "description": "teste"
+      },
+      {
+        "image": "assets/instagram-3.png",
+        "description": "teste"
+      },
+      {
+        "image": "assets/instagram-3.png",
+        "description": "teste"
+      },
+      {
+        "image": "assets/instagram-3.png",
+        "description": "teste"
+      }
+    ]
+    }
+
+  },
+  "slider-layout#avaliacoes":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

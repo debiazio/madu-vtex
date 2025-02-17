@@ -19,5 +19,8 @@
   },
   "store.custom#perguntas-frequentes": {
     "path": "/perguntas-frequentes"
+  },
+  "store.custom#made-for-you": {
+    "path": "/made-for-you"
   }
 }
