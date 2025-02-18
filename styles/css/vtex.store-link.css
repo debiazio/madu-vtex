@@ -26,13 +26,18 @@
 }
 
 .label--link-ver-mais{
-  background-color: #000;
+  background-color: #153B64;
   font-family: "Montserrat";
   font-weight: 600;
   fill: #FFF;
   color: #FFF;
   border-radius: 30px 30px 30px 30px;
   padding: 15PX;
+}
+
+.label--link-ver-mais:hover{
+  background-color: #000;
+  cursor: pointer;
 }
 
 /* RODAPÉ  */

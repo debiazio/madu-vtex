@@ -556,6 +556,40 @@
   max-width: 15px;
 }
 
+
+/* MADE FOR YOU */
+.imageElement--imagem--made-for-you {
+  transition: transform 0.3s ease-out;
+  max-width: 100%;
+  width: 80%;
+  margin: 40px;
+}
+
+.imageElement--imagem-banner-avaliacoes{
+  transition: transform 0.3s ease-out;
+  max-width: 100%;
+  margin: 40px;
+  width: 60%;
+}
+
+.imageElement--imagem-banner-avaliacoes:hover,
+.imageElement--imagem--made-for-you:hover {
+  transition: transform 0.3s ease-out;
+  transform: scale(1.1) rotateX(10deg) rotateY(10deg);
+}
+
+
+.imageElement--avaliacao-avatar{
+  height: 40px;
+  margin: 10px;
+}
+
+.imageElement--avaliacao1-imagem-google{
+  height: 25px;
+  margin: 10px;
+
+}
+
 /* MOBILE */
 @media screen and (max-width: 1024px) {
   .container .container {

@@ -42,7 +42,7 @@
   color: #000;
 }
 
-  .paragraph--titulo-categorias{
+.paragraph--titulo-categorias {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.1em;
@@ -55,7 +55,7 @@
   margin: 0;
 }
 
-.paragraph--texto-modal{
+.paragraph--texto-modal {
   text-align: justify;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .paragraph--titulo-modal {
-  background-color: #000;
+  background-color: #153B64;
   font-family: "Montserrat";
   font-weight: 600;
   fill: #FFF;
@@ -73,6 +73,11 @@
   border-radius: 30px 30px 30px 30px;
   padding: 14px;
   font-size: 13px;
+}
+
+.paragraph--titulo-modal:hover {
+  background-color: #000;
+  cursor: pointer;
 }
 
 /* INSTITUCIONAIS */
@@ -91,7 +96,7 @@
 }
 
 /* RODAPÉ */
-.paragraph--subtitle-logo-madu{
+.paragraph--subtitle-logo-madu {
   margin: 0;
   font-size: 14px;
   line-height: 14px;
@@ -99,16 +104,17 @@
   margin-left: 13px;
 }
 
-.paragraph--link-footer{
+.paragraph--link-footer {
   color: white;
   margin: 0;
   transition: color 0.3s ease;
 }
 
-.paragraph--link-footer:hover{
+.paragraph--link-footer:hover {
   color: grey;
   transition: color 0.3s ease;
 }
+
 .container--title-newsletter {
   justify-content: center;
 }
@@ -139,7 +145,7 @@
   text-transform: uppercase;
 }
 
-.paragraph--subtitle-logo-madu{
+.paragraph--subtitle-logo-madu {
   color: white;
 }
 
@@ -252,6 +258,33 @@
 
 .link--item-menu-institucionais-7::before {
   background: url(assets/icon-institucionais-4.png) no-repeat center transparent;
+}
+
+/* MADE FOR YOU */
+.wrapper--texto--made-for-you {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.paragraph--avaliacao-nome {
+  margin: 10px 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 14px;
+  overflow: hidden;
+  padding-right: 25px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.paragraph--avaliacao-data {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  opacity: 0.5;
+  font-size: 11.2px
 }
 
 /* MOBILE */

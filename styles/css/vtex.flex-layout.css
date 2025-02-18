@@ -25,7 +25,7 @@
   flex-direction: row;
   align-items: center;
   padding: 8px 0 6px;
-  border-bottom: 1px solid #C7C7C7;
+  border-bottom: 1px solid #DFDFDF;
   justify-content: center;
   margin: 0;
 }
@@ -50,6 +50,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  border-bottom: 1px solid #DFDFDF;
 }
 
 .flexColChild--topbar-right {
@@ -59,8 +60,12 @@
 }
 
 
+.flexRow--content-ver-mais-final {
+  margin: 30px;
+}
+
 /* CATEGORIAS */
-.flexRowContent--banner-dpto{
+.flexRowContent--banner-dpto {
   height: 250px;
 }
 
@@ -76,14 +81,14 @@
   align-items: center;
 }
 
-.flexRow--categorias-madu {
+/* .flexRow--categorias-madu {
   margin: 40px 0 20px 0;
-}
+} */
 
 .flexRow--categorias {
   background-color: white;
-  margin-top: 20px;
-  margin: 20px 0 0 0;
+  /* margin-top: 20px;
+  margin: 20px 0 0 0; */
   padding-bottom: 50px;
 }
 
@@ -194,7 +199,7 @@
 }
 
 /* RODAPÉ */
-.flexRow--content-footer-atendimento{
+.flexRow--content-footer-atendimento {
   margin-bottom: 10px;
 }
 
@@ -332,6 +337,62 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
 }
 
+/* MADE FOR YOU */
+.flexCol--page-texto--made-for-you {
+  margin: 50px;
+}
+
+.flexRow--page-linha-made-for-you {
+  background-color: white;
+}
+
+.flexColChild--coluna-banner-img-avaliacoes,
+.flexColChild--page-imagem--made-for-you {
+  perspective: 500px;
+  /* Cria efeito 3D */
+  display: inline-block;
+  /* Garante que o contêiner se ajuste ao tamanho da imagem */
+}
+
+.flexRow--page-linha-made-for-you {
+  border-bottom: 1px solid #D9D8D7;
+}
+
+.flexRow--avaliacao-estrelas {
+  display: flex;
+}
+
+.flexRowContent--avaliacao-estrelas {
+  height: 20px;
+}
+
+.flexRowContent--avaliacao-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flexCol--avaliacao-col-nome-data {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColChild--coluna-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.flexColChild--avaliacao-col-google {
+  display: flex;
+  align-items: center;
+}
+
+.flexColChild--coluna-banner-img-avaliacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* MOBILE */
 @media screen and (max-width: 1024px) {
   .flexRow--main-header-mobile {
@@ -435,6 +496,6 @@
   }
 
   .flexRow--pagina-institucional {
-    margin: 20px 0;
+    margin: 2
   }
 }
