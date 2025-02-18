@@ -22,5 +22,11 @@
   },
   "store.custom#made-for-you": {
     "path": "/made-for-you"
+  },
+  "store.custom#nossas-linhas": {
+    "path": "/nossas-linhas"
+  },
+  "store.custom#catalogo":{
+    "path": "/catalogo"
   }
 }
