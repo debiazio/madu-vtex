@@ -53,6 +53,7 @@
       "blockClass": "link-ver-mais"
     }
   },
+  // LINHA AVALIACOES 
   "flex-layout.row#avaliacoes": {
     "props": {
       "blockClass": "content-avaliacoes"

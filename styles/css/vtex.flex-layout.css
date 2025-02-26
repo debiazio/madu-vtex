@@ -393,6 +393,11 @@
   justify-content: center;
 }
 
+/* CONTATO  */
+.flexRowContent--content-contato-contatos{
+  display: block;
+}
+
 /* MOBILE */
 @media screen and (max-width: 1024px) {
   .flexRow--main-header-mobile {

@@ -51,6 +51,12 @@
   transition: color 0.3s ease;
 }
 
+/* CONTATO  */
+.childrenContainer--link-contato{
+  display: flex;
+  flex-direction: row;
+}
+
 /* MOBILE */
 @media screen and (max-width: 1024px){
     .link--instagramTitle{

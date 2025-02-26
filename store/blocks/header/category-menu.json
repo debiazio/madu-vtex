@@ -62,7 +62,6 @@
     "props": {
       "id": "menu-item-armarios",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -78,7 +77,6 @@
     "props": {
       "id": "menu-item-acessorios",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -94,7 +92,6 @@
     "props": {
       "id": "menu-item-carrinhos",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -110,7 +107,6 @@
     "props": {
       "id": "menu-item-estantes",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -126,14 +122,13 @@
     "props": {
       "id": "menu-item-modulos",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "/produtos/modulos",
         "noFollow": false,
-        "tagTitle": "modulos",
-        "text": "modulos"
+        "tagTitle": "Módulos",
+        "text": "Módulos"
       },
       "blockClass": "menu-principal-subitem"
     }
@@ -142,14 +137,13 @@
     "props": {
       "id": "menu-item-novidades",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "/produtos/novidades",
         "noFollow": false,
-        "tagTitle": "Tapa Fralda",
-        "text": "Tapa Fralda"
+        "tagTitle": "Novidades",
+        "text": "Novidades"
       },
       "blockClass": "menu-principal-subitem"
     }
@@ -158,7 +152,6 @@
     "props": {
       "id": "menu-item-ver-tudo",
       "type": "custom",
-      "iconId": null,
       "highlight": true,
       "itemProps": {
         "type": "internal",
@@ -292,7 +285,6 @@
     "props": {
       "id": "menu-item-made-for-you",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -308,7 +300,6 @@
     "props": {
       "id": "menu-item-catalogo",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -324,7 +315,6 @@
     "props": {
       "id": "menu-item-contato",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -357,7 +347,6 @@
     "props": {
       "id": "menu-item-produtos-mobile",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
