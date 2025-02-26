@@ -278,12 +278,6 @@
       "rich-text#avaliacao2-data"
     ]
   },
-  "flex-layout.col#avaliacao2-nome-data": {
-    "children": [
-      "rich-text#avaliacao2-nome",
-      "rich-text#avaliacao2-data"
-    ]
-  },
   "rich-text#avaliacao2-nome": {
     "props": {
       "text": "Duda Hayashida",
