@@ -17,7 +17,6 @@
       "header": "header"
     }
   },
-
   "video#video-banner-home-1": {
     "props": {
       "blockClass": "video-banner-home",
@@ -44,7 +43,7 @@
       "link#link-feira-hospitalar"
     ]
   },
-  "link#link-carrinhos":{
+  "link#link-carrinhos": {
     "props": {
       "href": "/mobiliario-tecnico",
       "blockClass": "link-categorias"
@@ -63,7 +62,7 @@
       "rich-text#carrinho"
     ]
   },
-  "link#link-armarios":{
+  "link#link-armarios": {
     "props": {
       "href": "/mobiliario-tecnico",
       "blockClass": "link-categorias"
@@ -72,7 +71,6 @@
       "flex-layout.col#armarios"
     ]
   },
-
   "flex-layout.col#armarios": {
     "props": {
       "blockClass": "colunas-categorias",
@@ -83,7 +81,7 @@
       "rich-text#armarios"
     ]
   },
-  "link#link-estantes":{
+  "link#link-estantes": {
     "props": {
       "href": "/mobiliario-tecnico",
       "blockClass": "link-categorias"
@@ -102,7 +100,7 @@
       "rich-text#estantes"
     ]
   },
-  "link#link-acessorios":{
+  "link#link-acessorios": {
     "props": {
       "href": "/idealovers-by--mad-u",
       "blockClass": "link-categorias"
@@ -121,7 +119,7 @@
       "rich-text#acessorios"
     ]
   },
-  "link#link-lancamentos":{
+  "link#link-lancamentos": {
     "props": {
       "href": "/mobiliario-tecnico",
       "blockClass": "link-categorias"
@@ -140,7 +138,7 @@
       "rich-text#lancamentos"
     ]
   },
-  "link#link-feira-hospitalar":{
+  "link#link-feira-hospitalar": {
     "props": {
       "href": "/mobiliario-tecnico",
       "blockClass": "link-categorias"
@@ -239,7 +237,6 @@
       "blockClass": "titulo-categorias"
     }
   },
-
   // MADU ONE
   "flex-layout.row#madu-one": {
     "props": {
@@ -253,7 +250,6 @@
       "link#shelf-ver-mais"
     ]
   },
-
   "image#logo-madu-one": {
     "props": {
       "blockClass": "logo-madu-cat",
@@ -261,7 +257,6 @@
       "alt": "Logo Madu one"
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
       "text": "É a nossa **Linha Premium**. Nela você encontrará milhares de combinações possíveis com o que há de **melhor em**\n **tecnologia e soluções de design**.",
@@ -269,13 +264,18 @@
     },
     "title": "Título da primeira prateleira"
   },
-
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#prateleira-home"]
+    "children": [
+      "list-context.product-list#prateleira-home"
+    ]
   },
   "list-context.product-list#prateleira-home": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#prateleira-home"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-home"
+    ],
     "props": {
       "orderBy": "OrderByNameASC"
     }
@@ -299,7 +299,6 @@
       "blockClass": "link-ver-mais"
     }
   },
-
   "flex-layout.row#madu-extra": {
     "props": {
       "blockClass": "content-madu-cat",
@@ -327,11 +326,17 @@
     "title": "Título da primeira prateleira"
   },
   "flex-layout.row#shelf-extra": {
-    "children": ["list-context.product-list#prateleira-home-extra"]
+    "children": [
+      "list-context.product-list#prateleira-home-extra"
+    ]
   },
   "list-context.product-list#prateleira-home-extra": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#prateleira-home-extra"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-home-extra"
+    ],
     "props": {
       "orderBy": "OrderByNameASC"
     }
@@ -355,7 +360,7 @@
       "blockClass": "link-ver-mais"
     }
   },
-  "flex-layout.row#combinam":{
+  "flex-layout.row#combinam": {
     "props": {
       "blockClass": "linha-combinam"
     },
@@ -372,11 +377,17 @@
   },
   // PRATELEIRA 1
   "flex-layout.row#shelf-final": {
-    "children": ["list-context.product-list#prateleira-home-final"]
+    "children": [
+      "list-context.product-list#prateleira-home-final"
+    ]
   },
   "list-context.product-list#prateleira-home-final": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#prateleira-home-final"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-home-final"
+    ],
     "props": {
       "orderBy": "OrderByNameASC"
     }
@@ -394,73 +405,86 @@
       "blockClass": "shelf-prateleira-final"
     }
   },
-// PRATELEIRA 2
-"flex-layout.row#shelf-final-1": {
-  "children": ["list-context.product-list#prateleira-home-final-1"]
-},
-"list-context.product-list#prateleira-home-final-1": {
-  "blocks": ["product-summary.shelf"],
-  "children": ["slider-layout#prateleira-home-final-1"],
-  "props": {
-    "orderBy": "OrderByNameDESC"
-  }
-},
-"slider-layout#prateleira-home-final-1": {
-  "props": {
-    "itemsPerPage": {
-      "desktop": 4,
-      "tablet": 2,
-      "phone": 2
-    },
-    "infinite": false,
-    "fullWidth": false,
-    "showNavigationArrows": "never",
-    "blockClass": "shelf-prateleira-final"
-  }
-},
-// PRATELEIRA 2
-"flex-layout.row#shelf-final-2": {
-  "children": ["list-context.product-list#prateleira-home-final-2"]
-},
-"list-context.product-list#prateleira-home-final-2": {
-  "blocks": ["product-summary.shelf"],
-  "children": ["slider-layout#prateleira-home-final-2"],
-  "props": {
-    "orderBy": "OrderByPriceDESC"
-  }
-},
-"slider-layout#prateleira-home-final-2": {
-  "props": {
-    "itemsPerPage": {
-      "desktop": 4,
-      "tablet": 2,
-      "phone": 2
-    },
-    "infinite": false,
-    "fullWidth": false,
-    "showNavigationArrows": "never",
-    "blockClass": "shelf-prateleira-final"
-  }
-},
-"flex-layout.row#ver-mais-final":{
-  "props": {
-    "blockClass": "content-ver-mais-final"
+  // PRATELEIRA 2
+  "flex-layout.row#shelf-final-1": {
+    "children": [
+      "list-context.product-list#prateleira-home-final-1"
+    ]
   },
-  "children": [
-    "link#ver-mais-final"
-  ]
-},
-"link#ver-mais-final":{
-  "props": {
-    "label": "Ver todos os produtos",
-    "blockClass": "link-ver-mais"
-  }
-},
-
-
+  "list-context.product-list#prateleira-home-final-1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-home-final-1"
+    ],
+    "props": {
+      "orderBy": "OrderByNameDESC"
+    }
+  },
+  "slider-layout#prateleira-home-final-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "showNavigationArrows": "never",
+      "blockClass": "shelf-prateleira-final"
+    }
+  },
+  // PRATELEIRA 2
+  "flex-layout.row#shelf-final-2": {
+    "children": [
+      "list-context.product-list#prateleira-home-final-2"
+    ]
+  },
+  "list-context.product-list#prateleira-home-final-2": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-home-final-2"
+    ],
+    "props": {
+      "orderBy": "OrderByPriceDESC"
+    }
+  },
+  "slider-layout#prateleira-home-final-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "showNavigationArrows": "never",
+      "blockClass": "shelf-prateleira-final"
+    }
+  },
+  "flex-layout.row#ver-mais-final": {
+    "props": {
+      "blockClass": "content-ver-mais-final"
+    },
+    "children": [
+      "link#ver-mais-final"
+    ]
+  },
+  "link#ver-mais-final": {
+    "props": {
+      "label": "Ver todos os produtos",
+      "blockClass": "link-ver-mais"
+    }
+  },
   "flex-layout.row#banner-final": {
     "props": {
-      "blockClass": ["categorias-madu", "categorias"],
+      "blockClass": [
+        "categorias-madu",
+        "categorias"
+      ],
       "preventHorizontalStretch": true
     },
     "children": [
@@ -614,7 +638,6 @@
     "children": [
       "image#inovacao-modal",
       "flex-layout.col#coluna-inovacao"
-
     ]
   },
   "flex-layout.col#coluna-inovacao": {
@@ -639,7 +662,7 @@
       "modal-layout#qualidade"
     ]
   },
-  "rich-text#texto-modal-qualidade":{
+  "rich-text#texto-modal-qualidade": {
     "props": {
       "text": "Mobiliário técnico feito 100% no Brasil,\n com a melhor qualidade disponível no\n Mundo.",
       "blockClass": "texto-modal"
@@ -688,16 +711,14 @@
   },
   // MODAL TECNOLOGIA
   "modal-trigger#saiba-mais-tecnologia": {
-    "props": {
-
-    },
+    "props": {},
     "children": [
       "rich-text#texto-modal-tecnologia",
       "rich-text#titulo-modal-tecnologia",
       "modal-layout#tecnologia"
     ]
   },
-  "rich-text#texto-modal-tecnologia":{
+  "rich-text#texto-modal-tecnologia": {
     "props": {
       "text": "A MAIOR linha de mobiliário técnico do\n mundo também merece a MELHOR\n tecnologia do mundo.",
       "blockClass": "texto-modal"
@@ -766,5 +787,4 @@
       "blockClass": "imagem-categorias-modal"
     }
   }
-
 }

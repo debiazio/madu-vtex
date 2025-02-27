@@ -273,11 +273,24 @@
 }
 
 /* PDP */
+.flexRowContent--linha-possibilidades,
+.flexRowContent--linha-veja-mais-produtos{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+
 .flexRowContent--linha-cep{
   display: block;
 }
 
-
+.flexRow--linha-possibilidades,
+.flexRowContent--linha-possibilidades,
+.flexRow--linha-veja-mais-produtos,
+.flexRowContent--linha-veja-mais-produtos{
+  background-color: white;
+}
 
 .flexRowContent--linha-seletor-quantidade{
   border-bottom: 1px solid #efefef;

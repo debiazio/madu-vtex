@@ -4,7 +4,8 @@
       "responsive-layout.phone#nome-do-produto",
       "condition-layout.product#availability",
       "flex-layout.row#relatedProducts",
-      "flex-layout.row#abas-pdp"
+      "flex-layout.row#abas-pdp",
+      "flex-layout.row#veja-mais-produtos"
     ]
   },
   "responsive-layout.phone#nome-do-produto": {
@@ -238,7 +239,7 @@
     }
   },
   // TEXTO ATENCAO
-  "flex-layout.row#atencao-pdp":{
+  "flex-layout.row#atencao-pdp": {
     "props": {
       "blockClass": "texto-atencao"
     },
@@ -246,12 +247,11 @@
       "rich-text#texto-atencao"
     ]
   },
-  "rich-text#texto-atencao":{
+  "rich-text#texto-atencao": {
     "props": {
       "text": "**Atenção:**\nO prazo de entrega começa a contar após a postagem do pedido que será realizada em até 15 dias úteis. Os produtos e seus acessórios poderão ser fornecidos montados ou desmontados, mediante pedido antecipado e de acordo com condições de embalagem e transporte definidas pela fábrica."
     }
   },
-
   // SELETOR DE QUANTIDADES
   "flex-layout.row#quantidade-seletor-comprar": {
     "props": {
@@ -393,39 +393,90 @@
       "availability-subscriber"
     ]
   },
-  // PRODUTOS RELACIONADOS
+  // POSSIBILIDADES
   "flex-layout.row#relatedProducts": {
-    "children": [
-      "flex-layout.col#relatedProducts"
-    ]
-  },
-  "flex-layout.col#relatedProducts": {
+    "props": {
+      "blockClass": "linha-possibilidades",
+      "preventHorizontalStretch": true
+    },
     "children": [
       "rich-text#produtos-relacionados",
-      "shelf.relatedProducts#produtos-relacionados"
+      "list-context.product-list#sugestoes-pdp"
     ]
   },
   "rich-text#produtos-relacionados": {
     "props": {
-      "text": "Recomendamos para você",
+      "text": "Adicione mais possibilidades:",
       "blockClass": "produtos-relacionados"
     }
   },
-  "shelf.relatedProducts#produtos-relacionados": {
+  "list-context.product-list#sugestoes-pdp": {
     "blocks": [
       "product-summary.shelf"
     ],
+    "children": [
+      "slider-layout#sugestoes-pdp"
+    ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "recommendation": "similars",
-      "blockClass": "related-shelf",
-      "productList": {
-        "showTitle": false,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 2,
-        "maxItems": 12,
-        "arrows": true
-      }
+
+      "orderBy": "OrderByReleaseDateDESC",
+      "maxItems": 8
+    }
+  },
+  "slider-layout#sugestoes-pdp": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelf"
+    }
+  },
+  // VEJA MAIS PRODUTOS
+  "flex-layout.row#veja-mais-produtos":{
+    "props": {
+      "blockClass": "linha-veja-mais-produtos",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#veja-mais-produtos",
+      "list-context.product-list#veja-mais-produtos"
+    ]
+  },
+  "rich-text#veja-mais-produtos": {
+    "props": {
+      "text": "Veja mais produtos:",
+      "blockClass": "texto-veja-mais-produtos"
+    }
+  },
+  "list-context.product-list#veja-mais-produtos": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#veja-mais-produtos"
+    ],
+    "props": {
+
+      "orderBy": "OrderByReleaseDateDESC",
+      "maxItems": 8
+    }
+  },
+  "slider-layout#veja-mais-produtos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelf"
     }
   }
 }
