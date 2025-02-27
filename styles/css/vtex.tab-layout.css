@@ -1,0 +1,33 @@
+.contentContainer {
+  background-color: white;
+  border: 1px solid #DFDFDF;
+}
+
+
+.container--secao-abas .listContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-bottom: -1px;
+}
+
+.listItemActive {
+  background-color: white;
+  border: 1px solid #DFDFDF;
+  border-bottom: none;
+  margin: 0;
+}
+
+.listItemActive :global(.vtex-button) {
+  color:#3A3434;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.listItem :global(.vtex-button) :global(.vtex-button__label),
+.listItemActive :global(.vtex-button) :global(.vtex-button__label) {
+  text-transform: none;
+  color:#3A3434;
+  font-weight: bold;
+}

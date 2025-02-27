@@ -6,13 +6,13 @@
 }
 .homeLink::before{
     content:"Home";
-    font-size:13px;
+    font-size:10px;
     color:#7B7979;
 }
 .link,
 .term{
-    font-size:13px;
-    color:#7B7979;
+    font-size:10px;
+    color:black;
     padding:0;
     line-height:1;
 }
@@ -22,7 +22,7 @@
 .arrow::before{
     content:"/";
     font-size:13px;
-    color:#7B7979;
+    color:black;
     padding-right:5px;
     line-height:1;
 }

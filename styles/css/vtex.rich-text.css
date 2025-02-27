@@ -81,13 +81,13 @@
 }
 
 /* INSTITUCIONAIS */
-.strong--texto-intitucionais{
+.strong--texto-intitucionais {
   font-size: 27px;
   font-weight: 600;
   color: #242424;
 }
 
-.container--titulo-institucionais{
+.container--titulo-institucionais {
   display: flex;
   justify-content: center;
 }
@@ -172,6 +172,22 @@
 }
 
 /* PDP */
+.container--valor-unitario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.paragraph--label-cep,
+.wrapper--texto-metodo-pgto-pdp {
+  white-space: nowrap;
+}
+
+.paragraph--texto-metodo-pgto-pdp {
+  margin: 0;
+  padding: 0;
+}
+
 .paragraph--product-description {
   margin: 0;
   color: #3A3434;
@@ -214,7 +230,7 @@
   font-weight: 500;
 }
 
-.link--texto-intitucionais{
+.link--texto-intitucionais {
   text-decoration: none;
   color: #000;
 }

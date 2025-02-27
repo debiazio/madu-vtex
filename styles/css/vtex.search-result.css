@@ -43,12 +43,13 @@
 .filterItem :global(.vtex-checkbox__box){
   margin:1px 0 0 1px;
 }
-.galleryTitle--layout{
+
+/* .galleryTitle--layout{
   font-size:28px;
   font-weight:400;
   color:black;
   margin:0 0 33px;
-}
+} */
 .totalProducts--layout{
   text-align:left;
 }
@@ -123,14 +124,15 @@
 }
 
 /* EDICOES MADU */
-.galleryTitle--layout{
+/* .galleryTitle--layout{
   position: absolute;
   top: 50px;
-}
+} */
 
 .galleryTitle--layout{
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 
