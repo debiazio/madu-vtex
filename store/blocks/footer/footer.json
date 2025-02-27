@@ -1,6 +1,9 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
@@ -10,13 +13,18 @@
     ]
   },
   "flex-layout.row#footer-1-desktop": {
-    "children": ["flex-layout.col#footer-1-desktop"],
+    "children": [
+      "flex-layout.col#footer-1-desktop"
+    ],
     "props": {
       "blockClass": "newsletter-row"
     }
   },
   "flex-layout.col#footer-1-desktop": {
-    "children": ["rich-text#title-newsletter", "newsletter-form"],
+    "children": [
+      "rich-text#title-newsletter",
+      "newsletter-form"
+    ],
     "props": {
       "blockClass": "newsletter-row"
     }
@@ -49,7 +57,6 @@
       "submitButtonLabel": "Enviar"
     }
   },
-
   "flex-layout.row#footer-2-desktop": {
     "children": [
       "flex-layout.col#footer-logo-footer",
@@ -63,7 +70,10 @@
     }
   },
   "flex-layout.col#footer-logo-footer": {
-    "children": ["image#logo-branca-footer", "rich-text#subtitle-logo-madu"],
+    "children": [
+      "image#logo-branca-footer",
+      "rich-text#subtitle-logo-madu"
+    ],
     "props": {
       "blockClass": "footer-2-desktop"
     }
@@ -82,7 +92,6 @@
       "blockClass": "subtitle-logo-madu"
     }
   },
-
   "flex-layout.col#footer-atendimento": {
     "children": [
       "rich-text#title-footer-4",
@@ -101,7 +110,7 @@
       "blockClass": "title-footer"
     }
   },
-  "flex-layout.row#footer-email":{
+  "flex-layout.row#footer-email": {
     "props": {
       "blockClass": "content-footer-atendimento",
       "preventHorizontalStretch": true
@@ -111,7 +120,7 @@
       "link#e-mail-footer"
     ]
   },
-  "image#email-footer":{
+  "image#email-footer": {
     "props": {
       "src": "assets/mail.svg",
       "alt": "logo de email",
@@ -126,7 +135,7 @@
       "blockClass": "link-footer"
     }
   },
-  "flex-layout.row#footer-whatsapp":{
+  "flex-layout.row#footer-whatsapp": {
     "props": {
       "blockClass": "content-footer-atendimento",
       "preventHorizontalStretch": true
@@ -136,7 +145,7 @@
       "link#fone-footer"
     ]
   },
-  "image#footer-whatsapp":{
+  "image#footer-whatsapp": {
     "props": {
       "src": "assets/whatsapp.svg",
       "alt": "Ícone whatsapp",
@@ -151,7 +160,7 @@
       "blockClass": "link-footer"
     }
   },
-  "flex-layout.row#footer-endereco":{
+  "flex-layout.row#footer-endereco": {
     "props": {
       "blockClass": "content-footer-atendimento",
       "preventHorizontalStretch": true
@@ -161,7 +170,7 @@
       "link#endereco-footer"
     ]
   },
-  "image#endereco-footer":{
+  "image#endereco-footer": {
     "props": {
       "src": "assets/maps-and-flags.png",
       "alt": "logo de email",
@@ -173,7 +182,9 @@
       "href": "https://www.google.com/maps/dir/?api=1&destination=Rua+Emma+Rohrsetzer,+1011,+Pinhais+-+Grande+Curitiba+-+PR,+83324-190",
       "blockClass": "link-footer"
     },
-    "children": ["rich-text#endereco"]
+    "children": [
+      "rich-text#endereco"
+    ]
   },
   "rich-text#endereco": {
     "props": {
@@ -181,7 +192,7 @@
       "blockClass": "link-footer"
     }
   },
-  "flex-layout.row#footer-telefone":{
+  "flex-layout.row#footer-telefone": {
     "props": {
       "blockClass": "content-footer-atendimento",
       "preventHorizontalStretch": true
@@ -191,7 +202,7 @@
       "link#fone-telefone-footer"
     ]
   },
-  "image#icone-telefone-footer":{
+  "image#icone-telefone-footer": {
     "props": {
       "src": "assets/phone-receiver-silhouette.png",
       "alt": "Ícone telefone",
@@ -220,7 +231,6 @@
       "blockClass": "title-footer"
     }
   },
-
   "flex-layout.col#footer-siga-nos": {
     "children": [
       "rich-text#title-footer-siga-nos",
@@ -256,7 +266,7 @@
       "alt": "Facebook",
       "link": {
         "openNewTab": true,
-        "url": "https://www.facebook.com"
+        "url": "https://www.facebook.com/mfmmadu"
       }
     }
   },
@@ -267,7 +277,7 @@
       "alt": "Instagram",
       "link": {
         "openNewTab": true,
-        "url": "https://www.instagram.com"
+        "url": "https://www.instagram.com/madumfm/"
       }
     }
   },
@@ -297,7 +307,18 @@
     "props": {
       "blockClass": "logo-grupo-mfm"
     },
-    "children": ["image#logo-grupomfm"]
+    "children": [
+      "link#link-grupo-mfm"
+    ]
+  },
+  "link#link-grupo-mfm": {
+    "props": {
+      "blockClass": "link-grupo-mfm",
+      "href": "https://grupomfm.com.br"
+    },
+    "children": [
+      "image#logo-grupomfm"
+    ]
   },
   "image#logo-grupomfm": {
     "props": {
@@ -305,7 +326,6 @@
       "blockClass": "logo-nav-grupo-mfm"
     }
   },
-
   "flex-layout.row#footer-3-desktop": {
     "children": [
       "rich-text#footer-3-desktop",
@@ -381,7 +401,6 @@
       }
     }
   },
-
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#footer-1-desktop",
@@ -390,13 +409,17 @@
     ]
   },
   "flex-layout.row#footer-2-mobile": {
-    "children": ["flex-layout.col#footer-2-mobile"],
+    "children": [
+      "flex-layout.col#footer-2-mobile"
+    ],
     "props": {
       "blockClass": "footer-2-mobile"
     }
   },
   "flex-layout.col#footer-2-mobile": {
-    "children": ["vtex.menu@2.x:menu#footer-mobile"],
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ],
     "props": {
       "blockClass": "footer-2-mobile"
     }

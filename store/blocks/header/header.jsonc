@@ -1,19 +1,27 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header#topo-home": {
-    "blocks": ["header-layout.desktop#topo-home", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop#topo-home",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop#topo-home": {
     "children": [
       "sticky-layout#3-desktop"
     ]
   },
-
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
@@ -21,7 +29,6 @@
       "sticky-layout#3-desktop"
     ]
   },
-
   "flex-layout.row#1-desktop": {
     "children": [
       "rich-text#notification-bar",
@@ -29,7 +36,6 @@
       "flex-layout.col#tel",
       "flex-layout.col#whatsapp",
       "flex-layout.col#email"
-
     ],
     "props": {
       "fullWidth": true,
@@ -62,6 +68,15 @@
       "blockClass": "coluna-tel-notif"
     },
     "children": [
+      "link#whatsapp-header"
+    ]
+  },
+  "link#whatsapp-header": {
+    "props": {
+      "blockClass": "whats-header",
+      "href": "https://api.whatsapp.com/send?phone=5541999710465"
+    },
+    "children": [
       "image#whatsapp",
       "rich-text#numero-whatsapp"
     ]
@@ -75,12 +90,14 @@
       "rich-text#email"
     ]
   },
-
   "image#telefone": {
     "props": {
       "src": "assets/phone-call.svg",
       "alt": "Ícone telefone",
-      "blockClass": ["icone-telefone", "icone-notification"]
+      "blockClass": [
+        "icone-telefone",
+        "icone-notification"
+      ]
     }
   },
   "image#whatsapp": {
@@ -115,21 +132,18 @@
       "blockClass": "texto-notification-bar"
     }
   },
-
-
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
     }
   },
-
-
-
   "sticky-layout#3-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#3-desktop"]
+    "children": [
+      "flex-layout.row#3-desktop"
+    ]
   },
   "flex-layout.row#3-desktop": {
     "props": {
@@ -149,7 +163,9 @@
       "verticalAlign": "middle",
       "blockClass": "logo-desktop"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo#desktop"
+    ]
   },
   "logo#desktop": {
     "props": {
@@ -164,23 +180,28 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
   },
   "search-bar": {
-    "blocks": ["autocomplete-result-list.v2"],
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
     "props": {
       "openAutocompleteOnFocus": true,
       "placeholder": "Buscar..."
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary"],
+    "blocks": [
+      "product-summary"
+    ],
     "props": {
       "maxSuggestedProducts": 2,
       "productLayout": "HORIZONTAL"
     }
   },
-
   "header-layout.mobile": {
     "children": [
       "flex-layout.row#1-mobile",
@@ -262,13 +283,15 @@
       "drawer"
     ],
     "props": {
-      "blockClass": ["main-header-mobile", "main-header-mobile-2"],
+      "blockClass": [
+        "main-header-mobile",
+        "main-header-mobile-2"
+      ],
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Summer",
@@ -278,11 +301,11 @@
       "height": "57"
     }
   },
-
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": [
+      "menu#drawer"
+    ]
   },
-
   "menu#drawer": {
     "children": [
       "vtex.menu@2.x:menu#category-menu-mobile"

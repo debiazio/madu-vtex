@@ -1,3 +1,7 @@
+.childrenContainer--whats-header{
+  display: flex;
+}
+
 .link--instagramTitle{
     display:block;
     text-align:center;

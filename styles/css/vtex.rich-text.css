@@ -81,12 +81,22 @@
 }
 
 /* INSTITUCIONAIS */
-/* QUEM SOMOS */
+.strong--texto-intitucionais{
+  font-size: 27px;
+  font-weight: 600;
+  color: #242424;
+}
+
+.container--titulo-institucionais{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper--titulo-institucionais,
 .heading--titulo-institucionais {
-  color: #3A3434;
-  font-size: 28px;
-  font-weight: 400;
-  margin: 0 0 25px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #FFF;
 }
 
 .paragraph--conteudo-institucionais {
@@ -191,79 +201,22 @@
 }
 
 /* INSTITUCIONAIS */
-.heading--titulo-menu-institucionais {
-  margin: 0 0 14px 25px;
-  color: #fff;
-  font-size: 22px;
-  font-weight: normal;
-}
-
-.wrapper--item-menu-institucionais {
-  width: 100%;
-}
-
-.paragraph--item-menu-institucionais {
-  margin: 0;
-}
-
-.link--item-menu-institucionais {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 0 15px 22px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin: 5px 0;
-  border-left: 5px solid transparent;
-  font: 13px "Montserrat Semibold";
-}
-
-.link--item-menu-institucionais-active {
-  background: #fff;
-  color: #3A3434;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-left-color: #FFDDDE;
-}
-
-.link--item-menu-institucionais::before {
-  content: "";
-  display: block;
-  width: 22px;
-  height: 18px;
-}
-
-.link--item-menu-institucionais-1::before {
-  background: url(assets/icon-institucionais-1.png) no-repeat center transparent;
-}
-
-.link--item-menu-institucionais-2::before {
-  background: url(assets/icon-institucionais-2.png) no-repeat center transparent;
-}
-
-.link--item-menu-institucionais-3::before {
-  background: url(assets/icon-institucionais-3.png) no-repeat center transparent;
-}
-
-.link--item-menu-institucionais-4::before {
-  background: url(assets/icon-institucionais-1.png) no-repeat center transparent;
-}
-
-.link--item-menu-institucionais-5::before {
-  background: url(assets/icon-institucionais-2.png) no-repeat center transparent;
-}
-
-.link--item-menu-institucionais-6::before {
-  background: url(assets/icon-institucionais-3.png) no-repeat center transparent;
-}
-
-.link--item-menu-institucionais-7::before {
-  background: url(assets/icon-institucionais-4.png) no-repeat center transparent;
+.wrapper--texto-intitucionais {
+  color: #202020;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 400;
+  line-height: 1.9em;
 }
 
 /* MADE FOR YOU */
 .wrapper--texto--made-for-you {
   font-size: 16px;
   font-weight: 500;
+}
+
+.link--texto-intitucionais{
+  text-decoration: none;
+  color: #000;
 }
 
 .paragraph--avaliacao-nome {

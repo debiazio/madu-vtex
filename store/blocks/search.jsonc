@@ -89,11 +89,18 @@
   },
   "flex-layout.row#banner-categoria":{
     "props": {
-      "blockClass": "banner-categoria"
+      "blockClass": "banner-categoria",
+      "fullWidth": true
     },
     "children": [
-      "flex-layout.row#banner-dpto"
+      "rich-text#mobiliário-tecnico"
     ]
+  },
+  "rich-text#mobiliário-tecnico":{
+    "props": {
+      "blockClass": "titulo-institucionais",
+      "text": "Mobiliário Técnico"
+    }
   },
   "flex-layout.row#result": {
     "children": [
@@ -150,26 +157,11 @@
       "search-title.v2"
     ],
     "props":{
-      "fullWidth": true
+      "fullWidth": true, 
+      "blockClass": "titulo-institucionais"
     }
   },
-  "flex-layout.row#banner-dpto":{
-    "children": [
-      "image#banner-dpto"
-    ],
-    "props": {
-      "blockClass": "banner-dpto",
-      "colSizing": "auto",
-      "fullWidth": true
-    }
-  },
-  "image#banner-dpto":{
-    "props": {
-      "src": "assets/bg-black-1024x578.jpg",
-      "alt": "Banner Departamento",
-      "blockClass":"banner-dpto"
-    }
-  },
+
   "flex-layout.row#searchinfo": {
     "children": [
       "flex-layout.col#productCount",

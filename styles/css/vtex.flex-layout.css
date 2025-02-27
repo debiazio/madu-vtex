@@ -321,22 +321,26 @@
 }
 
 /* INSTITUCIONAIS */
-.flexRow--pagina-institucional {
-  margin: 66px 0 42px;
+
+.flexRowContent--content-institucionais{
+  padding: 80px;
 }
 
-.flexCol--conteudo-institucionais {
-  margin-left: 133px;
-  height: fit-content;
+.flexRowContent--banner-categoria,
+.flexRowContent--banner-institucionais{
+  background-color: #E4E4E4;
+  background-image: url(https://madumfm.com.br/wp-content/uploads/2023/06/slide-comercio.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.flexCol--menu-institucionais {
-  background: #D9D8D7;
-  padding: 25px 0;
-  height: fit-content;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
-}
 
+.flexRowContent--banner-categoria .stretchChildrenWidth,
+.flexRowContent--banner-institucionais .stretchChildrenWidth{
+  background-color: #101E42;
+  opacity: .59;
+}
 /* MADE FOR YOU */
 .flexCol--page-texto--made-for-you {
   margin: 50px;
