@@ -274,38 +274,38 @@
 
 /* PDP */
 .flexRowContent--linha-possibilidades,
-.flexRowContent--linha-veja-mais-produtos{
+.flexRowContent--linha-veja-mais-produtos {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
 
 
-.flexRowContent--linha-cep{
+.flexRowContent--linha-cep {
   display: block;
 }
 
 .flexRow--linha-possibilidades,
 .flexRowContent--linha-possibilidades,
 .flexRow--linha-veja-mais-produtos,
-.flexRowContent--linha-veja-mais-produtos{
+.flexRowContent--linha-veja-mais-produtos {
   background-color: white;
 }
 
-.flexRowContent--linha-seletor-quantidade{
+.flexRowContent--linha-seletor-quantidade {
   border-bottom: 1px solid #efefef;
 }
 
-.flexRowContent--linha-valor-unitario{
+.flexRowContent--linha-valor-unitario {
   background-color: #f5f5f5;
   border-left: 4px solid #bcdff1;
 }
 
-.flexRowContent--linha-secundaria-metodos-pgto .stretchChildrenWidth{
+.flexRowContent--linha-secundaria-metodos-pgto .stretchChildrenWidth {
   width: 80% !important;
 }
 
-.flexRowContent--linha-info-metodos-pgto{
+.flexRowContent--linha-info-metodos-pgto {
   display: block;
   margin: 25px 0;
 }
@@ -363,12 +363,12 @@
 
 /* INSTITUCIONAIS */
 
-.flexRowContent--content-institucionais{
+.flexRowContent--content-institucionais {
   padding: 80px;
 }
 
 .flexRowContent--banner-categoria,
-.flexRowContent--banner-institucionais{
+.flexRowContent--banner-institucionais {
   background-color: #E4E4E4;
   background-image: url(https://madumfm.com.br/wp-content/uploads/2023/06/slide-comercio.jpg);
   background-position: bottom center;
@@ -378,10 +378,11 @@
 
 
 .flexRowContent--banner-categoria .stretchChildrenWidth,
-.flexRowContent--banner-institucionais .stretchChildrenWidth{
+.flexRowContent--banner-institucionais .stretchChildrenWidth {
   background-color: #101E42;
   opacity: .59;
 }
+
 /* MADE FOR YOU */
 .flexCol--page-texto--made-for-you {
   margin: 50px;
@@ -439,8 +440,29 @@
 }
 
 /* CONTATO  */
-.flexRowContent--content-contato-contatos{
+.flexRow--leitor-catalogo{
+  margin-top: 30px;
+}
+
+.flexCol--contato-col1 {
+  margin: 50px;
+}
+
+.flexRowContent--content-contato-contatos {
   display: block;
+}
+
+.flexRowContent--coluna-contato .stretchChildrenWidth {
+  width: fit-content !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow--catalogo-download {
+  text-align: center;
+  margin: 40px;
 }
 
 /* MOBILE */

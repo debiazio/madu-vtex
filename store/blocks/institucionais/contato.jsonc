@@ -33,7 +33,7 @@
   },
   "rich-text#contato-texto": {
     "props": {
-      "text": "A MAD.U inova com a maior linha de mobiliário técnico do\n mundo. São milhões de possibilidades de configurações, através de\n módulos, acessórios e cores, criando o mobiliário perfeito para as\n mais diversas necessidades.",
+      "text": "A **MAD.U** inova com **a maior linha de mobiliário técnico do\n mundo.** São milhões de possibilidades de configurações, através de\n módulos, acessórios e cores, criando o mobiliário perfeito para as\n mais diversas necessidades.",
       "blockClass": "contato-texto"
     }
   },
@@ -49,7 +49,7 @@
       "flex-layout.row#telefone-contato"
     ]
   },
-  // linha de email - contato 
+  // linha de email - contato
   "flex-layout.row#email-contato": {
     "props": {
       "blockClass": "coluna-contato"
@@ -68,14 +68,14 @@
   },
   "rich-text#email-contato": {
     "props": {
-      "text": "comercial@madumfm.com.br"
+      "text": "comercial@madumfm.com.br",
+      "blockClass": "whatsapp-text"
     }
   },
   // linha de whatsapp
   "flex-layout.row#whatsapp-contato": {
     "props": {
-      "blockClass": "coluna-contato",
-      "preventHorizontalStretch": true
+      "blockClass": "coluna-contato"
     },
     "children": [
       "link#whatsapp-contato-link"
@@ -101,14 +101,14 @@
   },
   "rich-text#whatsapp-contato-numero":{
     "props": {
-      "text": "(41) 99971-0465"
+      "text": "(41) 99971-0465",
+      "blockClass": "whatsapp-text"
     }
   },
-  // linha de telefone 
+  // linha de telefone
   "flex-layout.row#telefone-contato": {
     "props": {
-      "blockClass": "coluna-contato",
-      "preventHorizontalStretch": true
+      "blockClass": "coluna-contato"
     },
     "children": [
       "image#telefone-contato-icone",
@@ -124,7 +124,8 @@
   },
   "rich-text#telefone-contato":{
     "props": {
-      "text": "0800 721 8533"
+      "text": "0800 721 8533",
+      "blockClass": "whatsapp-text"
     }
   },
     // COLUNA 2 - CONTATO

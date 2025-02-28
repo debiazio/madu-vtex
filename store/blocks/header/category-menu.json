@@ -323,7 +323,7 @@
         "tagTitle": "CONTATO",
         "text": "CONTATO"
       },
-      "blockClass": "menu-principal-item"
+      "blockClass": ["menu-principal-item", "menu-principal-lastchild"]
     }
   },
 

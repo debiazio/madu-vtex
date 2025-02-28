@@ -148,11 +148,10 @@
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "main-header",
-      "horizontalAlign": "center",
+      "horizontalAlign": "left",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "preventVerticalStretch": true
     },
     "children": [
       "flex-layout.col#category-menu"

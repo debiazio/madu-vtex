@@ -105,6 +105,32 @@
   margin: 0;
 }
 
+/* CONTATO  */
+.paragraph--whatsapp-text{
+  font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+.paragraph--whatsapp-text,
+.link{
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+.paragraph--contato-titulo {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.1;
+  margin: 5px;
+}
+
+.flexColChild--contato-col1{
+  font-size: 16px;
+}
+
 /* RODAPÉ */
 .paragraph--subtitle-logo-madu {
   margin: 0;

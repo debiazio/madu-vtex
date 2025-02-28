@@ -33,6 +33,11 @@
   margin-top: 10px;
 }
 
+.link--catalogo-download{
+  text-decoration: none;
+}
+
+.label--catalogo-download,
 .label--link-ver-mais{
   background-color: #153B64;
   font-family: "Montserrat";
@@ -60,9 +65,14 @@
 }
 
 /* CONTATO  */
+.link--link-contato{
+  text-decoration: none;
+}
+
 .childrenContainer--link-contato{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 /* MOBILE */

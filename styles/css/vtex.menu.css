@@ -39,6 +39,11 @@
   align-items: center;
 }
 
+.styledLinkContainer--menu-principal-lastchild{
+  border-right: none!important;
+}
+
+
 .styledLinkContainer--menu-principal-item {
   margin: 0;
   padding: 0;
