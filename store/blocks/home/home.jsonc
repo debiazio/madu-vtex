@@ -74,7 +74,7 @@
   },
   "link#link-carrinhos": {
     "props": {
-      "href": "/mobiliario-tecnico",
+      "href": "/carrinhos?_q=Carrinhos&map=ft",
       "blockClass": "link-categorias"
     },
     "children": [
@@ -93,7 +93,7 @@
   },
   "link#link-armarios": {
     "props": {
-      "href": "/mobiliario-tecnico",
+      "href": "#",
       "blockClass": "link-categorias"
     },
     "children": [
@@ -112,7 +112,7 @@
   },
   "link#link-estantes": {
     "props": {
-      "href": "/mobiliario-tecnico",
+      "href": "#",
       "blockClass": "link-categorias"
     },
     "children": [
@@ -150,7 +150,7 @@
   },
   "link#link-lancamentos": {
     "props": {
-      "href": "/mobiliario-tecnico",
+      "href": "#",
       "blockClass": "link-categorias"
     },
     "children": [
@@ -169,7 +169,7 @@
   },
   "link#link-feira-hospitalar": {
     "props": {
-      "href": "/mobiliario-tecnico",
+      "href": "#",
       "blockClass": "link-categorias"
     },
     "children": [
@@ -321,7 +321,8 @@
       "slider-layout#prateleira-home"
     ],
     "props": {
-      "orderBy": "OrderByNameASC"
+      "orderBy": "OrderByNameASC",
+      "collection": "215"
     }
   },
   "slider-layout#prateleira-home": {
@@ -381,7 +382,8 @@
       "slider-layout#prateleira-home-extra"
     ],
     "props": {
-      "orderBy": "OrderByNameASC"
+      "orderBy": "OrderByNameASC",
+      "collection": "215"
     }
   },
   "slider-layout#prateleira-home-extra": {
@@ -432,7 +434,8 @@
       "slider-layout#prateleira-home-final"
     ],
     "props": {
-      "orderBy": "OrderByNameASC"
+      "orderBy": "OrderByNameASC",
+      "collection": "215"
     }
   },
   "slider-layout#prateleira-home-final": {
@@ -462,7 +465,8 @@
       "slider-layout#prateleira-home-final-1"
     ],
     "props": {
-      "orderBy": "OrderByNameDESC"
+      "orderBy": "OrderByNameDESC",
+      "collection": "215"
     }
   },
   "slider-layout#prateleira-home-final-1": {
@@ -492,7 +496,8 @@
       "slider-layout#prateleira-home-final-2"
     ],
     "props": {
-      "orderBy": "OrderByPriceDESC"
+      "orderBy": "OrderByPriceDESC",
+      "collection": "215"
     }
   },
   "slider-layout#prateleira-home-final-2": {

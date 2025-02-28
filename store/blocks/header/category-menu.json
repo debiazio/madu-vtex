@@ -95,7 +95,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos/carrinhos",
+        "href": "/carrinhos?_q=Carrinhos&map=ft",
         "noFollow": false,
         "tagTitle": "Carrinhos",
         "text": "Carrinhos"

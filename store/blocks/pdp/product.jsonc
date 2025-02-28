@@ -420,7 +420,8 @@
     "props": {
 
       "orderBy": "OrderByReleaseDateDESC",
-      "maxItems": 8
+      "maxItems": 8,
+      "collection": "215"
     }
   },
   "slider-layout#sugestoes-pdp": {
@@ -463,7 +464,8 @@
     "props": {
 
       "orderBy": "OrderByReleaseDateDESC",
-      "maxItems": 8
+      "maxItems": 8,
+      "collection": "215"
     }
   },
   "slider-layout#veja-mais-produtos": {
