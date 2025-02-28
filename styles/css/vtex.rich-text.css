@@ -106,14 +106,14 @@
 }
 
 /* CONTATO  */
-.paragraph--whatsapp-text{
+.paragraph--whatsapp-text {
   font-size: 18px;
-    font-weight: 500;
-    line-height: 1.7em;
+  font-weight: 500;
+  line-height: 1.7em;
 }
 
 .paragraph--whatsapp-text,
-.link{
+.link {
   text-decoration: none;
   color: black;
   margin: 0;
@@ -127,7 +127,7 @@
   margin: 5px;
 }
 
-.flexColChild--contato-col1{
+.flexColChild--contato-col1 {
   font-size: 16px;
 }
 
@@ -305,5 +305,14 @@
   .paragraph--produtos-relacionados {
     margin: 38px 0 14px;
     font-size: 20px;
+  }
+
+  /* MOBILE */
+  .container--texto-notification-bar {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }

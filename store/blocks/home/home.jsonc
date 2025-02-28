@@ -1,8 +1,11 @@
 {
   "store.home": {
     "blocks": [
-      "video#video-banner-home-1",
-      "flex-layout.row#categorias",
+      "responsive-layout.desktop#video",
+      "responsive-layout.mobile#video",
+      "responsive-layout.desktop#categorias",
+      "responsive-layout.mobile#categorias",
+      
       "__fold__",
       "flex-layout.row#madu-one",
       "flex-layout.row#madu-extra",
@@ -17,17 +20,43 @@
       "header": "header"
     }
   },
+  "responsive-layout.desktop#video": {
+    "children": [
+      "video#video-banner-home-1"
+    ]
+  },
   "video#video-banner-home-1": {
     "props": {
-      "blockClass": "video-banner-home",
       "src": "https://stermax.com.br/images_idealine/Banner_TEASER-Black-Summer-Madu-1.mp4",
       "autoPlay": true,
       "width": "100%",
       "height": "100%",
-      "loop": true,
-      "title": "Black summer",
-      "alt": "Black summer"
+      "loop": true
     }
+  },
+  "responsive-layout.mobile#video": {
+    "children": [
+      "video#video-banner-home-1-mobile"
+    ]
+  },
+  "video#video-banner-home-1-mobile": {
+    "props": {
+      "src": "https://stermax.com.br/images_idealine/Banner-Mobile.mp4",
+      "autoPlay": true,
+      "width": "100%",
+      "height": "100%",
+      "loop": true
+    }
+  },
+  "responsive-layout.desktop#categorias":{
+    "children": [
+      "flex-layout.row#categorias"
+    ]
+  },
+  "responsive-layout.mobile#categorias":{
+    "children": [
+      "flex-layout.row#categorias-mobile"    
+    ]
   },
   "flex-layout.row#categorias": {
     "props": {
@@ -237,6 +266,22 @@
       "blockClass": "titulo-categorias"
     }
   },
+  // CATEGORIAS MOBILE 
+  "flex-layout.row#categorias-mobile":{
+    "props": {
+      "blockClass": "categorias-mobile"
+    },
+    "children": [
+      "link#link-carrinhos",
+      "link#link-armarios",
+      "link#link-estantes",
+      "link#link-acessorios",
+      "link#link-lancamentos",
+      "link#link-feira-hospitalar"
+    ]
+  },
+
+
   // MADU ONE
   "flex-layout.row#madu-one": {
     "props": {

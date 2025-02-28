@@ -168,7 +168,7 @@
   },
   "logo#desktop": {
     "props": {
-      "title": "Summer",
+      "title": "Logo MADU",
       "href": "/",
       "url": "assets/logo-madu.webp",
       "width": "302",
@@ -207,55 +207,16 @@
       "sticky-layout#2-mobile"
     ]
   },
-  "flex-layout.row#1-mobile": {
-    "children": [
-      "slider-layout#notification-bar-mobile"
-    ],
+  "flex-layout.row#1-mobile":{
     "props": {
       "fullWidth": true,
-      "blockClass": "notification"
-    }
-  },
-  "slider-layout#notification-bar-mobile": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "autoplay": {
-        "timeout": 5000,
-        "stopOnHover": false
-      },
-      "blockClass": "notification"
+      "blockClass": "mobile-notification-bar"
     },
     "children": [
-      "rich-text#notification-bar-1-mobile",
-      "rich-text#notification-bar-2-mobile",
-      "rich-text#notification-bar-3-mobile"
+      "rich-text#notification-bar"
     ]
   },
-  "rich-text#notification-bar-1-mobile": {
-    "props": {
-      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
-      "blockClass": "notification"
-    }
-  },
-  "rich-text#notification-bar-2-mobile": {
-    "props": {
-      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
-      "blockClass": "notification"
-    }
-  },
-  "rich-text#notification-bar-3-mobile": {
-    "props": {
-      "text": "Ganhe **15% OFF***! Use o cupom SUMMER100",
-      "blockClass": "notification"
-    }
-  },
+
   "sticky-layout#2-mobile": {
     "children": [
       "flex-layout.row#2-mobile",
@@ -264,9 +225,8 @@
   },
   "flex-layout.row#2-mobile": {
     "children": [
-      "search-bar",
-      "login",
-      "minicart.v2"
+      "logo#mobile",
+      "search-bar"
     ],
     "props": {
       "blockClass": "main-header-mobile",
@@ -277,8 +237,8 @@
   },
   "flex-layout.row#3-mobile": {
     "children": [
-      "logo#mobile",
-      "flex-layout.col#spacer",
+      "login",      
+      "minicart.v2",
       "drawer"
     ],
     "props": {
@@ -293,7 +253,7 @@
   },
   "logo#mobile": {
     "props": {
-      "title": "Summer",
+      "title": "Logo MADU",
       "href": "/",
       "url": "assets/logo-madu.webp",
       "width": "146",

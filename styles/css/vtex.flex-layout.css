@@ -440,7 +440,7 @@
 }
 
 /* CONTATO  */
-.flexRow--leitor-catalogo{
+.flexRow--leitor-catalogo {
   margin-top: 30px;
 }
 
@@ -465,6 +465,13 @@
   margin: 40px;
 }
 
+/* categorias - mobile - com responsive layout  */
+.flexRowContent--categorias-mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 /* MOBILE */
 @media screen and (max-width: 1024px) {
   .flexRow--main-header-mobile {
@@ -482,6 +489,8 @@
   .flexRowContent--main-header-mobile-2 {
     padding: 0;
     border-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .flexColChild--product-info-summary {

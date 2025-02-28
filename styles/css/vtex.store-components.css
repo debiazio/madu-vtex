@@ -627,9 +627,27 @@
   margin-right: 15px;
 }
 
+/* CATEGORIAS MOBILE  */
+/* classe com responsive layout  */
+.flexRowContent--categorias-mobile{
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  /* CATEGORIAS HOME  */
+  .imageElement--imagem-categorias {
+    width: 75px;  
+  }
+
+  /* header  */
+  .searchBarContainer{
+    width: auto;
+    margin:0;
+  }
+
   .container .container {
     padding: 0;
   }
