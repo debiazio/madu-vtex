@@ -9,7 +9,7 @@
   width: 400px;
 }
 
-.formSubmitContainer :global(.vtex-button){
+.formSubmitContainer :global(.vtex-button) {
   width: 200px;
 }
 
@@ -18,7 +18,7 @@
 .formSubmitContainer :global(.vtex-button) {
   min-height: auto;
   border: 0;
-  border-radius: 0;
+  border-radius: 20px;
 }
 
 .nameInputContainer :global(.vtex-styleguide-9-x-input),
@@ -64,5 +64,10 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+
+  .nameInputContainer,
+  .emailInputContainer {
+    width: 100%;
   }
 }

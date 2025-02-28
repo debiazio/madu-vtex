@@ -101,7 +101,26 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px){
+  .sliderTrack--slider-avaliacoes{
+    gap: 30px;
+    padding: 20px 20px;
+  }
+
+  .slide--slider-avaliacoes{
+    padding: 8px;
+  }
+  
   .sliderTrack--shelf{
     gap:10px;
+  }
+
+  .sliderLayoutContainer--shelf-prateleira-final{
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+
+  .sliderTrack--shelf-prateleira-final{
+    gap: 5px;
+    padding: 10px 0;
   }
 }

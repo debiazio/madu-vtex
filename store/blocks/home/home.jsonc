@@ -306,8 +306,7 @@
     "props": {
       "text": "É a nossa **Linha Premium**. Nela você encontrará milhares de combinações possíveis com o que há de **melhor em**\n **tecnologia e soluções de design**.",
       "blockClass": "texto-madu-cat"
-    },
-    "title": "Título da primeira prateleira"
+    }
   },
   "flex-layout.row#shelf": {
     "children": [
@@ -330,11 +329,11 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 2,
-        "phone": 2
+        "phone": 1
       },
       "infinite": true,
       "fullWidth": false,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows":"always",
       "blockClass": "shelf"
     }
   },
@@ -367,8 +366,7 @@
     "props": {
       "text": "Essa é a nossa linha básica. Para quem procura uma solução leve, simples e prática. **Qualidade e durabilidade numa**\n **linha extremamente competitiva.**",
       "blockClass": "texto-madu-cat"
-    },
-    "title": "Título da primeira prateleira"
+    }
   },
   "flex-layout.row#shelf-extra": {
     "children": [
@@ -391,11 +389,11 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 2,
-        "phone": 2
+        "phone": 1
       },
       "infinite": true,
       "fullWidth": false,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "always",
       "blockClass": "shelf"
     }
   },

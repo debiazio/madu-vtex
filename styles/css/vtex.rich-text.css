@@ -178,7 +178,6 @@
   margin: 0 0 14px;
   color: white;
   font: 14px "Montserrat Semibold";
-  text-transform: uppercase;
 }
 
 .paragraph--subtitle-logo-madu {
@@ -284,6 +283,37 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .wrapper--texto-intitucionais{
+    width: 100%;
+  }
+  
+  .strong--texto-intitucionais {
+    font-size: 15px;
+  }
+
+  .wrapper--texto-modal-modal{
+    padding: 50px;
+  }
+
+  .container--credits {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexCol--footer-2-desktop {
+    margin-left: 15px;
+  }
+
+  .paragraph--subtitle-logo-madu {
+    margin-left: 0;
+  }
+
+  .subtitle-logo-madu {
+    font-size: 10px;
+  }
+
   .headingLevel2--shelfTitle {
     font-size: 20px;
     margin: 16px 0 14px;
@@ -295,11 +325,14 @@
     text-align: center;
   }
 
+  .paragraph--link-footer {
+    font-size: 12px;
+  }
+
   .paragraph--title-footer {
     font: 12px "Montserrat Semibold";
-    text-transform: uppercase;
     color: white;
-    margin: 0;
+    margin: 20px 0px;
   }
 
   .paragraph--produtos-relacionados {
@@ -307,12 +340,18 @@
     font-size: 20px;
   }
 
-  /* MOBILE */
+  /* notification bar */
   .container--texto-notification-bar {
     background-color: black;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  /* TEXTO CATEGORIAS */
+  .paragraph--titulo-categorias {
+    font-size: 12px;
+
   }
 }

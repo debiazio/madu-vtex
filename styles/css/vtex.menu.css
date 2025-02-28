@@ -117,6 +117,7 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+
   .menuContainerNav {
     width: 100%;
   }

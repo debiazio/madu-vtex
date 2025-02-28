@@ -98,14 +98,16 @@
     ],
     "props": {
       "blockClass": "slider-avaliacoes",
-      "infinite": false,
+      "infinite": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "never",
       "itemsPerPage": {
         "desktop": 2,
         "tablet": 2,
-        "phone": 2
-      }
+        "phone": 1
+      },
+      "autoplay": {"timeout": "500"}
+      
     }
   },
   // primeira avaliacao

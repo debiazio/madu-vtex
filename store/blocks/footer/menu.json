@@ -214,21 +214,7 @@
     ]
   },
 
-  "disclosure-layout#footer-payments":{
-    "children": [
-      "disclosure-content#footer-payments"
-    ],
-    "props": {
-      "blockClass":"footer-payments"
-    }
-  },
-  "disclosure-trigger#footer-payments":{
-    "children": [
-    ],
-    "props": {
-      "blockClass":"footer-payments"
-    }
-  },
+
   "disclosure-content#footer-payments":{
     "children": [
       "image#payments"

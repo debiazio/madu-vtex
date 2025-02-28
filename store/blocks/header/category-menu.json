@@ -6,7 +6,7 @@
     },
     "children": [
       "menu-item#produtos",
-      "menu-item#nossas-linhas",
+      "menu-item#nossas-linhas-mobile",
       "menu-item#made-for-you",
       "menu-item#catalogo",
       "menu-item#contato"
@@ -164,15 +164,11 @@
     }
   },
 
-  "menu-item#nossas-linhas": {
+  "menu-item#nossas-linhas-mobile": {
     "props": {
       "id": "menu-item-nossas-linhas",
       "type": "custom",
       "iconPosition": "right",
-      "iconProps": {
-        "id": "hpa-menu",
-        "isActive": true
-      },
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -184,19 +180,19 @@
       "blockClass": "menu-principal-item"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#nossas-linhas"
+      "submenu.accordion#nossas-linhas"
     ]
   },
-  "vtex.menu@2.x:submenu#nossas-linhas":{
+  "submenu.accordion#nossas-linhas":{
     "props": {
       "width": "auto",
-      "blockClass": "menu-principal-submenu"
+      "blockClass": "produtos-mobile"
     },
     "children": [
-      "vtex.menu@2.x:menu#nossas-linhas"
+      "vtex.menu@2.x:menu#nossas-linhas-mobile"
     ]
   },
-  "vtex.menu@2.x:menu#nossas-linhas":{
+  "vtex.menu@2.x:menu#nossas-linhas-mobile":{
     "props": {
       "orientation": "vertical",
       "blockClass": "menu-principal-submenu"
@@ -337,7 +333,7 @@
     },
     "children": [
       "menu-item#produtos-mobile",
-      "menu-item#nossas-linhas",
+      "menu-item#nossas-linhas-mobile",
       "menu-item#made-for-you",
       "menu-item#catalogo",
       "menu-item#contato"

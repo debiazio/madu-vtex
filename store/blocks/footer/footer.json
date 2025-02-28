@@ -88,7 +88,7 @@
   },
   "rich-text#subtitle-logo-madu": {
     "props": {
-      "text": "A maior linha de mobiliário\ntécnico do mundo!",
+      "text": "A maior linha de mobiliário técnico do mundo!",
       "blockClass": "subtitle-logo-madu"
     }
   },
@@ -404,24 +404,8 @@
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-mobile",
+      "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
-  },
-  "flex-layout.row#footer-2-mobile": {
-    "children": [
-      "flex-layout.col#footer-2-mobile"
-    ],
-    "props": {
-      "blockClass": "footer-2-mobile"
-    }
-  },
-  "flex-layout.col#footer-2-mobile": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-mobile"
-    ],
-    "props": {
-      "blockClass": "footer-2-mobile"
-    }
   }
 }

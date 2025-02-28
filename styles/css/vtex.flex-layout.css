@@ -469,11 +469,50 @@
 .flexRowContent--categorias-mobile {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .flexRowContent--content-institucionais{
+    padding: 20px;
+  }
+
+  .flexRowContent--avaliacao-estrelas{
+    display: flex;
+  }
+
+  .flexColChild--footer-2-desktop-1{
+    margin-top: 20px;
+  }
+
+
+  .link--link-grupo-mfm{
+    margin-top: 30px;
+  }
+
+  .flexCol--footer-2-desktop-1{
+    margin-left: 15px;
+  }
+
+  .flexRowContent--conteiner-redes-sociais{
+    display: flex;
+  }
+
+  .flexCol--footer-2-desktop{
+    margin-left: 15px;
+  }
+
+  .flexRowContent--categorias{
+    flex-direction: column;
+  }
+
+  .flexRow--add-to-cart-summary{
+    display: none;
+  }
+
   .flexRow--main-header-mobile {
     background-color: #fff;
   }
@@ -491,6 +530,7 @@
     border-bottom: 0;
     display: flex;
     justify-content: flex-end;
+
   }
 
   .flexColChild--product-info-summary {
