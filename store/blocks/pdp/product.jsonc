@@ -111,7 +111,7 @@
   },
   "breadcrumb": {
     "props": {
-      "showOnMobile": true
+      "showOnMobile": false
     }
   },
   "responsive-layout.desktop#nome-do-produto": {
@@ -428,7 +428,7 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 2,
-        "phone": 2
+        "phone": 1
       },
       "infinite": true,
       "fullWidth": false,
@@ -471,7 +471,7 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 2,
-        "phone": 2
+        "phone": 1
       },
       "infinite": true,
       "fullWidth": false,

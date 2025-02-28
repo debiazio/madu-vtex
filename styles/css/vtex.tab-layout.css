@@ -35,3 +35,9 @@
   color:#3A3434;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1024px) {
+  .container--secao-abas .listContainer {
+    flex-wrap: nowrap;
+  }
+}

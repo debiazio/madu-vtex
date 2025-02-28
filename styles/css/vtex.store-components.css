@@ -637,6 +637,10 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .shippingContainer :global(.vtex-input-prefix__group) {
+    width: 100%;
+  }
+
   .imageElement--imagem-banner-avaliacoes {
     width: 100%;
   }
@@ -727,7 +731,7 @@
   /* PDP */
 
   :global(.vtex-address-form__postalCode-forgottenURL) {
-    width: 17%;
+    width: 100%;
   }
 
   .productImagesGallerySwiperContainer .swiperPaginationClickable {
@@ -750,7 +754,7 @@
   }
 
   .swiperBullet {
-    background: #FFDDDE;
+    background: #black;
     opacity: 1;
   }
 

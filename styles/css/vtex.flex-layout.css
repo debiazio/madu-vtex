@@ -476,6 +476,14 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .flexRowContent--linha-secundaria-metodos-pgto .stretchChildrenWidth {
+    width: 10% !important;
+  }
+
+  .flexRowContent--linha-secundaria-metodos-pgto{
+    display: flex!important;
+  }
+
   .flexRowContent--content-institucionais{
     padding: 20px;
   }
