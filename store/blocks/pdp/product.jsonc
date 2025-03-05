@@ -62,7 +62,8 @@
         "desktop": "auto",
         "phone": "auto"
       },
-      "displayThumbnailsArrows": false,
+      "hiddenImages": "thumbcor",
+      "displayThumbnailsArrows": true,
       "showNavigationArrows": false,
       "showPaginationDots": true,
       // "zoomMode":"open-modal",
@@ -270,7 +271,7 @@
   },
   "sku-selector": {
     "props": {
-      "showValueForVariation": "image"
+      "thumbnailImage": "thumbcor"
     }
   },
   // BOTAO COMPRAR
@@ -418,7 +419,6 @@
       "slider-layout#sugestoes-pdp"
     ],
     "props": {
-
       "orderBy": "OrderByReleaseDateDESC",
       "maxItems": 8,
       "collection": "215"
@@ -438,7 +438,7 @@
     }
   },
   // VEJA MAIS PRODUTOS
-  "flex-layout.row#veja-mais-produtos":{
+  "flex-layout.row#veja-mais-produtos": {
     "props": {
       "blockClass": "linha-veja-mais-produtos",
       "preventHorizontalStretch": true
@@ -462,7 +462,6 @@
       "slider-layout#veja-mais-produtos"
     ],
     "props": {
-
       "orderBy": "OrderByReleaseDateDESC",
       "maxItems": 8,
       "collection": "215"

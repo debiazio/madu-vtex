@@ -134,6 +134,17 @@
   margin: 0;
 }
 
+/* thumbnail produtos  */
+.skuSelectorItem{
+  border-radius: 50%;
+}
+
+.skuSelectorItemImageValue{
+  border-radius: 50%;
+}
+
+
+
 /* ABAS PDP  */
 .productDescriptionContainer {
   padding: 20px;
@@ -291,6 +302,7 @@
 .skuSelectorInternalBox {
   border-radius: 0;
   border: 0;
+  margin-top: 1px;
 }
 
 .skuSelectorItemTextValue {
@@ -309,9 +321,8 @@
 
 .skuSelectorOptionsList .skuSelectorItemImage {
   width: 77px;
-  height: 77px;
   padding: 8px;
-  border-radius: 0;
+  border-radius: 50%;
   opacity: 1;
   border-color: #D6C0B0;
 }
