@@ -6,7 +6,7 @@
     },
     "children": [
       "menu-item#produtos",
-      "menu-item#nossas-linhas-mobile",
+      "menu-item#nossas-linhas",
       "menu-item#made-for-you",
       "menu-item#catalogo",
       "menu-item#contato"
@@ -24,7 +24,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos",
+        
         "noFollow": false,
         "tagTitle": "PRODUTOS",
         "text": "PRODUTOS"
@@ -163,7 +163,50 @@
       "blockClass": "menu-principal-subitem"
     }
   },
-
+  "menu-item#nossas-linhas":{
+    "props": {
+      "type": "custom",
+      "id": "menu-item-nossas-linhas",
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "hpa-menu",
+        "isActive": true
+      },
+      "itemProps": {
+        "type": "internal",
+        
+        "noFollow": false,
+        "tagTitle": "NOSSAS LINHAS",
+        "text": "NOSSAS LINHAS"
+      },
+      "blockClass": "menu-principal-item"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#nossas-linhas"
+    ]
+  },
+  "vtex.menu@2.x:submenu#nossas-linhas":{
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#nossas-linhas"
+    ]
+  },
+  "vtex.menu@2.x:menu#nossas-linhas":{
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#madu-box",
+      "menu-item#madu-expand",
+      "menu-item#madu-express",
+      "menu-item#madu-extra",
+      "menu-item#madu-one"
+    ]
+  },
   "menu-item#nossas-linhas-mobile": {
     "props": {
       "id": "menu-item-nossas-linhas",

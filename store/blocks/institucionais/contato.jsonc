@@ -134,14 +134,14 @@
         "blockClass": "contato-col2"
       },
       "children": [
-        "rich-text#provisoriro"
+        // "form#contato"
       ]
-    },
-    "rich-text#provisoriro":{
-      "props": {
-        "text": "Provisorio - Criar form"
-      }
     }
+    // "rich-text#provisoriro":{
+    //   "props": {
+    //     "text": "Provisorio - Criar form"
+    //   }
+    // }
 
 
 
@@ -152,8 +152,8 @@
 
   // "form#contato": {
   //   "props": {
-  //     "entity": "CO",
-  //     "schema": "contact"
+  //     "entity": "CL",
+  //     "schema": "Customer"
   //   },
   //   "blocks": [
   //     "form-success#contato"
@@ -161,9 +161,9 @@
   //   "children": [
   //     "form-input.text#nome",
   //     "form-input.text#email",
-  //     "form-input.text#telefone",
-  //     "form-field-group#assunto",
-  //     "form-input.textarea#mensagem",
+  //     // "form-input.text#telefone",
+  //     // "form-field-group#assunto",
+  //     // "form-input.textarea#mensagem",
   //     "form-submit#contact"
   //   ]
   // },
@@ -180,21 +180,21 @@
   // },
   // "form-input.text#nome": {
   //   "props": {
-  //     "pointer": "#/properties/nome",
+  //     "pointer": "#/properties/Name",
   //     "placeholder": "Coloque seu nome completo",
   //     "label":"Nome: "
   //   }
   // },
   // "form-input.text#email": {
   //   "props": {
-  //     "pointer": "#/properties/email",
+  //     "pointer": "#/properties/Email",
   //     "placeholder":"Digite seu e-mail",
   //     "label":"E-mail: "
   //   }
   // },
   // "form-input.text#telefone": {
   //   "props": {
-  //     "pointer": "#/properties/telefone",
+  //     "pointer": "#/properties/phone",
   //     "placeholder":"Digite seu telefone",
   //     "label": "Telefone: "
   //   }

@@ -106,8 +106,10 @@
         "tablet": 2,
         "phone": 1
       },
-      "autoplay": {"timeout": "500"}
-      
+      "autoplay": {
+        "timeout": 900,
+        "stopOnHover": true
+      }
     }
   },
   // primeira avaliacao
