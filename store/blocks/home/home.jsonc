@@ -321,8 +321,7 @@
       "slider-layout#prateleira-home"
     ],
     "props": {
-      "orderBy": "OrderByNameASC",
-      "collection": "215"
+      "orderBy": "OrderByNameASC"
     }
   },
   "slider-layout#prateleira-home": {
@@ -382,8 +381,7 @@
       "slider-layout#prateleira-home-extra"
     ],
     "props": {
-      "orderBy": "OrderByNameASC",
-      "collection": "215"
+      "orderBy": "OrderByNameASC"
     }
   },
   "slider-layout#prateleira-home-extra": {
@@ -434,8 +432,7 @@
       "slider-layout#prateleira-home-final"
     ],
     "props": {
-      "orderBy": "OrderByNameASC",
-      "collection": "215"
+      "orderBy": "OrderByNameASC"
     }
   },
   "slider-layout#prateleira-home-final": {
@@ -465,8 +462,7 @@
       "slider-layout#prateleira-home-final-1"
     ],
     "props": {
-      "orderBy": "OrderByNameDESC",
-      "collection": "215"
+      "orderBy": "OrderByNameDESC"
     }
   },
   "slider-layout#prateleira-home-final-1": {
@@ -496,8 +492,7 @@
       "slider-layout#prateleira-home-final-2"
     ],
     "props": {
-      "orderBy": "OrderByPriceDESC",
-      "collection": "215"
+      "orderBy": "OrderByPriceDESC"
     }
   },
   "slider-layout#prateleira-home-final-2": {
