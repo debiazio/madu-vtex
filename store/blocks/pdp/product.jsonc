@@ -113,7 +113,7 @@
       "visibility": "always",
       "initialSelection": "complete",
       // "displayThumbnailsArrows": true,
-      "thumbnailImage": "thumb",
+      // "thumbnailImage": "thumb",
   
       "imageHeight": 80
     }
