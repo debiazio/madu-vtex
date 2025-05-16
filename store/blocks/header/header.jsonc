@@ -24,15 +24,38 @@
   },
   "header-layout.desktop": {
     "children": [
+      // "slider-layout#home-banner",
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "sticky-layout#3-desktop"
     ]
   },
+  // "slider-layout#home-banner": {
+  //   "children": [
+  //     "notification.bar#home"
+  //   ],
+  //   "props": {
+  //     "blockClass": "banner-home",
+  //     "fullWidth": true,
+  //     "preventHorizontalStretch": true,
+  //     "autoplay": {
+  //       "enabled": true,
+  //       "delay": 5000
+  //     },
+  //     "showNavigationArrows": "never",
+  //     "showNavigationDots": "never"
+  //   }
+  // },
+  // "notification.bar#home": {
+  //   "props": {
+  //     "content": "teste asdfasf"
+  //   }
+  // },
+
   "flex-layout.row#1-desktop": {
     "children": [
       "rich-text#notification-bar",
-      "flex-layout.col#spacer",
+      "flex-layout.row#spacer",
       "flex-layout.col#tel",
       "flex-layout.col#whatsapp",
       "flex-layout.col#email"
@@ -237,7 +260,7 @@
   },
   "flex-layout.row#3-mobile": {
     "children": [
-      "login",      
+      "login",
       "minicart.v2",
       "drawer"
     ],

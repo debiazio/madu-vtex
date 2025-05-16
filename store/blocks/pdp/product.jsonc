@@ -96,7 +96,6 @@
       "flex-layout.row#selling-price",
       "flex-layout.row#aviso-valor-unitario",
       "flex-layout.row#metodos-pagamento-pdp",
-      
       "sku-selector",
       "similar-products-variants",
       "flex-layout.row#quantidade-seletor-comprar",
@@ -114,16 +113,14 @@
       "initialSelection": "complete",
       // "displayThumbnailsArrows": true,
       // "thumbnailImage": "thumb",
-  
       "imageHeight": 80
     }
   },
   "similar-products-variants": {
     "props": {
-        "blockClass": "similar-variant"
+      "blockClass": "similar-variant"
     }
-},
-
+  },
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "blockClass": "breadcrumb"
@@ -283,7 +280,8 @@
     },
     "children": [
       "product-quantity",
-      "flex-layout.row#buy-button"
+      "flex-layout.row#buy-button",
+      "bundle"
     ]
   },
   "product-quantity": {
@@ -291,7 +289,6 @@
       "showLabel": false
     }
   },
-
   // BOTAO COMPRAR
   "flex-layout.row#buy-button": {
     "props": {
@@ -381,7 +378,7 @@
       "showTitle": false
     }
   },
-  // QUANDO O PRODUTO NÃO TEM ESTOQUE
+  // QUANDO O PRODUTO tem TEM ESTOQUE
   "flex-layout.row#product-availability": {
     "props": {
       "blockClass": "product-main"
