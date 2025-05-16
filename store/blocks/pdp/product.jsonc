@@ -280,8 +280,8 @@
     },
     "children": [
       "product-quantity",
-      "flex-layout.row#buy-button",
-      "bundle"
+      "flex-layout.row#buy-button"
+      // "bundle"
     ]
   },
   "product-quantity": {
