@@ -97,11 +97,16 @@
       "flex-layout.row#aviso-valor-unitario",
       "flex-layout.row#metodos-pagamento-pdp",
       "sku-selector",
+      "flex-layout.col#product-recommendations-custom",
+      "bundle",
       "similar-products-variants",
       "flex-layout.row#quantidade-seletor-comprar",
       "flex-layout.row#busca-cep",
       "flex-layout.row#atencao-pdp"
     ]
+  },
+  "flex-layout.col#product-recommendations-custom": {
+    "children": []
   },
   "sku-selector": {
     "props": {
@@ -281,7 +286,6 @@
     "children": [
       "product-quantity",
       "flex-layout.row#buy-button"
-      // "bundle"
     ]
   },
   "product-quantity": {
