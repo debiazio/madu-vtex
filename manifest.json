@@ -69,7 +69,7 @@
     "vtex.iframe": "0.x",
     "vtex.sandbox": "0.x",
     "vtex.similar-products-variants": "0.x",
-    "madumfm2.bundle": "0.x"
+    "madumfm2.bundle": "1.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
