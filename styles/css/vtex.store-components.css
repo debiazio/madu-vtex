@@ -329,7 +329,7 @@
   opacity: 1;
   /* border-color: #D6C0B0; */
   border: none;
-  
+
 }
 
 .skuSelectorItem--selected.skuSelectorItemImage {
@@ -651,6 +651,21 @@
   flex-direction: row;
 }
 
+.skuSelectorName {
+  position: relative;
+  color: transparent; /* esconde o texto original */
+    white-space: nowrap;
+  position: relative;
+}
+
+.skuSelectorName::after {
+  content: "COR PUXADOR";
+  position: absolute;
+  left: 0;
+  color: #000; /* cor visível */
+}
+
+
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
@@ -665,12 +680,12 @@
   .discountInsideContainer{
     margin-right: 20px;
     margin-top: -5px;
-    border-radius: 0 30px 0 0;
+    border-radius: 0 5px 0 0;
   }
 
   /* CATEGORIAS HOME  */
   /* .imageElement--imagem-categorias {
-    width: 75px;  
+    width: 75px;
   } */
 
   /* header  */

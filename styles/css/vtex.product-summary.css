@@ -37,6 +37,7 @@
   .imageNormal{
     width: unset!important;
     height: unset!important;
+    /* max-width: unset!important; */
   }
 
   .element{

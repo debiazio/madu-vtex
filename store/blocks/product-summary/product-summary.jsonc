@@ -59,7 +59,7 @@
     "children": [
       "product-summary-name",
       "product-list-price#summary",
-      "product-selling-price#summary",
+      // "product-selling-price#summary",
       "product-spot-price#summary",
       "product-installments#summary"
     ],
@@ -83,7 +83,7 @@
   "product-spot-price#summary":{
     "props":{
       "blockClass": "summary",
-      "message":"ou {spotPriceValue} à vista",
+      "message":"por {spotPriceValue} à vista",
       "alwaysShow":true
     }
   },

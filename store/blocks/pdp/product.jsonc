@@ -116,8 +116,8 @@
       "showVariationsLabels": "variationAndItemValue",
       "visibility": "always",
       "initialSelection": "complete",
-      // "displayThumbnailsArrows": true,
-      // "thumbnailImage": "thumb",
+      "displayThumbnailsArrows": true,
+      "thumbnailImage": "thumb",
       "imageHeight": 80
     }
   },
