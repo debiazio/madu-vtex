@@ -1,6 +1,6 @@
 {
   "vendor": "madumfm2",
-  "name": "tema-madu-vtex-antigo",
+  "name": "tema-madu-vtex",
   "version": "0.0.18",
   "builders": {
     "styles": "2.x",
