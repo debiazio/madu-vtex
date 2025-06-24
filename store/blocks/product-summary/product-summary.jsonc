@@ -9,7 +9,7 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "add-to-list-btn",
+      // "add-to-list-btn",
       "flex-layout.row#add-to-cart-summary"
     ]
   },
@@ -31,11 +31,11 @@
       }
     }
   },
-  "add-to-list-btn":{
-    "props":{
-      "blockClass":"wishlist-shelf"
-    }
-  },
+  // "add-to-list-btn":{
+  //   "props":{
+  //     "blockClass":"wishlist-shelf"
+  //   }
+  // },
   "flex-layout.row#add-to-cart-summary":{
     "children": [
       "product-summary-sku-selector",

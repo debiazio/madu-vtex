@@ -146,8 +146,8 @@
   },
   "flex-layout.row#product-name": {
     "children": [
-      "vtex.store-components:product-name",
-      "add-to-list-btn"
+      "vtex.store-components:product-name"
+      // "add-to-list-btn"
     ],
     "props": {
       "blockClass": "product-name",
