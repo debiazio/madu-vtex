@@ -65,7 +65,7 @@
 
 .slide--shelf-prateleira-final--visible{
   background-color: white;
-  border-radius: 25px;
+  border-radius: 5px;
   border: 1px solid #D7D7D7;
 }
 .slide--shelf-prateleira-final--visible:hover{
@@ -109,7 +109,7 @@
   .slide--slider-avaliacoes{
     padding: 8px;
   }
-  
+
   .sliderTrack--shelf{
     gap:10px;
   }

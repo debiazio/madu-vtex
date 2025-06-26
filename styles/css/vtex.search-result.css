@@ -133,6 +133,7 @@
   color: white;
   font-weight: bold;
   text-align: center;
+  text-transform: capitalize;
 }
 
 
@@ -144,6 +145,7 @@
   .galleryTitle--layout{
     color:#3A3434;
     margin:0 0 13px;
+    text-transform: capitalize;
   }
   .filterPopupButton{
     padding:9px 17px;

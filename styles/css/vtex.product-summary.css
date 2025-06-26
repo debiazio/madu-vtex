@@ -4,7 +4,7 @@
 
 .image{
   height: 100%!important;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 .nameContainer{
   margin:19px 0 10px;
@@ -37,7 +37,7 @@
   .imageNormal{
     width: unset!important;
     height: unset!important;
-    /* max-width: unset!important; */
+    max-width: 100%!important;
   }
 
   .element{

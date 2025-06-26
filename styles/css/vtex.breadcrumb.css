@@ -1,3 +1,14 @@
+
+
+.container{
+  text-transform: capitalize;
+}
+
+
+.breadcrumb-1-x-link--1{
+  font-size: 12px;
+}
+
 .homeIcon{
     display:none;
 }
@@ -11,7 +22,7 @@
 }
 .link,
 .term{
-    font-size:10px;
+    font-size:12px;
     color:black;
     padding:0;
     line-height:1;
