@@ -4,17 +4,16 @@
 
 
 .title--similar-variant::before {
-    content: "Outras variações do produto";
+    content: "Cores de gavetas";
     display: block;
   }
-  
+
   .title--similar-variant {
     visibility: hidden;
     position: relative;
   }
-  
+
   .title--similar-variant::before {
     visibility: visible;
     position: absolute;
   }
-  

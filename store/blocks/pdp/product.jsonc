@@ -95,11 +95,12 @@
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "flex-layout.row#aviso-valor-unitario",
-      "flex-layout.row#metodos-pagamento-pdp",
+      // "flex-layout.row#metodos-pagamento-pdp",
       "sku-selector",
       "flex-layout.col#product-recommendations-custom",
-      "similar-products-variants",
+      "similar-products-variants", //traz os produtos similares
       "flex-layout.row#quantidade-seletor-comprar",
+      // "similares",
       "bundle",
       "flex-layout.row#busca-cep",
       "flex-layout.row#atencao-pdp"
@@ -185,8 +186,8 @@
       "blockClass": "linha-secundaria-metodos-pgto"
     },
     "children": [
-      "image#cartao-credito",
-      "rich-text#cartao-credito"
+      "image#cartao-credito"
+      // "rich-text#cartao-credito"
     ]
   },
   "flex-layout.row#linha2-metodos-pgto": {
