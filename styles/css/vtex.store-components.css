@@ -1,3 +1,11 @@
+.skuSelectorItem{
+  height: auto!important;
+}
+
+.skuSelectorItemImageValue{
+  width: 30px;
+}
+
 .discountInsideContainer{
   background-color: transparent;
   color: #ff0000;
@@ -328,7 +336,7 @@
 }
 
 .skuSelectorOptionsList .skuSelectorItemImage {
-  width: 77px;
+  /* width: 77px; */
   padding: 8px;
   border-radius: 50%;
   opacity: 1;

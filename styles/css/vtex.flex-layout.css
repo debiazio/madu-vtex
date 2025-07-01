@@ -273,6 +273,10 @@
 }
 
 /* PDP */
+.flexRow--linha-valor-unitario{
+  margin-bottom: 20px;
+}
+
 .flexRowContent--linha-possibilidades,
 .flexRowContent--linha-veja-mais-produtos {
   display: flex;
@@ -327,7 +331,7 @@
   justify-content: flex-start;
   gap: 12px;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .flexRow--buy-button-pdp {

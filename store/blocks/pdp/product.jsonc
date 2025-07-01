@@ -111,14 +111,14 @@
   },
   "sku-selector": {
     "props": {
-      "maxItems": 5,
+      "maxItems": 30,
       // "variationsSpacing": 3,
       // "showValueNameForImageVariation": true,
       "showVariationsLabels": "variationAndItemValue",
       "visibility": "always",
       "initialSelection": "complete",
       "displayThumbnailsArrows": true,
-      "thumbnailImage": "thumb",
+      "thumbnailImage": "thumbcor",
       "imageHeight": 80
     }
   },
