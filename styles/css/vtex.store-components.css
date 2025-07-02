@@ -664,19 +664,6 @@
   flex-direction: row;
 }
 
-.skuSelectorName {
-  position: relative;
-  color: transparent; /* esconde o texto original */
-    white-space: nowrap;
-  position: relative;
-}
-
-.skuSelectorName::after {
-  content: "COR PUXADOR";
-  position: absolute;
-  left: 0;
-  color: #000; /* cor visível */
-}
 
 
 

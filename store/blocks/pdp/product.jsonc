@@ -101,6 +101,7 @@
       "similar-products-variants", //traz os produtos similares
       "flex-layout.row#quantidade-seletor-comprar",
       // "similares",
+      "change-text-pdp-app",
       "bundle",
       "flex-layout.row#busca-cep",
       "flex-layout.row#atencao-pdp"
