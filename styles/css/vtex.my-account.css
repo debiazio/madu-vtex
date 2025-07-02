@@ -1,5 +1,5 @@
 .skuSelectorItem--selected :global(.absolute--fill) {
-  background-color: aliceblue;
+  background-color: transparent;
 }
 
 /* RESET */
