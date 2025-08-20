@@ -11,7 +11,7 @@
   },
   "product-installments":{
     "props": {
-      "message": "{hasMoreThanOne, select, true { em {installmentsNumber}X  {installmentValue} sem juros} false{ }}"
+      "message": "{hasMoreThanOne, select, true { ou em {installmentsNumber}X  {installmentValue} sem juros} false{ }}"
     }
   },
 

@@ -13,7 +13,7 @@
     margin-bottom:9px;
 }
 .productPrice{
-    color:#D9D8D7;
+    color:#153b64;
     font:14px "Montserrat Semibold";
 }
 .quantityDropdownContainer :global(.vtex-dropdown__container){

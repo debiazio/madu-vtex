@@ -7,7 +7,7 @@
     top:2px;
     right:-20px;
     background:transparent;
-    color:#43483B;
+    color:#153b64;
     font-size:13px;
 }
 .drawerContent{
@@ -54,7 +54,7 @@
     border-radius:100px;
     min-height:auto;
     border:0;
-    background:#D9D8D7;
+    background:#153b64;
     text-transform: none;
 }
 .minicartCheckoutButton :global(.vtex-button__label) {
