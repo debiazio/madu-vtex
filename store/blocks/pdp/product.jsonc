@@ -120,7 +120,7 @@
       "initialSelection": "complete",
       "displayThumbnailsArrows": true,
       "thumbnailImage": "thumbcor",
-      "imageHeight": 80
+      "imageHeight": 350
     }
   },
   "similar-products-variants": {
@@ -248,11 +248,17 @@
       "blockClass": "imagem-metodos-pgto-pdp"
     }
   },
+  "bundle": {
+    "props": {
+      "blockClass": "bundle-acessorios"
+    }
+  },
   // BUSCA CEP
   "flex-layout.row#busca-cep": {
     "props": {
       "blockClass": "linha-cep",
-      "fullWidth": true
+      "fullWidth": true,
+      "colSizing": "auto"
     },
     "children": [
       "rich-text#label-cep",
@@ -263,6 +269,11 @@
     "props": {
       "blockClass": "label-cep",
       "text": "Consulte o frete e o prazo de entrega:"
+    }
+  },
+  "shipping-simulator": {
+    "props": {
+      "shouldUpdateOrderForm": "true"
     }
   },
   // TEXTO ATENCAO

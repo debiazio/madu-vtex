@@ -24,7 +24,7 @@
 
 .link--texto-notification-bar {
   text-decoration: none;
-  color: white;
+  color: white!important;
 }
 
 /* MADU ONE  */
@@ -283,10 +283,14 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+.paragraph--valor-unitario{
+  padding: 0 15px;
+}
+
   .wrapper--texto-intitucionais{
     width: 100%;
   }
-  
+
   .strong--texto-intitucionais {
     font-size: 15px;
   }
