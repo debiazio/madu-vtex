@@ -1,3 +1,19 @@
+.buyButton :global(.vtex-button){
+  background-color: #00b280;
+  border: none;
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+.buyButtonText{
+  font-size: 0;
+}
+
+
+.buyButtonText::after{
+  content: "COMPRAR";
+  font-size: 18px;
+}
 /* .image{
   box-shadow:0 4px 8px #ccc;
 } */

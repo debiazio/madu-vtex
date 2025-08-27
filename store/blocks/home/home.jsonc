@@ -5,7 +5,7 @@
       "responsive-layout.mobile#video",
       "responsive-layout.desktop#categorias",
       "responsive-layout.mobile#categorias",
-      
+
       "__fold__",
       "flex-layout.row#madu-one",
       "flex-layout.row#madu-extra",
@@ -55,7 +55,7 @@
   },
   "responsive-layout.mobile#categorias":{
     "children": [
-      "flex-layout.row#categorias-mobile"    
+      "flex-layout.row#categorias-mobile"
     ]
   },
   "flex-layout.row#categorias": {
@@ -266,7 +266,7 @@
       "blockClass": "titulo-categorias"
     }
   },
-  // CATEGORIAS MOBILE 
+  // CATEGORIAS MOBILE
   "flex-layout.row#categorias-mobile":{
     "props": {
       "blockClass": "categorias-mobile"
@@ -285,8 +285,7 @@
   // MADU ONE
   "flex-layout.row#madu-one": {
     "props": {
-      "blockClass": "content-madu-cat",
-      "preventHorizontalStretch": true
+      "blockClass": "content-madu-cat"
     },
     "children": [
       "image#logo-madu-one",
@@ -334,6 +333,7 @@
       "infinite": true,
       "fullWidth": false,
       "showNavigationArrows":"always",
+      "showPaginationDots": "mobileOnly",
       "blockClass": "shelf"
     }
   },
@@ -345,8 +345,7 @@
   },
   "flex-layout.row#madu-extra": {
     "props": {
-      "blockClass": "content-madu-cat",
-      "preventHorizontalStretch": true
+      "blockClass": "content-madu-cat"
     },
     "children": [
       "image#logo-madu-extra",

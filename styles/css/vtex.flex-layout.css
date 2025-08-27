@@ -1,3 +1,19 @@
+.flexRowContent--content-madu-cat .stretchChildrenWidth,
+
+.flexRowContent--linha-veja-mais-produtos .stretchChildrenWidth,
+.flexRowContent--linha-possibilidades .stretchChildrenWidth{
+  width: 100%!important;
+}
+
+
+.flexRowContent--linha-possibilidades .items-stretch{
+  width: -webkit-fill-available;
+}
+
+.flexCol--coluna-direita-disp{
+  margin-top: 20px;
+}
+
 /* TOPO */
 .flexRow--notification {
   background: #181818;
@@ -50,7 +66,7 @@
 .flexRowContent--main-header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .flexRow--main-header{

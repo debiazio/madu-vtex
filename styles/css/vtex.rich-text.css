@@ -24,13 +24,16 @@
 
 .link--texto-notification-bar {
   text-decoration: none;
-  color: white!important;
+  color: white !important;
 }
 
 /* MADU ONE  */
 .container--texto-madu-cat {
   font-size: 18px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* CATEGORIAS FINAL HOME  */
@@ -231,10 +234,6 @@
   cursor: pointer;
 }
 
-.container--produtos-relacionados {
-  justify-content: center;
-}
-
 .paragraph--produtos-relacionados {
   margin: 48px 0 27px;
   font-size: 28px;
@@ -283,11 +282,11 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
-.paragraph--valor-unitario{
-  padding: 0 15px;
-}
+  .paragraph--valor-unitario {
+    padding: 0 15px;
+  }
 
-  .wrapper--texto-intitucionais{
+  .wrapper--texto-intitucionais {
     width: 100%;
   }
 
@@ -295,7 +294,7 @@
     font-size: 15px;
   }
 
-  .wrapper--texto-modal-modal{
+  .wrapper--texto-modal-modal {
     padding: 50px;
   }
 

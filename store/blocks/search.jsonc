@@ -1,19 +1,22 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": false,
-        "maxItemsPerPage": 9,
+        "maxItemsPerPage": 30,
         "skusFilter": "ALL_AVAILABLE",
         "simulationBehavior": "default"
       }
     }
   },
-
   "store.search#brand": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -24,9 +27,10 @@
       }
     }
   },
-
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -37,9 +41,10 @@
       }
     }
   },
-
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -50,9 +55,10 @@
       }
     }
   },
-
   "store.search#subcategory": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -63,32 +69,28 @@
       }
     }
   },
-
   "search-result-layout": {
-
     "blocks": [
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
     ]
   },
-
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#banner-categoria",
-
       "flex-layout.row#categorias",
       "flex-layout.row#result"
     ],
     "props": {
       "pagination": "infinite-scroll",
       "preventRouteChange": true,
-      "showFacetQuantity":true,
+      "showFacetQuantity": true,
       "blockClass": "busca-desktop",
       "defaultGalleryLayout": "grid"
     }
   },
-  "flex-layout.row#banner-categoria":{
+  "flex-layout.row#banner-categoria": {
     "props": {
       "blockClass": "banner-categoria",
       "fullWidth": true
@@ -114,20 +116,25 @@
     "props": {
       "blockClass": "filterCol",
       "verticalAlign": "top",
-      "width":"20%"
+      "width": "20%"
     }
   },
-  "filter-navigator.v3":{
+  "filter-navigator.v3": {
     "props": {
-      "initiallyCollapsed": false,
+      "initiallyCollapsed": true,
       "scrollToTop": "smooth",
-      "blockClass": "filterCol"
-
+      "blockClass": "filterCol",
+      "layout": "responsive",
+      "truncateFilters": true,
+      "appliedFiltersOverview": "show",
+      "showClearAllFiltersOnDesktop": true
       // "navigationTypeOnMobile":"collapsible"
     }
   },
   "flex-layout.row#searchbread": {
-    "children": ["breadcrumb.search"]
+    "children": [
+      "breadcrumb.search"
+    ]
   },
   "breadcrumb.search": {
     "props": {
@@ -137,26 +144,26 @@
   "flex-layout.col#content": {
     "children": [
       // "flex-layout.row#searchtitle",
-
       "flex-layout.row#searchinfo",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
       "flex-layout.row#fetchmore"
     ],
     "props": {
-      "width": "80%"
+      "width": "80%",
+      "colSizing": "auto",
+      "preventVerticalStretch": true
     }
   },
   "flex-layout.row#searchtitle": {
     "children": [
       "search-title.v2"
     ],
-    "props":{
+    "props": {
       "fullWidth": true,
       "blockClass": "titulo-institucionais"
     }
   },
-
   "flex-layout.row#searchinfo": {
     "children": [
       "flex-layout.col#productCount",
@@ -189,7 +196,10 @@
       "search-fetch-previous"
     ],
     "props": {
-      "blockClass": ["fetch", "fetchprevious"]
+      "blockClass": [
+        "fetch",
+        "fetchprevious"
+      ]
     }
   },
   "flex-layout.row#fetchmore": {
@@ -210,9 +220,10 @@
       "htmlElementForButton": "a"
     }
   },
-
   "flex-layout.row#products": {
-    "children": ["search-content"]
+    "children": [
+      "search-content"
+    ]
   },
   "search-content": {
     "blocks": [
@@ -237,7 +248,6 @@
       "GridSummary": "product-summary.shelf"
     }
   },
-
   // MOBILE
   "search-result-layout.mobile": {
     "children": [
@@ -259,19 +269,20 @@
       "defaultGalleryLayout": "grid"
     }
   },
-  "image#banner-dpto-mobile":{
+  "image#banner-dpto-mobile": {
     "props": {
-      "src": "assets/banner-dpto-mobile.png",
+      "src": "",
       "alt": "Banner Departamento mobile"
     }
   },
   "flex-layout.row#contentmobile": {
-    "children": ["search-content"],
+    "children": [
+      "search-content"
+    ],
     "props": {
       "preserveLayoutOnMobile": true
     }
   },
-
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#filterMobile",
@@ -284,32 +295,35 @@
     }
   },
   "flex-layout.col#filterMobile": {
-    "children": ["filter-navigator.v3"],
+    "children": [
+      "filter-navigator.v3"
+    ],
     "props": {
       "blockClass": "filterMobileCol"
     }
   },
   "flex-layout.col#orderByMobile": {
-    "children": ["order-by.v2"],
+    "children": [
+      "order-by.v2"
+    ],
     "props": {
       "blockClass": "orderByMobileCol"
     }
   },
-
   "flex-layout.row#productCountMobile": {
-    "children": ["flex-layout.col#productCount"],
+    "children": [
+      "flex-layout.col#productCount"
+    ],
     "props": {
       "blockClass": "productCountMobileRow"
     }
   },
-
   "search-not-found-layout": {
     "children": [
       "flex-layout.row#searchbread",
       "flex-layout.row#notfound"
     ]
   },
-
   "flex-layout.row#notfound": {
     "children": [
       "flex-layout.col#notfound"
@@ -318,17 +332,17 @@
       "fullWidth": true
     }
   },
-  "flex-layout.col#notfound":{
+  "flex-layout.col#notfound": {
     "children": [
       "not-found",
       "rich-text#notfound",
       "flex-layout.row#shelf"
     ]
   },
-  "rich-text#notfound":{
+  "rich-text#notfound": {
     "props": {
       "text": "Sugestões para você!",
-      "blockClass":"notfound"
+      "blockClass": "notfound"
     }
   }
 }

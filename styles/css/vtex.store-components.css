@@ -18,9 +18,9 @@
 
 
 /* TOPO */
-.container {
+/* .container {
   max-width: 1300px;
-}
+} */
 
 .sizeDesktop {
   max-width: 233px;
@@ -645,7 +645,7 @@
 .imageElement--imagem-banner-avaliacoes:hover,
 .imageElement--imagem--made-for-you:hover {
   transition: transform 0.3s ease-out;
-  transform: scale(1.1) rotateX(10deg) rotateY(10deg);
+  transform: scale(1.01) rotateX(10deg) rotateY(10deg);
 }
 
 

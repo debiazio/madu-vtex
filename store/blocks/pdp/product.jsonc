@@ -87,7 +87,8 @@
   "flex-layout.col#product-right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "width": "40%"
+      "width": "40%",
+      "blockClass": "coluna-direita-produto"
     },
     "children": [
       "flex-layout.row#product-breadcrumb",
@@ -408,7 +409,8 @@
   "flex-layout.col#right-col-availability": {
     "props": {
       "preventVerticalStretch": true,
-      "width": "40%"
+      "width": "40%",
+      "blockClass": "coluna-direita-disp"
     },
     "children": [
       "flex-layout.row#product-name",
@@ -429,8 +431,7 @@
   // POSSIBILIDADES
   "flex-layout.row#relatedProducts": {
     "props": {
-      "blockClass": "linha-possibilidades",
-      "preventHorizontalStretch": true
+      "blockClass": "linha-possibilidades"
     },
     "children": [
       "rich-text#produtos-relacionados",
@@ -451,8 +452,9 @@
       "slider-layout#sugestoes-pdp"
     ],
     "props": {
-      "orderBy": "OrderByReleaseDateDESC",
-      "maxItems": 8
+      "orderBy": "OrderByPriceASC",
+      "maxItems": 8,
+      "blockClass": "list-context"
     }
   },
   "slider-layout#sugestoes-pdp": {
@@ -463,7 +465,7 @@
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "shelf"
     }
@@ -471,8 +473,7 @@
   // VEJA MAIS PRODUTOS
   "flex-layout.row#veja-mais-produtos": {
     "props": {
-      "blockClass": "linha-veja-mais-produtos",
-      "preventHorizontalStretch": true
+      "blockClass": "linha-veja-mais-produtos"
     },
     "children": [
       "rich-text#veja-mais-produtos",
@@ -493,7 +494,7 @@
       "slider-layout#veja-mais-produtos"
     ],
     "props": {
-      "orderBy": "OrderByReleaseDateDESC",
+      "orderBy": "OrderByTopSaleDESC",
       "maxItems": 8
     }
   },

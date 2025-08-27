@@ -23,6 +23,7 @@
   height: 21px !important;
 }
 
+
 /* PRATELEIRA */
 .sliderLayoutContainer--shelf {
   margin-bottom: 20px;
@@ -83,15 +84,20 @@
   border: 1px solid #D7D7D7;
 }
 
+
 /* teste */
 .slideChildrenContainer--shelf,
 .slide--shelf-prateleira-final--visible {
   transition: transform 200ms ease, filter 200ms ease;
 }
+
+
 .slideChildrenContainer--shelf:hover,
 .slide--shelf-prateleira-final--visible:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
+  z-index: 9999;
 }
+
 
 
 

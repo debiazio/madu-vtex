@@ -68,7 +68,7 @@
   },
   "rich-text#notification-bar": {
     "props": {
-      "text": "A maior linha de mobiliário técnico do mundo!",
+      "text": "A maior linha de mobiliário técnico do Mundo!",
       "blockClass": "texto-notification-bar"
     }
   },

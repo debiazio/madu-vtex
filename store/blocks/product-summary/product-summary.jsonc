@@ -2,8 +2,14 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
-      "flex-layout.col#product-info-summary"
+      "flex-layout.col#product-info-summary",
+      "product-summary-buy-button"
     ]
+  },
+  "product-summary-buy-button": {
+    "props": {
+      "buyButtonText": "COMPRAR"
+    }
   },
 
   "stack-layout#prodsum": {
