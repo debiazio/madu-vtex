@@ -126,7 +126,8 @@
   },
   "similar-products-variants": {
     "props": {
-      "blockClass": "similar-variant"
+      "blockClass": "similar-variant",
+      "imageLabel": "thumbcor"
     }
   },
   "flex-layout.row#product-breadcrumb": {
@@ -466,7 +467,7 @@
       },
       "infinite": true,
       "fullWidth": true,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "always",
       "blockClass": "shelf"
     }
   },
@@ -507,7 +508,7 @@
       },
       "infinite": true,
       "fullWidth": false,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows":"always",
       "blockClass": "shelf"
     }
   }

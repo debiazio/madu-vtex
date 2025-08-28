@@ -2,18 +2,32 @@
     height: 80px;
 } */
 
+.var-wrap--similar-variant {
+  display: flex;
+  gap: 10px;
+}
+
+.img {
+  margin: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
 
 .title--similar-variant::before {
-    content: "Cores de gavetas";
-    display: block;
-  }
+  content: "Cores de gavetas";
+  display: block;
+}
 
-  .title--similar-variant {
-    visibility: hidden;
-    position: relative;
-  }
+.title--similar-variant {
+  text-transform: uppercase;
+  visibility: hidden;
+  position: relative;
+  font-size: 13px;
+  color: #3A3434;
+}
 
-  .title--similar-variant::before {
-    visibility: visible;
-    position: absolute;
-  }
+.title--similar-variant::before {
+  visibility: visible;
+  position: absolute;
+}
