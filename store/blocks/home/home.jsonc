@@ -27,16 +27,28 @@
       "height": 650,
       "images": [
         {
-          "image": "assets/banner-exemplo1.webp",
-          "description": "Banner 1"
+          "image": "https://madumfm.com.br/wp-content/uploads/2025/08/Group-8-2.png",
+          "mobileImage": "https://madumfm.com.br/wp-content/uploads/2025/08/Banner-mobile-20OFF.png",
+          "description": "Banner 1",
+          "link": {
+            "url": "/categoria-produto/madu-one"
+          }
         },
         {
-          "image": "assets/banner-exemplo2.webp",
-          "description": "Banner 2"
+          "image": "https://madumfm.com.br/wp-content/uploads/2025/08/Banner-Desktop.jpg",
+          "mobileImage": "https://madumfm.com.br/wp-content/uploads/2025/07/Banner-Mobile.png",
+          "description": "Banner 2",
+          "link": {
+            "url": "/produtos"
+          }
         },
         {
-          "image": "assets/banner-exemplo3.webp",
-          "description": "Banner 3"
+          "image": "https://madumfm.com.br/wp-content/uploads/2025/07/Banner-desktop-Coffee-Time-scaled.jpg",
+          "mobileImage": "https://madumfm.com.br/wp-content/uploads/2025/07/Banner-mobile-Coffee-Time.jpg",
+          "description": "Banner 3",
+          "link": {
+            "url": "/produtos/carrinho-de-cafe-e-bebidas-multiuso-mad-u-one-740/"
+          }
         }
       ],
       "title": "List-context-Images"

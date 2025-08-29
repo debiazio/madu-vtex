@@ -18,6 +18,9 @@
     ]
   },
   "header-layout.desktop#topo-home": {
+    "props": {
+      "blockClass": "topo-nome"
+    },
     "children": [
       "sticky-layout#3-desktop"
     ]
@@ -30,35 +33,11 @@
       "sticky-layout#3-desktop"
     ]
   },
-  // "slider-layout#home-banner": {
-  //   "children": [
-  //     "notification.bar#home"
-  //   ],
-  //   "props": {
-  //     "blockClass": "banner-home",
-  //     "fullWidth": true,
-  //     "preventHorizontalStretch": true,
-  //     "autoplay": {
-  //       "enabled": true,
-  //       "delay": 5000
-  //     },
-  //     "showNavigationArrows": "never",
-  //     "showNavigationDots": "never"
-  //   }
-  // },
-  // "notification.bar#home": {
-  //   "props": {
-  //     "content": "teste asdfasf"
-  //   }
-  // },
-
   "flex-layout.row#1-desktop": {
     "children": [
-      "rich-text#notification-bar",
-      "flex-layout.row#spacer",
-      "flex-layout.col#tel",
-      "flex-layout.col#whatsapp",
-      "flex-layout.col#email"
+      "flex-layout.col#header-col1",
+      "flex-layout.col#header-col2"
+
     ],
     "props": {
       "fullWidth": true,
@@ -66,11 +45,33 @@
       "preventHorizontalStretch": true
     }
   },
+  "flex-layout.col#header-col1": {
+    "props": {
+      "blockClass": "header-col1",
+      "colSizing": "auto",
+      "width": "100%"
+    },
+    "children": [
+      "rich-text#notification-bar"
+    ]
+  },
   "rich-text#notification-bar": {
     "props": {
       "text": "A maior linha de mobiliário técnico do Mundo!",
       "blockClass": "texto-notification-bar"
     }
+  },
+  "flex-layout.col#header-col2": {
+    "props": {
+      "blockClass": "header-col2",
+      "colSizing": "auto",
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.col#tel",
+      "flex-layout.col#whatsapp",
+      "flex-layout.col#email"
+    ]
   },
   "flex-layout.row#spacer": {
     "props": {
@@ -193,7 +194,7 @@
     "props": {
       "title": "Logo MADU",
       "href": "/",
-      "url": "assets/logo-madu.webp",
+      "url": "assets/MDU_Logo MAD.U_MAD.U (Principal).webp",
       "width": "302",
       "height": "119"
     }
@@ -230,7 +231,7 @@
       "sticky-layout#2-mobile"
     ]
   },
-  "flex-layout.row#1-mobile":{
+  "flex-layout.row#1-mobile": {
     "props": {
       "fullWidth": true,
       "blockClass": "mobile-notification-bar"
@@ -239,7 +240,6 @@
       "rich-text#notification-bar"
     ]
   },
-
   "sticky-layout#2-mobile": {
     "children": [
       "flex-layout.row#2-mobile",
