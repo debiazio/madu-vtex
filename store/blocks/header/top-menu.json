@@ -3,13 +3,32 @@
     "props": {
       "blockClass": "topbar",
       "colSizing": "auto",
-      "preventHorizontalStretch": true
+      "preventHorizontalStretch": false,
+      "fullWidth": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#search-bar",
       "flex-layout.col#2-desktop-col-2"
     ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "logo-desktop"
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo MADU",
+      "href": "/",
+      "url": "assets/MDU_Logo MAD.U_MAD.U (Principal).webp",
+      "width": "302",
+      "height": "119"
+    }
   },
   "flex-layout.col#search-bar": {
     "props": {

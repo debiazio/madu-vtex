@@ -24,14 +24,9 @@
 }
 
 
-/* TOPO */
-/* .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-} */
+.container{
+  max-width: 1300px;
+}
 
 .sizeDesktop {
   max-width: 233px;

@@ -111,9 +111,9 @@
       "blockClass": "footer-mobile"
     },
     "children": [
-      "menu-item#institucional-mobile",
-      "menu-item#produtos-mobile",
-      "menu-item#contato-mobile"
+      // "menu-item#institucional-mobile",
+      // "menu-item#produtos-mobile",
+      // "menu-item#contato-mobile"
     ]
   },
 
@@ -152,38 +152,38 @@
 
 
 
-  "menu-item#produtos-mobile": {
-    "props": {
-      "id": "menu-item-produtos-mobile",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Produtos",
-        "text": "Produtos"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#produtos-mobile"]
-  },
-  "vtex.menu@2.x:submenu.accordion#produtos-mobile": {
-    "children": ["vtex.menu@2.x:menu#produtos-mobile"]
-  },
-  "vtex.menu@2.x:menu#produtos-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#produtos-footer",
-      "menu-item#colecao-footer",
-      "menu-item#feminino-footer",
-      "menu-item#acessorios-footer",
-      "menu-item#clube-footer",
-      "menu-item#summer-sale-footer"
-    ]
-  },
+  // "menu-item#produtos-mobile": {
+  //   "props": {
+  //     "id": "menu-item-produtos-mobile",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": true,
+  //       "tagTitle": "Produtos",
+  //       "text": "Produtos"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu.accordion#produtos-mobile"]
+  // },
+  // "vtex.menu@2.x:submenu.accordion#produtos-mobile": {
+  //   "children": ["vtex.menu@2.x:menu#produtos-mobile"]
+  // },
+  // "vtex.menu@2.x:menu#produtos-mobile": {
+  //   "props": {
+  //     "orientation": "vertical"
+  //   },
+  //   "children": [
+  //     "menu-item#produtos-footer",
+  //     "menu-item#colecao-footer",
+  //     "menu-item#feminino-footer",
+  //     "menu-item#acessorios-footer",
+  //     "menu-item#clube-footer",
+  //     "menu-item#summer-sale-footer"
+  //   ]
+  // },
 
   "menu-item#contato-mobile": {
     "props": {

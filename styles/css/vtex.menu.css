@@ -29,9 +29,9 @@
   margin: 15px 0px 0 10px;
 }
 
-.menuContainerNav--menu-principal {
+/* .menuContainerNav--menu-principal {
   margin-left: 70px;
-}
+} */
 
 .menuContainer--menu-principal {
   height: 4.5rem;
@@ -47,11 +47,10 @@
 .styledLinkContainer--menu-principal-item {
   margin: 0;
   padding: 0;
-
   border-right: 2px solid #C7C7C7;
   display: flex;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .styledLink--menu-principal-item {

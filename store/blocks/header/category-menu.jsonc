@@ -158,6 +158,8 @@
       "menu-item#madu-one"
     ]
   },
+
+
   "menu-item#nossas-linhas-mobile": {
     "props": {
       "id": "menu-item-nossas-linhas",
@@ -329,14 +331,14 @@
       "blockClass": "menu-principal-mobile"
     },
     "children": [
-      "menu-item#produtos-mobile",
+      "menu-item#cat-carrinhos-mobile",
       "menu-item#nossas-linhas-mobile",
       "menu-item#made-for-you",
       "menu-item#catalogo",
       "menu-item#contato"
     ]
   },
-  "menu-item#produtos-mobile": {
+  "menu-item#cat-carrinhos-mobile": {
     "props": {
       "id": "menu-item-produtos-mobile",
       "type": "custom",
@@ -345,164 +347,161 @@
         "type": "internal",
         "href": "/produtos",
         "noFollow": false,
-        "tagTitle": "PRODUTOS",
-        "text": "PRODUTOS"
-      },
-      "blockClass": "menu-principal-item"
-    },
-    "blocks": [
-      "submenu.accordion#produtos"
-    ]
-  },
-  "submenu.accordion#produtos":{
-    "props":{
-      "width":"100%",
-      "blockClass": "produtos-mobile"
-    },
-    "children":["vtex.menu@2.x:menu#produtos-mobile"]
-  },
-  "vtex.menu@2.x:menu#produtos-mobile":{
-    "children": [
-      "flex-layout.col#produtos-mobile"
-    ]
-  },
-  "flex-layout.col#produtos-mobile":{
-    "children": [
-      "menu-item#armarios",
-      "menu-item#acessorios",
-      "menu-item#carrinhos",
-      "menu-item#estantes",
-      "menu-item#modulos",
-      "menu-item#novidades",
-      "menu-item#ver-tudo"
-    ]
-  },
-    "vtex.menu@2.x:submenu#produtos": {
-    "props": {
-      "width": "auto",
-      "blockClass": "menu-principal-submenu"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#produtos"
-    ]
-  },
-  "vtex.menu@2.x:menu#produtos": {
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "menu-principal-submenu"
-    },
-    "children": [
-      "menu-item#armarios",
-      "menu-item#acessorios",
-      "menu-item#carrinhos",
-      "menu-item#estantes",
-      "menu-item#modulos",
-      "menu-item#novidades"
-    ]
-  },
-  "menu-item#armarios": {
-    "props": {
-      "id": "menu-item-armarios",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/produtos/armarios",
-        "noFollow": false,
-        "tagTitle": "Armários",
-        "text": "Armários"
-      },
-      "blockClass": "menu-principal-subitem"
-    }
-  },
-  "menu-item#acessorios": {
-    "props": {
-      "id": "menu-item-acessorios",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/produtos/acessorios",
-        "noFollow": false,
-        "tagTitle": "Acessórios",
-        "text": "Acessórios"
-      },
-      "blockClass": "menu-principal-subitem"
-    }
-  },
-  "menu-item#carrinhos": {
-    "props": {
-      "id": "menu-item-carrinhos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/carrinhos?_q=Carrinhos&map=ft",
-        "noFollow": false,
         "tagTitle": "Carrinhos",
         "text": "Carrinhos"
       },
-      "blockClass": "menu-principal-subitem"
-    }
-  },
-  "menu-item#estantes": {
-    "props": {
-      "id": "menu-item-estantes",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/produtos/estantes",
-        "noFollow": false,
-        "tagTitle": "Estantes",
-        "text": "Estantes"
-      },
-      "blockClass": "menu-principal-subitem"
-    }
-  },
-  "menu-item#modulos": {
-    "props": {
-      "id": "menu-item-modulos",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/produtos/modulos",
-        "noFollow": false,
-        "tagTitle": "Módulos",
-        "text": "Módulos"
-      },
-      "blockClass": "menu-principal-subitem"
-    }
-  },
-  "menu-item#novidades": {
-    "props": {
-      "id": "menu-item-novidades",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/produtos/novidades",
-        "noFollow": false,
-        "tagTitle": "Novidades",
-        "text": "Novidades"
-      },
-      "blockClass": "menu-principal-subitem"
-    }
-  },
-  "menu-item#ver-tudo": {
-    "props": {
-      "id": "menu-item-ver-tudo",
-      "type": "custom",
-      "highlight": true,
-      "itemProps": {
-        "type": "internal",
-        "href": "/produtos",
-        "noFollow": false,
-        "tagTitle": "Ver tudo",
-        "text": "Ver tudo"
-      },
-      "blockClass": "menu-principal-subitem"
+      "blockClass": "menu-principal-item"
     }
   }
+  // "submenu.accordion#produtos":{
+  //   "props":{
+  //     "width":"100%",
+  //     "blockClass": "produtos-mobile"
+  //   },
+  //   "children":["vtex.menu@2.x:menu#produtos-mobile"]
+  // },
+  // "vtex.menu@2.x:menu#produtos-mobile":{
+  //   "children": [
+  //     "flex-layout.col#produtos-mobile"
+  //   ]
+  // },
+  // "flex-layout.col#produtos-mobile":{
+  //   "children": [
+  //     "menu-item#armarios",
+  //     "menu-item#acessorios",
+  //     "menu-item#carrinhos",
+  //     "menu-item#estantes",
+  //     "menu-item#modulos",
+  //     "menu-item#novidades",
+  //     "menu-item#ver-tudo"
+  //   ]
+  // },
+  //   "vtex.menu@2.x:submenu#produtos": {
+  //   "props": {
+  //     "width": "auto",
+  //     "blockClass": "menu-principal-submenu"
+  //   },
+  //   "children": [
+  //     "vtex.menu@2.x:menu#produtos"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#produtos": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-principal-submenu"
+  //   },
+  //   "children": [
+  //     "menu-item#armarios",
+  //     "menu-item#acessorios",
+  //     "menu-item#carrinhos",
+  //     "menu-item#estantes",
+  //     "menu-item#modulos",
+  //     "menu-item#novidades"
+  //   ]
+  // },
+  // "menu-item#armarios": {
+  //   "props": {
+  //     "id": "menu-item-armarios",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/produtos/armarios",
+  //       "noFollow": false,
+  //       "tagTitle": "Armários",
+  //       "text": "Armários"
+  //     },
+  //     "blockClass": "menu-principal-subitem"
+  //   }
+  // },
+  // "menu-item#acessorios": {
+  //   "props": {
+  //     "id": "menu-item-acessorios",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/produtos/acessorios",
+  //       "noFollow": false,
+  //       "tagTitle": "Acessórios",
+  //       "text": "Acessórios"
+  //     },
+  //     "blockClass": "menu-principal-subitem"
+  //   }
+  // },
+  // "menu-item#carrinhos": {
+  //   "props": {
+  //     "id": "menu-item-carrinhos",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/carrinhos?_q=Carrinhos&map=ft",
+  //       "noFollow": false,
+  //       "tagTitle": "Carrinhos",
+  //       "text": "Carrinhos"
+  //     },
+  //     "blockClass": "menu-principal-subitem"
+  //   }
+  // },
+  // "menu-item#estantes": {
+  //   "props": {
+  //     "id": "menu-item-estantes",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/produtos/estantes",
+  //       "noFollow": false,
+  //       "tagTitle": "Estantes",
+  //       "text": "Estantes"
+  //     },
+  //     "blockClass": "menu-principal-subitem"
+  //   }
+  // },
+  // "menu-item#modulos": {
+  //   "props": {
+  //     "id": "menu-item-modulos",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/produtos/modulos",
+  //       "noFollow": false,
+  //       "tagTitle": "Módulos",
+  //       "text": "Módulos"
+  //     },
+  //     "blockClass": "menu-principal-subitem"
+  //   }
+  // },
+  // "menu-item#novidades": {
+  //   "props": {
+  //     "id": "menu-item-novidades",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/produtos/novidades",
+  //       "noFollow": false,
+  //       "tagTitle": "Novidades",
+  //       "text": "Novidades"
+  //     },
+  //     "blockClass": "menu-principal-subitem"
+  //   }
+  // },
+  // "menu-item#ver-tudo": {
+  //   "props": {
+  //     "id": "menu-item-ver-tudo",
+  //     "type": "custom",
+  //     "highlight": true,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/produtos",
+  //       "noFollow": false,
+  //       "tagTitle": "Ver tudo",
+  //       "text": "Ver tudo"
+  //     },
+  //     "blockClass": "menu-principal-subitem"
+  //   }
+  // }
 }
