@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#home",
+      "list-context.image-list#home-desktop",
       "responsive-layout.desktop#categorias",
       "responsive-layout.mobile#categorias",
       "__fold__",
@@ -18,33 +18,34 @@
       "header": "header"
     }
   },
-  // SLIDER HOME
-  "list-context.image-list#home": {
+  // SLIDER HOME - DESKTOP
+  "list-context.image-list#home-desktop": {
     "children": [
       "slider-layout#home"
     ],
     "props": {
-      "height": 650,
+      "height": 570,
       "images": [
         {
-          "image": "https://madumfm.com.br/wp-content/uploads/2025/08/Group-8-2.png",
-          "mobileImage": "https://madumfm.com.br/wp-content/uploads/2025/08/Banner-mobile-20OFF.png",
+          "mobileImage": "assets/Banner-mobile-20OFF.webp",
+          "image": "assets/20%-off-desktop.webp",
+
           "description": "Banner 1",
           "link": {
             "url": "/categoria-produto/madu-one"
           }
         },
         {
-          "image": "https://madumfm.com.br/wp-content/uploads/2025/08/Banner-Desktop.jpg",
-          "mobileImage": "https://madumfm.com.br/wp-content/uploads/2025/07/Banner-Mobile.png",
+          "mobileImage": "assets/Banner-Mobile.webp",
+          "image": "assets/primeira-compra-desktop.webp",
           "description": "Banner 2",
           "link": {
             "url": "/produtos"
           }
         },
         {
-          "image": "https://madumfm.com.br/wp-content/uploads/2025/07/Banner-desktop-Coffee-Time-scaled.jpg",
-          "mobileImage": "https://madumfm.com.br/wp-content/uploads/2025/07/Banner-mobile-Coffee-Time.jpg",
+          "mobileImage": "assets/Banner-mobile-Coffee-Time.webp",
+          "image": "assets/coffe-banner-desktop.webp",
           "description": "Banner 3",
           "link": {
             "url": "/produtos/carrinho-de-cafe-e-bebidas-multiuso-mad-u-one-740/"
