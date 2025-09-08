@@ -60,6 +60,11 @@
       "visibleVariations": ["Tamanho"]
     }
   },
+  "add-to-cart-button":{
+    "props": {
+      "onClickBehavior": "add-to-cart"
+    }
+  },
 
   "flex-layout.col#product-info-summary":{
     "children": [

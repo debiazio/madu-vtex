@@ -1,8 +1,17 @@
 {
   "store.custom#contato": {
     "blocks": [
+      "flex-layout.row#titulo-contato",
       "flex-layout.row#contato",
       "flex-layout.row#avaliacoes"
+    ]
+  },
+  "flex-layout.row#titulo-contato":{
+    "props": {
+      "blockClass": "content-titulo-contato"
+    },
+    "children": [
+      "rich-text#contato-titulo"
     ]
   },
   "flex-layout.row#contato": {
@@ -20,7 +29,6 @@
       "blockClass": "contato-col1"
     },
     "children": [
-      "rich-text#contato-titulo",
       "rich-text#contato-texto",
       "flex-layout.row#contato-contatos"
     ]
@@ -134,64 +142,65 @@
         "blockClass": "contato-col2"
       },
       "children": [
-        // "form#contato"
+        // "rich-text#provisoriro",
+        "form"
       ]
+    },
+    "rich-text#provisoriro":{
+      "props": {
+        "text": "Form sendo criado"
+      }
+    },
+
+
+
+
+
+
+
+
+  "form": {
+    "props": {
+      "entity": "CL",
+      "schema": "Clientes"
+    },
+    "blocks": [
+      "form-success"
+    ],
+    "children": [
+      "form-input.text#firstName",
+      "form-input.text#email",
+      // "form-input.text#telefone",
+      // "form-field-group#assunto",
+      // "form-input.textarea#mensagem",
+      "form-submit#contact"
+    ]
+  },
+  "form-success": {
+    "children": [
+      "rich-text#success-submit"
+    ]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "Obrigado por entrar em contato conosco, em breve retornaremos.",
+      "blockClass":"success-submit"
     }
-    // "rich-text#provisoriro":{
-    //   "props": {
-    //     "text": "Provisorio - Criar form"
-    //   }
-    // }
-
-
-
-
-
-
-
-
-  // "form#contato": {
-  //   "props": {
-  //     "entity": "CL",
-  //     "schema": "Customer"
-  //   },
-  //   "blocks": [
-  //     "form-success#contato"
-  //   ],
-  //   "children": [
-  //     "form-input.text#nome",
-  //     "form-input.text#email",
-  //     // "form-input.text#telefone",
-  //     // "form-field-group#assunto",
-  //     // "form-input.textarea#mensagem",
-  //     "form-submit#contact"
-  //   ]
-  // },
-  // "form-success#contato": {
-  //   "children": [
-  //     "rich-text#success-submit"
-  //   ]
-  // },
-  // "rich-text#success-submit": {
-  //   "props": {
-  //     "text": "Obrigado por entrar em contato conosco, em breve retornaremos.",
-  //     "blockClass":"success-submit"
-  //   }
-  // },
-  // "form-input.text#nome": {
-  //   "props": {
-  //     "pointer": "#/properties/Name",
-  //     "placeholder": "Coloque seu nome completo",
-  //     "label":"Nome: "
-  //   }
-  // },
-  // "form-input.text#email": {
-  //   "props": {
-  //     "pointer": "#/properties/Email",
-  //     "placeholder":"Digite seu e-mail",
-  //     "label":"E-mail: "
-  //   }
-  // },
+  },
+  "form-input.text#firstName": {
+    "props": {
+      "pointer": "#/properties/firstName",
+      "placeholder": "Coloque seu nome completo",
+      "label":"Nome: "
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder":"Digite seu e-mail",
+      "label":"E-mail: "
+    }
+  },
   // "form-input.text#telefone": {
   //   "props": {
   //     "pointer": "#/properties/phone",
@@ -213,9 +222,9 @@
   //     "placeholder":"Deixe aqui sua pergunta"
   //   }
   // },
-  // "form-submit#contact": {
-  //   "props": {
-  //     "label": "Enviar"
-  //   }
-  // }
+  "form-submit#contact": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
 }

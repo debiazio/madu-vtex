@@ -7,11 +7,7 @@
       "__fold__",
       "flex-layout.row#madu-one",
       "flex-layout.row#madu-extra",
-      "flex-layout.row#combinam",
-      "flex-layout.row#shelf-final",
-      "flex-layout.row#shelf-final-1",
-      "flex-layout.row#shelf-final-2",
-      "flex-layout.row#ver-mais-final",
+      "flex-layout.row#combinam-e-combinam",
       "flex-layout.row#banner-final"
     ],
     "parent": {
@@ -29,7 +25,6 @@
         {
           "mobileImage": "assets/Banner-mobile-20OFF.webp",
           "image": "assets/20%-off-desktop.webp",
-
           "description": "Banner 1",
           "link": {
             "url": "/categoria-produto/madu-one"
@@ -70,7 +65,7 @@
       "showNavigationArrows": "always",
       "showPaginationDots": "never",
       "autoplay": {
-        "timeout": 1400,
+        "timeout": 8000,
         "stopOnHover": true
       }
     }
@@ -427,12 +422,16 @@
       "blockClass": "link-ver-mais"
     }
   },
-  "flex-layout.row#combinam": {
+  "flex-layout.row#combinam-e-combinam": {
     "props": {
-      "blockClass": "linha-combinam"
+      "blockClass": "content-madu-cat"
     },
     "children": [
-      "image#combinam"
+      "image#combinam",
+      "flex-layout.row#shelf-final",
+      "flex-layout.row#shelf-final-1",
+      "flex-layout.row#shelf-final-2",
+      "flex-layout.row#ver-mais-final"
     ]
   },
   "image#combinam": {
@@ -468,8 +467,8 @@
       },
       "infinite": false,
       "fullWidth": false,
-      "showNavigationArrows": "never",
-      "blockClass": "shelf-prateleira-final"
+      "showNavigationArrows": "always",
+      "blockClass": "shelf"
     }
   },
   // PRATELEIRA 2
@@ -498,8 +497,8 @@
       },
       "infinite": false,
       "fullWidth": false,
-      "showNavigationArrows": "never",
-      "blockClass": "shelf-prateleira-final"
+      "showNavigationArrows": "always",
+      "blockClass": "shelf"
     }
   },
   // PRATELEIRA 2
@@ -528,8 +527,8 @@
       },
       "infinite": false,
       "fullWidth": false,
-      "showNavigationArrows": "never",
-      "blockClass": "shelf-prateleira-final"
+      "showNavigationArrows": "always",
+      "blockClass": "shelf"
     }
   },
   "flex-layout.row#ver-mais-final": {
