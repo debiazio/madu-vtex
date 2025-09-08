@@ -1,3 +1,13 @@
+.portalWrapper{
+    position: unset;
+}
+
+.portalContainer{
+  position: relative;
+      top: 0px;
+      left: 0px;
+}
+
 .flexRow--topbar .conteiner {
   margin: 0;
   padding: 0;
@@ -83,7 +93,7 @@
 
 /* BUSCA */
 .searchBarContainer {
-  margin-right: 200px;
+  /* margin-right: 200px; */
   padding: 0;
   display: flex;
   align-items: center;

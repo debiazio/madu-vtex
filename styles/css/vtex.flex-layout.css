@@ -1,7 +1,11 @@
+/* .flexCol--search-bar{
+  margin-left: 150px;
+} */
+
 .flexRow--topbar .conteiner {
   margin: 0;
   padding: 0;
-  width: 1300px;
+  width: 1200px;
 }
 
 .flexColChild--search-bar {
@@ -9,7 +13,7 @@
 }
 
 .flexRowContent--topbar {
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .flexRowContent--notification .items-stretch {
@@ -62,7 +66,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1300px;
+  width: 1200px;
 }
 
 .flexRow--topbar {

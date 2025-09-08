@@ -5,6 +5,37 @@
       "header-layout.mobile"
     ]
   },
+  // CUPOM POPUP
+  "modal-trigger#popup-cupom":{
+    "props": {
+      "trigger": "load",
+      "blockClass": "modal-layout-pupup-trigger"
+    },
+    "children":[
+      "modal-layout#cupom"
+    ]
+  },
+  "modal-layout#cupom":{
+    "props": {
+      "blockClass": "modal-layout-pupup-trigger"
+    },
+    "children": [
+      "modal-header#close-desconto",
+      "image#popup-desconto"
+    ]
+  },
+  "modal-header#close-desconto":{
+    "props": {
+      "showCloseButton": true,
+      "blockClass": "close-button-desconto"
+    }
+  },
+  "image#popup-desconto":{
+    "props": {
+      "src": "assets/POP-UP-saida-primeira-compra.webp",
+      "maxWidth": "400px"
+    }
+  },
   "header.full": {
     "blocks": [
       "header-layout.desktop",
@@ -28,6 +59,7 @@
   "header-layout.desktop": {
     "children": [
       // "slider-layout#home-banner",
+      "modal-trigger#popup-cupom", //cupom popup
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "sticky-layout#3-desktop"

@@ -46,7 +46,7 @@
 .paragraph--categorias-final {
   font-family: "Montserrat Bold";
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -.6px;
   color: #000;
 }
@@ -65,7 +65,7 @@
 }
 
 .paragraph--texto-modal {
-  text-align: justify;
+  text-align: center;
 }
 
 .container--titulo-modal {

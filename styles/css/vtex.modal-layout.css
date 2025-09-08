@@ -6,6 +6,15 @@
   max-width: 80vw;
 }
 
+.headerContainer--close-button-desconto{
+  margin-bottom: -53px;
+  border: none
+}
+
+.paper--modal-layout-pupup-trigger{
+  border: 12px solid white;
+}
+
 @media screen and (max-width: 1024px) {
   .paperNotFullScreen {
     margin: 0!important;
