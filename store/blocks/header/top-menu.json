@@ -9,6 +9,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#search-bar",
+      "flex-layout.col#botao-contatos",
       "flex-layout.col#2-desktop-col-2"
     ]
   },
@@ -38,6 +39,41 @@
       "search-bar"
     ]
   },
+  "flex-layout.col#botao-contatos":{
+    "props": {
+      "blockClass": "botao-contatos"
+    },
+    "children": [
+      "modal-trigger#popup-botoes"
+
+    ]
+  },
+  "modal-trigger#popup-botoes": {
+    "props": {
+      "trigger": "click",
+      "blockClass": "botao-contatos"
+    },
+    "children": [
+      "rich-text#botao-atendimento",
+      "modal-layout#botoes-contatos"
+    ]
+  },
+  "rich-text#botao-atendimento": {
+    "props": {
+      "text": "Atendimento MAD.U",
+      "blockClass": "botao-atendimento"
+    }
+  },
+  "modal-layout#botoes-contatos":{
+    "props": {
+      "backdrop": "clickable",
+      "blockClass": "botoes-contatos-modal"
+    },
+    "children": [
+      "modal-header#close-desconto"
+    ]
+  },
+
   "vtex.menu@2.x:menu#top-menu": {
     "props": {
       "blockClass": "topbar"

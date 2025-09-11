@@ -112,10 +112,19 @@
       "blockClass": "coluna-tel-notif"
     },
     "children": [
-      "image#telefone",
-      "rich-text#0800"
+      // "image#telefone",
+      // "rich-text#0800"
+      "link#made-for-you"
     ]
   },
+  "link#made-for-you":{
+    "props": {
+      "href": "/made-for-you",
+      "blockClass": "made-for-you-link",
+      "label": "Made For You"
+    }
+  },
+
   "flex-layout.col#whatsapp": {
     "props": {
       "blockClass": "coluna-tel-notif"
@@ -127,11 +136,12 @@
   "link#whatsapp-header": {
     "props": {
       "blockClass": "whats-header",
-      "href": "https://api.whatsapp.com/send?phone=5541999710465"
+      "href": "/perguntos-frequentes",
+      "label": "Perguntas Frequentes"
     },
     "children": [
-      "image#whatsapp",
-      "rich-text#numero-whatsapp"
+      // "image#whatsapp",
+      // "rich-text#numero-whatsapp"
     ]
   },
   "flex-layout.col#email": {
@@ -139,9 +149,17 @@
       "blockClass": "coluna-tel-notif"
     },
     "children": [
-      "image#email",
-      "rich-text#email"
+      // "image#email",
+      // "rich-text#email"
+      "link#meus-pedidos"
     ]
+  },
+  "link#meus-pedidos":{
+    "props": {
+      "blockClass": "meus-pedidos-link",
+      "href": "/account",
+      "label": "Meus pedidos"
+    }
   },
   "image#telefone": {
     "props": {

@@ -146,23 +146,11 @@
         "form"
       ]
     },
-    "rich-text#provisoriro":{
-      "props": {
-        "text": "Form sendo criado"
-      }
-    },
-
-
-
-
-
-
-
-
+// FORMULARIO
   "form": {
     "props": {
-      "entity": "CL",
-      "schema": "Clientes"
+      "entity": "PE",
+      "schema": "Form"
     },
     "blocks": [
       "form-success"
@@ -170,13 +158,16 @@
     "children": [
       "form-input.text#firstName",
       "form-input.text#email",
-      // "form-input.text#telefone",
-      // "form-field-group#assunto",
-      // "form-input.textarea#mensagem",
+      "form-input.text#telefone",
+      "form-field-group#assunto",
+      "form-input.textarea#mensagem",
       "form-submit#contact"
     ]
   },
   "form-success": {
+    "props": {
+      "blockClass": "form-success"
+    },
     "children": [
       "rich-text#success-submit"
     ]
@@ -189,39 +180,34 @@
   },
   "form-input.text#firstName": {
     "props": {
-      "pointer": "#/properties/firstName",
-      "placeholder": "Coloque seu nome completo",
-      "label":"Nome: "
+      "pointer": "#/properties/Nome",
+      "placeholder": "Seu nome completo"
     }
   },
   "form-input.text#email": {
     "props": {
-      "pointer": "#/properties/email",
-      "placeholder":"Digite seu e-mail",
-      "label":"E-mail: "
+      "pointer": "#/properties/Email",
+      "placeholder":"Seu e-mail"
     }
   },
-  // "form-input.text#telefone": {
-  //   "props": {
-  //     "pointer": "#/properties/phone",
-  //     "placeholder":"Digite seu telefone",
-  //     "label": "Telefone: "
-  //   }
-  // },
-  // "form-field-group#assunto": {
-  //   "props": {
-  //     "pointer": "#/properties/assunto",
-  //     "uiSchema":"select",
-  //     "label": "Assunto: "
-  //   }
-  // },
-  // "form-input.textarea#mensagem": {
-  //   "props": {
-  //     "pointer": "#/properties/mensagem",
-  //     "label": "Mensagem: ",
-  //     "placeholder":"Deixe aqui sua pergunta"
-  //   }
-  // },
+  "form-input.text#telefone": {
+    "props": {
+      "pointer": "#/properties/Telefone",
+      "placeholder":"(00) 999999999"
+    }
+  },
+  "form-field-group#assunto": {
+    "props": {
+      "pointer": "#/properties/Assunto",
+      "uiSchema":"select"
+    }
+  },
+  "form-input.textarea#mensagem": {
+    "props": {
+      "pointer": "#/properties/Mensagem",
+      "label": "Mensagem"
+    }
+  },
   "form-submit#contact": {
     "props": {
       "label": "Enviar"
