@@ -87,7 +87,7 @@
   "rich-text#notification-bar": {
     "props": {
       "text": "A maior linha de mobiliário técnico do Mundo!",
-      "blockClass": "texto-notification-bar"
+      "blockClass": "frase-notification-bar"
     }
   },
   "flex-layout.col#header-col2": {
@@ -102,11 +102,7 @@
       "flex-layout.col#email"
     ]
   },
-  "flex-layout.row#spacer": {
-    "props": {
-      "blockClass": "spacer-header-notification"
-    }
-  },
+
   "flex-layout.col#tel": {
     "props": {
       "blockClass": "coluna-tel-notif"

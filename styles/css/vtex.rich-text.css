@@ -3,12 +3,23 @@
   color: #3A3434;
 }
 
+.paragraph--botao-atendimento{
+  cursor: pointer;
+  user-select: none;
+}
 
 /* TOPO */
+.paragraph--frase-notification-bar {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
 .paragraph--texto-notification-bar {
   font-size: 12px;
   font-weight: 600;
-  color: #FFF;
+  color: #3A3434;
   margin: 10px 0;
 }
 
@@ -30,7 +41,7 @@
 
 .link--texto-notification-bar {
   text-decoration: none;
-  color: white !important;
+  color: #3A3434 !important;
 }
 
 /* MADU ONE  */

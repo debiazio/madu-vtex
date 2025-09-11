@@ -18,9 +18,7 @@
       "verticalAlign": "middle",
       "blockClass": "logo-desktop"
     },
-    "children": [
-      "logo#desktop"
-    ]
+    "children": ["logo#desktop"]
   },
   "logo#desktop": {
     "props": {
@@ -35,28 +33,20 @@
     "props": {
       "blockClass": "search-bar"
     },
-    "children": [
-      "search-bar"
-    ]
+    "children": ["search-bar"]
   },
-  "flex-layout.col#botao-contatos":{
+  "flex-layout.col#botao-contatos": {
     "props": {
       "blockClass": "botao-contatos"
     },
-    "children": [
-      "modal-trigger#popup-botoes"
-
-    ]
+    "children": ["modal-trigger#popup-botoes"]
   },
   "modal-trigger#popup-botoes": {
     "props": {
       "trigger": "click",
       "blockClass": "botao-contatos"
     },
-    "children": [
-      "rich-text#botao-atendimento",
-      "modal-layout#botoes-contatos"
-    ]
+    "children": ["rich-text#botao-atendimento", "modal-layout#botoes-contatos"]
   },
   "rich-text#botao-atendimento": {
     "props": {
@@ -64,14 +54,81 @@
       "blockClass": "botao-atendimento"
     }
   },
-  "modal-layout#botoes-contatos":{
+  "modal-layout#botoes-contatos": {
     "props": {
       "backdrop": "clickable",
       "blockClass": "botoes-contatos-modal"
     },
+    "children": ["modal-header#close-desconto", "flex-layout.row#modal-content"]
+  },
+  "flex-layout.row#modal-content": {
+    "props": {
+      "blockClass": "modal-content-central-atendimento",
+      "colSizing": "auto",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["rich-text#titulo-atendimento", "flex-layout.col#botoes"]
+  },
+  "rich-text#titulo-atendimento": {
+    "props": {
+      "text": "Central de Atendimento"
+    }
+  },
+  "flex-layout.col#botoes": {
+    "props": {
+      "blockClass": "coluna-botoes",
+      "colSizing": "auto",
+      "gap": "10px"
+    },
     "children": [
-      "modal-header#close-desconto"
+      "link#whatsapp",
+      "link#fale-conosco-atendimento",
+      "link#perguntas-frequentes-atendimento",
+      "flex-layout.row#linha-telefone",
+      "flex-layout.row#linha-whatsapp",
+      "flex-layout.row#linha-email"
     ]
+  },
+  "link#whatsapp": {
+    "props": {
+      "href": "https://api.whatsapp.com/send?phone=5541999710465",
+      "label": "WhatsApp",
+      "openNewTab": true,
+      "blockClass": "link-whatsapp-atendimento"
+    }
+  },
+  "link#fale-conosco-atendimento": {
+    "props": {
+      "href": "/contato",
+      "label": "Fale Conosco",
+      "blockClass": "link-fale-conosco-atendimento"
+    }
+  },
+  "link#perguntas-frequentes-atendimento": {
+    "props": {
+      "href": "/perguntas-frequentes",
+      "label": "Perguntas Frequentes",
+      "blockClass": "link-perguntas-frequentes-atendimento"
+    }
+  },
+  "flex-layout.row#linha-telefone": {
+    "props": {
+      "blockClass": "linha-telefone"
+    },
+    "children": ["rich-text#0800"]
+  },
+  "flex-layout.row#linha-whatsapp": {
+    "props": {
+      "blockClass": "linha-whatsapp"
+    },
+    "children": ["rich-text#numero-whatsapp"]
+  },
+  "flex-layout.row#linha-email": {
+    "props": {
+      "blockClass": "linha-email-atendimento"
+    },
+    "children": ["rich-text#email"]
   },
 
   "vtex.menu@2.x:menu#top-menu": {
@@ -82,21 +139,13 @@
   },
   "flex-layout.col#2-desktop-col-2": {
     "props": {
-      "blockClass": [
-        "topbar",
-        "topbar-right"
-      ],
+      "blockClass": ["topbar", "topbar-right"],
       "width": "35%"
     },
-    "children": [
-      "flex-layout.row#2-desktop-col-2-1"
-    ]
+    "children": ["flex-layout.row#2-desktop-col-2-1"]
   },
   "flex-layout.row#2-desktop-col-2-1": {
-    "children": [
-      "login",
-      "minicart.v2"
-    ],
+    "children": ["login", "minicart.v2"],
     "props": {
       "colSizing": "auto",
       "horizontalAlign": "right"
