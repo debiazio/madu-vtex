@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#home-desktop",
+      "flex-layout.row#mais-vendidos",
       "responsive-layout.desktop#categorias",
       "responsive-layout.mobile#categorias",
       "__fold__",
@@ -70,6 +71,55 @@
       }
     }
   },
+  // VITRINE - MAIS VENDIDOS
+  "flex-layout.row#mais-vendidos":{
+    "props": {
+      "blockClass": "content-madu-cat"
+    },
+    "children": [
+      "rich-text#titulo-mais-vendidos",
+      "flex-layout.row#shelf-mais-vendidos"
+    ]
+  },
+  "rich-text#titulo-mais-vendidos":{
+    "props": {
+      "text": "MAIS **VENDIDOS**",
+      "blockClass": "mais-vendidos-text"
+    }
+  },
+  "flex-layout.row#shelf-mais-vendidos":{
+    "children": [
+      "list-context.product-list#mais-vendidos"
+    ]
+  },
+  "list-context.product-list#mais-vendidos":{
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#mais-vendidos"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#mais-vendidos":{
+        "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "shelf"
+    }
+  },
+
+
+
   "responsive-layout.desktop#categorias": {
     "children": [
       "flex-layout.row#categorias"
@@ -308,25 +358,18 @@
       "blockClass": "content-madu-cat"
     },
     "children": [
-      "image#logo-madu-one",
-      "rich-text#shelf-title",
+      "rich-text#shelf-title1",
       "flex-layout.row#shelf",
       "link#shelf-ver-mais"
     ]
   },
-  "image#logo-madu-one": {
+  "rich-text#shelf-title1":{
     "props": {
-      "blockClass": "logo-madu-cat",
-      "src": "assets/madu-one-icon.webp",
-      "alt": "Logo Madu one"
+      "text": "MAD.U **One**",
+      "blockClass": "mais-vendidos-text"
     }
   },
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "É a nossa **Linha Premium**. Nela você encontrará milhares de combinações possíveis com o que há de **melhor em**\n **tecnologia e soluções de design**.",
-      "blockClass": "texto-madu-cat"
-    }
-  },
+
   "flex-layout.row#shelf": {
     "children": [
       "list-context.product-list#prateleira-home"
@@ -353,7 +396,7 @@
       "infinite": true,
       "fullWidth": false,
       "showNavigationArrows": "always",
-      "showPaginationDots": "mobileOnly",
+      "showPaginationDots": "always",
       "blockClass": "shelf"
     }
   },
@@ -368,25 +411,19 @@
       "blockClass": "content-madu-cat"
     },
     "children": [
-      "image#logo-madu-extra",
-      "rich-text#shelf-title-extra",
+
+      "rich-text#shelf-title1-extra",
       "flex-layout.row#shelf-extra",
       "link#shelf-ver-mais-extra"
     ]
   },
-  "image#logo-madu-extra": {
+  "rich-text#shelf-title1-extra":{
     "props": {
-      "src": "assets/madu-extra-icon.webp",
-      "alt": "Logo Madu Extra",
-      "blockClass": "logo-madu-cat"
+      "text": "MAD.U **Extra**",
+      "blockClass": "mais-vendidos-text"
     }
   },
-  "rich-text#shelf-title-extra": {
-    "props": {
-      "text": "Essa é a nossa linha básica. Para quem procura uma solução leve, simples e prática. **Qualidade e durabilidade numa**\n **linha extremamente competitiva.**",
-      "blockClass": "texto-madu-cat"
-    }
-  },
+
   "flex-layout.row#shelf-extra": {
     "children": [
       "list-context.product-list#prateleira-home-extra"
@@ -413,6 +450,7 @@
       "infinite": true,
       "fullWidth": false,
       "showNavigationArrows": "always",
+      "showPaginationDots": "always",
       "blockClass": "shelf"
     }
   },
@@ -427,20 +465,21 @@
       "blockClass": "content-madu-cat"
     },
     "children": [
-      "image#combinam",
+      "rich-text#combinam-text1",
       "flex-layout.row#shelf-final",
-      "flex-layout.row#shelf-final-1",
-      "flex-layout.row#shelf-final-2",
+      // "flex-layout.row#shelf-final-1",
+      // "flex-layout.row#shelf-final-2",
       "flex-layout.row#ver-mais-final"
     ]
   },
-  "image#combinam": {
+  "rich-text#combinam-text1":{
     "props": {
-      "src": "assets/madu-combinam-se-combinam.webp",
-      "alt": "Combinam e se combinam",
-      "blockClass": "se-combinam"
+      "text": "Combinam e **se combinam**",
+      "blockClass": "mais-vendidos-text"
     }
   },
+
+
   // PRATELEIRA 1
   "flex-layout.row#shelf-final": {
     "children": [
@@ -468,6 +507,7 @@
       "infinite": false,
       "fullWidth": false,
       "showNavigationArrows": "always",
+      "showPaginationDots": "always",
       "blockClass": "shelf"
     }
   },
@@ -498,6 +538,7 @@
       "infinite": false,
       "fullWidth": false,
       "showNavigationArrows": "always",
+      "showPaginationDots": "always",
       "blockClass": "shelf"
     }
   },
@@ -528,6 +569,7 @@
       "infinite": false,
       "fullWidth": false,
       "showNavigationArrows": "always",
+      "showPaginationDots": "always",
       "blockClass": "shelf"
     }
   },

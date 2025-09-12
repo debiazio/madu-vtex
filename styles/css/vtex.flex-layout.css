@@ -1,4 +1,4 @@
-.flexColChild--botao-contatos{
+.flexColChild--botao-contatos {
   display: flex;
   align-items: center;
 }
@@ -593,6 +593,11 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1300px) {
+  .flexRow--categorias-madu {
+    margin: 40px 20px 20px 20px;
+  }
+}
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {

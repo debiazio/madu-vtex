@@ -1,3 +1,20 @@
+.paragraph--mais-vendidos-text {
+  font-family: "Montserrat Bold";
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #173866;
+}
+
+.strong--mais-vendidos-text{
+  color: #5F5F5F;
+}
+.container--mais-vendidos-text {
+  display: flex;
+  justify-content: center;
+}
+
+
 .paragraph--texto-veja-mais-produtos {
   font-size: 28px;
   color: #3A3434;

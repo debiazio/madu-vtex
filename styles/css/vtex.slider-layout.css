@@ -31,8 +31,17 @@
   padding-right: 0 !important;
 }
 
+
+.paginationDot--isActive{
+  background-color: #173866;
+}
+
+
+
 .paginationDotsContainer--shelf {
-  display: none;
+  display: block;
+  bottom: -15px;
+  text-align: center;
   /* bottom:-70px;
   margin:41px 0 29px; */
 }
@@ -45,7 +54,7 @@
 }
 
 .paginationDot--shelf--isActive {
-  background: #D9D8D7;
+  background: #173866;
 }
 
 .sliderArrows--shelf {
@@ -70,7 +79,9 @@
 }
 
 .paginationDotsContainer--shelf-prateleira-final {
-  display: none;
+  display: block;
+  bottom: -15px;
+  text-align: center;
 }
 
 .sliderTrack--shelf-prateleira-final {
