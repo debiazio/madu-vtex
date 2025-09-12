@@ -3,9 +3,23 @@
   color: #3A3434;
 }
 
-.paragraph--botao-atendimento{
+.paragraph--botao-atendimento {
   cursor: pointer;
   user-select: none;
+  background-color: #153B64;
+  border: 2px solid #153B64;
+  padding: 5px 10px;
+  margin: 0;
+  color: white;
+  border-radius: 30px;
+}
+
+.paragraph--botao-atendimento:hover {
+  cursor: pointer;
+  user-select: none;
+  background-color: white;
+  color: #153B64;
+  border: 2px solid #153B64;
 }
 
 /* TOPO */
@@ -13,14 +27,14 @@
   color: white;
   font-size: 12px;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .paragraph--texto-notification-bar {
   font-size: 12px;
   font-weight: 600;
   color: #3A3434;
-  margin: 10px 0;
+  margin: 5px;
 }
 
 .container--shelfTitle {

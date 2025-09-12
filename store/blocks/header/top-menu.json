@@ -18,7 +18,9 @@
       "verticalAlign": "middle",
       "blockClass": "logo-desktop"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo#desktop"
+    ]
   },
   "logo#desktop": {
     "props": {
@@ -33,20 +35,27 @@
     "props": {
       "blockClass": "search-bar"
     },
-    "children": ["search-bar"]
+    "children": [
+      "search-bar"
+    ]
   },
   "flex-layout.col#botao-contatos": {
     "props": {
       "blockClass": "botao-contatos"
     },
-    "children": ["modal-trigger#popup-botoes"]
+    "children": [
+      "modal-trigger#popup-botoes"
+    ]
   },
   "modal-trigger#popup-botoes": {
     "props": {
       "trigger": "click",
       "blockClass": "botao-contatos"
     },
-    "children": ["rich-text#botao-atendimento", "modal-layout#botoes-contatos"]
+    "children": [
+      "rich-text#botao-atendimento",
+      "modal-layout#botoes-contatos"
+    ]
   },
   "rich-text#botao-atendimento": {
     "props": {
@@ -59,7 +68,10 @@
       "backdrop": "clickable",
       "blockClass": "botoes-contatos-modal"
     },
-    "children": ["modal-header#close-desconto", "flex-layout.row#modal-content"]
+    "children": [
+      "modal-header#close-desconto",
+      "flex-layout.row#modal-content"
+    ]
   },
   "flex-layout.row#modal-content": {
     "props": {
@@ -68,7 +80,10 @@
       "fullWidth": true,
       "preventHorizontalStretch": true
     },
-    "children": ["rich-text#titulo-atendimento", "flex-layout.col#botoes"]
+    "children": [
+      "rich-text#titulo-atendimento",
+      "flex-layout.col#botoes"
+    ]
   },
   "rich-text#titulo-atendimento": {
     "props": {
@@ -85,8 +100,17 @@
       "link#whatsapp",
       "link#fale-conosco-atendimento",
       "link#perguntas-frequentes-atendimento",
-      "flex-layout.row#linha-telefone",
+      "flex-layout.col#linhas-contatos"
+    ]
+  },
+  "flex-layout.col#linhas-contatos": {
+    "props": {
+      "blockClass": "linha-contatos-atendimento",
+      "colSizing": "auto"
+    },
+    "children": [
       "flex-layout.row#linha-whatsapp",
+      "flex-layout.row#linha-telefone",
       "flex-layout.row#linha-email"
     ]
   },
@@ -114,23 +138,55 @@
   },
   "flex-layout.row#linha-telefone": {
     "props": {
-      "blockClass": "linha-telefone"
+      "blockClass": "linha-telefone",
+      "preventHorizontalStretch": true
     },
-    "children": ["rich-text#0800"]
+    "children": [
+      "image#telefone-atendimento",
+      "rich-text#0800"
+    ]
+  },
+  "image#telefone-atendimento": {
+    "props": {
+      "src": "assets/telephone-call.png",
+      "maxWidth": "35px",
+      "maxHeight": "20px"
+    }
   },
   "flex-layout.row#linha-whatsapp": {
     "props": {
-      "blockClass": "linha-whatsapp"
+      "blockClass": "linha-whatsapp",
+      "preventHorizontalStretch": true
     },
-    "children": ["rich-text#numero-whatsapp"]
+    "children": [
+      "image#whatsapp-image-popup",
+      "rich-text#numero-whatsapp"
+    ]
+  },
+  "image#whatsapp-image-popup": {
+    "props": {
+      "src": "assets/whatsapp-black.png",
+      "maxWidth": "35px",
+      "maxHeight": "20px"
+    }
   },
   "flex-layout.row#linha-email": {
     "props": {
-      "blockClass": "linha-email-atendimento"
+      "blockClass": "linha-email-atendimento",
+      "preventHorizontalStretch": true
     },
-    "children": ["rich-text#email"]
+    "children": [
+      "image#email-atendimento",
+      "rich-text#email"
+    ]
   },
-
+  "image#email-atendimento": {
+    "props": {
+      "src": "assets/mail_black.png",
+      "maxWidth": "35px",
+      "maxHeight": "20px"
+    }
+  },
   "vtex.menu@2.x:menu#top-menu": {
     "props": {
       "blockClass": "topbar"
@@ -139,13 +195,21 @@
   },
   "flex-layout.col#2-desktop-col-2": {
     "props": {
-      "blockClass": ["topbar", "topbar-right"],
+      "blockClass": [
+        "topbar",
+        "topbar-right"
+      ],
       "width": "35%"
     },
-    "children": ["flex-layout.row#2-desktop-col-2-1"]
+    "children": [
+      "flex-layout.row#2-desktop-col-2-1"
+    ]
   },
   "flex-layout.row#2-desktop-col-2-1": {
-    "children": ["login", "minicart.v2"],
+    "children": [
+      "login",
+      "minicart.v2"
+    ],
     "props": {
       "colSizing": "auto",
       "horizontalAlign": "right"

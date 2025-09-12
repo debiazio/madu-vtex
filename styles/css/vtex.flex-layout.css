@@ -1,13 +1,33 @@
-.flexRow--modal-content-central-atendimento{
+.flexColChild--botao-contatos{
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--linha-whatsapp,
+.flexRowContent--linha-telefone,
+.flexRowContent--linha-email-atendimento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexCol--linha-contatos-atendimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.flexRow--modal-content-central-atendimento {
   padding: 20px 60px;
 }
 
-.flexColChild--coluna-botoes{
+.flexColChild--coluna-botoes {
   width: 100%;
   display: contents;
 }
 
-.flexCol--coluna-botoes{
+.flexCol--coluna-botoes {
   display: flex;
   flex-direction: column;
   align-items: center;
