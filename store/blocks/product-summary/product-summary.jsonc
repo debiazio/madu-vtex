@@ -21,7 +21,7 @@
   },
   "product-summary-image#shelf": {
     "props": {
-      "showBadge": true,
+      "showBadge": false,
       "maxHeight": 400,
       "width":{
         "desktop":"300",
