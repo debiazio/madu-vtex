@@ -56,13 +56,34 @@
       "sticky-layout#3-desktop"
     ]
   },
+
+
+
   "header-layout.desktop": {
     "children": [
       // "slider-layout#home-banner",
       "modal-trigger#popup-cupom", //cupom popup
+      "flex-layout.row#linha-cupom-top",
       "sticky-layout#3-desktop"
     ]
   },
+  // LINHA DO CUPOM
+  "flex-layout.row#linha-cupom-top":{
+    "props": {
+      "fullWidth": true,
+      "blockClass": "linha-cupom-top"
+    },
+    "children": [
+      "rich-text#frase-cupom-top"
+    ]
+  },
+  "rich-text#frase-cupom-top":{
+    "props": {
+      "text": "10% OFF! Utilize o cupom **PRIMEIRACOMPRA**",
+      "blockClass": "frase-cupom-top"
+    }
+  },
+  
   "flex-layout.row#1-desktop": {
     "children": [
       "flex-layout.col#header-col1",
