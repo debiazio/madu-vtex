@@ -1,8 +1,15 @@
-.flexCol--botao-contatos .stretchChildrenWidth {
-  width: 100%!important
+.flexRow--conteiner-botao-atendimento-whatsapp {
+  position: fixed;
+  z-index: 9999;
+  bottom: 20px;
+  right: 20px;
 }
 
-.flexCol--botao-contatos{
+.flexCol--botao-contatos .stretchChildrenWidth {
+  width: 100% !important
+}
+
+.flexCol--botao-contatos {
   display: flex;
   align-items: center;
 }
