@@ -7,10 +7,39 @@
   },
   "footer-layout.desktop": {
     "children": [
+      "flex-layout.row#botao-atendimento-whatsapp",
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
+  },
+  // BOTAO WHATSAPP FLUTUANTE
+  "flex-layout.row#botao-atendimento-whatsapp":{
+    "props": {
+      "blockClass": "conteiner-botao-atendimento-whatsapp"
+    },
+    "children": [
+      "link#botao-atendimento-whatsapp"
+    ]
+  },
+  "link#botao-atendimento-whatsapp": {
+    "props": {
+      "blockClass": "link-botao-atendimento-whatsapp",
+      "href": "https://api.whatsapp.com/send?phone=5541996878783&text=Ol%C3%A1%2C%20estou%20vindo%20do%20site%20da%20MAD.U!",
+      "label": "Atendimento",
+      "target": "_blank"
+    },
+    "children": [
+      "image#atendimento-whatsapp"
+    ]
+  },
+  "image#atendimento-whatsapp":{
+    "props": {
+      "src": "assets/whatsapp.svg",
+      "alt": "Atendimento WhatsApp",
+      "blockClass": "imagem-atendimento-whatsapp",
+      "maxWidth": "15px"
+    }
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
