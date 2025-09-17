@@ -38,6 +38,11 @@ input:-webkit-autofill {
   -webkit-transition-delay: 9999s;
 }
 
+  input[type="text"],
+  input[type="email"] {
+    background-color: #F7F7F7;
+  }
+
 
 /* ajusta bug de zoom nos inputs do iphone */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {

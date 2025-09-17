@@ -59,7 +59,7 @@
 }
 
 .imageElement--icone-notification {
-  width: 1.5em;
+  width: 1.2em;
   padding: 1.5px;
 }
 
@@ -707,6 +707,8 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+
+
   .shippingContainer :global(.vtex-button) {
     width: auto;
   }
@@ -731,6 +733,7 @@
 
   .imageElement--imagem-banner-avaliacoes {
     width: 100%;
+    margin: 0;
   }
 
   .discountInsideContainer {

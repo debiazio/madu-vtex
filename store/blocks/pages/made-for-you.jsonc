@@ -53,7 +53,7 @@
       "blockClass": "link-ver-mais"
     }
   },
-  // LINHA AVALIACOES 
+  // LINHA AVALIACOES
   "flex-layout.row#avaliacoes": {
     "props": {
       "blockClass": "content-avaliacoes"
@@ -107,7 +107,7 @@
         "phone": 1
       },
       "autoplay": {
-        "timeout": 900,
+        "timeout": 9000,
         "stopOnHover": true
       }
     }

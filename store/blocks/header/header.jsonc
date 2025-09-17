@@ -83,7 +83,7 @@
       "blockClass": "frase-cupom-top"
     }
   },
-  
+
   "flex-layout.row#1-desktop": {
     "children": [
       "flex-layout.col#header-col1",
@@ -129,9 +129,9 @@
       "blockClass": "coluna-tel-notif"
     },
     "children": [
-      // "image#telefone",
-      // "rich-text#0800"
-      "link#made-for-you"
+      "image#telefone",
+      "rich-text#0800"
+      // "link#made-for-you"
     ]
   },
   "link#made-for-you":{
@@ -147,36 +147,19 @@
       "blockClass": "coluna-tel-notif"
     },
     "children": [
-      "link#whatsapp-header"
+            "image#whatsapp",
+      "rich-text#numero-whatsapp"
     ]
   },
-  "link#whatsapp-header": {
-    "props": {
-      "blockClass": "whats-header",
-      "href": "/perguntos-frequentes",
-      "label": "Perguntas Frequentes"
-    },
-    "children": [
-      // "image#whatsapp",
-      // "rich-text#numero-whatsapp"
-    ]
-  },
+
   "flex-layout.col#email": {
     "props": {
       "blockClass": "coluna-tel-notif"
     },
     "children": [
-      // "image#email",
-      // "rich-text#email"
-      "link#meus-pedidos"
+      "image#email",
+      "rich-text#email"
     ]
-  },
-  "link#meus-pedidos":{
-    "props": {
-      "blockClass": "meus-pedidos-link",
-      "href": "/account",
-      "label": "Meus pedidos"
-    }
   },
   "image#telefone": {
     "props": {
@@ -220,11 +203,7 @@
       "blockClass": "texto-notification-bar"
     }
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
+
   "sticky-layout#3-desktop": {
     "props": {
       "blockClass": "sticky-header"

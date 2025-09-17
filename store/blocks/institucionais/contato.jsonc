@@ -1,19 +1,11 @@
 {
   "store.custom#contato": {
     "blocks": [
-      "flex-layout.row#titulo-contato",
       "flex-layout.row#contato",
       "flex-layout.row#avaliacoes"
     ]
   },
-  "flex-layout.row#titulo-contato":{
-    "props": {
-      "blockClass": "content-titulo-contato"
-    },
-    "children": [
-      "rich-text#contato-titulo"
-    ]
-  },
+
   "flex-layout.row#contato": {
     "props": {
       "blockClass": "colunas-contato"
@@ -29,6 +21,7 @@
       "blockClass": "contato-col1"
     },
     "children": [
+      "rich-text#contato-titulo",
       "rich-text#contato-texto",
       "flex-layout.row#contato-contatos"
     ]
@@ -64,7 +57,7 @@
     },
     "children": [
       "image#email-contato-icone",
-      "rich-text#email-contato"
+      "rich-text#email-contatos"
     ]
   },
   "image#email-contato-icone": {
@@ -74,10 +67,10 @@
       "blockClass": "icone-contato"
     }
   },
-  "rich-text#email-contato": {
+  "rich-text#email-contatos": {
     "props": {
-      "text": "comercial@madumfm.com.br",
-      "blockClass": "whatsapp-text"
+      "blockClass": "link-contato",
+      "text": "comercial@madumfm.com.br"
     }
   },
   // linha de whatsapp
@@ -109,8 +102,8 @@
   },
   "rich-text#whatsapp-contato-numero":{
     "props": {
-      "text": "(41) 99971-0465",
-      "blockClass": "whatsapp-text"
+      "text": "+55 (41) 99971-0465",
+      "blockClass": "whatsapp-text-contato"
     }
   },
   // linha de telefone
@@ -133,7 +126,7 @@
   "rich-text#telefone-contato":{
     "props": {
       "text": "0800 721 8533",
-      "blockClass": "whatsapp-text"
+      "blockClass": "whatsapp-text-contato"
     }
   },
     // COLUNA 2 - CONTATO
@@ -181,19 +174,19 @@
   "form-input.text#firstName": {
     "props": {
       "pointer": "#/properties/Nome",
-      "placeholder": "Seu nome completo"
+      "placeholder": "Nome"
     }
   },
   "form-input.text#email": {
     "props": {
       "pointer": "#/properties/Email",
-      "placeholder":"Seu e-mail"
+      "placeholder":"E-mail"
     }
   },
   "form-input.text#telefone": {
     "props": {
       "pointer": "#/properties/Telefone",
-      "placeholder":"(00) 999999999"
+      "placeholder":"Telefone"
     }
   },
   "form-field-group#assunto": {
@@ -205,7 +198,7 @@
   "form-input.textarea#mensagem": {
     "props": {
       "pointer": "#/properties/Mensagem",
-      "label": "Mensagem"
+      "placeholder": "Mensagem"
     }
   },
   "form-submit#contact": {

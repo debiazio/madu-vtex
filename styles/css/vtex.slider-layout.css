@@ -1,20 +1,21 @@
 /* HOME */
 /* BANNER */
 
-.sliderTrack--slider-home-desktop{
+.sliderTrack--slider-home-desktop {
   gap: 1px;
 }
 
-.sliderLeftArrow--slider-shopByCategorias{
+.sliderLeftArrow--slider-shopByCategorias {
   margin-left: 20px;
 }
-.sliderRightArrow--slider-shopByCategorias{
+
+.sliderRightArrow--slider-shopByCategorias {
   margin-right: 20px;
 }
 
 .paginationDot--slider-shopByCategorias {
-  height: 0.325rem!important;
-  width: 0.325rem!important;
+  height: 0.325rem !important;
+  width: 0.325rem !important;
 }
 
 .sliderTrackContainer--slider-shopByCategorias {
@@ -179,6 +180,10 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .sliderRightArrow--slider-avaliacoes {
+    margin-right: -20px;
+  }
+
   .sliderTrack--slider-avaliacoes {
     gap: 30px;
     padding: 20px 20px;

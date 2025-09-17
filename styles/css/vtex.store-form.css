@@ -1,3 +1,11 @@
+.formSubmitButton :global(.vtex-button){
+  width: 100%;
+  background-color: #000;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
 .formSubmitButton{
   display: flex;
   justify-content: center;
