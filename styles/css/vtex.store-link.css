@@ -1,4 +1,18 @@
-.link--link-botao-atendimento-whatsapp{
+.link--btn-shopby-verProdutos{
+  text-decoration: none;
+}
+
+.label--btn-shopby-verProdutos {
+  font-weight: 500;
+  background-color: #173866;
+  border-radius: 30px 30px 30px 30px;
+
+  color: #FFF;
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.link--link-botao-atendimento-whatsapp {
   text-decoration: none;
   display: flex;
   flex-direction: row-reverse;

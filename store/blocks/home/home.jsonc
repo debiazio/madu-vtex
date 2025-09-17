@@ -1,8 +1,8 @@
 {
   "store.home": {
     "blocks": [
-      "flex-layout.row#botao-atendimento-whatsapp",
       "list-context.image-list#home-desktop",
+      "flex-layout.row#shop-by-category",
       "flex-layout.row#mais-vendidos",
       "responsive-layout.desktop#categorias",
       "responsive-layout.mobile#categorias",
@@ -16,7 +16,6 @@
       "header": "header"
     }
   },
-
   // SLIDER HOME - DESKTOP
   "list-context.image-list#home-desktop": {
     "children": [
@@ -73,8 +72,9 @@
       }
     }
   },
+
   // VITRINE - MAIS VENDIDOS
-  "flex-layout.row#mais-vendidos":{
+  "flex-layout.row#mais-vendidos": {
     "props": {
       "blockClass": "content-madu-cat"
     },
@@ -83,18 +83,18 @@
       "flex-layout.row#shelf-mais-vendidos"
     ]
   },
-  "rich-text#titulo-mais-vendidos":{
+  "rich-text#titulo-mais-vendidos": {
     "props": {
       "text": "MAIS **VENDIDOS**",
       "blockClass": "mais-vendidos-text"
     }
   },
-  "flex-layout.row#shelf-mais-vendidos":{
+  "flex-layout.row#shelf-mais-vendidos": {
     "children": [
       "list-context.product-list#mais-vendidos"
     ]
   },
-  "list-context.product-list#mais-vendidos":{
+  "list-context.product-list#mais-vendidos": {
     "blocks": [
       "product-summary.shelf"
     ],
@@ -105,8 +105,8 @@
       "orderBy": "OrderByTopSaleDESC"
     }
   },
-  "slider-layout#mais-vendidos":{
-        "props": {
+  "slider-layout#mais-vendidos": {
+    "props": {
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 2,
@@ -119,9 +119,6 @@
       "blockClass": "shelf"
     }
   },
-
-
-
   "responsive-layout.desktop#categorias": {
     "children": [
       "flex-layout.row#categorias"
@@ -365,13 +362,12 @@
       "link#shelf-ver-mais"
     ]
   },
-  "rich-text#shelf-title1":{
+  "rich-text#shelf-title1": {
     "props": {
       "text": "MAD.U **One**",
       "blockClass": "mais-vendidos-text"
     }
   },
-
   "flex-layout.row#shelf": {
     "children": [
       "list-context.product-list#prateleira-home"
@@ -413,19 +409,17 @@
       "blockClass": "content-madu-cat"
     },
     "children": [
-
       "rich-text#shelf-title1-extra",
       "flex-layout.row#shelf-extra",
       "link#shelf-ver-mais-extra"
     ]
   },
-  "rich-text#shelf-title1-extra":{
+  "rich-text#shelf-title1-extra": {
     "props": {
       "text": "MAD.U **Extra**",
       "blockClass": "mais-vendidos-text"
     }
   },
-
   "flex-layout.row#shelf-extra": {
     "children": [
       "list-context.product-list#prateleira-home-extra"
@@ -474,14 +468,12 @@
       "flex-layout.row#ver-mais-final"
     ]
   },
-  "rich-text#combinam-text1":{
+  "rich-text#combinam-text1": {
     "props": {
       "text": "Combinam e **se combinam**",
       "blockClass": "mais-vendidos-text"
     }
   },
-
-
   // PRATELEIRA 1
   "flex-layout.row#shelf-final": {
     "children": [
