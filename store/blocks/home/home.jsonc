@@ -3,13 +3,13 @@
     "blocks": [
       "list-context.image-list#home-desktop",
       "flex-layout.row#shop-by-category",
-      "flex-layout.row#mais-vendidos",
-      "responsive-layout.desktop#categorias",
-      "responsive-layout.mobile#categorias",
+      // "flex-layout.row#mais-vendidos",
+      // "responsive-layout.desktop#categorias",
+      // "responsive-layout.mobile#categorias",
       "__fold__",
       "flex-layout.row#madu-one",
       "flex-layout.row#madu-extra",
-      "flex-layout.row#combinam-e-combinam",
+      // "flex-layout.row#combinam-e-combinam",
       "flex-layout.row#banner-final"
     ],
     "parent": {
