@@ -66,6 +66,8 @@ input:-webkit-autofill {
   flex-direction: row-reverse;
 } */
 
+
+
 :global(.vtex-account)>div {
   max-width: 1300px;
   padding-left: 0;

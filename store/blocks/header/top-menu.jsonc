@@ -215,15 +215,14 @@
       "minicart.v2"
     ],
     "props": {
-      "colSizing": "auto",
-      "horizontalAlign": "right"
+      "blockClass": "topbar-right",
+      "preventHorizontalStretch": true
     }
   },
   "login": {
     "props": {
-      "iconLabel": "Minha Conta",
+      "hideIconLabel": true,
       "showIconProfile": true,
-      "labelClasses": "login-label",
       "optionsTitle": "Acesse sua conta",
       "emailAndPasswordTitle": "Login",
       "accessCodeTitle": "Receba sua chave por e-mail",

@@ -1,3 +1,9 @@
+
+.flexRowContent--topbar-right{
+  display: flex;
+  justify-content: flex-end
+}
+
 .flexRow--content-avaliacoes{
   background-color: #F7F7F7;
 }

@@ -1,41 +1,61 @@
-.label{
-    color:#4F4242;
-    font-size:12px;
-    text-transform: none;
-    padding-left:1px;
-    display:block;
-    margin-top:3px;
+.label {
+  color: #4F4242;
+  font-size: 12px;
+  text-transform: none;
+  padding-left: 1px;
+  display: block;
+  margin-top: 3px;
 }
-:global(.vtex-flex-layout-0-x-flexColChild--topbar) .profileIcon{
-    width:19px;
-    height:19px;
-    overflow:visible;
+
+:global(.vtex-flex-layout-0-x-flexColChild--topbar) .profileIcon {
+  width: 1px;
+  height: 1px;
+  overflow: visible;
 }
 
 
-.container{
-    margin-right:37px;
+.container {
+  margin-right: 37px;
 }
-.container :global(.vtex-button){
-    border:0;
-    min-height: auto;
+
+.container :global(.vtex-button)::before {
+  content: "Minha conta";
+  text-transform: capitalize;
+  margin-right: 18px;
+  font-weight: 900;
 }
-.container :global(.vtex-button__label){
-    padding:0 !important;
+
+.container :global(.vtex-button) {
+  border: 0;
+  min-height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.container :global(.vtex-button__label) {
+  padding: 0 !important;
+  margin-top: -10px;
 }
 
 
 /* MOBILE */
-@media screen and (max-width: 1024px){
-    .container{
-        margin-right:31px;
-    }
-    .label{
-        display:none;
-    }
-    .container .profileIcon{
-        width:19px;
-        height:19px;
-        overflow:visible;
-    }
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-right: 31px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .container .profileIcon {
+    width: 0.1rem;
+    height: 0.05rem;
+    overflow: visible;
+    margin-top: -1px;
+  }
+
+  .container :global(.vtex-button)::before {
+    display: none;
+  }
 }
