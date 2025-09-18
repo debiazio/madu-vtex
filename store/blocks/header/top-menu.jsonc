@@ -203,11 +203,15 @@
     },
     "children": [
       "flex-layout.row#2-desktop-col-2-1"
+
     ]
   },
+
+  // COLUNA DO LOGIN
   "flex-layout.row#2-desktop-col-2-1": {
     "children": [
       "login",
+      "minicart-summary#header",
       "minicart.v2"
     ],
     "props": {
@@ -219,6 +223,7 @@
     "props": {
       "iconLabel": "Minha Conta",
       "showIconProfile": true,
+      "labelClasses": "login-label",
       "optionsTitle": "Acesse sua conta",
       "emailAndPasswordTitle": "Login",
       "accessCodeTitle": "Receba sua chave por e-mail",
@@ -228,5 +233,34 @@
       "showPasswordVerificationIntoTooltip": true,
       "blockClass": "minha-conta"
     }
-  }
+  },
+    // componente do carrinho
+    "minicart-summary#header":{
+      "blocks": [
+        "checkout-summary.compact#header"
+      ]
+    },
+    "checkout-summary.compact#header":{
+      "children": [
+        "summary-totalizers#header"
+      ],
+      "props": {
+        "blockClass": "minicart-summary-header",
+        "showTotalizers": true,
+        "showItems": true,
+        "showEmptyMessage": false,
+        "summaryText": "Meu Carrinho",
+        "emptyMessage": "Seu carrinho está vazio",
+        "iconColor": "#000000",
+        "iconSize": 24,
+        "side": "right"
+      }
+    },
+    "summary-totalizers#header":{
+      "props": {
+        "showTotal": false,
+        "showDeliveryTotal": false,
+        "showOriginalTotal": false
+      }
+    }
 }

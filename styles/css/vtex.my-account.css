@@ -54,11 +54,17 @@ input:-webkit-autofill {
 }
 
 
-/* MINHA CONTA */
-.container :global(.vtex-button__label) {
+/* .container :global(.vtex-button__label) span{
   display: flex;
   flex-direction: row-reverse;
 }
+
+
+/* MINHA CONTA */
+/* .container :global(.vtex-button__label) {
+  display: flex;
+  flex-direction: row-reverse;
+} */
 
 :global(.vtex-account)>div {
   max-width: 1300px;
