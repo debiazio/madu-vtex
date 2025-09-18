@@ -39,14 +39,6 @@
       "search-bar"
     ]
   },
-  "flex-layout.col#botao-contatos": {
-    "props": {
-      "blockClass": "botao-contatos"
-    },
-    "children": [
-      "modal-trigger#popup-botoes"
-    ]
-  },
   "modal-trigger#popup-botoes": {
     "props": {
       "trigger": "click",

@@ -134,13 +134,7 @@
       // "link#made-for-you"
     ]
   },
-  "link#made-for-you":{
-    "props": {
-      "href": "/made-for-you",
-      "blockClass": "made-for-you-link",
-      "label": "Made For You"
-    }
-  },
+
 
   "flex-layout.col#whatsapp": {
     "props": {
@@ -288,6 +282,7 @@
   "flex-layout.row#3-mobile": {
     "children": [
       "login",
+      "minicart-summary#header",
       "minicart.v2",
       "drawer"
     ],

@@ -1,17 +1,23 @@
+.imageElement--banner-search {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #EAEAEA;
+  border-radius: 10px 10px 10px 10px;
+}
 
 
-.imageElement--imagem-atendimento-whatsapp{
+.imageElement--imagem-atendimento-whatsapp {
   padding: 0 5px;
 }
 
-.portalWrapper{
-    position: unset;
+.portalWrapper {
+  position: unset;
 }
 
-.portalContainer{
+.portalContainer {
   position: relative;
-      top: 0px;
-      left: 0px;
+  top: 0px;
+  left: 0px;
 }
 
 .flexRow--topbar .conteiner {
@@ -40,7 +46,8 @@
 }
 
 
-.container{
+.container {
+  padding-top: 0;
   max-width: 1300px;
 }
 

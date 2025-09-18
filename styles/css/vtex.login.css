@@ -49,13 +49,10 @@
   }
 
   .container .profileIcon {
-    width: 0.1rem;
+    width: 0.5rem;
     height: 0.05rem;
     overflow: visible;
-    margin-top: -1px;
+    margin-top: 4px;
   }
 
-  .container :global(.vtex-button)::before {
-    display: none;
-  }
 }

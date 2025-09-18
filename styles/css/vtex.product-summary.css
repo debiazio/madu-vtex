@@ -1,3 +1,7 @@
+.containerNormal{
+  margin: 0;
+}
+
 .buyButton :global(.vtex-button){
   background-color: #00b280;
   border: none;
