@@ -1,6 +1,19 @@
+.heading--texto-modal-modal {
+  font-size: 41px;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 10px 0;
+}
+
+.strong--texto-modal-modal {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-block-end: 1rem;
+  margin-block-start: .5rem;
+}
+
 .container--texto-modal-modal {
-  padding: 20px 20px 20px 20px;
-  width: 80%;
+  padding: 20px 50px 20px 20px;
   text-align: justify;
 }
 

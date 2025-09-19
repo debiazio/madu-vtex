@@ -756,7 +756,7 @@
   "flex-layout.col#coluna-inovacao": {
     "props": {
       "blockClass": "coluna-modal",
-      "width": "68%"
+      "width": "58%"
     },
     "children": [
       "rich-text#modal-inovacao"
@@ -765,7 +765,7 @@
   "rich-text#modal-inovacao": {
     "props": {
       "blockClass": "texto-modal-modal",
-      "text": "##Inovação## **Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!**\n\nA maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São **milhares** de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e **múltiplas utilizações** de acordo com a necessidade de cada cliente.\n\nA MAD.U inova nos mínimos detalhes. **Como num jogo de blocos de montar** os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para **novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.**"
+      "text": "## Inovação ##\n**Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!**\n\nA maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São **milhares** de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e **múltiplas utilizações** de acordo com a necessidade de cada cliente.\n\nA MAD.U inova nos mínimos detalhes. **Como num jogo de blocos de montar** os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para **novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.**"
     }
   },
   // MODAL QUALIDADE
@@ -805,13 +805,23 @@
       "preventHorizontalStretch": true
     },
     "children": [
-      "image#qualidade-modal",
+      "flex-layout.col#coluna-imagem-qualidade",
       "flex-layout.col#coluna-qualidade"
+    ]
+  },
+  "flex-layout.col#coluna-imagem-qualidade": {
+    "props": {
+      "blockClass": "modal-inovacao-coluna-imagem",
+      "width": "42%"
+    },
+    "children": [
+      "image#qualidade-modal"
     ]
   },
   "flex-layout.col#coluna-qualidade": {
     "props": {
-      "blockClass": "coluna-modal"
+      "blockClass": "coluna-modal",
+      "width": "58%"
     },
     "children": [
       "rich-text#modal-qualidade"
@@ -861,13 +871,23 @@
       "preventHorizontalStretch": true
     },
     "children": [
-      "image#tecnologia-modal",
+      "flex-layout.col#coluna-tecnologia-imagem",
       "flex-layout.col#coluna-tecnologia"
+    ]
+  },
+  "flex-layout.col#coluna-tecnologia-imagem": {
+    "props": {
+      "blockClass": "modal-inovacao-coluna-imagem",
+      "width": "42%"
+    },
+    "children": [
+      "image#tecnologia-modal"
     ]
   },
   "flex-layout.col#coluna-tecnologia": {
     "props": {
-      "blockClass": "coluna-modal"
+      "blockClass": "coluna-modal",
+      "width": "58%"
     },
     "children": [
       "rich-text#modal-tecnologia"

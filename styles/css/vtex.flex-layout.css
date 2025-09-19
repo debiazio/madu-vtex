@@ -1,4 +1,10 @@
-.flexRowContent--texto-atencao{
+.flexColChild--modal-inovacao-coluna-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRowContent--texto-atencao {
   width: fit-content;
 }
 
@@ -694,9 +700,9 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
-  .flexRowContent--texto-atencao{
-  margin: 10px;
-}
+  .flexRowContent--texto-atencao {
+    margin: 10px;
+  }
 
   .flexRowContent--banner-pesquisa {
     display: flex;

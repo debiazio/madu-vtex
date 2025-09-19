@@ -1,3 +1,8 @@
+.backdrop--modal-layout-content{
+      background-color: rgba(0, 0, 0, 0.877);
+      opacity: 0.8;
+}
+
 .container--modal-layout-content {
   display: flex;
   align-items: center;
@@ -27,7 +32,8 @@
 }
 
 .paperNotFullScreen {
-  max-width: 80vw;
+  max-width: 1000px;
+  border-radius: 10px;
 }
 
 .headerContainer--close-button-desconto {
