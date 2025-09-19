@@ -1,3 +1,14 @@
+.container--texto-modal-modal {
+  padding: 20px 20px 20px 20px;
+  width: 80%;
+  text-align: justify;
+}
+
+.paragraph--label-cep {
+  font-weight: 700;
+  margin: 20px 0 0;
+}
+
 .wrapper--subtitulo-shopBy {
   height: 120px;
   text-align: center;
@@ -201,21 +212,21 @@
   margin: 0;
 }
 
-.link--link-contato{
+.link--link-contato {
   color: #000;
 }
 
-.paragraph--contato-texto{
+.paragraph--contato-texto {
   font-weight: 500;
   color: #000;
 }
 
-.strong--contato-texto{
+.strong--contato-texto {
   font-weight: 900;
 }
 
 .paragraph--whatsapp-text-contato,
-.paragraph--link-contato{
+.paragraph--link-contato {
   white-space: nowrap;
   margin: 5px;
   font-weight: 600;

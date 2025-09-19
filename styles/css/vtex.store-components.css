@@ -1,3 +1,47 @@
+.shippingTableRow:hover {
+  background-color: #EEE;
+
+}
+
+.shippingTableRow {
+  min-height: 100%;
+}
+
+.shippingTableCellDeliveryEstimate {
+  height: inherit !important;
+}
+
+.shippingTableLabel,
+.shippingTableCellDeliveryEstimate,
+.currencyContainer {
+  font-size: .9em;
+  font-weight: 700;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.shippingTable {
+  border-collapse: collapse;
+}
+
+.shippingTableCellDeliveryEstimate {
+  border-bottom: .1em solid #e0e0e0;
+  line-height: 1.5;
+  padding: 15px;
+}
+
+.shippingTableCellDeliveryEstimate:last-child {
+  border-bottom: none !important;
+}
+
+.shippingTableCellDeliveryName,
+.shippingTableCellDeliveryPrice {
+  border: .1em solid #e0e0e0;
+  line-height: 1.5;
+  padding: 15px;
+}
+
 .imageElement--banner-search {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -8,6 +52,7 @@
 
 .imageElement--imagem-atendimento-whatsapp {
   padding: 0 5px;
+  padding-top: 4px;
 }
 
 .portalWrapper {
@@ -93,8 +138,7 @@
 
 /* CATEGORIA IMAGENS MODAL */
 .imageElement--imagem-categorias-modal {
-  width: 70%;
-  padding: 0 0 50px 50px;
+  padding: 10px;
 }
 
 /* INSTITUCIONAIS */
@@ -402,6 +446,21 @@
   gap: 10px;
 }
 
+.shippingContainer :global(.vtex-input__suffix ) {
+  display: none;
+}
+
+.shippingContainer :global(.vtex-button__label) {
+  font-size: 0;
+}
+
+.shippingContainer :global(.vtex-button__label)::before {
+  content: "Consultar";
+  color: black;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
 /* .shippingContainer {
   position: relative;
   margin-top: 27px;
@@ -443,11 +502,13 @@
 */
 
 .shippingContainer :global(.vtex-input-prefix__group) {
-  width: 250px;
+  width: unset;
 }
 
 .shippingContainer :global(.vtex-button) {
-  height: 40px
+  height: 40px;
+  width: unset;
+  border: none;
 }
 
 .shippingContainer :global(.vtex-button__label) {
@@ -456,6 +517,14 @@
   background-color: white;
   font-weight: bold;
   color: black;
+   border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(204, 204, 204) !important;
+    border-image: initial !important;
+}
+
+.shippingContainer :global(.vtex-address-form-4-x-input) {
+  background-color: #f7f7f7;
 }
 
 /*
@@ -716,7 +785,9 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
-
+  .shippingTableRow {
+    height: 120px;
+  }
 
   .shippingContainer :global(.vtex-button) {
     width: auto;

@@ -1,8 +1,23 @@
-.triggerContainer--botao-contatos{
+.container--modal-layout-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButtonContainer--close-button-desconto {
+  z-index: 8;
+}
+
+.closeIcon--close-button-inov-qual-tec {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.triggerContainer--botao-contatos {
   cursor: pointer;
 }
 
-.paper--botoes-contatos-modal{
+.paper--botoes-contatos-modal {
   overflow: hidden;
   background-color: rgb(231, 229, 229);
 }
@@ -15,18 +30,18 @@
   max-width: 80vw;
 }
 
-.headerContainer--close-button-desconto{
+.headerContainer--close-button-desconto {
   margin-bottom: -53px;
   border: none
 }
 
-.paper--modal-layout-pupup-trigger{
+.paper--modal-layout-pupup-trigger {
   border: 12px solid white;
 }
 
 @media screen and (max-width: 1024px) {
   .paperNotFullScreen {
-    margin: 0!important;
+    margin: 0 !important;
   }
 
 }

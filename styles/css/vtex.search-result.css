@@ -1,18 +1,24 @@
-.gallery--grid{
-  gap: 10px;
+.orderByButton {
+  background-color: transparent;
 }
 
-.galleryItem--normal{
-  flex-basis: unset!important;
-    max-width: unset!important;
-    padding: unset!important;
-    margin: unset!important;
+.gallery--grid {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
 
+.galleryItem--normal {
+  flex-basis: unset !important;
+  max-width: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / .05);
 }
 
 
 .filterIcon {
-  display: block!important;
+  display: block !important;
 }
 
 /* COR DAS PUXADORES  */
@@ -120,8 +126,8 @@
 .totalProducts--layout,
 .totalProducts--layout .totalProductsMessage {
   padding: 0;
-  color: #7B7979;
-  font-size: 13px;
+  color: #333;
+  font-size: 1rem;
   text-transform: none;
   font-weight: 400;
 }
@@ -215,7 +221,7 @@
   font-size: medium;
 }
 
-.galleryTitle--layout::before{
+.galleryTitle--layout::before {
   content: "Resultados da pesquisa por: ";
 }
 

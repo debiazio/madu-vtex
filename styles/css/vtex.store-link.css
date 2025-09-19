@@ -12,6 +12,22 @@
   text-align: center;
 }
 
+
+
+.link--link-compre-pelo-wpp {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #00B280;
+  padding: 12px 24px;
+  margin: 10px 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
 .link--link-botao-atendimento-whatsapp {
   text-decoration: none;
   display: flex;

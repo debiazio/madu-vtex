@@ -1,3 +1,8 @@
+:global(.vtex-address-form-4-x-input)::before{
+  content: "teste";
+}
+
+
 .skuSelectorItem--selected :global(.absolute--fill) {
   background-color: transparent;
 }

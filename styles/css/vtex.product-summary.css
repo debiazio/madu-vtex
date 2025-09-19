@@ -1,3 +1,11 @@
+.brandName{
+  text-align: center;
+}
+
+.clearLink{
+  background-color: white;
+}
+
 .containerNormal{
   margin: 0;
 }

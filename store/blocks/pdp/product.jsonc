@@ -105,7 +105,7 @@
       "change-text-pdp-app",
       "bundle",
       "flex-layout.row#busca-cep",
-      "flex-layout.row#atencao-pdp"
+      "flex-layout.row#contao-whatsapp"
     ]
   },
   "flex-layout.col#product-recommendations-custom": {
@@ -278,19 +278,25 @@
       "shouldUpdateOrderForm": "true"
     }
   },
-  // TEXTO ATENCAO
-  "flex-layout.row#atencao-pdp": {
+  // COMPRE PELO WHATSAPP
+  "flex-layout.row#contao-whatsapp": {
     "props": {
       "blockClass": "texto-atencao"
     },
     "children": [
-      "rich-text#texto-atencao"
+      "link#compre-pelo-whatsapp"
     ]
   },
-  "rich-text#texto-atencao": {
+  "link#compre-pelo-whatsapp": {
     "props": {
-      "text": "**Atenção:**\nO prazo de entrega começa a contar após a postagem do pedido que será realizada em até 15 dias úteis. Os produtos e seus acessórios poderão ser fornecidos montados ou desmontados, mediante pedido antecipado e de acordo com condições de embalagem e transporte definidas pela fábrica."
-    }
+      "blockClass": "link-compre-pelo-wpp",
+      "href": "https://api.whatsapp.com/send?phone=5541996878783&text=Ol%C3%A1%2C%20estou%20vindo%20do%20site%20da%20MAD.U!",
+      "label": "Compre pelo Whatsapp",
+      "target": "_blank"
+    },
+    "children": [
+      "image#atendimento-whatsapp"
+    ]
   },
   // SELETOR DE QUANTIDADES
   "flex-layout.row#quantidade-seletor-comprar": {
@@ -508,7 +514,7 @@
       },
       "infinite": true,
       "fullWidth": false,
-      "showNavigationArrows":"always",
+      "showNavigationArrows": "always",
       "blockClass": "shelf"
     }
   }

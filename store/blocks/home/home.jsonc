@@ -72,7 +72,6 @@
       }
     }
   },
-
   // VITRINE - MAIS VENDIDOS
   "flex-layout.row#mais-vendidos": {
     "props": {
@@ -729,22 +728,35 @@
   },
   "modal-header#close": {
     "props": {
+      "blockClass": [
+        "close-button-desconto",
+        "close-button-inov-qual-tec"
+      ],
       "showCloseButton": true
     }
   },
   "flex-layout.row#linha-inovacao": {
     "props": {
-      "blockClass": "linha-modal",
-      "preventHorizontalStretch": true
+      "blockClass": "linha-modal"
     },
     "children": [
-      "image#inovacao-modal",
+      "flex-layout.col#coluna-imagem",
       "flex-layout.col#coluna-inovacao"
+    ]
+  },
+  "flex-layout.col#coluna-imagem": {
+    "props": {
+      "blockClass": "modal-inovacao-coluna-imagem",
+      "width": "42%"
+    },
+    "children": [
+      "image#inovacao-modal"
     ]
   },
   "flex-layout.col#coluna-inovacao": {
     "props": {
-      "blockClass": "coluna-modal"
+      "blockClass": "coluna-modal",
+      "width": "68%"
     },
     "children": [
       "rich-text#modal-inovacao"
@@ -753,7 +765,7 @@
   "rich-text#modal-inovacao": {
     "props": {
       "blockClass": "texto-modal-modal",
-      "text": "# Inovação #\n**Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!**\n\nA maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São **milhares** de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e **múltiplas utilizações** de acordo com a necessidade de cada cliente.\n\nA MAD.U inova nos mínimos detalhes. **Como num jogo de blocos de montar** os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para **novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.**"
+      "text": "##Inovação## **Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!**\n\nA maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São **milhares** de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e **múltiplas utilizações** de acordo com a necessidade de cada cliente.\n\nA MAD.U inova nos mínimos detalhes. **Como num jogo de blocos de montar** os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para **novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.**"
     }
   },
   // MODAL QUALIDADE

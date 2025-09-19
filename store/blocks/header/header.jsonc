@@ -56,9 +56,6 @@
       "sticky-layout#3-desktop"
     ]
   },
-
-
-
   "header-layout.desktop": {
     "children": [
       // "slider-layout#home-banner",
@@ -68,7 +65,7 @@
     ]
   },
   // LINHA DO CUPOM
-  "flex-layout.row#linha-cupom-top":{
+  "flex-layout.row#linha-cupom-top": {
     "props": {
       "fullWidth": true,
       "blockClass": "linha-cupom-top"
@@ -77,13 +74,12 @@
       "rich-text#frase-cupom-top"
     ]
   },
-  "rich-text#frase-cupom-top":{
+  "rich-text#frase-cupom-top": {
     "props": {
       "text": "10% OFF! Utilize o cupom **PRIMEIRACOMPRA**",
       "blockClass": "frase-cupom-top"
     }
   },
-
   "flex-layout.row#1-desktop": {
     "children": [
       "flex-layout.col#header-col1",
@@ -123,7 +119,6 @@
       "flex-layout.col#email"
     ]
   },
-
   "flex-layout.col#tel": {
     "props": {
       "blockClass": "coluna-tel-notif"
@@ -134,18 +129,15 @@
       // "link#made-for-you"
     ]
   },
-
-
   "flex-layout.col#whatsapp": {
     "props": {
       "blockClass": "coluna-tel-notif"
     },
     "children": [
-            "image#whatsapp",
+      "image#whatsapp",
       "rich-text#numero-whatsapp"
     ]
   },
-
   "flex-layout.col#email": {
     "props": {
       "blockClass": "coluna-tel-notif"
@@ -197,7 +189,6 @@
       "blockClass": "texto-notification-bar"
     }
   },
-
   "sticky-layout#3-desktop": {
     "props": {
       "blockClass": "sticky-header"
