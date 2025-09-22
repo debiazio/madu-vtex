@@ -344,8 +344,6 @@
       }
     }
   },
-
-  
   "menu-item#cat-ver-todos": {
     "props": {
       "type": "custom",
@@ -405,57 +403,7 @@
     }
   },
   // SUBMENUS - DROPDOWNS
-  "vtex.menu@2.x:submenu#nossas-linhas": {
-    "props": {
-      "width": "auto",
-      "blockClass": "menu-principal-submenu"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#nossas-linhas"
-    ]
-  },
   "vtex.menu@2.x:menu#nossas-linhas": {
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "menu-principal-submenu"
-    },
-    "children": [
-      "menu-item#madu-box",
-      "menu-item#madu-expand",
-      "menu-item#madu-express",
-      "menu-item#madu-extra",
-      "menu-item#madu-one"
-    ]
-  },
-  "menu-item#nossas-linhas-mobile": {
-    "props": {
-      "id": "menu-item-nossas-linhas",
-      "type": "custom",
-      "iconPosition": "right",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/colecao",
-        "noFollow": false,
-        "tagTitle": "NOSSAS LINHAS",
-        "text": "NOSSAS LINHAS"
-      },
-      "blockClass": "menu-principal-item"
-    },
-    "blocks": [
-      "submenu.accordion#nossas-linhas"
-    ]
-  },
-  "submenu.accordion#nossas-linhas": {
-    "props": {
-      "width": "auto",
-      "blockClass": "produtos-mobile"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#nossas-linhas-mobile"
-    ]
-  },
-  "vtex.menu@2.x:menu#nossas-linhas-mobile": {
     "props": {
       "orientation": "vertical",
       "blockClass": "menu-principal-submenu"
@@ -595,7 +543,12 @@
     },
     "children": [
       "menu-item#cat-carrinhos-mobile",
+      "menu-item#cat-armarios-mobile",
+      "menu-item#cat-estantes-mobile",
+      "menu-item#cat-acessorios-n-mobile",
+      "menu-item#cat-organizadores-mobile",
       "menu-item#nossas-linhas-mobile",
+      "menu-item#cat-ver-todos-mobile",
       "menu-item#made-for-you",
       "menu-item#catalogo",
       "menu-item#atendimento"
@@ -615,156 +568,250 @@
       },
       "blockClass": "menu-principal-item"
     }
+  },
+  "menu-item#cat-armarios-mobile": {
+    "props": {
+      "id": "menu-item-produtos-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos",
+        "noFollow": false,
+        "tagTitle": "Armários",
+        "text": "Armários"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  "menu-item#cat-estantes-mobile": {
+    "props": {
+      "id": "menu-item-produtos-mobile",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/produtos",
+        "noFollow": false,
+        "tagTitle": "Estantes",
+        "text": "Estantes"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  "menu-item#cat-acessorios-n-mobile": {
+    "props": {
+      "id": "menu-item-nossas-linhas-mobile",
+      "type": "custom",
+      "iconPosition": "right",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      },
+      "blockClass": "menu-principal-item"
+    },
+    "blocks": [
+      "submenu.accordion#acessorios"
+    ]
+  },
+  // ACESSORIOS MENU MOBILE
+  "submenu.accordion#acessorios": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-accordion-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#acessorios-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#acessorios-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#acessorios-linhas-linhaExtra",
+      "menu-item#acessorios-linhas-linhaOne"
+    ]
+  },
+  "menu-item#cat-organizadores-mobile": {
+    "props": {
+      "id": "menu-item-produtos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Organizadores",
+        "text": "Organizadores"
+      },
+      "blockClass": "menu-principal-item"
+    }
+  },
+  // NOSSAS LINHAS MOBILE
+  "menu-item#nossas-linhas-mobile": {
+    "props": {
+      "id": "menu-item-nossas-linhas",
+      "type": "custom",
+      "iconPosition": "right",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/colecao",
+        "noFollow": false,
+        "tagTitle": "Linhas",
+        "text": "Linhas"
+      },
+      "blockClass": "menu-principal-item"
+    },
+    "blocks": [
+      "submenu.accordion#nossas-linhas"
+    ]
+  },
+  // NOSSAS LINHAS MOBILE
+  "submenu.accordion#nossas-linhas": {
+    "props": {
+      "width": "auto",
+      "blockClass": "produtos-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#nossas-linhas-mobile"
+    ]
+  },
+  // menu dropdow mobile
+  "vtex.menu@2.x:menu#nossas-linhas-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#linhas-madu-one-mobile",
+      "menu-item#linhas-madu-extra-mobile",
+      "menu-item#linhas-maduOne-expand-mobile",
+      "menu-item#linhas-maduOne-express-mobile"
+    ]
+  },
+  "menu-item#linhas-madu-one-mobile": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "MAD.U One",
+        "text": "MAD.U One"
+      },
+      "blockClass": "menu-principal-item"
+    },
+    "blocks": [
+      "submenu.accordion#linhas-maduOne"
+    ]
+  },
+  "submenu.accordion#linhas-maduOne": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-accordion-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#linhas-maduOne-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#linhas-maduOne-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#maduOne-560",
+      "menu-item#maduOne-740"
+    ]
+  },
+  // madu extra mobile
+  "menu-item#linhas-madu-extra-mobile": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "MAD.U Extra",
+        "text": "MAD.U Extra"
+      },
+      "blockClass": "menu-principal-item"
+    },
+    "blocks": [
+      "submenu.accordion#linhas-maduExtra"
+    ]
+  },
+  "submenu.accordion#linhas-maduExtra": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-accordion-mobile"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#linhas-maduExtra-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#linhas-maduExtra-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#maduExtra-380",
+      "menu-item#maduExtra-550"
+    ]
+  },
+    // SUBMENU DA EXPAND
+  "menu-item#linhas-maduOne-expand-mobile": {
+    "props": {
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "MAD.U Expand",
+        "text": "MAD.U Expand"
+      }
+    }
+  },
+  "menu-item#linhas-maduOne-express-mobile": {
+    "props": {
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "MAD.U Express",
+        "text": "MAD.U Express"
+      }
+    }
+  },
+    "menu-item#cat-ver-todos-mobile": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-nossas-linhas",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "+ Ver Todos",
+        "text": "+ Ver Todos"
+      },
+      "blockClass": "menu-principal-item"
+    }
   }
-  // "submenu.accordion#produtos":{
-  //   "props":{
-  //     "width":"100%",
-  //     "blockClass": "produtos-mobile"
-  //   },
-  //   "children":["vtex.menu@2.x:menu#produtos-mobile"]
-  // },
-  // "vtex.menu@2.x:menu#produtos-mobile":{
-  //   "children": [
-  //     "flex-layout.col#produtos-mobile"
-  //   ]
-  // },
-  // "flex-layout.col#produtos-mobile":{
-  //   "children": [
-  //     "menu-item#armarios",
-  //     "menu-item#acessorios",
-  //     "menu-item#carrinhos",
-  //     "menu-item#estantes",
-  //     "menu-item#modulos",
-  //     "menu-item#novidades",
-  //     "menu-item#ver-tudo"
-  //   ]
-  // },
-  //   "vtex.menu@2.x:submenu#produtos": {
-  //   "props": {
-  //     "width": "auto",
-  //     "blockClass": "menu-principal-submenu"
-  //   },
-  //   "children": [
-  //     "vtex.menu@2.x:menu#produtos"
-  //   ]
-  // },
-  // "vtex.menu@2.x:menu#produtos": {
-  //   "props": {
-  //     "orientation": "vertical",
-  //     "blockClass": "menu-principal-submenu"
-  //   },
-  //   "children": [
-  //     "menu-item#armarios",
-  //     "menu-item#acessorios",
-  //     "menu-item#carrinhos",
-  //     "menu-item#estantes",
-  //     "menu-item#modulos",
-  //     "menu-item#novidades"
-  //   ]
-  // },
-  // "menu-item#armarios": {
-  //   "props": {
-  //     "id": "menu-item-armarios",
-  //     "type": "custom",
-  //     "highlight": false,
-  //     "itemProps": {
-  //       "type": "internal",
-  //       "href": "/produtos/armarios",
-  //       "noFollow": false,
-  //       "tagTitle": "Armários",
-  //       "text": "Armários"
-  //     },
-  //     "blockClass": "menu-principal-subitem"
-  //   }
-  // },
-  // "menu-item#acessorios": {
-  //   "props": {
-  //     "id": "menu-item-acessorios",
-  //     "type": "custom",
-  //     "highlight": false,
-  //     "itemProps": {
-  //       "type": "internal",
-  //       "href": "/produtos/acessorios",
-  //       "noFollow": false,
-  //       "tagTitle": "Acessórios",
-  //       "text": "Acessórios"
-  //     },
-  //     "blockClass": "menu-principal-subitem"
-  //   }
-  // },
-  // "menu-item#carrinhos": {
-  //   "props": {
-  //     "id": "menu-item-carrinhos",
-  //     "type": "custom",
-  //     "highlight": false,
-  //     "itemProps": {
-  //       "type": "internal",
-  //       "href": "/carrinhos?_q=Carrinhos&map=ft",
-  //       "noFollow": false,
-  //       "tagTitle": "Carrinhos",
-  //       "text": "Carrinhos"
-  //     },
-  //     "blockClass": "menu-principal-subitem"
-  //   }
-  // },
-  // "menu-item#estantes": {
-  //   "props": {
-  //     "id": "menu-item-estantes",
-  //     "type": "custom",
-  //     "highlight": false,
-  //     "itemProps": {
-  //       "type": "internal",
-  //       "href": "/produtos/estantes",
-  //       "noFollow": false,
-  //       "tagTitle": "Estantes",
-  //       "text": "Estantes"
-  //     },
-  //     "blockClass": "menu-principal-subitem"
-  //   }
-  // },
-  // "menu-item#modulos": {
-  //   "props": {
-  //     "id": "menu-item-modulos",
-  //     "type": "custom",
-  //     "highlight": false,
-  //     "itemProps": {
-  //       "type": "internal",
-  //       "href": "/produtos/modulos",
-  //       "noFollow": false,
-  //       "tagTitle": "Módulos",
-  //       "text": "Módulos"
-  //     },
-  //     "blockClass": "menu-principal-subitem"
-  //   }
-  // },
-  // "menu-item#novidades": {
-  //   "props": {
-  //     "id": "menu-item-novidades",
-  //     "type": "custom",
-  //     "highlight": false,
-  //     "itemProps": {
-  //       "type": "internal",
-  //       "href": "/produtos/novidades",
-  //       "noFollow": false,
-  //       "tagTitle": "Novidades",
-  //       "text": "Novidades"
-  //     },
-  //     "blockClass": "menu-principal-subitem"
-  //   }
-  // },
-  // "menu-item#ver-tudo": {
-  //   "props": {
-  //     "id": "menu-item-ver-tudo",
-  //     "type": "custom",
-  //     "highlight": true,
-  //     "itemProps": {
-  //       "type": "internal",
-  //       "href": "/produtos",
-  //       "noFollow": false,
-  //       "tagTitle": "Ver tudo",
-  //       "text": "Ver tudo"
-  //     },
-  //     "blockClass": "menu-principal-subitem"
-  //   }
-  // }
 }

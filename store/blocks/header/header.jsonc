@@ -297,6 +297,9 @@
     }
   },
   "drawer": {
+    "props": {
+      "slideDirection": "rightToLeft"
+    },
     "children": [
       "menu#drawer"
     ]
