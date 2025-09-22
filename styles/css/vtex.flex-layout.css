@@ -1,3 +1,7 @@
+.flexCol--modal-inovacao-coluna-imagem{
+  justify-content: center;
+}
+
 .flexColChild--modal-inovacao-coluna-imagem {
   display: flex;
   align-items: center;
@@ -280,6 +284,7 @@
 
 .flexCol--colunas-categorias {
   background-color: white;
+  cursor: pointer;
 }
 
 .flexColChild--colunas-categorias {

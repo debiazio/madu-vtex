@@ -1,3 +1,23 @@
+.paragraph--categorias-final {
+  margin: 0;
+}
+
+.container--categorias-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container--texto-banner-final {
+  text-align: center;
+}
+
+.paragraph--texto-banner-final {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
 .heading--texto-modal-modal {
   font-size: 41px;
   font-weight: 600;
@@ -405,6 +425,15 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+.strong--texto-modal-modal{
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+  .container--texto-modal-modal{
+    padding: unset;
+  }
+
   .paragraph--valor-unitario {
     padding: 0 15px;
   }
@@ -418,7 +447,7 @@
   }
 
   .wrapper--texto-modal-modal {
-    padding: 50px;
+    padding: 20px;
   }
 
   .container--credits {

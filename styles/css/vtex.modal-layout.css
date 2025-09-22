@@ -1,3 +1,10 @@
+.triggerContainer--modal-layout-trigger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .backdrop--modal-layout-content{
       background-color: rgba(0, 0, 0, 0.877);
       opacity: 0.8;
@@ -47,7 +54,11 @@
 
 @media screen and (max-width: 1024px) {
   .paperNotFullScreen {
-    margin: 0 !important;
+    margin: 6px !important;
+    height: 100%;
+    overflow: auto;
   }
+
+
 
 }
