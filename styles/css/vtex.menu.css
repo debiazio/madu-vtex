@@ -1,4 +1,18 @@
-/* MENU TOPBAR */
+.menuItem{
+  width: fit-content;
+}
+
+
+.submenuWrapper--menu-principal-submenu--isOpen{
+  margin: 0;
+}
+
+
+.submenuWrapper--menu-principal-submenu .submenuWrapper--menu-principal-submenu--isOpen {
+  margin-left: 160px;
+  margin-top: -30px;
+}
+
 .styledLinkContainer--topbar {
   margin: 0;
   padding: 0;
@@ -18,15 +32,15 @@
 }
 
 /* MENU PRINCIPAL */
-.styledLinkContent--menu-principal-item{
+.styledLinkContent--menu-principal-item {
   display: flex;
   align-items: center;
   font-weight: bold;
   color: black;
 }
 
-.styledLinkIcon--menu-principal-item{
-  margin: 15px 0px 0 10px;
+.styledLinkIcon--menu-principal-item {
+  margin: 15px -10px 0 10px;
 }
 
 /* .menuContainerNav--menu-principal {
@@ -40,8 +54,8 @@
   margin-left: 15px;
 }
 
-.styledLinkContainer--menu-principal-lastchild{
-  border-right: none!important;
+.styledLinkContainer--menu-principal-lastchild {
+  border-right: none !important;
 }
 
 
@@ -60,7 +74,7 @@
 }
 
 .submenuWrapper--menu-principal-submenu--isOpen {
-  padding: 13px 23px;
+  /* padding: 13px 23px; */
   margin: 0;
   border-bottom: 0;
   border-radius: 10px;
@@ -106,11 +120,12 @@
 }
 
 /* ROPAPÉ  */
-.styledLinkContent--menu-item-footer-inst{
+.styledLinkContent--menu-item-footer-inst {
   color: white;
   transition: color 0.3s ease;
 }
-.styledLinkContent--menu-item-footer-inst:hover{
+
+.styledLinkContent--menu-item-footer-inst:hover {
   color: grey;
   transition: color 0.3s ease;
 }

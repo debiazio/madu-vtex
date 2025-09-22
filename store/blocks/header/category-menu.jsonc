@@ -6,17 +6,15 @@
     },
     "children": [
       "menu-item#cat-carrinhos",
-      "menu-item#cat-acessorios",
       "menu-item#cat-armarios",
-      "menu-item#cat-prateleiras",
       "menu-item#cat-estantes",
+      "menu-item#cat-acessorios-n",
       "menu-item#cat-organizadores",
-      "menu-item#cat-caixas",
-      "menu-item#cat-bandejas",
-
+      "menu-item#cat-linhas",
+      "menu-item#cat-ver-todos",
       "menu-item#made-for-you",
       "menu-item#catalogo",
-      "menu-item#contato"
+      "menu-item#atendimento"
     ]
   },
   // MENU ITEMS - CATEGORIAS DO HEADER
@@ -27,7 +25,6 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-
         "noFollow": false,
         "tagTitle": "Carrinhos",
         "text": "Carrinhos"
@@ -35,13 +32,12 @@
       "blockClass": "menu-principal-item"
     }
   },
-  "menu-item#cat-acessorios":{
+  "menu-item#cat-estantes": {
     "props": {
       "type": "custom",
       "id": "menu-item-nossas-linhas",
       "itemProps": {
         "type": "internal",
-
         "noFollow": false,
         "tagTitle": "Acessórios",
         "text": "Acessórios"
@@ -49,13 +45,83 @@
       "blockClass": "menu-principal-item"
     }
   },
-  "menu-item#cat-armarios":{
+  // MENU PRINCIPAL ACESSÓRIOS
+  "menu-item#cat-acessorios-n": {
     "props": {
       "type": "custom",
       "id": "menu-item-nossas-linhas",
       "itemProps": {
         "type": "internal",
-
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      },
+      "blockClass": "menu-principal-item",
+      "iconProps": {
+        "id": "hpa-menu",
+        "isActive": true
+      },
+      "iconPosition": "right"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#acessorios-linhas"
+    ]
+  },
+  // BLOCO DROPDOWN ACESSORIOS LINHAS
+  "vtex.menu@2.x:submenu#acessorios-linhas": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#acessorios-linhas"
+    ]
+  },
+  "vtex.menu@2.x:menu#acessorios-linhas": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#acessorios-linhas-linhaExtra",
+      "menu-item#acessorios-linhas-linhaOne"
+    ]
+  },
+  // ITEM DO DROPDOWN ACESSORIOS LINHAS
+  "menu-item#acessorios-linhas-linhaExtra": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-acessorios-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Linha Extra",
+        "text": "Linha Extra"
+      }
+    }
+  },
+  "menu-item#acessorios-linhas-linhaOne": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-acessorios-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Linha One",
+        "text": "Linha One"
+      }
+    }
+  },
+  "menu-item#cat-armarios": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-nossas-linhas",
+      "itemProps": {
+        "type": "internal",
         "noFollow": false,
         "tagTitle": "Armários",
         "text": "Armários"
@@ -63,63 +129,267 @@
       "blockClass": "menu-principal-item"
     }
   },
-  "menu-item#cat-prateleiras":{
+  // MENU PRINCIPAL LINHAS
+  "menu-item#cat-linhas": {
     "props": {
       "type": "custom",
       "id": "menu-item-nossas-linhas",
       "itemProps": {
         "type": "internal",
-
         "noFollow": false,
-        "tagTitle": "Prateleiras",
-        "text": "Prateleiras"
+        "tagTitle": "Linhas",
+        "text": "Linhas"
+      },
+      "blockClass": "menu-principal-item",
+      "iconProps": {
+        "id": "hpa-menu",
+        "isActive": true
+      },
+      "iconPosition": "right"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#linhas-maduOne"
+    ]
+  },
+  // BLOCO ACESSORIOS LINHAS MADU ONE
+  "vtex.menu@2.x:submenu#linhas-maduOne": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#linhas-maduOne"
+    ]
+  },
+  "vtex.menu@2.x:menu#linhas-maduOne": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#linhas-madu-one",
+      "menu-item#linhas-madu-extra",
+      "menu-item#linhas-maduOne-expand",
+      "menu-item#linhas-maduOne-express"
+    ]
+  },
+  // SUBMENU MADU ONE
+  "menu-item#linhas-madu-one": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "MAD.U One",
+        "text": "MAD.U One"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "isActive": true
+      },
+      "iconPosition": "right"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#linhas-maduOne-submenu"
+    ]
+  },
+  // BLOCK DO SUBMENU INTERNO
+  "vtex.menu@2.x:submenu#linhas-maduOne-submenu": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#linhas-maduOne-submenu"
+    ]
+  },
+  "vtex.menu@2.x:menu#linhas-maduOne-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#maduOne-560",
+      "menu-item#maduOne-740"
+    ]
+  },
+  "menu-item#maduOne-560": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-acessorios-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "One 560",
+        "text": "One 560"
+      }
+    }
+  },
+  "menu-item#maduOne-740": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-acessorios-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "One 740",
+        "text": "One 740"
+      }
+    }
+  },
+  // BLOCO ACESSORIOS LINHAS MADU EXTRA
+  // SUBMENU MADU EXTRA
+  "menu-item#linhas-madu-extra": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "MAD.U Extra",
+        "text": "MAD.U Extra"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "isActive": true
+      },
+      "iconPosition": "right"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#linhas-maduExtra-submenu"
+    ]
+  },
+  "vtex.menu@2.x:submenu#linhas-maduExtra-submenu": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#linhas-maduExtra-submenu"
+    ]
+  },
+  "vtex.menu@2.x:menu#linhas-maduExtra-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-principal-submenu"
+    },
+    "children": [
+      "menu-item#maduExtra-380",
+      "menu-item#maduExtra-550"
+    ]
+  },
+  "menu-item#maduExtra-380": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Extra 380",
+        "text": "Extra 380"
+      }
+    }
+  },
+  "menu-item#maduExtra-550": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Extra 550",
+        "text": "Extra 550"
+      }
+    }
+  },
+  // SUBMENU DA EXPAND
+  "menu-item#linhas-maduOne-expand": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "MAD.U Expand",
+        "text": "MAD.U Expand"
+      }
+    }
+  },
+  "menu-item#linhas-maduOne-express": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "MAD.U Express",
+        "text": "MAD.U Express"
+      }
+    }
+  },
+
+  
+  "menu-item#cat-ver-todos": {
+    "props": {
+      "type": "custom",
+      "id": "menu-item-nossas-linhas",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "+ Ver Todos",
+        "text": "+ Ver Todos"
       },
       "blockClass": "menu-principal-item"
     }
   },
-  "menu-item#cat-estantes":{
+  "menu-item#cat-organizadores": {
     "props": {
       "type": "custom",
       "id": "menu-item-nossas-linhas",
       "itemProps": {
         "type": "internal",
-
-        "noFollow": false,
-        "tagTitle": "Estantes",
-        "text": "Estantes"
-      },
-      "blockClass": "menu-principal-item"
-    }
-  },
-  "menu-item#cat-organizadores":{
-    "props": {
-      "type": "custom",
-      "id": "menu-item-nossas-linhas",
-      "itemProps": {
-        "type": "internal",
-
         "noFollow": false,
         "tagTitle": "Organizadores",
         "text": "Organizadores"
       },
-      "blockClass": ["menu-principal-item"]
+      "blockClass": [
+        "menu-principal-item"
+      ]
     }
   },
-  "menu-item#cat-caixas":{
+  "menu-item#cat-caixas": {
     "props": {
       "type": "custom",
       "id": "menu-item-nossas-linhas",
       "itemProps": {
         "type": "internal",
-
         "noFollow": false,
         "tagTitle": "Caixas",
         "text": "Caixas"
       },
-      "blockClass": ["menu-principal-item"]
+      "blockClass": [
+        "menu-principal-item"
+      ]
     }
   },
-  "menu-item#cat-bandejas":{
+  "menu-item#cat-bandejas": {
     "props": {
       "type": "custom",
       "id": "menu-item-nossas-linhas",
@@ -129,14 +399,13 @@
         "tagTitle": "Bandejas",
         "text": "Bandejas"
       },
-      "blockClass": ["menu-principal-item"]
+      "blockClass": [
+        "menu-principal-item"
+      ]
     }
   },
-
-
   // SUBMENUS - DROPDOWNS
-
-  "vtex.menu@2.x:submenu#nossas-linhas":{
+  "vtex.menu@2.x:submenu#nossas-linhas": {
     "props": {
       "width": "auto",
       "blockClass": "menu-principal-submenu"
@@ -145,7 +414,7 @@
       "vtex.menu@2.x:menu#nossas-linhas"
     ]
   },
-  "vtex.menu@2.x:menu#nossas-linhas":{
+  "vtex.menu@2.x:menu#nossas-linhas": {
     "props": {
       "orientation": "vertical",
       "blockClass": "menu-principal-submenu"
@@ -158,8 +427,6 @@
       "menu-item#madu-one"
     ]
   },
-
-
   "menu-item#nossas-linhas-mobile": {
     "props": {
       "id": "menu-item-nossas-linhas",
@@ -179,7 +446,7 @@
       "submenu.accordion#nossas-linhas"
     ]
   },
-  "submenu.accordion#nossas-linhas":{
+  "submenu.accordion#nossas-linhas": {
     "props": {
       "width": "auto",
       "blockClass": "produtos-mobile"
@@ -188,7 +455,7 @@
       "vtex.menu@2.x:menu#nossas-linhas-mobile"
     ]
   },
-  "vtex.menu@2.x:menu#nossas-linhas-mobile":{
+  "vtex.menu@2.x:menu#nossas-linhas-mobile": {
     "props": {
       "orientation": "vertical",
       "blockClass": "menu-principal-submenu"
@@ -201,7 +468,7 @@
       "menu-item#madu-one"
     ]
   },
-  "menu-item#madu-box":{
+  "menu-item#madu-box": {
     "props": {
       "id": "menu-item-madu-box",
       "type": "custom",
@@ -215,7 +482,7 @@
       }
     }
   },
-  "menu-item#madu-expand":{
+  "menu-item#madu-expand": {
     "props": {
       "id": "menu-item-madu-expand",
       "type": "custom",
@@ -229,7 +496,7 @@
       }
     }
   },
-  "menu-item#madu-express":{
+  "menu-item#madu-express": {
     "props": {
       "id": "menu-item-madu-express",
       "type": "custom",
@@ -243,7 +510,7 @@
       }
     }
   },
-  "menu-item#madu-extra":{
+  "menu-item#madu-extra": {
     "props": {
       "id": "menu-item-madu-extra",
       "type": "custom",
@@ -257,7 +524,7 @@
       }
     }
   },
-  "menu-item#madu-one":{
+  "menu-item#madu-one": {
     "props": {
       "id": "menu-item-madu-one",
       "type": "custom",
@@ -271,9 +538,6 @@
       }
     }
   },
-
-
-
   "menu-item#made-for-you": {
     "props": {
       "id": "menu-item-made-for-you",
@@ -304,7 +568,7 @@
       "blockClass": "menu-principal-item"
     }
   },
-  "menu-item#contato": {
+  "menu-item#atendimento": {
     "props": {
       "id": "menu-item-contato",
       "type": "custom",
@@ -313,17 +577,16 @@
         "type": "internal",
         "href": "/contato",
         "noFollow": true,
-        "tagTitle": "Contato",
-        "text": "Contato"
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
       },
-      "blockClass": ["menu-principal-item", "menu-principal-lastchild"]
+      "blockClass": [
+        "menu-principal-item",
+        "menu-principal-lastchild"
+      ]
     }
   },
-
-
-
   // MOBILE MENU
-
   "vtex.menu@2.x:menu#category-menu-mobile": {
     "props": {
       "orientation": "vertical",
@@ -335,7 +598,7 @@
       "menu-item#nossas-linhas-mobile",
       "menu-item#made-for-you",
       "menu-item#catalogo",
-      "menu-item#contato"
+      "menu-item#atendimento"
     ]
   },
   "menu-item#cat-carrinhos-mobile": {
