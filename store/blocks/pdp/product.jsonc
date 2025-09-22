@@ -40,7 +40,7 @@
       "stack-layout"
     ],
     "props": {
-      "width": "60%"
+      "width": "50%"
     }
   },
   "stack-layout": {
@@ -87,7 +87,7 @@
   "flex-layout.col#product-right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "width": "40%",
+      "width": "50%",
       "blockClass": "coluna-direita-produto"
     },
     "children": [
@@ -418,7 +418,7 @@
   "flex-layout.col#right-col-availability": {
     "props": {
       "preventVerticalStretch": true,
-      "width": "40%",
+      "width": "50%",
       "blockClass": "coluna-direita-disp"
     },
     "children": [
