@@ -6,8 +6,8 @@
       // "responsive-layout.desktop#categorias",
       // "responsive-layout.mobile#categorias",
       "__fold__",
-      "flex-layout.row#madu-one",
-      "flex-layout.row#madu-extra",
+      "flex-layout.row#mais-vendidos-madu-extra",
+      "flex-layout.row#mais-vendidos-madu-one",
       "flex-layout.row#banner-final"
     ],
     "parent": {
@@ -70,7 +70,6 @@
       }
     }
   },
-
   "rich-text#titulo-mais-vendidos": {
     "props": {
       "text": "MAIS **VENDIDOS**",
@@ -330,91 +329,144 @@
     ]
   },
   // MADU ONE
-  "flex-layout.row#madu-one": {
+  "flex-layout.row#mais-vendidos-madu-extra": {
     "props": {
       "blockClass": "content-madu-cat"
     },
     "children": [
-      "rich-text#shelf-title1",
-      "flex-layout.row#shelf",
-      "link#shelf-ver-mais"
+      "flex-layout.row#titulo-prateleiras-madu-extra",
+      "flex-layout.row#shelf"
     ]
+  },
+  "flex-layout.row#titulo-prateleiras-madu-extra": {
+    "props": {
+      "blockClass": "titulo-prateleiras",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#plus-titulo-prateleira",
+      "rich-text#shelf-title1"
+    ]
+  },
+  "image#plus-titulo-prateleira": {
+    "props": {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgMzQ5LjAzIDM0OS4wMzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIGQ9Ik0zNDkuMDMgMTQxLjIyNnY2Ni41NzlhOS4wNzggOS4wNzggMCAwIDEtOS4wNzkgOS4wNzlIMjE2Ljg4NHYxMjMuMDY3YTkuMDc3IDkuMDc3IDAgMCAxLTkuMDc5IDkuMDc5aC02Ni41NzljLTUuMDA5IDAtOS4wNzktNC4wNjEtOS4wNzktOS4wNzlWMjE2Ljg4NEg5LjA3OUE5LjA4IDkuMDggMCAwIDEgMCAyMDcuODA1di02Ni41NzlhOS4wNzkgOS4wNzkgMCAwIDEgOS4wNzktOS4wNzloMTIzLjA2OFY5LjA3OWMwLTUuMDE4IDQuMDY5LTkuMDc5IDkuMDc5LTkuMDc5aDY2LjU3OWE5LjA3OCA5LjA3OCAwIDAgMSA5LjA3OSA5LjA3OXYxMjMuMDY4aDEyMy4wNjdhOS4wNzcgOS4wNzcgMCAwIDEgOS4wNzkgOS4wNzl6IiBmaWxsPSIjNWY1ZjVmIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==",
+      "maxWidth": "16px",
+      "blockClass": "plus-titulo"
+    }
   },
   "rich-text#shelf-title1": {
     "props": {
-      "text": "MAD.U **One**",
+      "text": "MAIS VENDIDOS **MAD.U EXTRA**",
       "blockClass": "mais-vendidos-text"
     }
   },
   "flex-layout.row#shelf": {
+    "props": {
+      "blockClass": "prateleira-madu-extra"
+    },
     "children": [
-      "list-context.product-list#prateleira-home"
+      "list-context.product-list#prateleira-home-madu-extra1",
+      "list-context.product-list#prateleira-home-madu-extra2"
     ]
   },
-  "list-context.product-list#prateleira-home": {
+  "list-context.product-list#prateleira-home-madu-extra1": {
     "blocks": [
       "product-summary.shelf"
     ],
     "children": [
-      "slider-layout#prateleira-home"
+      "slider-layout#prateleira-home1"
     ],
     "props": {
-      "orderBy": "OrderByNameASC"
+      "orderBy": "OrderByPriceDESC",
+      "blockClass": "list-prateleira-home-madu-extra"
     }
   },
-  "slider-layout#prateleira-home": {
+  "slider-layout#prateleira-home1": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 5,
         "tablet": 2,
         "phone": 1
       },
-      "infinite": true,
+      "infinite": false,
       "fullWidth": false,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "always",
-      "blockClass": "shelf"
+      "showNavigationArrows": "never",
+      "showPaginationDots":"never",
+      "blockClass": "prateleira-home-madu-extra"
     }
   },
-  "link#shelf-ver-mais": {
+  "list-context.product-list#prateleira-home-madu-extra2": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-home2"
+    ],
     "props": {
-      "label": "Ver mais da MAD.U ONE",
-      "blockClass": "link-ver-mais"
+      "orderBy":"OrderByTopSaleDESC",
+      "blockClass": "list-prateleira-home-madu-extra"
     }
   },
-  "flex-layout.row#madu-extra": {
+  "slider-layout#prateleira-home2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"never",
+      "blockClass": "prateleira-home-madu-extra"
+    }
+  },
+
+
+  // MADU ONE
+  "flex-layout.row#mais-vendidos-madu-one": {
     "props": {
       "blockClass": "content-madu-cat"
     },
     "children": [
-      "rich-text#shelf-title1-extra",
-      "flex-layout.row#shelf-extra",
-      "link#shelf-ver-mais-extra"
+      "flex-layout.row#titulo-prateleiras-madu-one",
+      "flex-layout.row#shelf-one"
     ]
   },
-  "rich-text#shelf-title1-extra": {
+  "flex-layout.row#titulo-prateleiras-madu-one": {
     "props": {
-      "text": "MAD.U **Extra**",
+      "blockClass": "titulo-prateleiras",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#plus-titulo-prateleira",
+      "rich-text#shelf-title1-one"
+    ]
+  },
+  "rich-text#shelf-title1-one": {
+    "props": {
+      "text": "MAIS VENDIDOS **MAD.U One**",
       "blockClass": "mais-vendidos-text"
     }
   },
-  "flex-layout.row#shelf-extra": {
+  "flex-layout.row#shelf-one": {
     "children": [
-      "list-context.product-list#prateleira-home-extra"
+      "list-context.product-list#prateleira-home-one"
     ]
   },
-  "list-context.product-list#prateleira-home-extra": {
+  "list-context.product-list#prateleira-home-one": {
     "blocks": [
       "product-summary.shelf"
     ],
     "children": [
-      "slider-layout#prateleira-home-extra"
+      "slider-layout#prateleira-home-one"
     ],
     "props": {
-      "orderBy": "OrderByNameASC"
+      "orderBy":"OrderByTopSaleDESC"
     }
   },
-  "slider-layout#prateleira-home-extra": {
+  "slider-layout#prateleira-home-one": {
     "props": {
       "itemsPerPage": {
         "desktop": 4,
@@ -428,19 +480,7 @@
       "blockClass": "shelf"
     }
   },
-  "link#shelf-ver-mais-extra": {
-    "props": {
-      "label": "ver mais da MAD.U EXTRA",
-      "blockClass": "link-ver-mais"
-    }
-  },
 
-  "rich-text#combinam-text1": {
-    "props": {
-      "text": "Combinam e **se combinam**",
-      "blockClass": "mais-vendidos-text"
-    }
-  },
   // PRATELEIRA 1
   "flex-layout.row#shelf-final": {
     "children": [
@@ -498,7 +538,6 @@
       "blockClass": "shelf"
     }
   },
-
   "list-context.product-list#prateleira-home-final-2": {
     "blocks": [
       "product-summary.shelf"

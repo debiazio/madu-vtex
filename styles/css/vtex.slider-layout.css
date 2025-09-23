@@ -1,4 +1,28 @@
-/* HOME */
+
+.sliderTrack--prateleira-home-madu-extra{
+  gap: 20px;
+  padding: 10px;
+}
+
+.sliderLayoutContainer--prateleira-home-madu-extra{
+  padding: 0;
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.slide--prateleira-home-madu-extra {
+  padding: 20px 20px 20px 20px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #eee;
+  border-radius: 10px 10px 10px 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slide--prateleira-home-madu-extra:hover{
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
+}
+
 /* BANNER */
 
 .sliderTrack--slider-home-desktop {

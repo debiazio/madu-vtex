@@ -39,8 +39,9 @@
       "itemProps": {
         "type": "internal",
         "noFollow": false,
-        "tagTitle": "Acessórios",
-        "text": "Acessórios"
+        "tagTitle": "Estantes",
+        "text": "Estantes",
+        "href": "/moveis/estantes"
       },
       "blockClass": "menu-principal-item"
     }
@@ -51,6 +52,7 @@
       "type": "custom",
       "id": "menu-item-nossas-linhas",
       "itemProps": {
+        "href": "/acessorios",
         "type": "internal",
         "noFollow": false,
         "tagTitle": "Acessórios",
