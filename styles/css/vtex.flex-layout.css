@@ -97,7 +97,7 @@
 
 .flexRow--conteiner-botao-atendimento-whatsapp {
   position: fixed;
-  z-index: 9999;
+  z-index: 998;
   bottom: 20px;
   right: 20px;
 }
@@ -474,7 +474,7 @@
 
 .flexRow--footer-2-desktop {
   padding: 32px 0 36px;
-  background-color: #04264B;
+  background-color: #143B65;
 }
 
 .flexRow--credits {

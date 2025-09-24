@@ -291,7 +291,7 @@
   "image#footer-facebook": {
     "props": {
       "blockClass": "logo-rede-social",
-      "src": "assets/facebook-logo-in-circular-shape.png",
+      "src": "assets/facebook-icon-footer.svg",
       "alt": "Facebook",
       "link": {
         "openNewTab": true,
@@ -302,7 +302,7 @@
   "image#footer-instagram": {
     "props": {
       "blockClass": "logo-rede-social",
-      "src": "assets/social.png",
+      "src": "assets/instagram-icon-footer.svg",
       "alt": "Instagram",
       "link": {
         "openNewTab": true,
@@ -313,7 +313,7 @@
   "image#footer-vimeo": {
     "props": {
       "blockClass": "logo-rede-social",
-      "src": "assets/vimeo.png",
+      "src": "assets/vimeo-icon-footer.svg",
       "alt": "Vimeo",
       "link": {
         "openNewTab": true,
@@ -324,7 +324,7 @@
   "image#footer-linkedin": {
     "props": {
       "blockClass": "logo-rede-social",
-      "src": "assets/linkedin.png",
+      "src": "assets/linkedin-icon-footer.svg",
       "alt": "Linkedin",
       "link": {
         "openNewTab": true,
@@ -351,7 +351,7 @@
   },
   "image#logo-grupomfm": {
     "props": {
-      "src": "assets/logo-nav.png",
+      "src": "assets/logo-grupo-1.png.webp",
       "blockClass": "logo-nav-grupo-mfm"
     }
   },
