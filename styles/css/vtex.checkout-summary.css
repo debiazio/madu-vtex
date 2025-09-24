@@ -1,5 +1,5 @@
 .summarySmallContent {
-    border-top:1px solid #D9D8D7;
+    border-top: unset;
 }
 .summarySmallDisclaimer{
     display:none;

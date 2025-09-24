@@ -1,11 +1,33 @@
+.filter__container--filterCol :global(.vtex-button) :global(.vtex-button__label)::before{
+  content: "limpar filtos";
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.filter__container--filterCol :global(.vtex-button) :global(.vtex-button__label){
+  font-size: 0;
+}
+
+.filter__container--filterCol :global(.vtex-button){
+  background-color: black;
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.filter__container--filterCol--clearAllFilters{
+  border: none;
+}
+
 .orderByButton {
   background-color: transparent;
+
 }
 
 .gallery--grid {
   gap: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .galleryItem--normal {
@@ -53,26 +75,42 @@
 
 
 .filter__container--clearAllFilters {
-  padding: 20px;
+  padding: 20px 10px;
   text-align: center;
+
 }
 
+.filter__container--brand .filterTitleSpan--filterCol{
+  font-size: 0;
+}
+
+.filter__container--brand .filterTitleSpan--filterCol::before{
+  content: "Linha";
+  font-size: 1rem;
+}
+
+.filterIcon{
+  padding: 10px 0 0 10px;
+}
 
 /* DESKTOP */
 .filter__container--title,
-.filter__container--brand,
-.filter__container--selectedFilters,
-.filterIcon,
-.filter__container--priceRange {
-  display: none;
+.filter__container--selectedFilters{
+  padding: 0 5px;
 }
 
 .filterItem :global(.vtex-checkbox__line-container) {
   align-items: center;
 }
 
+
+
 .filterAvailable {
-  padding: 24px 0 15px;
+  padding: 10px;
+}
+
+.filterContent--filterCol{
+  padding: 0 10px;
 }
 
 .filterTitleSpan {
@@ -101,12 +139,13 @@
   margin-right: 9px;
 }
 
-.filterTemplateOverflow {
+/* .filterTemplateOverflow {
   padding-bottom: 16px;
-}
+} */
 
 .filter__container {
-  border-color: #D9D8D7;
+  /* border-color: #D9D8D7; */
+  border: none;
 }
 
 .filterItem :global(.vtex-checkbox__box) {
@@ -130,6 +169,10 @@
   font-size: 1rem;
   text-transform: none;
   font-weight: 400;
+}
+
+.filter__container--priceRange .filterTemplateOverflow--filterCol{
+  padding: 0 15px;
 }
 
 .totalProducts--layout::after {

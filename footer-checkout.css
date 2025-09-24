@@ -136,20 +136,28 @@ table {
 
 
 /* inicio */
+
+* {
+  font-family: 'Montserrat', sans-serif!important;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+  color: black;
 }
 
 
-h2,
-p,
-a {
+
+footer h2,
+footer p,
+footer a {
   color: white;
 }
 
 a,
 a:hover {
   text-decoration: none;
+  color: white;
 }
 
 h2 {
@@ -167,6 +175,7 @@ a {
   flex-direction: row;
   gap: 40px;
   padding: 30px 40px;
+  font-size: 12px
 }
 
 .coluna-1-footer,
@@ -185,9 +194,21 @@ a {
   width: 200px;
 }
 
+.coluna-1-footer h2{
+  color: transparent!important;
+}
+
+h2{
+  font-size: small;
+ }
 
 footer {
-  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #143B65;
+  font-family: 'Montserrat', sans-serif!important;
+  color: black;
 
 }
 
@@ -205,6 +226,10 @@ footer {
   align-items: center;
 }
 
+.atendimento p{
+  line-height: 1.5;
+ }
+
 .atendimento img {
   max-width: 15px;
   max-height: 15px;
@@ -218,14 +243,22 @@ footer {
   margin-left: 10px;
 }
 
+.conteiner-linha-final{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
 
 .linha-final-footer {
-  background-color: black;
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    background-color: black;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
 }
 
 .linha-final-footer {

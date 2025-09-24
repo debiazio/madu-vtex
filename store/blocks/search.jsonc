@@ -138,7 +138,8 @@
       "truncateFilters": true,
       "appliedFiltersOverview": "show",
       "showClearAllFiltersOnDesktop": true
-      // "navigationTypeOnMobile":"collapsible"
+      // "navigationTypeOnMobile":"collapsible",
+
     }
   },
   "flex-layout.row#searchbread": {
