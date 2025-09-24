@@ -314,20 +314,7 @@
       "blockClass": "titulo-categorias"
     }
   },
-  // CATEGORIAS MOBILE
-  "flex-layout.row#categorias-mobile": {
-    "props": {
-      "blockClass": "categorias-mobile"
-    },
-    "children": [
-      "link#link-carrinhos",
-      "link#link-armarios",
-      "link#link-estantes",
-      "link#link-acessorios",
-      "link#link-lancamentos",
-      "link#link-feira-hospitalar"
-    ]
-  },
+
   // MADU ONE
   "flex-layout.row#mais-vendidos-madu-extra": {
     "props": {
@@ -366,8 +353,7 @@
       "blockClass": "prateleira-madu-extra"
     },
     "children": [
-      "list-context.product-list#prateleira-home-madu-extra1",
-      "list-context.product-list#prateleira-home-madu-extra2"
+      "list-context.product-list#prateleira-home-madu-extra1"
     ]
   },
   "list-context.product-list#prateleira-home-madu-extra1": {
@@ -391,37 +377,12 @@
       },
       "infinite": false,
       "fullWidth": false,
-      "showNavigationArrows": "never",
-      "showPaginationDots":"never",
+      "showNavigationArrows": "always",
+      "showPaginationDots":"always",
       "blockClass": "prateleira-home-madu-extra"
     }
   },
-  "list-context.product-list#prateleira-home-madu-extra2": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#prateleira-home2"
-    ],
-    "props": {
-      "orderBy":"OrderByTopSaleDESC",
-      "blockClass": "list-prateleira-home-madu-extra"
-    }
-  },
-  "slider-layout#prateleira-home2": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 2,
-        "phone": 1
-      },
-      "infinite": false,
-      "fullWidth": false,
-      "showNavigationArrows": "never",
-      "showPaginationDots":"never",
-      "blockClass": "prateleira-home-madu-extra"
-    }
-  },
+
 
 
   // MADU ONE
@@ -469,24 +430,19 @@
   "slider-layout#prateleira-home-one": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 5,
         "tablet": 2,
         "phone": 1
       },
-      "infinite": true,
+      "infinite": false,
       "fullWidth": false,
       "showNavigationArrows": "always",
-      "showPaginationDots": "always",
-      "blockClass": "shelf"
+      "showPaginationDots":"always",
+      "blockClass": ["prateleira-home-madu-extra", "prateleira-home-madu-one"]
     }
   },
 
-  // PRATELEIRA 1
-  "flex-layout.row#shelf-final": {
-    "children": [
-      "list-context.product-list#prateleira-home-final"
-    ]
-  },
+
   "list-context.product-list#prateleira-home-final": {
     "blocks": [
       "product-summary.shelf"
@@ -510,71 +466,6 @@
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
       "blockClass": "shelf"
-    }
-  },
-  // PRATELEIRA 2
-  "list-context.product-list#prateleira-home-final-1": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#prateleira-home-final-1"
-    ],
-    "props": {
-      "orderBy": "OrderByNameDESC"
-    }
-  },
-  "slider-layout#prateleira-home-final-1": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 2,
-        "phone": 2
-      },
-      "infinite": false,
-      "fullWidth": false,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "always",
-      "blockClass": "shelf"
-    }
-  },
-  "list-context.product-list#prateleira-home-final-2": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#prateleira-home-final-2"
-    ],
-    "props": {
-      "orderBy": "OrderByPriceDESC"
-    }
-  },
-  "slider-layout#prateleira-home-final-2": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 2,
-        "phone": 2
-      },
-      "infinite": false,
-      "fullWidth": false,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "always",
-      "blockClass": "shelf"
-    }
-  },
-  "flex-layout.row#ver-mais-final": {
-    "props": {
-      "blockClass": "content-ver-mais-final"
-    },
-    "children": [
-      "link#ver-mais-final"
-    ]
-  },
-  "link#ver-mais-final": {
-    "props": {
-      "label": "Ver todos os produtos",
-      "blockClass": "link-ver-mais"
     }
   }
 }

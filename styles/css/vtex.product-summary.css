@@ -18,6 +18,10 @@
   width: 90%;
 }
 
+.buyButton :global(.vtex-button):hover{
+  background-color: black;
+}
+
 .buyButtonText{
   font-size: 0;
 }
@@ -25,7 +29,7 @@
 
 .buyButtonText::after{
   content: "COMPRAR";
-  font-size: 18px;
+  font-size: 13px;
 }
 /* .image{
   box-shadow:0 4px 8px #ccc;
