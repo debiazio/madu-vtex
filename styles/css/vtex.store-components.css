@@ -1,3 +1,34 @@
+
+
+.imageElement--bandeiras-cartoes-pdp{
+  width: 50%;
+}
+
+.thumbImg{
+  border-radius: 15px;
+}
+
+.productImagesThumbActive{
+  opacity: 1!important;
+}
+
+.productImagesThumb:hover{
+  opacity: 1;
+}
+
+.productImagesThumb{
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ECECEC;
+  border-radius: 10px;
+  opacity: 0.5;
+  margin-right: .6rem;
+}
+
+.productImageTag{
+  border-radius: 15px;
+}
+
 .container--product-spec {
   height: 100% !important;
 }
@@ -105,7 +136,7 @@
 
 .container {
   padding-top: 0;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .sizeDesktop {
@@ -370,13 +401,18 @@
   height: 100% !important;
 }
 
-/* .productImage{
-  width:50%;
+.productImage {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ECECEC;
+  border-radius: 10px;
 }
-.productImagesContainer--list{
-  display:flex;
+
+
+.productImagesContainer--list {
+  display: flex;
   flex-wrap: wrap;
-} */
+}
 
 .imageElement--imagem-metodos-pgto-pdp {
   width: 1em;
@@ -385,8 +421,10 @@
 }
 
 .productBrand {
-  color: #3A3434;
-  font-size: 28px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #383838;
 }
 
 .skuSelectorTextContainer {
@@ -394,9 +432,10 @@
 }
 
 .skuSelectorName {
-  font-size: 13px;
-  color: #3A3434;
-  text-transform: uppercase;
+  color: #202020;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .skuSelectorOptionsList {
@@ -443,12 +482,15 @@
   opacity: 1;
   /* border-color: #D6C0B0; */
   border: none;
-
+  padding: 2px !important;
 }
 
 .skuSelectorItem--selected.skuSelectorItemImage {
   border-color: #251203;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.897);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.897); */
+
+  padding: 2px !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.658);
 }
 
 .shippingContainer :global(.vtex-input__label) {

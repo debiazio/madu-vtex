@@ -11,10 +11,12 @@
 }
 .sellingPriceValue--summary,
 .sellingPriceValue{
-  color:#000;
-  font:16px/1 "Montserrat Semibold";
+  font:25px/1 "Montserrat Semibold";
   margin:0 0 10px;
   display:block;
+  font-family: Montserrat;
+  color: #000;
+  font-weight: 500;
 }
 .installments--summary{
   color:#7B7979;

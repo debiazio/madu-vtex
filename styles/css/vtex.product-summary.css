@@ -1,3 +1,4 @@
+
 .brandName{
   text-align: center;
 }
@@ -7,7 +8,7 @@
 }
 
 .containerNormal{
-  max-width: 325px;
+  max-width: unset!important;
   margin: 0;
 }
 

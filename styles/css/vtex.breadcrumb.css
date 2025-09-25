@@ -6,8 +6,9 @@
 
 .container{
   text-transform: capitalize;
+  padding:15px 0;
+  align-items:center;
 }
-
 
 .breadcrumb-1-x-link--1{
   font-size: 12px;
@@ -21,16 +22,35 @@
 }
 .homeLink::before{
     content:"Home";
-    font-size:10px;
-    color:#7B7979;
-}
-.link,
-.term{
-    font-size:12px;
-    color:black;
+    font-size:.92em;
     padding:0;
     line-height:1;
+    color: #161616;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 500;
+    text-align: left;
 }
+
+.term{
+    font-size:.92em;
+    padding:0;
+    line-height:1;
+    color: #636363;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.link{
+    font-size:.92em;
+    padding:0;
+    line-height:1;
+    color: #161616;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
 .arrow{
     padding:0 5px;
 }
@@ -44,12 +64,9 @@
 .link:hover,
 .arrow:last-child .link,
 .term{
-    color:#D9D8D7;
+    color:#636363;
 }
-.container{
-    padding:10px 0;
-    align-items:center;
-}
+
 .caretIcon{
     display:none;
 }

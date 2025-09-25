@@ -28,7 +28,18 @@
   // QUANDO O PRODUTO TEM ESTOQUE
   "flex-layout.row#product-main": {
     "props": {
-      "blockClass": "product-main"
+      "blockClass": "product-main",
+      "fullWidth": false,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#colunas-pdp"
+    ]
+  },
+  "flex-layout.row#colunas-pdp": {
+    "props": {
+      "blockClass": "product-main-colunas"
     },
     "children": [
       "flex-layout.col#product-left-col",
@@ -91,11 +102,11 @@
       "blockClass": "coluna-direita-produto"
     },
     "children": [
-      "flex-layout.row#product-breadcrumb",
       "responsive-layout.desktop#nome-do-produto",
+
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "flex-layout.row#aviso-valor-unitario",
+      // "flex-layout.row#aviso-valor-unitario",
       // "flex-layout.row#metodos-pagamento-pdp",
       "sku-selector",
       "flex-layout.col#product-recommendations-custom",
@@ -105,6 +116,8 @@
       "change-text-pdp-app",
       "bundle",
       "flex-layout.row#busca-cep",
+      "flex-layout.row#metodos-pagamento-pdp",
+      "image#bandeiras",
       "flex-layout.row#contao-whatsapp"
     ]
   },
@@ -155,7 +168,9 @@
     ],
     "props": {
       "blockClass": "product-name",
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "showProductReference": true,
+      "showSku": true
     }
   },
   // AVISO VALOR UNITÁRIO
@@ -173,6 +188,30 @@
       "text": "Valor unitário, consulte-nos para maiores informações"
     }
   },
+  // BUSCA CEP
+  "flex-layout.row#busca-cep": {
+    "props": {
+      "blockClass": "linha-cep",
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#label-cep",
+      "shipping-simulator"
+    ]
+  },
+  "rich-text#label-cep": {
+    "props": {
+      "blockClass": "label-cep",
+      "text": "Consulte o frete e o prazo de entrega:"
+    }
+  },
+  "shipping-simulator": {
+    "props": {
+      "shouldUpdateOrderForm": "true"
+    }
+  },
+  // BANDEIRAS DE PAGAMENTO
   // INFORMATIVO DE FORMAS DE PAGAMENTO
   "flex-layout.row#metodos-pagamento-pdp": {
     "props": {
@@ -189,8 +228,8 @@
       "blockClass": "linha-secundaria-metodos-pgto"
     },
     "children": [
-      "image#cartao-credito"
-      // "rich-text#cartao-credito"
+      "image#cartao-credito",
+      "rich-text#cartao-credito"
     ]
   },
   "flex-layout.row#linha2-metodos-pgto": {
@@ -255,27 +294,11 @@
       "blockClass": "bundle-acessorios"
     }
   },
-  // BUSCA CEP
-  "flex-layout.row#busca-cep": {
+  // IMAGEM BANDEIRAS DE PAGAMENTO
+  "image#bandeiras":{
     "props": {
-      "blockClass": "linha-cep",
-      "fullWidth": true,
-      "colSizing": "auto"
-    },
-    "children": [
-      "rich-text#label-cep",
-      "shipping-simulator"
-    ]
-  },
-  "rich-text#label-cep": {
-    "props": {
-      "blockClass": "label-cep",
-      "text": "Consulte o frete e o prazo de entrega:"
-    }
-  },
-  "shipping-simulator": {
-    "props": {
-      "shouldUpdateOrderForm": "true"
+      "blockClass": "bandeiras-cartoes-pdp",
+      "src": "assets/bandeiras_cartoes-768x93.webp"
     }
   },
   // COMPRE PELO WHATSAPP

@@ -70,17 +70,7 @@
       }
     }
   },
-  "rich-text#titulo-mais-vendidos": {
-    "props": {
-      "text": "MAIS **VENDIDOS**",
-      "blockClass": "mais-vendidos-text"
-    }
-  },
-  "flex-layout.row#shelf-mais-vendidos": {
-    "children": [
-      "list-context.product-list#mais-vendidos"
-    ]
-  },
+
   "list-context.product-list#mais-vendidos": {
     "blocks": [
       "product-summary.shelf"
@@ -106,20 +96,7 @@
       "blockClass": "shelf"
     }
   },
-  "flex-layout.row#categorias": {
-    "props": {
-      "blockClass": "categorias-madu",
-      "preventHorizontalStretch": true
-    },
-    "children": [
-      "link#link-carrinhos",
-      "link#link-armarios",
-      "link#link-estantes",
-      "link#link-acessorios",
-      "link#link-lancamentos",
-      "link#link-feira-hospitalar"
-    ]
-  },
+
   "link#link-carrinhos": {
     "props": {
       "href": "/carrinhos?_q=Carrinhos&map=ft",
