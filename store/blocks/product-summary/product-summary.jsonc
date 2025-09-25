@@ -85,12 +85,7 @@
       "message":"De: {listPriceValue}"
     }
   },
-  "product-selling-price#summary": {
-    "props": {
-      "blockClass": "summary",
-      "message":"{sellingPriceValue}"
-    }
-  },
+
   "product-spot-price#summary":{
     "props":{
       "blockClass": "summary",
