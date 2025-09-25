@@ -228,6 +228,10 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .sliderTrackContainer--slider-home-desktop{
+    border-radius: 0;
+  }
+
   .sliderRightArrow--slider-avaliacoes {
     margin-right: -20px;
   }

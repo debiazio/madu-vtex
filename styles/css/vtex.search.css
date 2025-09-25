@@ -10,6 +10,7 @@
     }
     .biggy-autocomplete{
         top: 9px;
-        right: -103px;
+        right: unset;
+        max-width: unset;
     }
 }

@@ -433,6 +433,19 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .wrapper--subtitulo-shopBy{
+    height: 15vh;
+  }
+
+  .paragraph--titulo-categorias-shopBy {
+    margin: 45px 0 0;
+  }
+
+  .paragraph--mais-vendidos-text {
+    font-size: 18px;
+    margin: 20px 5px;
+  }
+
   .strong--texto-modal-modal {
     font-size: 1.25rem;
     font-weight: 900;

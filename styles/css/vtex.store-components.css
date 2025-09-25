@@ -842,6 +842,11 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .imageElement--plus-titulo{
+    max-width: 11px!important;
+    margin-bottom: 3px;
+  }
+
   .shippingTableRow {
     height: 120px;
   }

@@ -752,6 +752,17 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .flexRowContent--content-madu-cat .stretchChildrenWidth,
+  .flexRowContent--linha-veja-mais-produtos .stretchChildrenWidth,
+  .flexRowContent--linha-possibilidades .stretchChildrenWidth {
+    padding: 0 10px;
+  }
+
+
+  .flexCol--coluna-shopby{
+    margin-top: 35px;
+  }
+
   .flexRowContent--texto-atencao {
     margin: 10px;
   }
