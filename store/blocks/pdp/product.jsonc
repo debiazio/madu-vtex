@@ -1,14 +1,15 @@
 {
   "store.product": {
     "children": [
-      "responsive-layout.phone#nome-do-produto",
+      "responsive-layout.mobile#breadcrumb",
+      "responsive-layout.mobile#nome-do-produto",
       "condition-layout.product#availability",
       "flex-layout.row#relatedProducts",
       "flex-layout.row#abas-pdp",
       "flex-layout.row#veja-mais-produtos"
     ]
   },
-  "responsive-layout.phone#nome-do-produto": {
+  "responsive-layout.mobile#nome-do-produto": {
     "children": [
       "flex-layout.row#product-name"
     ]
@@ -33,8 +34,13 @@
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.row#product-breadcrumb",
+      "responsive-layout.desktop#breadcrumb",
       "flex-layout.row#colunas-pdp"
+    ]
+  },
+  "responsive-layout.desktop#breadcrumb":{
+    "children": [
+      "flex-layout.row#product-breadcrumb"
     ]
   },
   "flex-layout.row#colunas-pdp": {
@@ -103,7 +109,6 @@
     },
     "children": [
       "responsive-layout.desktop#nome-do-produto",
-
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       // "flex-layout.row#aviso-valor-unitario",
@@ -119,6 +124,11 @@
       "flex-layout.row#metodos-pagamento-pdp",
       "image#bandeiras",
       "flex-layout.row#contao-whatsapp"
+    ]
+  },
+  "responsive-layout.mobile#breadcrumb": {
+    "children": [
+      "flex-layout.row#product-breadcrumb"
     ]
   },
   "flex-layout.col#product-recommendations-custom": {
@@ -153,7 +163,7 @@
   },
   "breadcrumb": {
     "props": {
-      "showOnMobile": false
+      "showOnMobile": true
     }
   },
   "responsive-layout.desktop#nome-do-produto": {
@@ -295,7 +305,7 @@
     }
   },
   // IMAGEM BANDEIRAS DE PAGAMENTO
-  "image#bandeiras":{
+  "image#bandeiras": {
     "props": {
       "blockClass": "bandeiras-cartoes-pdp",
       "src": "assets/bandeiras_cartoes-768x93.webp"
@@ -472,7 +482,7 @@
   },
   "rich-text#produtos-relacionados": {
     "props": {
-      "text": "Adicione mais possibilidades:",
+      "text": "Conheça nossos acessorios!",
       "blockClass": "produtos-relacionados"
     }
   },
@@ -485,21 +495,25 @@
     ],
     "props": {
       "orderBy": "OrderByPriceASC",
-      "maxItems": 8,
+      "maxItems": 36,
       "blockClass": "list-context"
     }
   },
   "slider-layout#sugestoes-pdp": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
+        "desktop": 5,
         "tablet": 2,
         "phone": 1
       },
       "infinite": true,
       "fullWidth": true,
       "showNavigationArrows": "always",
-      "blockClass": "shelf"
+      "blockClass": "shelf",
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      }
     }
   },
   // VEJA MAIS PRODUTOS

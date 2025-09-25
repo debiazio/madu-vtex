@@ -78,6 +78,7 @@
         color:#43483B;
     }
     .container{
-        padding:22px 0 12px;
+        text-align: center;
+        padding: 10px 0;
     }
 }
