@@ -1,0 +1,9 @@
+
+.orderform-template-holder #client-profile-data .step.client-profile-data .accordion-toggle>span{
+  color: green;
+}
+
+.main-footer{
+  position: unset;
+  background-color: #143b65;
+}
