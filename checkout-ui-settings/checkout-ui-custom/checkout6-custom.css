@@ -136,31 +136,157 @@ table {
   font-family: "Montserrat", sans-serif !important;
 }
 
+.summary-template-holder tfoot tr td.monetary {
+  white-space: nowrap;
+}
+
+.table.cart-items td.quantity,
+.table.cart-items td.quantity input {
+  background-color: #cbcbcb;
+}
+
+.input-small,
+.orderform-template-holder #shipping-data input[type=text]:not(.pac-target-input) {
+  margin-bottom: 5px;
+}
+
+.table.cart-items thead tr th.product {
+  width: calc(100% - 260px) !important;
+}
+
+.table.cart-items td.quantity .item-quantity-change i {
+  line-height: unset;
+}
+
+.table.cart-items i.icon.icon-remove.item-remove-ico:before {
+  width: 11px
+}
+
 /* FORMULARIO  */
-.orderform-template-holder #client-profile-data form.client-pre-email .accordion-toggle>span, .orderform-template-holder #client-profile-data .step.client-profile-data .accordion-toggle>span, .orderform-template-holder #shipping-data .accordion-toggle>span, .orderform-template-holder #payment-data .accordion-toggle>span{
+.client-profile-summary {
+  line-height: 2;
+}
+
+.street,
+.v-changeShippingTimeInfo-elem-active,
+.postalCode,
+.state,
+.city,
+.number,
+.complement,
+.neighborhood,
+.shp-summary-group-price,
+.vtex-omnishipping-1-x-summaryChange {
+  line-height: 2;
   font-size: 1.3em;
 }
 
-.orderform-template-holder #shipping-data .accordion-toggle{
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap .payment-group-item-text:before,
+.email,
+.name,
+.tel,
+.orderform-template-holder #client-profile-data form.client-pre-email .accordion-toggle>span,
+.orderform-template-holder #client-profile-data .step.client-profile-data .accordion-toggle>span,
+.orderform-template-holder #shipping-data .accordion-toggle>span,
+.orderform-template-holder #payment-data .accordion-toggle>span {
+  font-size: 1.3em;
+}
+
+.orderform-template-holder #shipping-data .accordion-toggle {
   font-size: 1.5em;
 }
 
-.orderform-template .cart-template.mini-cart h2{
+.orderform-template .cart-template.mini-cart h2 {
   font-size: 1.5em;
+}
+
+.btn-large {
+  padding: 10px;
+}
+
+input.success:not([invalid="true"]) {
+  background-position: right;
+}
+
+.checkout-steps_item:after {
+  content: unset;
+}
+
+.orderform-template-holder #shipping-data input.error[type=text]:not(.pac-target-input) {
+  margin-bottom: 5px;
+}
+
+.icon-edit:before {
+  content: "Editar";
+}
+
+
+.icon-lock:before {
+  content: "";
 }
 
 /* FORMULARIO ^^^^ */
 
 
 /* RESUMO DO PEDIDO  */
-.orderform-template .cart-template.mini-cart #go-to-cart-button{
-      text-decoration: none;
-    padding: 10px;
-    font-size: .7em;
+.orderform-template .cart-template.mini-cart #go-to-cart-button {
+  text-decoration: none;
+  padding: 10px;
+  font-size: .7em;
 }
-.product-name{
-  font-size: 1.3EM;
+
+.product,
+.product-name,
+.product-price,
+.quantity,
+.buy-more-link,
+.header-link {
+  font-size: 1.2em;
+  line-height: 2;
 }
+
+.orderform-template .cart-template.mini-cart .item .fn {
+  width: calc(65% - 20px);
+}
+
+.mini-cart .item .fn {
+  white-space: break-spaces;
+}
+
+.photo {
+  width: 55px;
+}
+
+.orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td,
+
+.mini-cart .description {
+  font-size: 1.2em;
+}
+
+.orderform-template .cart-template.mini-cart .summary-totalizers tbody td {
+  font: 1em sans-serif;
+}
+
+.btn-success {
+  font-size: 1.2em;
+}
+
+.mini-cart .summary-cart-template-holder {
+  overflow: hidden;
+}
+
+.orderform-template .cart-template.mini-cart .item .description {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.orderform-template .cart-template.mini-cart .summary-template-holder button[type=submit],
+.orderform-template .cart-template.mini-cart .summary-template-holder input[type=text] {
+  height: 45px !important;
+}
+
+
+
 /* RESUMO DO PEDIDO  */
 
 /* footer  */
@@ -359,5 +485,25 @@ footer {
     max-width: 300px;
     max-height: 30px;
     padding: 10px 0;
+  }
+
+  body:not(.body-cart) .main-header .logo:before {
+    content: "";
+  }
+
+  .body .main-header .logo img,
+  body:not(.body-cart) .main-header .logo svg,
+  body:not(.body-cart) .main-header .logo img {
+    display: block !important;
+  }
+
+  .cart {
+    border-radius: unset;
+  }
+
+  .outras-imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }

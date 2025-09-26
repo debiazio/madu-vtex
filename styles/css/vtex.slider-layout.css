@@ -154,12 +154,12 @@
 
 .sliderLeftArrow--prateleira-home-madu-extra,
 .sliderLeftArrow--shelf {
-  left: -10px;
+  left: 0px;
 }
 
 .sliderRightArrow--prateleira-home-madu-extra,
 .sliderRightArrow--shelf {
-  right: -10px;
+  right: 0px;
 }
 
 .paginationDotsContainer--shelf-prateleira-final {
