@@ -201,7 +201,7 @@
   },
   "image#endereco-footer": {
     "props": {
-      "src": "assets/maps-and-flags.png",
+      "src": "assets/localization.svg",
       "alt": "logo de email",
       "blockClass": "icones-footer"
     }

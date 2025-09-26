@@ -179,8 +179,8 @@
     "props": {
       "blockClass": "product-name",
       "colSizing": "auto",
-      "showProductReference": true,
-      "showSku": true
+      "showProductReference": false,
+      "showSku": false
     }
   },
   // AVISO VALOR UNITÁRIO

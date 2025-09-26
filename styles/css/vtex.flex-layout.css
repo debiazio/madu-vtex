@@ -242,7 +242,7 @@
 .flexRowContent--linha-possibilidades .stretchChildrenWidth {
   width: 100% !important;
   overflow: hidden;
-  padding: 0 20px;
+  padding: 0;
 }
 
 
