@@ -752,6 +752,10 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .flexRowContent--minicart-footer {
+    padding: 20px;
+  }
+
   .flexRowContent--content-madu-cat .stretchChildrenWidth,
   .flexRowContent--linha-veja-mais-produtos .stretchChildrenWidth,
   .flexRowContent--linha-possibilidades .stretchChildrenWidth {
@@ -862,10 +866,10 @@
   }
 
   .flexRowContent--main-header-mobile-2 {
-    padding: 0;
+    padding: 10px 0;
     border-bottom: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 
   }
 

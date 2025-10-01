@@ -1,17 +1,16 @@
-
-.sliderTrack--prateleira-home-madu-extra{
+.sliderTrack--prateleira-home-madu-extra {
   gap: 20px;
   padding: 10px;
 }
 
-.sliderLayoutContainer--prateleira-home-madu-extra{
+.sliderLayoutContainer--prateleira-home-madu-extra {
   padding: 0;
-  padding-left: 0!important;
-  padding-right: 0!important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   margin-bottom: 20px;
 }
 
-.sliderLayoutContainer--prateleira-home-madu-one{
+.sliderLayoutContainer--prateleira-home-madu-one {
   margin-bottom: 40px;
 }
 
@@ -25,7 +24,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.slide--prateleira-home-madu-extra:hover{
+.slide--prateleira-home-madu-extra:hover {
   box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
 }
 
@@ -104,14 +103,13 @@
   background-color: #173866;
 }
 
-.paginationDotsContainer{
-  bottom: -20px!important;
+.paginationDotsContainer {
+  bottom: -20px !important;
 }
 
-.paginationDotsContainer--prateleira-home-madu-extra
-.paginationDotsContainer--shelf {
+.paginationDotsContainer--prateleira-home-madu-extra .paginationDotsContainer--shelf {
   display: block;
-  bottom: -20px!important;
+  bottom: -20px !important;
   text-align: center;
   /* bottom:-70px;
   margin:41px 0 29px; */
@@ -133,17 +131,17 @@
 .sliderLeftArrow--prateleira-home-madu-extra,
 .sliderRightArrow--prateleira-home-madu-extra,
 .sliderArrows--shelf {
-  background: #fff !important;
+  background: #E2E2E2 !important;
   border-radius: 50%;
   margin: 0;
-  padding: 11px 11px 12px 17px;
+  padding: 12px 12px 11px 17px;
   border: 1px solid #E2E2E2;
 }
 
 .sliderLeftArrow--prateleira-home-madu-extra:hover,
 .sliderRightArrow--prateleira-home-madu-extra:hover,
 .sliderArrows--shelf:hover {
-   background: #c3d4eb!important;
+  background: #c0c0c0 !important;
 }
 
 .caretIcon--prateleira-home-madu-extra,
@@ -228,7 +226,12 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
-  .sliderTrackContainer--slider-home-desktop{
+
+  .sliderLayoutContainer--slider-home-desktop {
+    padding: 0;
+  }
+
+  .sliderTrackContainer--slider-home-desktop {
     border-radius: 0;
   }
 

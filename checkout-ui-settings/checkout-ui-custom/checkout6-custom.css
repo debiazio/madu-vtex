@@ -136,6 +136,24 @@ table {
   font-family: "Montserrat", sans-serif !important;
 }
 
+.vtex-omnishipping-1-x-addressForm{
+  margin-top: 20px;
+}
+
+tfoot .monetary{
+  margin-right: 12px;
+}
+
+.orderform-template .cart-template.mini-cart .quantity{
+  background-color: none!important;
+  background: none!important;
+  box-shadow: none!important;
+}
+
+.coupon-fields .btn{
+  font-size: .9em;
+}
+
 .summary-template-holder tfoot tr td.monetary {
   white-space: nowrap;
 }

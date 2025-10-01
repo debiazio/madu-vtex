@@ -40,8 +40,15 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  .container :global(.vtex-button)::before {
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-top: -2px;
+  }
+
   .container {
     margin-right: 31px;
+    margin-top: 6px;
   }
 
   .label {

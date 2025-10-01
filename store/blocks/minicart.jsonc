@@ -136,6 +136,9 @@
     }
   },
   "flex-layout.col#product-price-minicart": {
+    "props": {
+      "blockClass": "price-minicart-mobile"
+    },
     "children": [
       "price"
     ]
