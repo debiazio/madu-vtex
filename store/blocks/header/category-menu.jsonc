@@ -220,6 +220,7 @@
   },
   "menu-item#maduOne-560": {
     "props": {
+      "blockClass": "menu-principal-submenu",
       "type": "custom",
       "id": "menu-item-acessorios-linhas",
       "highlight": false,

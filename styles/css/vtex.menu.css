@@ -1,3 +1,8 @@
+.styledLinkContent {
+  font-weight: 900 !important;
+  color: black;
+}
+
 .styledLinkContent--menu-principal-item:hover {
   color: #153B64;
 }
@@ -87,6 +92,8 @@
   border-bottom: 0;
   border-radius: 10px;
   border: 1px solid #C7C7C7;
+  font-weight: 900 !important;
+  color: black;
 }
 
 .styledLink--menu-principal-subitem {
