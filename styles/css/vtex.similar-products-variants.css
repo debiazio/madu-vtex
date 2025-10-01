@@ -15,19 +15,32 @@
 }
 
 .title--similar-variant::before {
-  content: "Cores de gavetas";
+  content: "Outras Cores de gavetas";
   display: block;
 }
 
 .title--similar-variant {
-  text-transform: uppercase;
   visibility: hidden;
   position: relative;
-  font-size: 13px;
-  color: #3A3434;
+  color: #202020;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .title--similar-variant::before {
   visibility: visible;
   position: absolute;
+}
+
+.variants--similar-variant {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .variants--similar-variant,
+  .title--similar-variant{
+    margin-left: 40px;
+  }
 }

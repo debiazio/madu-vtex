@@ -81,7 +81,7 @@
       // "flex-layout.row#banner-categoria",
       // "flex-layout.row#categorias",
       "flex-layout.row#banner-pesquisa",
-      "flex-layout.row#conheca-nossas-linhas",
+      // "flex-layout.row#conheca-nossas-linhas",
       "flex-layout.row#result"
     ],
     "props": {
