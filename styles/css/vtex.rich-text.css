@@ -1,3 +1,24 @@
+
+.paragraph--titulo-conheca{
+  padding: 5px;
+}
+
+.paragraph--label-conheca{
+  padding: 5px 15px;
+  border-radius: 35px;
+  background-color: #04264B;
+  color: #FFF;
+}
+
+.paragraph--label-conheca:hover{
+  background-color: #000;
+  color: #FFF;
+}
+
+.container--label-conheca{
+  cursor: pointer;
+}
+
 .paragraph--texto-veja-mais-produtos,
 .paragraph--produtos-relacionados {
   font-family: "Montserrat", Sans-serif;
