@@ -564,7 +564,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos",
+        "href": "/carrinhos",
         "noFollow": false,
         "tagTitle": "Carrinhos",
         "text": "Carrinhos"
@@ -579,7 +579,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos",
+        "href": "/armarios",
         "noFollow": false,
         "tagTitle": "Armários",
         "text": "Armários"
@@ -594,7 +594,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/produtos",
+        "href": "/estantes",
         "noFollow": false,
         "tagTitle": "Estantes",
         "text": "Estantes"
@@ -610,7 +610,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/colecao",
+        "href": "/moveis/modulos",
         "noFollow": false,
         "tagTitle": "Acessórios",
         "text": "Acessórios"
@@ -648,6 +648,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
+        "href": "/organizadores",
         "noFollow": false,
         "tagTitle": "Organizadores",
         "text": "Organizadores"
@@ -664,7 +665,6 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/colecao",
         "noFollow": false,
         "tagTitle": "Linhas",
         "text": "Linhas"
@@ -705,7 +705,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/mad-u-one",
         "noFollow": false,
         "tagTitle": "MAD.U One",
         "text": "MAD.U One"
@@ -743,7 +743,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/mad-u-extra",
         "noFollow": false,
         "tagTitle": "MAD.U Extra",
         "text": "MAD.U Extra"
@@ -782,7 +782,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/mad-u-expand",
         "noFollow": false,
         "tagTitle": "MAD.U Expand",
         "text": "MAD.U Expand"
@@ -797,7 +797,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/mad-u-express",
         "noFollow": false,
         "tagTitle": "MAD.U Express",
         "text": "MAD.U Express"
