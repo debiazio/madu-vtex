@@ -49,9 +49,9 @@
 }
 
 @font-face {
-  font-family: "Rubik SemiBold";
-  src: url(assets/fonts/Rubik-SemiBold.woff2),
-    url(assets/fonts/Rubik-SemiBold.ttf);
+  font-family: "Rubik ExtraBold";
+  src: url(assets/fonts/Rubik-ExtraBold.woff2),
+    url(assets/fonts/Rubik-ExtraBold.ttf);
   font-display: swap;
 }
 

@@ -1,3 +1,27 @@
+.flexColChild--coluna-imagens-caracteristicas {
+  display: flex;
+  align-items: center;
+  justify-content: center;''
+}
+
+.flexRowContent--caracteristicas {
+  width: 617px;
+  height: 326px;
+}
+
+.flexRow--caracteristicas {
+  background-color: #F5F5F5;
+}
+
+.flexRowContent--linha-caracteristicas-madubox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+}
+
 .flexRow--linha-maletas-madubox {
   margin: 80px 0;
   min-height: 370px;

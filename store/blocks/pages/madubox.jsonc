@@ -2,7 +2,8 @@
   "store.custom#madubox": {
     "blocks": [
       "flex-layout.row#desktop-banner-madubox",
-      "flex-layout.row#desktop-banner2-maletas-madubox"
+      "flex-layout.row#desktop-banner2-maletas-madubox",
+      "flex-layout.row#desktop-banner3-caracteristicas-madubox"
     ]
   },
   "flex-layout.row#desktop-banner-madubox": {
@@ -101,7 +102,7 @@
     ]
   },
   // TITULO MALETAS
-    "flex-layout.row#titulo-banner-maletas":{
+  "flex-layout.row#titulo-banner-maletas": {
     "props": {
       "blockClass": "linha-titulo-maletas-madubox",
       "preventHorizontalStretch": true
@@ -139,12 +140,10 @@
       "colSizing": "auto"
     },
     "children": [
-
       "flex-layout.col#maletas-esquerda",
       "flex-layout.col#maletas-direita"
     ]
   },
-
   // COLUNA MALETAS ESQUERDA
   "flex-layout.col#maletas-esquerda": {
     "props": {
@@ -233,7 +232,7 @@
   },
   // COLUNAS DOS BOXES
   // DIAMANTE
-    "flex-layout.col#imagem-diamante":{
+  "flex-layout.col#imagem-diamante": {
     "props": {
       "blockClass": "coluna-imagens-boxes-maletas",
       "width": "40%"
@@ -242,7 +241,7 @@
       "image#diamante"
     ]
   },
-  "flex-layout.col#texto-diamante":{
+  "flex-layout.col#texto-diamante": {
     "props": {
       "blockClass": "coluna-textos-boxes-maletas",
       "width": "60%"
@@ -252,7 +251,7 @@
     ]
   },
   // PRATICIDADE
-  "flex-layout.col#imagem-praticidade":{
+  "flex-layout.col#imagem-praticidade": {
     "props": {
       "blockClass": "coluna-imagens-boxes-maletas",
       "width": "40%"
@@ -261,7 +260,7 @@
       "image#praticidade"
     ]
   },
-  "flex-layout.col#texto-praticidade":{
+  "flex-layout.col#texto-praticidade": {
     "props": {
       "blockClass": "coluna-textos-boxes-maletas",
       "width": "60%"
@@ -271,7 +270,7 @@
     ]
   },
   // TAMANHOS
-  "flex-layout.col#imagem-tamanhos":{
+  "flex-layout.col#imagem-tamanhos": {
     "props": {
       "blockClass": "coluna-imagens-boxes-maletas",
       "width": "40%"
@@ -280,7 +279,7 @@
       "image#tamanhos"
     ]
   },
-  "flex-layout.col#texto-tamanhos":{
+  "flex-layout.col#texto-tamanhos": {
     "props": {
       "blockClass": "coluna-textos-boxes-maletas",
       "width": "60%"
@@ -290,7 +289,7 @@
     ]
   },
   // TRANSPARENCIA
-  "flex-layout.col#imagem-transparencia":{
+  "flex-layout.col#imagem-transparencia": {
     "props": {
       "blockClass": "coluna-imagens-boxes-maletas",
       "width": "40%"
@@ -299,7 +298,7 @@
       "image#transparencia"
     ]
   },
-  "flex-layout.col#texto-transparencia":{
+  "flex-layout.col#texto-transparencia": {
     "props": {
       "blockClass": "coluna-textos-boxes-maletas",
       "width": "60%"
@@ -309,7 +308,7 @@
     ]
   },
   // PALETA
-  "flex-layout.col#imagem-paleta":{
+  "flex-layout.col#imagem-paleta": {
     "props": {
       "blockClass": "coluna-imagens-boxes-maletas",
       "width": "40%"
@@ -318,7 +317,7 @@
       "image#paleta"
     ]
   },
-  "flex-layout.col#texto-paleta":{
+  "flex-layout.col#texto-paleta": {
     "props": {
       "blockClass": "coluna-textos-boxes-maletas",
       "width": "60%"
@@ -328,7 +327,7 @@
     ]
   },
   // LIMPEZA
-  "flex-layout.col#imagem-limpeza":{
+  "flex-layout.col#imagem-limpeza": {
     "props": {
       "blockClass": "coluna-imagens-boxes-maletas",
       "width": "40%"
@@ -337,7 +336,7 @@
       "image#limpeza"
     ]
   },
-  "flex-layout.col#texto-limpeza":{
+  "flex-layout.col#texto-limpeza": {
     "props": {
       "blockClass": "coluna-textos-boxes-maletas",
       "width": "60%"
@@ -418,6 +417,214 @@
     "props": {
       "blockClass": "textos-boxes-maletas",
       "text": "Facilidade\n de limpeza "
+    }
+  },
+  // CARACTERISTICAS MADUBOX banner 3
+  "flex-layout.row#desktop-banner3-caracteristicas-madubox": {
+    "props": {
+      "blockClass": "linha-caracteristicas-madubox",
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.row#modulos-empilhaveis",
+      "flex-layout.row#fecho-duplo",
+      "flex-layout.row#tampa-transparente",
+      "flex-layout.row#alca-transparente"
+    ]
+  },
+  // LINHAS CARACTERISTICAS MADUBOX
+  "flex-layout.row#modulos-empilhaveis": {
+    "props": {
+      "blockClass": "caracteristicas"
+    },
+    "children": [
+      "flex-layout.col#imagem-modulos",
+      "flex-layout.col#texto-modulos"
+    ]
+  },
+  "flex-layout.row#fecho-duplo": {
+    "props": {
+      "blockClass": "caracteristicas"
+    },
+    "children": [
+      "flex-layout.col#imagem-fecho-duplo",
+      "flex-layout.col#texto-fecho-duplo"
+    ]
+  },
+  "flex-layout.row#tampa-transparente": {
+    "props": {
+      "blockClass": "caracteristicas"
+    },
+    "children": [
+      "flex-layout.col#imagem-tampa-transparente",
+      "flex-layout.col#texto-tampa-transparente"
+    ]
+  },
+  "flex-layout.row#alca-transparente": {
+    "props": {
+      "blockClass": "caracteristicas"
+    },
+    "children": [
+      "flex-layout.col#imagem-alca-transparente",
+      "flex-layout.col#texto-alca-transparente"
+    ]
+  },
+  // COLUNAS CARACTERISTICAS MADUBOX
+  "flex-layout.col#imagem-modulos": {
+    "props": {
+      "blockClass": "coluna-imagens-caracteristicas",
+      "width": "40%"
+    },
+    "children": [
+      "image#modulos"
+    ]
+  },
+  "flex-layout.col#imagem-fecho-duplo": {
+    "props": {
+      "blockClass": "coluna-imagens-caracteristicas",
+      "width": "40%"
+    },
+    "children": [
+      "image#fecho-duplo"
+    ]
+  },
+  "flex-layout.col#imagem-tampa-transparente": {
+    "props": {
+      "blockClass": "coluna-imagens-caracteristicas",
+      "width": "40%"
+    },
+    "children": [
+      "image#tampa-transparente"
+    ]
+  },
+  "flex-layout.col#imagem-alca-transparente": {
+    "props": {
+      "blockClass": "coluna-imagens-caracteristicas",
+      "width": "40%"
+    },
+    "children": [
+      "image#alca-transparente"
+    ]
+  },
+  // IMAGENS CARACTERISTICAS MADUBOX
+  "image#modulos": {
+    "props": {
+      "blockClass": "imagens-caracteristicas",
+      "src": "assets/mod-empilhaveis.webp",
+      "alt": "Módulos Empilháveis"
+    }
+  },
+  "image#fecho-duplo": {
+    "props": {
+      "blockClass": "imagens-caracteristicas",
+      "src": "assets/fecho-duplo.webp",
+      "alt": "Fecho Duplo"
+    }
+  },
+  "image#tampa-transparente": {
+    "props": {
+      "blockClass": "imagens-caracteristicas",
+      "src": "assets/tampa-transparent.webp",
+      "alt": "Tampa Transparente"
+    }
+  },
+  "image#alca-transparente": {
+    "props": {
+      "blockClass": "imagens-caracteristicas",
+      "src": "assets/alca-tranporte.webp",
+      "alt": "Alça de Transporte"
+    }
+  },
+
+  // colunas TEXTOS CARACTERISTICAS MADUBOX
+  "flex-layout.col#texto-modulos": {
+    "props": {
+      "blockClass": "coluna-textos-caracteristicas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#titulo-modulos",
+      "rich-text#subtitulo-modulos"
+    ]
+  },
+  "flex-layout.col#texto-fecho-duplo": {
+    "props": {
+      "blockClass": "coluna-textos-caracteristicas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#titulo-fecho-duplo",
+      "rich-text#subtitulo-fecho-duplo"
+    ]
+  },
+  "flex-layout.col#texto-tampa-transparente": {
+    "props": {
+      "blockClass": "coluna-textos-caracteristicas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#titulo-tampa-transparente",
+      "rich-text#subtitulo-tampa-transparente"
+    ]
+  },
+  "flex-layout.col#texto-alca-transparente": {
+    "props": {
+      "blockClass": "coluna-textos-caracteristicas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#titulo-alca-transparente",
+      "rich-text#subtitulo-alca-transparente"
+    ]
+  },
+  // TEXTOS CARACTERISTICAS MADUBOX
+  "rich-text#titulo-modulos": {
+    "props": {
+      "blockClass": "textos-caracteristicas",
+      "text": "MóDULOS EMPILHÁVEIS:"
+    }
+  },
+  "rich-text#titulo-fecho-duplo": {
+    "props": {
+      "blockClass": "textos-caracteristicas",
+      "text": "FECHO DUPLO:"
+    }
+  },
+  "rich-text#titulo-tampa-transparente": {
+    "props": {
+      "blockClass": "textos-caracteristicas",
+      "text": "TAMPA TRANSPARENTE:"
+    }
+  },
+  "rich-text#titulo-alca-transparente": {
+    "props": {
+      "blockClass": "textos-caracteristicas",
+      "text": "ALÇA DE TRANSPORTE:"
+    }
+  },
+  // subtitulos textos caracteristicas
+  "rich-text#subtitulo-modulos": {
+    "props": {
+      "blockClass": "textos-caracteristicas",
+      "text": "As maletas box possuem encaixes na parte inferior que possibilitam empilhamento entre os mesmos tamanhos."
+    }
+  },
+  "rich-text#subtitulo-fecho-duplo": {
+    "props": {
+      "blockClass": "textos-caracteristicas",
+      "text": "Fechamento seguro para transportar seus itens , com travas frontais."
+    }
+  },
+  "rich-text#subtitulo-tampa-transparente": {
+    "props": {
+      "blockClass": "textos-caracteristicas",
+      "text": "Design moderno, garantindo fácil visualização de objetos."
+    }
+  },
+  "rich-text#subtitulo-alca-transparente": {
+    "props": {
+      "blockClass": "textos-caracteristicas",
+      "text": "Nos tamanhos menores para facilitar seu dia- dia no transporte de itens."
     }
   }
 }
