@@ -1,10 +1,15 @@
 .paragraph--titulo-maletas-madubox{
+  font-family: Rubik Bold;
   white-space: nowrap;
   text-transform: uppercase;
   color: #505050;
   font-size: 36px;
   font-weight: bolder;
   margin: 0px 20px;
+}
+
+.wrapper--titulo-maletas-madubox{
+  font-family: "Rubik Bold";
 }
 
 .paragraph--textos-boxes-maletas{
