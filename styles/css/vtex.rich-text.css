@@ -1,21 +1,61 @@
+.paragraph--titulo-maletas-madubox{
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #505050;
+  font-size: 36px;
+  font-weight: bolder;
+  margin: 0px 20px;
+}
 
-.paragraph--titulo-conheca{
+.paragraph--textos-boxes-maletas{
+  font-size: 14px;
+  color: #686868;
+}
+
+.container--subtitulo-banner1-madubox {
+  white-space: nowrap;
+  height: 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.paragraph--subtitulo-banner1-madubox {
+  margin: 0;
+  color: #5D5D5D;
+}
+
+.paragraph--descricao-banner1-madubox {
+  margin: 0;
+  color: #999999;
+  font-size: 16px;
+}
+
+
+
+.wrapper--subtitulo-banner1-madubox {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.paragraph--titulo-conheca {
   padding: 5px;
 }
 
-.paragraph--label-conheca{
+.paragraph--label-conheca {
   padding: 5px 15px;
   border-radius: 35px;
   background-color: #04264B;
   color: #FFF;
 }
 
-.paragraph--label-conheca:hover{
+.paragraph--label-conheca:hover {
   background-color: #000;
   color: #FFF;
 }
 
-.container--label-conheca{
+.container--label-conheca {
   cursor: pointer;
 }
 
@@ -454,7 +494,7 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
-  .wrapper--subtitulo-shopBy{
+  .wrapper--subtitulo-shopBy {
     height: 15vh;
   }
 

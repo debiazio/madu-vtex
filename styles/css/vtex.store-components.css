@@ -1,22 +1,46 @@
+.imageElement--logo-madubox {
+  width: 171px;
+  height: 61px;
+}
 
+.imageElement--interrogacao {
+  width: 25px;
+  height: 34px;
+  padding: 5px 10px;
+}
 
-.imageElement--bandeiras-cartoes-pdp{
+.imageElement--imagens-boxes-maletas {
+  width: 40px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.imageElement--imagem-banner1-madubox {
+  min-height: 100%;
+  width: 100%;
+}
+
+.imageElement--titulo-banner1-madubox {
+  margin-bottom: 20.18px;
+}
+
+.imageElement--bandeiras-cartoes-pdp {
   width: 50%;
 }
 
-.thumbImg{
+.thumbImg {
   border-radius: 15px;
 }
 
-.productImagesThumbActive{
-  opacity: 1!important;
+.productImagesThumbActive {
+  opacity: 1 !important;
 }
 
-.productImagesThumb:hover{
+.productImagesThumb:hover {
   opacity: 1;
 }
 
-.productImagesThumb{
+.productImagesThumb {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #ECECEC;
@@ -25,7 +49,7 @@
   margin-right: .6rem;
 }
 
-.productImageTag{
+.productImageTag {
   border-radius: 15px;
 }
 
@@ -842,8 +866,8 @@
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
-  .imageElement--plus-titulo{
-    max-width: 11px!important;
+  .imageElement--plus-titulo {
+    max-width: 11px !important;
     margin-bottom: 3px;
   }
 

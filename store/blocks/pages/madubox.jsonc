@@ -1,0 +1,423 @@
+{
+  "store.custom#madubox": {
+    "blocks": [
+      "flex-layout.row#desktop-banner-madubox",
+      "flex-layout.row#desktop-banner2-maletas-madubox"
+    ]
+  },
+  "flex-layout.row#desktop-banner-madubox": {
+    "props": {
+      "blockClass": "linha-banner-madubox",
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-front-banner1-banner-box"
+    ]
+  },
+  // LINHA DA FRENTE DO BANNER 1
+  "flex-layout.row#linha-front-banner1-banner-box": {
+    "props": {
+      "blockClass": "linha-frente-banner-1"
+    },
+    "children": [
+      "flex-layout.col#banner1-coluna-esquerda",
+      "flex-layout.col#banner1-coluna-direita"
+    ]
+  },
+  // COLUNA DA ESQUERDA BANNER 1
+  "flex-layout.col#banner1-coluna-esquerda": {
+    "props": {
+      "blockClass": "coluna-esquerda-banner1-madubox",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#textos-coluna-esquerda-banner1",
+      "link#compreagora-madubox"
+    ]
+  },
+  "flex-layout.row#textos-coluna-esquerda-banner1": {
+    "props": {
+      "blockClass": "textos-coluna-esquerda-banner1-madubox",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#titulo-banner1-madubox",
+      "rich-text#subtitulo-banner1-madubox",
+      "rich-text#descricao-banner1-madubox"
+    ]
+  },
+  "image#titulo-banner1-madubox": {
+    "props": {
+      "src": "assets/titulo-maletas.webp",
+      "blockClass": "titulo-banner1-madubox"
+    }
+  },
+  "rich-text#subtitulo-banner1-madubox": {
+    "props": {
+      "text": "Organização, Estilo e Versatilidade em um só produto",
+      "blockClass": "subtitulo-banner1-madubox"
+    }
+  },
+  "rich-text#descricao-banner1-madubox": {
+    "props": {
+      "text": "As Maletas MaduBox chegaram para transformar sua rotina, unindo praticidade, resistência e design inteligente. Produzidas em plástico PSI de alta qualidade, com tampa de acrílico transparente, elas permitem visualizar facilmente o conteúdo, manter tudo em ordem e ainda transportar seus itens com segurança e estilo.",
+      "blockClass": "descricao-banner1-madubox"
+    }
+  },
+  "link#compreagora-madubox": {
+    "props": {
+      "label": "Comprar Agora",
+      "href": "#",
+      "blockClass": "compreagora-madubox"
+    }
+  },
+  // COLUNA DA DIREITA BANNER 1
+  "flex-layout.col#banner1-coluna-direita": {
+    "props": {
+      "blockClass": "coluna-direita-banner1-madubox"
+    },
+    "children": [
+      "image#imagem-banner1-madubox"
+    ]
+  },
+  "image#imagem-banner1-madubox": {
+    "props": {
+      "src": "assets/maduboxes.webp",
+      "alt": "Maletas Madubox",
+      "blockClass": "imagem-banner1-madubox"
+    }
+  },
+  // MALETAS MADUBOX banner 2
+  "flex-layout.row#desktop-banner2-maletas-madubox": {
+    "props": {
+      "blockClass": "linha-maletas-madubox",
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#titulo-banner-maletas",
+      "flex-layout.row#linha-maletas-frente"
+    ]
+  },
+  // TITULO MALETAS
+    "flex-layout.row#titulo-banner-maletas":{
+    "props": {
+      "blockClass": "linha-titulo-maletas-madubox",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#titulo-maletas",
+      "image#logo-madubox",
+      "image#interrogacao"
+    ]
+  },
+  "rich-text#titulo-maletas": {
+    "props": {
+      "text": "Por que escolher as maletas",
+      "blockClass": "titulo-maletas-madubox"
+    }
+  },
+  "image#logo-madubox": {
+    "props": {
+      "src": "assets/madu-box-logo.webp",
+      "alt": "Logo Madubox",
+      "blockClass": "logo-madubox"
+    }
+  },
+  "image#interrogacao": {
+    "props": {
+      "src": "assets/interrogacao.webp",
+      "alt": "Interrogação",
+      "blockClass": "interrogacao"
+    }
+  },
+  // LINHA DA FRENTE DAS MALETAS
+  "flex-layout.row#linha-maletas-frente": {
+    "props": {
+      "blockClass": "linha-maletas-frente-madubox",
+      "colSizing": "auto"
+    },
+    "children": [
+
+      "flex-layout.col#maletas-esquerda",
+      "flex-layout.col#maletas-direita"
+    ]
+  },
+
+  // COLUNA MALETAS ESQUERDA
+  "flex-layout.col#maletas-esquerda": {
+    "props": {
+      "blockClass": "coluna-esquerda-maletas-madubox",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#maleta-fechada"
+    ]
+  },
+  "image#maleta-fechada": {
+    "props": {
+      "src": "assets/maleta-fechada-laranja.webp",
+      "alt": "Maleta Madubox Fechada",
+      "blockClass": "maleta-fechada-madubox"
+    }
+  },
+  // COLUNA DIREITA MALETAS
+  "flex-layout.col#maletas-direita": {
+    "props": {
+      "blockClass": "coluna-direita-maletas-madubox"
+    },
+    "children": [
+      "flex-layout.row#material-qualidade",
+      "flex-layout.row#transporte-praticidade",
+      "flex-layout.row#diversos-tamanhos",
+      "flex-layout.row#transparencia-visibilidade",
+      "flex-layout.row#paleta-cores",
+      "flex-layout.row#limpeza"
+    ]
+  },
+  // BOXES MALETAS
+  "flex-layout.row#material-qualidade": {
+    "props": {
+      "blockClass": "boxes-maletas"
+    },
+    "children": [
+      "flex-layout.col#imagem-diamante",
+      "flex-layout.col#texto-diamante"
+    ]
+  },
+  "flex-layout.row#transporte-praticidade": {
+    "props": {
+      "blockClass": "boxes-maletas"
+    },
+    "children": [
+      "flex-layout.col#imagem-praticidade",
+      "flex-layout.col#texto-praticidade"
+    ]
+  },
+  "flex-layout.row#diversos-tamanhos": {
+    "props": {
+      "blockClass": "boxes-maletas"
+    },
+    "children": [
+      "flex-layout.col#imagem-tamanhos",
+      "flex-layout.col#texto-tamanhos"
+    ]
+  },
+  "flex-layout.row#transparencia-visibilidade": {
+    "props": {
+      "blockClass": "boxes-maletas"
+    },
+    "children": [
+      "flex-layout.col#imagem-transparencia",
+      "flex-layout.col#texto-transparencia"
+    ]
+  },
+  "flex-layout.row#paleta-cores": {
+    "props": {
+      "blockClass": "boxes-maletas"
+    },
+    "children": [
+      "flex-layout.col#imagem-paleta",
+      "flex-layout.col#texto-paleta"
+    ]
+  },
+  "flex-layout.row#limpeza": {
+    "props": {
+      "blockClass": "boxes-maletas"
+    },
+    "children": [
+      "flex-layout.col#imagem-limpeza",
+      "flex-layout.col#texto-limpeza"
+    ]
+  },
+  // COLUNAS DOS BOXES
+  // DIAMANTE
+    "flex-layout.col#imagem-diamante":{
+    "props": {
+      "blockClass": "coluna-imagens-boxes-maletas",
+      "width": "40%"
+    },
+    "children": [
+      "image#diamante"
+    ]
+  },
+  "flex-layout.col#texto-diamante":{
+    "props": {
+      "blockClass": "coluna-textos-boxes-maletas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#diamante"
+    ]
+  },
+  // PRATICIDADE
+  "flex-layout.col#imagem-praticidade":{
+    "props": {
+      "blockClass": "coluna-imagens-boxes-maletas",
+      "width": "40%"
+    },
+    "children": [
+      "image#praticidade"
+    ]
+  },
+  "flex-layout.col#texto-praticidade":{
+    "props": {
+      "blockClass": "coluna-textos-boxes-maletas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#praticidade"
+    ]
+  },
+  // TAMANHOS
+  "flex-layout.col#imagem-tamanhos":{
+    "props": {
+      "blockClass": "coluna-imagens-boxes-maletas",
+      "width": "40%"
+    },
+    "children": [
+      "image#tamanhos"
+    ]
+  },
+  "flex-layout.col#texto-tamanhos":{
+    "props": {
+      "blockClass": "coluna-textos-boxes-maletas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#tamanhos"
+    ]
+  },
+  // TRANSPARENCIA
+  "flex-layout.col#imagem-transparencia":{
+    "props": {
+      "blockClass": "coluna-imagens-boxes-maletas",
+      "width": "40%"
+    },
+    "children": [
+      "image#transparencia"
+    ]
+  },
+  "flex-layout.col#texto-transparencia":{
+    "props": {
+      "blockClass": "coluna-textos-boxes-maletas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#transparencia"
+    ]
+  },
+  // PALETA
+  "flex-layout.col#imagem-paleta":{
+    "props": {
+      "blockClass": "coluna-imagens-boxes-maletas",
+      "width": "40%"
+    },
+    "children": [
+      "image#paleta"
+    ]
+  },
+  "flex-layout.col#texto-paleta":{
+    "props": {
+      "blockClass": "coluna-textos-boxes-maletas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#paleta"
+    ]
+  },
+  // LIMPEZA
+  "flex-layout.col#imagem-limpeza":{
+    "props": {
+      "blockClass": "coluna-imagens-boxes-maletas",
+      "width": "40%"
+    },
+    "children": [
+      "image#limpeza"
+    ]
+  },
+  "flex-layout.col#texto-limpeza":{
+    "props": {
+      "blockClass": "coluna-textos-boxes-maletas",
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#limpeza"
+    ]
+  },
+  // IMAGENS DOS BOXES
+  "image#diamante": {
+    "props": {
+      "blockClass": "imagens-boxes-maletas",
+      "src": "assets/diamante.webp"
+    }
+  },
+  "image#praticidade": {
+    "props": {
+      "blockClass": "imagens-boxes-maletas",
+      "src": "assets/praticidade.webp"
+    }
+  },
+  "image#tamanhos": {
+    "props": {
+      "blockClass": "imagens-boxes-maletas",
+      "src": "assets/diversos-tam.webp"
+    }
+  },
+  "image#transparencia": {
+    "props": {
+      "blockClass": "imagens-boxes-maletas",
+      "src": "assets/transparencia.webp"
+    }
+  },
+  "image#paleta": {
+    "props": {
+      "blockClass": "imagens-boxes-maletas",
+      "src": "assets/paletas.webp"
+    }
+  },
+  "image#limpeza": {
+    "props": {
+      "blockClass": "imagens-boxes-maletas",
+      "src": "assets/limpeza.webp"
+    }
+  },
+  // TEXTOS MALETAS BOX
+  "rich-text#diamante": {
+    "props": {
+      "blockClass": "textos-boxes-maletas",
+      "text": "Material de alta\n qualidade"
+    }
+  },
+  "rich-text#praticidade": {
+    "props": {
+      "blockClass": "textos-boxes-maletas",
+      "text": "Praticidade no\n transporte e no\n armazenamento"
+    }
+  },
+  "rich-text#tamanhos": {
+    "props": {
+      "blockClass": "textos-boxes-maletas",
+      "text": "Diversos\n tamanhos"
+    }
+  },
+  "rich-text#transparencia": {
+    "props": {
+      "blockClass": "textos-boxes-maletas",
+      "text": "Transparência\n para visualização\n do conteúdo"
+    }
+  },
+  "rich-text#paleta": {
+    "props": {
+      "blockClass": "textos-boxes-maletas",
+      "text": "Paleta de\n cores variadas"
+    }
+  },
+  "rich-text#limpeza": {
+    "props": {
+      "blockClass": "textos-boxes-maletas",
+      "text": "Facilidade\n de limpeza "
+    }
+  }
+}

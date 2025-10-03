@@ -25,5 +25,8 @@
   },
   "store.custom#catalogo":{
     "path": "/catalogo"
+  },
+  "store.custom#madubox":{
+    "path": "/madubox"
   }
 }

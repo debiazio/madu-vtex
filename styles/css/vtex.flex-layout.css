@@ -1,11 +1,113 @@
+.flexRow--linha-maletas-madubox {
+  margin: 80px 0;
+  min-height: 370px;
+}
+
+.flexColChild--coluna-imagens-boxes-maletas {
+  display: flex;
+  justify-content: center;
+}
+
+.flexRow--boxes-maletas {
+  box-shadow: 0px 4px 4px 0 #00000026;
+}
+
+.flexRow--boxes-maletas:hover {
+  box-shadow: 2px 5px 5px 0px #00000026;
+}
+
+.flexRowContent--linha-maletas-madubox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRowContent--boxes-maletas {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 229px;
+  height: 79px;
+}
 
 
-.flexRow--product-main-colunas{
+.flexCol--coluna-direita-maletas-madubox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  align-content: center;
+}
+
+.flexCol--coluna-esquerda-banner1-madubox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexColChild--coluna-esquerda-banner1-madubox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.flexColChild--coluna-direita-banner1-madubox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flexRowContent--linha-banner-madubox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRow--textos-coluna-esquerda-banner1-madubox {
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--textos-coluna-esquerda-banner1-madubox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexRowContent--linha-maletas-frente-madubox {
+  max-width: 1200px;
+  height: 341px;
+}
+
+.flexRowContent--linha-frente-banner-1 {
+  max-width: 1200px;
+  height: 517px;
+}
+
+.flexRow--linha-maletas-madubox {
+  background-color: #fff;
+  background-image: url(assets/background-linhas.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flexRow--linha-banner-madubox {
+  background-color: #F7F7F7;
+  background-image: url(assets/frame-banner1-madubox.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flexRow--product-main-colunas {
   margin-top: 20px;
 }
 
 .flexRow--breadcrumb {
-  background: linear-gradient(to right, rgb(222, 229, 252), rgb(210, 215, 228), rgb(223, 228, 240),rgb(221, 219, 219));
+  background: linear-gradient(to right, rgb(222, 229, 252), rgb(210, 215, 228), rgb(223, 228, 240), rgb(221, 219, 219));
   padding-left: 10px;
 }
 
@@ -763,7 +865,7 @@
   }
 
 
-  .flexCol--coluna-shopby{
+  .flexCol--coluna-shopby {
     margin-top: 35px;
   }
 
