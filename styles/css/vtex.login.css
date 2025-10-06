@@ -23,6 +23,7 @@
   text-transform: capitalize;
   margin-right: 18px;
   font-weight: 900;
+  color:#04264b
 }
 
 .container :global(.vtex-button) {
