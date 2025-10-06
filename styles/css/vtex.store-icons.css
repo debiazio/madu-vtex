@@ -1,9 +1,18 @@
 .expandIcon {
   color: #727273;
 }
-:global(.vtex-flex-layout-0-x-flexColChild) .cartIcon--minicart-empty-state{
-  overflow:visible;
+
+:global(.vtex-flex-layout-0-x-flexColChild) .cartIcon--minicart-empty-state {
+  overflow: visible;
 }
-.caretIcon{
+
+.caretIcon {
   padding-top: 3px;
+}
+
+.caretIcon--cima-detalhes-tec,
+.caretIcon--baixo {
+  padding: 35px 20px 10px 20px;
+  width: 30px;
+  height: 30px;
 }

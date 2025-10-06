@@ -1,24 +1,54 @@
+.flexCol--coluna-accordion-detalhes-tecnicos{
+  padding-left: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+.flexRowContent--linha-conteudo-detalhes-tecnicos-madubox{
+  background-color: #F5F5F5;
+}
+
+.flexColChild--coluna-accordion-detalhes-tecnicos {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.flexRowContent--linha-detalhes-tecnicos-madubox {
+  background-image: url(assets/fundo-colorido2.webp);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  justify-content: end;
+}
+
 .flexColChild--coluna-imagens-caracteristicas {
   display: flex;
   align-items: center;
-  justify-content: center;''
+  justify-content: center;
 }
 
 .flexRowContent--caracteristicas {
-  width: 617px;
+  /* width: calc(1185px/2); */
   height: 326px;
 }
 
-.flexRow--caracteristicas {
+.flexRowContent--caracteristicas {
   background-color: #F5F5F5;
 }
+
+
 
 .flexRowContent--linha-caracteristicas-madubox {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  justify-items: center;
   gap: 15px;
 }
 

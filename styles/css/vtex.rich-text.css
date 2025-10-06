@@ -1,4 +1,66 @@
-.paragraph--titulo-maletas-madubox{
+.paragraph--label-text{
+  text-transform: uppercase;
+  font-family: "Rubik";
+  font-size: 24px;
+}
+
+.paragraph--content-text{
+  font-family: "Rubik";
+  font-size: 16px;
+  color: #636363;
+}
+
+.paragraph--label-text,
+.paragraph--content-text{
+  margin: 20px 0;
+}
+
+.container--titulo-caracteristicas {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container--subtitulo-caracteristicas {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  color: #686868;
+}
+
+
+
+.paragraph--titulo-detalhes-tecnicos{
+  font-family: "Rubik Bold";
+  font-size: 36px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #3F3F3F;
+}
+
+.paragraph--titulo-caracteristicas {
+  font-family: "Rubik Bold";
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #3F3F3F;
+}
+
+.paragraph--subtitulo-detalhes-tecnicos {
+  font-family: "Rubik";
+  font-size: 22px;
+  margin: 0 0 20px 0;
+  color: #AEAEAE;
+}
+
+.paragraph--subtitulo-caracteristicas {
+  font-family: "Rubik";
+  font-size: 16px;
+  margin: 0 20px 0 0;
+}
+
+
+.paragraph--titulo-maletas-madubox {
   font-family: Rubik Bold;
   white-space: nowrap;
   text-transform: uppercase;
@@ -8,11 +70,11 @@
   margin: 0px 20px;
 }
 
-.wrapper--titulo-maletas-madubox{
+.wrapper--titulo-maletas-madubox {
   font-family: "Rubik Bold";
 }
 
-.paragraph--textos-boxes-maletas{
+.paragraph--textos-boxes-maletas {
   font-size: 14px;
   color: #686868;
 }

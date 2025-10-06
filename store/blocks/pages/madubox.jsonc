@@ -3,7 +3,9 @@
     "blocks": [
       "flex-layout.row#desktop-banner-madubox",
       "flex-layout.row#desktop-banner2-maletas-madubox",
-      "flex-layout.row#desktop-banner3-caracteristicas-madubox"
+      "flex-layout.row#desktop-banner3-caracteristicas-madubox",
+      "flex-layout.row#desktop-detalhes-tecnicos-titulo",
+      "flex-layout.row#desktop-detalhes-tecnicos-conteudo"
     ]
   },
   "flex-layout.row#desktop-banner-madubox": {
@@ -423,7 +425,8 @@
   "flex-layout.row#desktop-banner3-caracteristicas-madubox": {
     "props": {
       "blockClass": "linha-caracteristicas-madubox",
-      "fullWidth": false
+      "fullWidth": false,
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.row#modulos-empilhaveis",
@@ -524,7 +527,7 @@
   "image#tampa-transparente": {
     "props": {
       "blockClass": "imagens-caracteristicas",
-      "src": "assets/tampa-transparent.webp",
+      "src": "assets/tampa-transparente.webp",
       "alt": "Tampa Transparente"
     }
   },
@@ -535,7 +538,6 @@
       "alt": "Alça de Transporte"
     }
   },
-
   // colunas TEXTOS CARACTERISTICAS MADUBOX
   "flex-layout.col#texto-modulos": {
     "props": {
@@ -580,51 +582,399 @@
   // TEXTOS CARACTERISTICAS MADUBOX
   "rich-text#titulo-modulos": {
     "props": {
-      "blockClass": "textos-caracteristicas",
+      "blockClass": "titulo-caracteristicas",
       "text": "MóDULOS EMPILHÁVEIS:"
     }
   },
   "rich-text#titulo-fecho-duplo": {
     "props": {
-      "blockClass": "textos-caracteristicas",
+      "blockClass": "titulo-caracteristicas",
       "text": "FECHO DUPLO:"
     }
   },
   "rich-text#titulo-tampa-transparente": {
     "props": {
-      "blockClass": "textos-caracteristicas",
+      "blockClass": "titulo-caracteristicas",
       "text": "TAMPA TRANSPARENTE:"
     }
   },
   "rich-text#titulo-alca-transparente": {
     "props": {
-      "blockClass": "textos-caracteristicas",
+      "blockClass": "titulo-caracteristicas",
       "text": "ALÇA DE TRANSPORTE:"
     }
   },
   // subtitulos textos caracteristicas
   "rich-text#subtitulo-modulos": {
     "props": {
-      "blockClass": "textos-caracteristicas",
+      "blockClass": "subtitulo-caracteristicas",
       "text": "As maletas box possuem encaixes na parte inferior que possibilitam empilhamento entre os mesmos tamanhos."
     }
   },
   "rich-text#subtitulo-fecho-duplo": {
     "props": {
-      "blockClass": "textos-caracteristicas",
+      "blockClass": "subtitulo-caracteristicas",
       "text": "Fechamento seguro para transportar seus itens , com travas frontais."
     }
   },
   "rich-text#subtitulo-tampa-transparente": {
     "props": {
-      "blockClass": "textos-caracteristicas",
+      "blockClass": "subtitulo-caracteristicas",
       "text": "Design moderno, garantindo fácil visualização de objetos."
     }
   },
   "rich-text#subtitulo-alca-transparente": {
     "props": {
-      "blockClass": "textos-caracteristicas",
+      "blockClass": "subtitulo-caracteristicas",
       "text": "Nos tamanhos menores para facilitar seu dia- dia no transporte de itens."
+    }
+  },
+  // DETALHES TÉCNICOS
+  "flex-layout.row#desktop-detalhes-tecnicos-titulo": {
+    "props": {
+      "blockClass": "linha-detalhes-tecnicos-madubox"
+    },
+    "children": [
+      "rich-text#titulo-detalhes-tecnicos",
+      "rich-text#subtitulo-detalhes-tecnicos"
+    ]
+  },
+  "rich-text#titulo-detalhes-tecnicos": {
+    "props": {
+      "blockClass": "titulo-detalhes-tecnicos",
+      "text": "DETALHES TÉCNICOS da linha"
+    }
+  },
+  "rich-text#subtitulo-detalhes-tecnicos": {
+    "props": {
+      "blockClass": "subtitulo-detalhes-tecnicos",
+      "text": "Explicação de como a linha é organizada:"
+    }
+  },
+  // DETALHES TÉCNICOS CONTEÚDO
+  "flex-layout.row#desktop-detalhes-tecnicos-conteudo": {
+    "props": {
+      "blockClass": "linha-conteudo-detalhes-tecnicos-madubox"
+    },
+    "children": [
+      "flex-layout.col#detalhes-tecnicos-coluna-esquerda",
+      "flex-layout.col#detalhes-tecnicos-coluna-direita"
+    ]
+  },
+  // COLUNA ESQUERDA DETALHES TÉCNICOS - ACORDION
+  "flex-layout.col#detalhes-tecnicos-coluna-esquerda": {
+    "props": {
+      "blockClass": "coluna-accordion-detalhes-tecnicos",
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "disclosure-layout-group#group"
+    ]
+  },
+  // COLUNA DIREITA DETALHES TÉCNICOS - IMAGEM
+  "flex-layout.col#detalhes-tecnicos-coluna-direita": {
+    "props": {
+      "blockClass": "coluna-imagem-detalhes-tecnicos"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior",
+      "flex-layout.row#linha-imagem-p",
+      "flex-layout.row#linha-imagem-m",
+      "flex-layout.row#linha-imagem-g",
+      "flex-layout.row#linha-imagem-gg"
+    ]
+  },
+  "flex-layout.row#linha-imagem-superior": {
+    "props": {
+      "blockClass": "linha-imagem-superior"
+    },
+    "children": [
+      "image#imagem-detalhes-tecnicos-tam3"
+    ]
+  },
+  "flex-layout.row#linha-imagem-p": {},
+  "flex-layout.row#linha-imagem-m": {},
+  "flex-layout.row#linha-imagem-g": {},
+  "flex-layout.row#linha-imagem-gg": {},
+  // imagem linha detalhes técnicos
+  "image#imagem-detalhes-tecnicos-tam3": {
+    "props": {
+      "src": "assets/tam3.webp",
+      "alt": "Imagem tamanho 3",
+      "blockClass": "imagem-detalhes-tecnicos"
+    }
+  },
+  // SESSÃO disclosure
+  "disclosure-layout-group#group": {
+    "props": {
+      "blockClass": "grupo-detalhes-tecnicos"
+    },
+    "children": [
+      "disclosure-layout#tam3",
+      "disclosure-layout#tam4",
+      "disclosure-layout#tam6",
+      "disclosure-layout#tam8",
+      "disclosure-layout#tam10",
+      "disclosure-layout#tam12"
+    ]
+  },
+  // DISCLOSURE LAYOUTS
+  "disclosure-layout#tam3": {
+    "props": {
+      "initialVisibility": "visible",
+      "blockClass": "disclosure-class"
+    },
+    "children": [
+      "disclosure-trigger#tam3",
+      "disclosure-content#tam3"
+    ]
+  },
+  "disclosure-layout#tam4": {
+    "props": {
+      "initialVisibility": "hidden",
+      "blockClass": "disclosure-class"
+    },
+    "children": [
+      "disclosure-trigger#tam4",
+      "disclosure-content#tam4"
+    ]
+  },
+  "disclosure-layout#tam6": {
+    "props": {
+      "initialVisibility": "hidden",
+      "blockClass": "disclosure-class"
+    },
+    "children": [
+      "disclosure-trigger#tam6",
+      "disclosure-content#tam6"
+    ]
+  },
+  "disclosure-layout#tam8": {
+    "props": {
+      "initialVisibility": "hidden",
+      "blockClass": "disclosure-class"
+    },
+    "children": [
+      "disclosure-trigger#tam8",
+      "disclosure-content#tam8"
+    ]
+  },
+  "disclosure-layout#tam10": {
+    "props": {
+      "initialVisibility": "hidden",
+      "blockClass": "disclosure-class"
+    },
+    "children": [
+      "disclosure-trigger#tam10",
+      "disclosure-content#tam10"
+    ]
+  },
+  "disclosure-layout#tam12": {
+    "props": {
+      "initialVisibility": "hidden",
+      "blockClass": "disclosure-class"
+    },
+    "children": [
+      "disclosure-trigger#tam12",
+      "disclosure-content#tam12"
+    ]
+  },
+  // ÍCONE DO DISCLOSURE
+  "disclosure-state-indicator#detalhes-tec": {
+    "props": {
+      "Show": "icon-caret#down-detalhes-tec",
+      "Hide": "icon-caret#up-detalhes-tec"
+    }
+  },
+  "icon-caret#down-detalhes-tec": {
+    "props": {
+      "blockClass": "baixo",
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up-detalhes-tec": {
+    "props": {
+      "blockClass": "cima-detalhes-tec",
+      "orientation": "up"
+    }
+  },
+  // DISCLOSURE TRIGGER
+  "disclosure-trigger#tam3": {
+    "props": {
+      "blockClass": "trigger-class"
+    },
+    "children": [
+      "rich-text#label-tam3",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
+  "disclosure-trigger#tam4": {
+    "props": {
+      "blockClass": "trigger-class"
+    },
+    "children": [
+      "rich-text#label-tam4",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
+  "disclosure-trigger#tam6": {
+    "props": {
+      "blockClass": "trigger-class"
+    },
+    "children": [
+      "rich-text#label-tam6",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
+  "disclosure-trigger#tam8": {
+    "props": {
+      "blockClass": "trigger-class"
+    },
+    "children": [
+      "rich-text#label-tam8",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
+  "disclosure-trigger#tam10": {
+    "props": {
+      "blockClass": "trigger-class"
+    },
+    "children": [
+      "rich-text#label-tam10",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
+  "disclosure-trigger#tam12": {
+    "props": {
+      "blockClass": "trigger-class-12"
+    },
+    "children": [
+      "rich-text#label-tam12",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
+  // DISCLOSURE CONTENT
+  "disclosure-content#tam3": {
+    "props": {
+      "blockClass": "content-class"
+    },
+    "children": [
+      "rich-text#content-tam3"
+    ]
+  },
+  "disclosure-content#tam4": {
+    "props": {
+      "blockClass": "content-class"
+    },
+    "children": [
+      "rich-text#content-tam4"
+    ]
+  },
+  "disclosure-content#tam6": {
+    "props": {
+      "blockClass": "content-class"
+    },
+    "children": [
+      "rich-text#content-tam6"
+    ]
+  },
+  "disclosure-content#tam8": {
+    "props": {
+      "blockClass": "content-class"
+    },
+    "children": [
+      "rich-text#content-tam8"
+    ]
+  },
+  "disclosure-content#tam10": {
+    "props": {
+      "blockClass": "content-class"
+    },
+    "children": [
+      "rich-text#content-tam10"
+    ]
+  },
+  "disclosure-content#tam12": {
+    "props": {
+      "blockClass": "content-class-12"
+    },
+    "children": [
+      "rich-text#content-tam12"
+    ]
+  },
+  // LABEL DISCLOSURE
+  "rich-text#label-tam3": {
+    "props": {
+      "text": "Tamanho **3**",
+      "blockClass": "label-text"
+    }
+  },
+  "rich-text#label-tam4": {
+    "props": {
+      "text": "Tamanho **4**",
+      "blockClass": "label-text"
+    }
+  },
+  "rich-text#label-tam6": {
+    "props": {
+      "text": "Tamanho **6**",
+      "blockClass": "label-text"
+    }
+  },
+  "rich-text#label-tam8": {
+    "props": {
+      "text": "Tamanho **8**",
+      "blockClass": "label-text"
+    }
+  },
+  "rich-text#label-tam10": {
+    "props": {
+      "text": "Tamanho **10**",
+      "blockClass": "label-text"
+    }
+  },
+  "rich-text#label-tam12": {
+    "props": {
+      "text": "Tamanho **12**",
+      "blockClass": "label-text"
+    }
+  },
+  // TEXTO CONTENT DISCLOSURE
+  "rich-text#content-tam3": {
+    "props": {
+      "text": "Formato quadrado, compacto e prático — ideal para guardar pequenos itens com leveza e estilo.",
+      "blockClass": "content-text"
+    }
+  },
+  "rich-text#content-tam4": {
+    "props": {
+      "text": "Modelo retangular com alça e dois fechos frontais. Perfeito para transportar seus objetos com praticidade e segurança.",
+      "blockClass": "content-text"
+    }
+  },
+  "rich-text#content-tam6": {
+    "props": {
+      "text": "Versátil e espaçosa, com alça de transporte e dois fechos frontais. Ideal para organizar e levar o que precisar.",
+      "blockClass": "content-text"
+    }
+  },
+  "rich-text#content-tam8": {
+    "props": {
+      "text": "Formato maior e sem alça, perfeita para organizar materiais e acessórios em casa ou no trabalho.",
+      "blockClass": "content-text"
+    }
+  },
+  "rich-text#content-tam10": {
+    "props": {
+      "text": "Ampla e resistente, com tampa transparente que facilita a visualização do conteúdo. Ideal para manter tudo em ordem.",
+      "blockClass": "content-text"
+    }
+  },
+  "rich-text#content-tam12": {
+    "props": {
+      "text": "O maior modelo da linha — máxima capacidade para guardar e organizar objetos de todos os tipos com praticidade e estilo.",
+      "blockClass": "content-text"
     }
   }
 }
