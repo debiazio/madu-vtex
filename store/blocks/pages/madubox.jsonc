@@ -675,14 +675,13 @@
   // COLUNA DIREITA DETALHES TÉCNICOS - IMAGEM
   "flex-layout.col#detalhes-tecnicos-coluna-direita": {
     "props": {
-      "blockClass": "coluna-imagem-detalhes-tecnicos"
+      "blockClass": "coluna-imagem-detalhes-tecnicos",
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.row#linha-imagem-superior",
-      "flex-layout.row#linha-imagem-p",
-      "flex-layout.row#linha-imagem-m",
-      "flex-layout.row#linha-imagem-g",
-      "flex-layout.row#linha-imagem-gg"
+      "flex-layout.row#linha-tamanhos"
     ]
   },
   "flex-layout.row#linha-imagem-superior": {
@@ -693,16 +692,123 @@
       "image#imagem-detalhes-tecnicos-tam3"
     ]
   },
-  "flex-layout.row#linha-imagem-p": {},
-  "flex-layout.row#linha-imagem-m": {},
-  "flex-layout.row#linha-imagem-g": {},
-  "flex-layout.row#linha-imagem-gg": {},
+  "flex-layout.row#linha-tamanhos": {
+    "props": {
+      "blockClass": "linha-tamanhos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-p",
+      "flex-layout.row#linha-imagem-m",
+      "flex-layout.row#linha-imagem-g",
+      "flex-layout.row#linha-imagem-gg"
+    ]
+  },
+  // LINHAS TAMANHOS  - TAM 3
+  "flex-layout.row#linha-imagem-p": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam3-p",
+      "rich-text#tam3-p"
+    ]
+  },
+  "flex-layout.row#linha-imagem-m": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam3-m",
+      "rich-text#tam3-m"
+    ]
+  },
+  "flex-layout.row#linha-imagem-g": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam3-g",
+      "rich-text#tam3-g"
+    ]
+  },
+  "flex-layout.row#linha-imagem-gg": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam3-gg",
+      "rich-text#tam3-gg"
+    ]
+  },
   // imagem linha detalhes técnicos
   "image#imagem-detalhes-tecnicos-tam3": {
     "props": {
       "src": "assets/tam3.webp",
       "alt": "Imagem tamanho 3",
       "blockClass": "imagem-detalhes-tecnicos"
+    }
+  },
+  // IMAGENS TAMANHOS
+  "image#imagem-tam3-p": {
+    "props": {
+      "src": "assets/tamanho-3-p.webp",
+      "alt": "Imagem tamanho 3 P",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  "image#imagem-tam3-m": {
+    "props": {
+      "src": "assets/tamanho-3-m.webp",
+      "alt": "Imagem tamanho 3 m",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  "image#imagem-tam3-g": {
+    "props": {
+      "src": "assets/tamanho-3-g.webp",
+      "alt": "Imagem tamanho 3 g",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  "image#imagem-tam3-gg": {
+    "props": {
+      "src": "assets/tamanho-3-gg.webp",
+      "alt": "Imagem tamanho 3 gg",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // textos tamanhos
+  "rich-text#tam3-p": {
+    "props": {
+      "blockClass": "textos-tamanhos",
+      "text": "**P:**\n6,3 Litros - 22,5x24,3x11,5cm"
+    }
+  },
+  "rich-text#tam3-m": {
+    "props": {
+      "blockClass": "textos-tamanhos",
+      "text": "**M:**\n8,2 Litros - 22,5x24,3x15cm"
+    }
+  },
+  "rich-text#tam3-g": {
+    "props": {
+      "blockClass": "textos-tamanhos",
+      "text": "**G:**\n10,1 Litros - 22,5x24,3x18,5cm"
+    }
+  },
+  "rich-text#tam3-gg": {
+    "props": {
+      "blockClass": "textos-tamanhos",
+      "text": "**GG:**\n12 Litros - 22,5x24,3x22cm"
     }
   },
   // SESSÃO disclosure

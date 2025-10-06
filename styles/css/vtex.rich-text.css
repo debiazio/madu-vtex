@@ -1,17 +1,29 @@
-.paragraph--label-text{
+.container--textos-tamanhos {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph--textos-tamanhos {
+  font-family: "Rubik";
+  font-size: 14px;
+  color: #636363;
+  margin: 0;
+}
+
+.paragraph--label-text {
   text-transform: uppercase;
   font-family: "Rubik";
   font-size: 24px;
 }
 
-.paragraph--content-text{
+.paragraph--content-text {
   font-family: "Rubik";
   font-size: 16px;
   color: #636363;
 }
 
 .paragraph--label-text,
-.paragraph--content-text{
+.paragraph--content-text {
   margin: 20px 0;
 }
 
@@ -30,7 +42,7 @@
 
 
 
-.paragraph--titulo-detalhes-tecnicos{
+.paragraph--titulo-detalhes-tecnicos {
   font-family: "Rubik Bold";
   font-size: 36px;
   margin: 0;

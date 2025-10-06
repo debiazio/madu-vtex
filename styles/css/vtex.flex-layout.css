@@ -1,11 +1,33 @@
-.flexCol--coluna-accordion-detalhes-tecnicos{
+.flexRow--linha-imagem-tamanhos {
+  margin: 0 100px;
+  background-color: white;
+}
+
+.flexRowContent--linha-tamanhos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.flexRowContent--linha-imagem-tamanhos .stretchChildrenWidth {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexRowContent--linha-imagem-tamanhos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.flexCol--coluna-accordion-detalhes-tecnicos {
   padding-left: 100px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 
-.flexRowContent--linha-conteudo-detalhes-tecnicos-madubox{
+.flexRowContent--linha-conteudo-detalhes-tecnicos-madubox {
   background-color: #F5F5F5;
 }
 
