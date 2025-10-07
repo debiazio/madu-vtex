@@ -4,6 +4,7 @@
       "flex-layout.row#desktop-banner-madubox",
       "flex-layout.row#desktop-banner2-maletas-madubox",
       "flex-layout.row#desktop-banner3-caracteristicas-madubox",
+      "handler-visualization",
       "flex-layout.row#desktop-detalhes-tecnicos-titulo",
       "flex-layout.row#desktop-detalhes-tecnicos-conteudo"
     ]
@@ -654,11 +655,17 @@
   // DETALHES TÉCNICOS CONTEÚDO
   "flex-layout.row#desktop-detalhes-tecnicos-conteudo": {
     "props": {
-      "blockClass": "linha-conteudo-detalhes-tecnicos-madubox"
+      "blockClass": "linha-conteudo-detalhes-tecnicos-madubox",
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.col#detalhes-tecnicos-coluna-esquerda",
-      "flex-layout.col#detalhes-tecnicos-coluna-direita"
+      "flex-layout.col#detalhes-tecnicos-coluna-direita-tam3",
+      "flex-layout.col#detalhes-tecnicos-coluna-direita-tam4",
+      "flex-layout.col#detalhes-tecnicos-coluna-direita-tam6",
+      "flex-layout.col#detalhes-tecnicos-coluna-direita-tam8",
+      "flex-layout.col#detalhes-tecnicos-coluna-direita-tam10",
+      "flex-layout.col#detalhes-tecnicos-coluna-direita-tam12"
     ]
   },
   // COLUNA ESQUERDA DETALHES TÉCNICOS - ACORDION
@@ -672,19 +679,98 @@
       "disclosure-layout-group#group"
     ]
   },
-  // COLUNA DIREITA DETALHES TÉCNICOS - IMAGEM
-  "flex-layout.col#detalhes-tecnicos-coluna-direita": {
+  // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM3
+  "flex-layout.col#detalhes-tecnicos-coluna-direita-tam3": {
     "props": {
-      "blockClass": "coluna-imagem-detalhes-tecnicos",
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos",
+        "coluna-tam3"
+      ],
       "preventVerticalStretch": true,
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.row#linha-imagem-superior",
-      "flex-layout.row#linha-tamanhos"
+      "flex-layout.row#linha-imagem-superior-tam3",
+      "flex-layout.row#linha-tamanhos-tam3"
     ]
   },
-  "flex-layout.row#linha-imagem-superior": {
+  // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM4
+  "flex-layout.col#detalhes-tecnicos-coluna-direita-tam4": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam4",
+        "coluna-tam4"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam4",
+      "flex-layout.row#linha-tamanhos-tam4"
+    ]
+  },
+  // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM6
+  "flex-layout.col#detalhes-tecnicos-coluna-direita-tam6": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam6",
+        "coluna-tam6"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam6",
+      "flex-layout.row#linha-tamanhos-tam6"
+    ]
+  },
+  // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM8
+  "flex-layout.col#detalhes-tecnicos-coluna-direita-tam8": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam8",
+        "coluna-tam8"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam8",
+      "flex-layout.row#linha-tamanhos-tam8"
+    ]
+  },
+  // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM10
+  "flex-layout.col#detalhes-tecnicos-coluna-direita-tam10": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam10",
+        "coluna-tam10"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam10",
+      "flex-layout.row#linha-tamanhos-tam10"
+    ]
+  },
+  // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM12
+  "flex-layout.col#detalhes-tecnicos-coluna-direita-tam12": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam12",
+        "coluna-tam12"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam12",
+      "flex-layout.row#linha-tamanhos-tam12"
+    ]
+  },
+  // linha da imagem principal tam 3
+  "flex-layout.row#linha-imagem-superior-tam3": {
     "props": {
       "blockClass": "linha-imagem-superior"
     },
@@ -692,20 +778,131 @@
       "image#imagem-detalhes-tecnicos-tam3"
     ]
   },
-  "flex-layout.row#linha-tamanhos": {
+  // linha da imagem principal tam 4
+  "flex-layout.row#linha-imagem-superior-tam4": {
+    "props": {
+      "blockClass": "linha-imagem-superior"
+    },
+    "children": [
+      "image#imagem-detalhes-tecnicos-tam4"
+    ]
+  },
+  // linha da imagem principal tam 6
+  "flex-layout.row#linha-imagem-superior-tam6": {
+    "props": {
+      "blockClass": "linha-imagem-superior"
+    },
+    "children": [
+      "image#imagem-detalhes-tecnicos-tam6"
+    ]
+  },
+  // linha da imagem principal tam 8
+  "flex-layout.row#linha-imagem-superior-tam8": {
+    "props": {
+      "blockClass": "linha-imagem-superior"
+    },
+    "children": [
+      "image#imagem-detalhes-tecnicos-tam8"
+    ]
+  },
+  // linha da imagem principal tam 10
+  "flex-layout.row#linha-imagem-superior-tam10": {
+    "props": {
+      "blockClass": "linha-imagem-superior"
+    },
+    "children": [
+      "image#imagem-detalhes-tecnicos-tam10"
+    ]
+  },
+  // linha da imagem principal tam 12
+  "flex-layout.row#linha-imagem-superior-tam12": {
+    "props": {
+      "blockClass": "linha-imagem-superior"
+    },
+    "children": [
+      "image#imagem-detalhes-tecnicos-tam12"
+    ]
+  },
+  // CONTEUDO IMAGENS DETALHES TECNICOS TAM3
+  "flex-layout.row#linha-tamanhos-tam3": {
     "props": {
       "blockClass": "linha-tamanhos",
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.row#linha-imagem-p",
-      "flex-layout.row#linha-imagem-m",
-      "flex-layout.row#linha-imagem-g",
-      "flex-layout.row#linha-imagem-gg"
+      "flex-layout.row#linha-imagem-p-tam3",
+      "flex-layout.row#linha-imagem-m-tam3",
+      "flex-layout.row#linha-imagem-g-tam3",
+      "flex-layout.row#linha-imagem-gg-tam3"
     ]
   },
-  // LINHAS TAMANHOS  - TAM 3
-  "flex-layout.row#linha-imagem-p": {
+  // CONTEUDO IMAGENS DETALHES TECNICOS TAM4
+  "flex-layout.row#linha-tamanhos-tam4": {
+    "props": {
+      "blockClass": "linha-tamanhos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-p-tam4",
+      "flex-layout.row#linha-imagem-m-tam4",
+      "flex-layout.row#linha-imagem-g-tam4",
+      "flex-layout.row#linha-imagem-gg-tam4"
+    ]
+  },
+  // CONTEUDO IMAGENS DETALHES TECNICOS TAM6
+  "flex-layout.row#linha-tamanhos-tam6": {
+    "props": {
+      "blockClass": "linha-tamanhos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-p-tam6",
+      "flex-layout.row#linha-imagem-m-tam6",
+      "flex-layout.row#linha-imagem-g-tam6",
+      "flex-layout.row#linha-imagem-gg-tam6"
+    ]
+  },
+  // CONTEUDO IMAGENS DETALHES TECNICOS TAM8
+  "flex-layout.row#linha-tamanhos-tam8": {
+    "props": {
+      "blockClass": "linha-tamanhos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-p-tam8",
+      "flex-layout.row#linha-imagem-m-tam8",
+      "flex-layout.row#linha-imagem-g-tam8",
+      "flex-layout.row#linha-imagem-gg-tam8"
+    ]
+  },
+  // CONTEUDO IMAGENS DETALHES TECNICOS TAM10
+  "flex-layout.row#linha-tamanhos-tam10": {
+    "props": {
+      "blockClass": "linha-tamanhos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-p-tam10",
+      "flex-layout.row#linha-imagem-m-tam10",
+      "flex-layout.row#linha-imagem-g-tam10",
+      "flex-layout.row#linha-imagem-gg-tam10"
+    ]
+  },
+  // CONTEUDO IMAGENS DETALHES TECNICOS TAM12
+  "flex-layout.row#linha-tamanhos-tam12": {
+    "props": {
+      "blockClass": "linha-tamanhos",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-p-tam12",
+      "flex-layout.row#linha-imagem-m-tam12",
+      "flex-layout.row#linha-imagem-g-tam12",
+      "flex-layout.row#linha-imagem-gg-tam12"
+    ]
+  },
+  // LINHAS TAMANHOS  - TAM 3 - p
+  "flex-layout.row#linha-imagem-p-tam3": {
     "props": {
       "blockClass": "linha-imagem-tamanhos",
       "preventHorizontalStretch": true,
@@ -713,10 +910,71 @@
     },
     "children": [
       "image#imagem-tam3-p",
-      "rich-text#tam3-p"
+      "rich-text#tam-p"
     ]
   },
-  "flex-layout.row#linha-imagem-m": {
+  // LINHAS TAMANHOS  - TAM 4 - p
+  "flex-layout.row#linha-imagem-p-tam4": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam4-p",
+      "rich-text#tam-p"
+    ]
+  },
+  // LINHAS TAMANHOS  - TAM 6 - p
+  "flex-layout.row#linha-imagem-p-tam6": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam6-p",
+      "rich-text#tam-p"
+    ]
+  },
+  // LINHAS TAMANHOS  - TAM 8 - p
+  "flex-layout.row#linha-imagem-p-tam8": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam8-p",
+      "rich-text#tam-p"
+    ]
+  },
+  // LINHAS TAMANHOS  - TAM 10 - p
+  "flex-layout.row#linha-imagem-p-tam10": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam10-p",
+      "rich-text#tam-p"
+    ]
+  },
+  // LINHAS TAMANHOS  - TAM 12 - p
+  "flex-layout.row#linha-imagem-p-tam12": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam12-p",
+      "rich-text#tam-p"
+    ]
+  },
+  // LINHA TAMANHOS TAM3 - M
+  "flex-layout.row#linha-imagem-m-tam3": {
     "props": {
       "blockClass": "linha-imagem-tamanhos",
       "preventHorizontalStretch": true,
@@ -724,10 +982,71 @@
     },
     "children": [
       "image#imagem-tam3-m",
-      "rich-text#tam3-m"
+      "rich-text#tam-m"
     ]
   },
-  "flex-layout.row#linha-imagem-g": {
+  // LINHA TAMANHOS TAM4 - M
+  "flex-layout.row#linha-imagem-m-tam4": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam4-m",
+      "rich-text#tam-m"
+    ]
+  },
+  // LINHA TAMANHOS TAM6 - M
+  "flex-layout.row#linha-imagem-m-tam6": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam6-m",
+      "rich-text#tam-m"
+    ]
+  },
+  // LINHA TAMANHOS TAM8 - M
+  "flex-layout.row#linha-imagem-m-tam8": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam8-m",
+      "rich-text#tam-m"
+    ]
+  },
+  // LINHA TAMANHOS TAM10 - M
+  "flex-layout.row#linha-imagem-m-tam10": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam10-m",
+      "rich-text#tam-m"
+    ]
+  },
+  // LINHA TAMANHOS TAM12 - M
+  "flex-layout.row#linha-imagem-m-tam12": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam12-m",
+      "rich-text#tam-m"
+    ]
+  },
+  // LINHA TAMANHOS TAM3 - G
+  "flex-layout.row#linha-imagem-g-tam3": {
     "props": {
       "blockClass": "linha-imagem-tamanhos",
       "preventHorizontalStretch": true,
@@ -735,10 +1054,71 @@
     },
     "children": [
       "image#imagem-tam3-g",
-      "rich-text#tam3-g"
+      "rich-text#tam-g"
     ]
   },
-  "flex-layout.row#linha-imagem-gg": {
+  // LINHA TAMANHOS TAM4 - G
+  "flex-layout.row#linha-imagem-g-tam4": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam4-g",
+      "rich-text#tam-g"
+    ]
+  },
+  // LINHA TAMANHOS TAM6 - G
+  "flex-layout.row#linha-imagem-g-tam6": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam6-g",
+      "rich-text#tam-g"
+    ]
+  },
+  // LINHA TAMANHOS TAM8 - G
+  "flex-layout.row#linha-imagem-g-tam8": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam8-g",
+      "rich-text#tam-g"
+    ]
+  },
+  // LINHA TAMANHOS TAM10 - G
+  "flex-layout.row#linha-imagem-g-tam10": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam10-g",
+      "rich-text#tam-g"
+    ]
+  },
+  // LINHA TAMANHOS TAM12 - G
+  "flex-layout.row#linha-imagem-g-tam12": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam12-g",
+      "rich-text#tam-g"
+    ]
+  },
+  // LINHA TAMANHOS TAM3 - GG
+  "flex-layout.row#linha-imagem-gg-tam3": {
     "props": {
       "blockClass": "linha-imagem-tamanhos",
       "preventHorizontalStretch": true,
@@ -746,66 +1126,334 @@
     },
     "children": [
       "image#imagem-tam3-gg",
-      "rich-text#tam3-gg"
+      "rich-text#tam-gg"
     ]
   },
-  // imagem linha detalhes técnicos
+  // LINHA TAMANHOS TAM4 - GG
+  "flex-layout.row#linha-imagem-gg-tam4": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam4-gg",
+      "rich-text#tam-gg"
+    ]
+  },
+  // LINHA TAMANHOS TAM6 - GG
+  "flex-layout.row#linha-imagem-gg-tam6": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam6-gg",
+      "rich-text#tam-gg"
+    ]
+  },
+  // LINHA TAMANHOS TAM8 - GG
+  "flex-layout.row#linha-imagem-gg-tam8": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam8-gg",
+      "rich-text#tam-gg"
+    ]
+  },
+  // LINHA TAMANHOS TAM10 - GG
+  "flex-layout.row#linha-imagem-gg-tam10": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam10-gg",
+      "rich-text#tam-gg"
+    ]
+  },
+  // LINHA TAMANHOS TAM12 - GG
+  "flex-layout.row#linha-imagem-gg-tam12": {
+    "props": {
+      "blockClass": "linha-imagem-tamanhos",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#imagem-tam12-gg",
+      "rich-text#tam-gg"
+    ]
+  },
+  // imagem PRINCIPAL linha detalhes técnicos tam3
   "image#imagem-detalhes-tecnicos-tam3": {
     "props": {
-      "src": "assets/tam3.webp",
+      "src": "assets/madu-box/tamanho-3/tam3.webp",
       "alt": "Imagem tamanho 3",
       "blockClass": "imagem-detalhes-tecnicos"
     }
   },
-  // IMAGENS TAMANHOS
+  // imagem PRINCIPAL linha detalhes técnicos tam4
+  "image#imagem-detalhes-tecnicos-tam4": {
+    "props": {
+      "src": "assets/madu-box/tamanho-4/tamanho-4.webp",
+      "alt": "Imagem tamanho 4",
+      "blockClass": "imagem-detalhes-tecnicos"
+    }
+  },
+  // imagem PRINCIPAL linha detalhes técnicos tam6
+  "image#imagem-detalhes-tecnicos-tam6": {
+    "props": {
+      "src": "assets/madu-box/tamanho-6/tamanho-6.webp",
+      "alt": "Imagem tamanho 6",
+      "blockClass": "imagem-detalhes-tecnicos"
+    }
+  },
+  // imagem PRINCIPAL linha detalhes técnicos tam8
+  "image#imagem-detalhes-tecnicos-tam8": {
+    "props": {
+      "src": "assets/madu-box/tamanho-8/tamanho-8.webp",
+      "alt": "Imagem tamanho 8",
+      "blockClass": "imagem-detalhes-tecnicos"
+    }
+  },
+  // imagem PRINCIPAL linha detalhes técnicos tam10
+  "image#imagem-detalhes-tecnicos-tam10": {
+    "props": {
+      "src": "assets/madu-box/tamanho-10/tamanho-10.webp",
+      "alt": "Imagem tamanho 10",
+      "blockClass": "imagem-detalhes-tecnicos"
+    }
+  },
+  // imagem PRINCIPAL linha detalhes técnicos tam12
+  "image#imagem-detalhes-tecnicos-tam12": {
+    "props": {
+      "src": "assets/madu-box/tamanho-12/tamanho-12.webp",
+      "alt": "Imagem tamanho 12",
+      "blockClass": "imagem-detalhes-tecnicos"
+    }
+  },
+  // IMAGENS MENORES TAMANHOS
+  // TAM3 - P
   "image#imagem-tam3-p": {
     "props": {
-      "src": "assets/tamanho-3-p.webp",
+      "src": "assets/madu-box/tamanho-3/tamanho-3-p.webp",
       "alt": "Imagem tamanho 3 P",
       "blockClass": "imagem-tamanhos"
     }
   },
+  // TAM4 - P
+  "image#imagem-tam4-p": {
+    "props": {
+      "src": "assets/madu-box/tamanho-4/tamanho-4-p.webp",
+      "alt": "Imagem tamanho 4 P",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM6 - P
+  "image#imagem-tam6-p": {
+    "props": {
+      "src": "assets/madu-box/tamanho-6/tamanho-6-p.webp",
+      "alt": "Imagem tamanho 6 P",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM8 - P
+  "image#imagem-tam8-p": {
+    "props": {
+      "src": "assets/madu-box/tamanho-8/tamanho-8-p.webp",
+      "alt": "Imagem tamanho 8 P",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM10 - P
+  "image#imagem-tam10-p": {
+    "props": {
+      "src": "assets/madu-box/tamanho-10/tamanho-10-p.webp",
+      "alt": "Imagem tamanho 10 P",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM12 - P
+  "image#imagem-tam12-p": {
+    "props": {
+      "src": "assets/madu-box/tamanho-12/tamanho-12-p.webp",
+      "alt": "Imagem tamanho 12 P",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM3 - M
   "image#imagem-tam3-m": {
     "props": {
-      "src": "assets/tamanho-3-m.webp",
+      "src": "assets/madu-box/tamanho-3/tamanho-3-m.webp",
       "alt": "Imagem tamanho 3 m",
       "blockClass": "imagem-tamanhos"
     }
   },
+  // TAM4 - M
+  "image#imagem-tam4-m": {
+    "props": {
+      "src": "assets/madu-box/tamanho-4/tamanho-4-m.webp",
+      "alt": "Imagem tamanho 4 m",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM6 - M
+  "image#imagem-tam6-m": {
+    "props": {
+      "src": "assets/madu-box/tamanho-6/tamanho-6-m.webp",
+      "alt": "Imagem tamanho 6 m",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM8 - M
+  "image#imagem-tam8-m": {
+    "props": {
+      "src": "assets/madu-box/tamanho-8/tamanho-8-m.webp",
+      "alt": "Imagem tamanho 8 m",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM10 - M
+  "image#imagem-tam10-m": {
+    "props": {
+      "src": "assets/madu-box/tamanho-10/tamanho-10-m.webp",
+      "alt": "Imagem tamanho 10 m",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM12 - M
+  "image#imagem-tam12-m": {
+    "props": {
+      "src": "assets/madu-box/tamanho-12/tamanho-12-m.webp",
+      "alt": "Imagem tamanho 12 m",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM3 - G
   "image#imagem-tam3-g": {
     "props": {
-      "src": "assets/tamanho-3-g.webp",
+      "src": "assets/madu-box/tamanho-3/tamanho-3-g.webp",
       "alt": "Imagem tamanho 3 g",
       "blockClass": "imagem-tamanhos"
     }
   },
+  // TAM4 - G
+  "image#imagem-tam4-g": {
+    "props": {
+      "src": "assets/madu-box/tamanho-4/tamanho-4-g.webp",
+      "alt": "Imagem tamanho 4 g",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM6 - G
+  "image#imagem-tam6-g": {
+    "props": {
+      "src": "assets/madu-box/tamanho-6/tamanho-6-g.webp",
+      "alt": "Imagem tamanho 6 g",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM8 - G
+  "image#imagem-tam8-g": {
+    "props": {
+      "src": "assets/madu-box/tamanho-8/tamanho-8-g.webp",
+      "alt": "Imagem tamanho 8 g",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM10 - G
+  "image#imagem-tam10-g": {
+    "props": {
+      "src": "assets/madu-box/tamanho-10/tamanho-10-g.webp",
+      "alt": "Imagem tamanho 10 g",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM12 - G
+  "image#imagem-tam12-g": {
+    "props": {
+      "src": "assets/madu-box/tamanho-12/tamanho-12-g.webp",
+      "alt": "Imagem tamanho 12 g",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM3 - GG
   "image#imagem-tam3-gg": {
     "props": {
-      "src": "assets/tamanho-3-gg.webp",
+      "src": "assets/madu-box/tamanho-3/tamanho-3-gg.webp",
       "alt": "Imagem tamanho 3 gg",
       "blockClass": "imagem-tamanhos"
     }
   },
+  // TAM4 - GG
+  "image#imagem-tam4-gg": {
+    "props": {
+      "src": "assets/madu-box/tamanho-4/tamanho-4-gg.webp",
+      "alt": "Imagem tamanho 4 gg",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM6 - GG
+  "image#imagem-tam6-gg": {
+    "props": {
+      "src": "assets/madu-box/tamanho-6/tamanho-6-gg.webp",
+      "alt": "Imagem tamanho 6 gg",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM8 - GG
+  "image#imagem-tam8-gg": {
+    "props": {
+      "src": "assets/madu-box/tamanho-8/tamanho-8-gg.webp",
+      "alt": "Imagem tamanho 8 gg",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM10 - GG
+  "image#imagem-tam10-gg": {
+    "props": {
+      "src": "assets/madu-box/tamanho-10/tamanho-10-gg.webp",
+      "alt": "Imagem tamanho 10 gg",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
+  // TAM12 - GG
+  "image#imagem-tam12-gg": {
+    "props": {
+      "src": "assets/madu-box/tamanho-12/tamanho-12-gg.webp",
+      "alt": "Imagem tamanho 12 gg",
+      "blockClass": "imagem-tamanhos"
+    }
+  },
   // textos tamanhos
-  "rich-text#tam3-p": {
+  // TEXTO P
+  "rich-text#tam-p": {
     "props": {
       "blockClass": "textos-tamanhos",
       "text": "**P:**\n6,3 Litros - 22,5x24,3x11,5cm"
     }
   },
-  "rich-text#tam3-m": {
+  // TEXTO M
+  "rich-text#tam-m": {
     "props": {
       "blockClass": "textos-tamanhos",
       "text": "**M:**\n8,2 Litros - 22,5x24,3x15cm"
     }
   },
-  "rich-text#tam3-g": {
+  // TEXTO G
+  "rich-text#tam-g": {
     "props": {
       "blockClass": "textos-tamanhos",
       "text": "**G:**\n10,1 Litros - 22,5x24,3x18,5cm"
     }
   },
-  "rich-text#tam3-gg": {
+  // TEXTO GG
+  "rich-text#tam-gg": {
     "props": {
       "blockClass": "textos-tamanhos",
       "text": "**GG:**\n12 Litros - 22,5x24,3x22cm"
@@ -814,7 +1462,8 @@
   // SESSÃO disclosure
   "disclosure-layout-group#group": {
     "props": {
-      "blockClass": "grupo-detalhes-tecnicos"
+      "blockClass": "grupo-detalhes-tecnicos",
+      "maxVisible": "one"
     },
     "children": [
       "disclosure-layout#tam3",
@@ -829,7 +1478,10 @@
   "disclosure-layout#tam3": {
     "props": {
       "initialVisibility": "visible",
-      "blockClass": "disclosure-class"
+      "blockClass": [
+        "disclosure-class",
+        "disclosure-tam3"
+      ]
     },
     "children": [
       "disclosure-trigger#tam3",
@@ -839,7 +1491,10 @@
   "disclosure-layout#tam4": {
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "disclosure-class"
+      "blockClass": [
+        "disclosure-class",
+        "disclosure-tam4"
+      ]
     },
     "children": [
       "disclosure-trigger#tam4",
@@ -849,7 +1504,10 @@
   "disclosure-layout#tam6": {
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "disclosure-class"
+      "blockClass": [
+        "disclosure-class",
+        "disclosure-tam6"
+      ]
     },
     "children": [
       "disclosure-trigger#tam6",
@@ -859,7 +1517,10 @@
   "disclosure-layout#tam8": {
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "disclosure-class"
+      "blockClass": [
+        "disclosure-class",
+        "disclosure-tam8"
+      ]
     },
     "children": [
       "disclosure-trigger#tam8",
@@ -869,7 +1530,10 @@
   "disclosure-layout#tam10": {
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "disclosure-class"
+      "blockClass": [
+        "disclosure-class",
+        "disclosure-tam10"
+      ]
     },
     "children": [
       "disclosure-trigger#tam10",
@@ -879,7 +1543,10 @@
   "disclosure-layout#tam12": {
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "disclosure-class"
+      "blockClass": [
+        "disclosure-class",
+        "disclosure-tam12"
+      ]
     },
     "children": [
       "disclosure-trigger#tam12",
@@ -908,7 +1575,10 @@
   // DISCLOSURE TRIGGER
   "disclosure-trigger#tam3": {
     "props": {
-      "blockClass": "trigger-class"
+      "blockClass": [
+        "trigger-class",
+        "trigger-tam3"
+      ]
     },
     "children": [
       "rich-text#label-tam3",
@@ -917,7 +1587,10 @@
   },
   "disclosure-trigger#tam4": {
     "props": {
-      "blockClass": "trigger-class"
+      "blockClass": [
+        "trigger-class",
+        "trigger-tam4"
+      ]
     },
     "children": [
       "rich-text#label-tam4",
@@ -926,7 +1599,10 @@
   },
   "disclosure-trigger#tam6": {
     "props": {
-      "blockClass": "trigger-class"
+      "blockClass": [
+        "trigger-class",
+        "trigger-tam6"
+      ]
     },
     "children": [
       "rich-text#label-tam6",
@@ -935,7 +1611,10 @@
   },
   "disclosure-trigger#tam8": {
     "props": {
-      "blockClass": "trigger-class"
+      "blockClass": [
+        "trigger-class",
+        "trigger-tam8"
+      ]
     },
     "children": [
       "rich-text#label-tam8",
@@ -944,7 +1623,10 @@
   },
   "disclosure-trigger#tam10": {
     "props": {
-      "blockClass": "trigger-class"
+      "blockClass": [
+        "trigger-class",
+        "trigger-tam10"
+      ]
     },
     "children": [
       "rich-text#label-tam10",
@@ -953,7 +1635,7 @@
   },
   "disclosure-trigger#tam12": {
     "props": {
-      "blockClass": "trigger-class-12"
+      "blockClass": ["trigger-tam12", "trigger-class-12"]
     },
     "children": [
       "rich-text#label-tam12",
@@ -963,7 +1645,10 @@
   // DISCLOSURE CONTENT
   "disclosure-content#tam3": {
     "props": {
-      "blockClass": "content-class"
+      "blockClass": [
+        "content-class",
+        "content-tam3"
+      ]
     },
     "children": [
       "rich-text#content-tam3"
@@ -971,7 +1656,10 @@
   },
   "disclosure-content#tam4": {
     "props": {
-      "blockClass": "content-class"
+      "blockClass": [
+        "content-class",
+        "content-tam4"
+      ]
     },
     "children": [
       "rich-text#content-tam4"
@@ -979,7 +1667,10 @@
   },
   "disclosure-content#tam6": {
     "props": {
-      "blockClass": "content-class"
+      "blockClass": [
+        "content-class",
+        "content-tam6"
+      ]
     },
     "children": [
       "rich-text#content-tam6"
@@ -987,7 +1678,10 @@
   },
   "disclosure-content#tam8": {
     "props": {
-      "blockClass": "content-class"
+      "blockClass": [
+        "content-class",
+        "content-tam8"
+      ]
     },
     "children": [
       "rich-text#content-tam8"
@@ -995,7 +1689,10 @@
   },
   "disclosure-content#tam10": {
     "props": {
-      "blockClass": "content-class"
+      "blockClass": [
+        "content-class",
+        "content-tam10"
+      ]
     },
     "children": [
       "rich-text#content-tam10"
@@ -1003,7 +1700,10 @@
   },
   "disclosure-content#tam12": {
     "props": {
-      "blockClass": "content-class-12"
+      "blockClass": [
+        "content-tam12",
+        "content-class-12"
+      ]
     },
     "children": [
       "rich-text#content-tam12"

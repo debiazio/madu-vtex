@@ -75,18 +75,6 @@
       }
     }
   },
-
-  "list-context.product-list#mais-vendidos": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#mais-vendidos"
-    ],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
   "slider-layout#mais-vendidos": {
     "props": {
       "itemsPerPage": {
@@ -101,16 +89,6 @@
       "blockClass": "shelf"
     }
   },
-
-  "link#link-carrinhos": {
-    "props": {
-      "href": "/carrinhos?_q=Carrinhos&map=ft",
-      "blockClass": "link-categorias"
-    },
-    "children": [
-      "flex-layout.col#carrinhos"
-    ]
-  },
   "flex-layout.col#carrinhos": {
     "props": {
       "blockClass": "colunas-categorias",
@@ -119,15 +97,6 @@
     "children": [
       "image#carrinho",
       "rich-text#carrinho"
-    ]
-  },
-  "link#link-armarios": {
-    "props": {
-      "href": "#",
-      "blockClass": "link-categorias"
-    },
-    "children": [
-      "flex-layout.col#armarios"
     ]
   },
   "flex-layout.col#armarios": {
@@ -140,15 +109,6 @@
       "rich-text#armarios"
     ]
   },
-  "link#link-estantes": {
-    "props": {
-      "href": "#",
-      "blockClass": "link-categorias"
-    },
-    "children": [
-      "flex-layout.col#estantes"
-    ]
-  },
   "flex-layout.col#estantes": {
     "props": {
       "blockClass": "colunas-categorias",
@@ -157,15 +117,6 @@
     "children": [
       "image#estantes",
       "rich-text#estantes"
-    ]
-  },
-  "link#link-acessorios": {
-    "props": {
-      "href": "/idealovers-by--mad-u",
-      "blockClass": "link-categorias"
-    },
-    "children": [
-      "flex-layout.col#acessorios"
     ]
   },
   "flex-layout.col#acessorios": {
@@ -178,15 +129,6 @@
       "rich-text#acessorios"
     ]
   },
-  "link#link-lancamentos": {
-    "props": {
-      "href": "#",
-      "blockClass": "link-categorias"
-    },
-    "children": [
-      "flex-layout.col#lancamentos"
-    ]
-  },
   "flex-layout.col#lancamentos": {
     "props": {
       "blockClass": "colunas-categorias",
@@ -195,15 +137,6 @@
     "children": [
       "image#lancamentos",
       "rich-text#lancamentos"
-    ]
-  },
-  "link#link-feira-hospitalar": {
-    "props": {
-      "href": "#",
-      "blockClass": "link-categorias"
-    },
-    "children": [
-      "flex-layout.col#feira-hospitalar"
     ]
   },
   "flex-layout.col#feira-hospitalar": {
@@ -296,7 +229,6 @@
       "blockClass": "titulo-categorias"
     }
   },
-
   // MADU ONE
   "flex-layout.row#mais-vendidos-madu-extra": {
     "props": {
@@ -360,13 +292,10 @@
       "infinite": false,
       "fullWidth": false,
       "showNavigationArrows": "always",
-      "showPaginationDots":"always",
+      "showPaginationDots": "always",
       "blockClass": "prateleira-home-madu-extra"
     }
   },
-
-
-
   // MADU ONE
   "flex-layout.row#mais-vendidos-madu-one": {
     "props": {
@@ -406,7 +335,7 @@
       "slider-layout#prateleira-home-one"
     ],
     "props": {
-      "orderBy":"OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC"
     }
   },
   "slider-layout#prateleira-home-one": {
@@ -419,21 +348,11 @@
       "infinite": false,
       "fullWidth": false,
       "showNavigationArrows": "always",
-      "showPaginationDots":"always",
-      "blockClass": ["prateleira-home-madu-extra", "prateleira-home-madu-one"]
-    }
-  },
-
-
-  "list-context.product-list#prateleira-home-final": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#prateleira-home-final"
-    ],
-    "props": {
-      "orderBy": "OrderByNameASC"
+      "showPaginationDots": "always",
+      "blockClass": [
+        "prateleira-home-madu-extra",
+        "prateleira-home-madu-one"
+      ]
     }
   },
   "slider-layout#prateleira-home-final": {

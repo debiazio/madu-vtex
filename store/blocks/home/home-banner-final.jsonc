@@ -139,18 +139,6 @@
       "blockClass": "texto-banner-final"
     }
   },
-  "rich-text#texto-modal-inovacao": {
-    "props": {
-      "text": "Inovar é a LIBERDADE para escolher o\n que, onde e principalmente\n QUANDO quiser!",
-      "blockClass": "texto-modal"
-    }
-  },
-  "rich-text#titulo-modal-inovacao": {
-    "props": {
-      "text": "SAIBA MAIS",
-      "blockClass": "titulo-modal"
-    }
-  },
   // JANELA MODAL
   "modal-layout#inovacao": {
     "props": {
@@ -206,18 +194,6 @@
       "text": "## Inovação ##\n**Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!**\n\nA maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São **milhares** de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e **múltiplas utilizações** de acordo com a necessidade de cada cliente.\n\nA MAD.U inova nos mínimos detalhes. **Como num jogo de blocos de montar** os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para **novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.**"
     }
   },
-  "rich-text#texto-modal-qualidade": {
-    "props": {
-      "text": "Mobiliário técnico feito 100% no Brasil,\n com a melhor qualidade disponível no\n Mundo.",
-      "blockClass": "texto-modal"
-    }
-  },
-  "rich-text#titulo-modal-qualidade": {
-    "props": {
-      "text": "SAIBA MAIS",
-      "blockClass": "titulo-modal"
-    }
-  },
   // JANELA MODAL
   "modal-layout#qualidade": {
     "props": {
@@ -263,18 +239,6 @@
     "props": {
       "blockClass": "texto-modal-modal",
       "text": "## Qualidade ##\n**Mobiliário técnico feito 100% no Brasil, com a melhor qualidade disponível no Mundo.**\n\nA MAD.U tem sua própria infraestrutura de indústria dominando a cadeia produtiva desde o projeto inicial até sua fabricação final.\n\nTodos os componentes são desenvolvidos para uso específico, sem a utilização de partes genéricas ou adaptadas.\n\nPartes plásticas produzidas por injeção em polímeros de engenharia de altíssima durabilidade, totalmente imunes à oxidação ou ferrugem, elevada resistência ao impacto, agentes químicos, raios ultravioletas ou outras intempéries. Com aditivo antimicrobiano para proteção contra a proliferação de microrganismos e diminuição da contaminação cruzada.\n\nPartes metálicas com chassi totalmente em aço anticorrosivo ou aço inoxidável, as peças sujeitas ao manejo constante estão recobertas por componentes plásticos projetados para facilitar a limpeza e promover elevada resistência ao uso evitando corrosão.\n\nCada componente e seus materiais foram pensados e especificados para o seu melhor uso."
-    }
-  },
-  "rich-text#texto-modal-tecnologia": {
-    "props": {
-      "text": "A MAIOR linha de mobiliário técnico do\n mundo também merece a MELHOR\n tecnologia do mundo.",
-      "blockClass": "texto-modal"
-    }
-  },
-  "rich-text#titulo-modal-tecnologia": {
-    "props": {
-      "text": "SAIBA MAIS",
-      "blockClass": "titulo-modal"
     }
   },
   // JANELA MODAL

@@ -20,6 +20,7 @@
   font-family: "Rubik";
   font-size: 16px;
   color: #636363;
+  max-width: 480px;
 }
 
 .paragraph--label-text,

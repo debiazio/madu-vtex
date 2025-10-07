@@ -41,7 +41,6 @@
         "type": "internal",
         "noFollow": false,
         "tagTitle": "Estantes",
-
         "text": "Estantes",
         "href": "/moveis/estantes"
       },
@@ -379,50 +378,7 @@
       ]
     }
   },
-  "menu-item#cat-caixas": {
-    "props": {
-      "type": "custom",
-      "id": "menu-item-nossas-linhas",
-      "itemProps": {
-        "type": "internal",
-        "noFollow": false,
-        "tagTitle": "Caixas",
-        "text": "Caixas"
-      },
-      "blockClass": [
-        "menu-principal-item"
-      ]
-    }
-  },
-  "menu-item#cat-bandejas": {
-    "props": {
-      "type": "custom",
-      "id": "menu-item-nossas-linhas",
-      "itemProps": {
-        "type": "internal",
-        "noFollow": false,
-        "tagTitle": "Bandejas",
-        "text": "Bandejas"
-      },
-      "blockClass": [
-        "menu-principal-item"
-      ]
-    }
-  },
   // SUBMENUS - DROPDOWNS
-  "vtex.menu@2.x:menu#nossas-linhas": {
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "menu-principal-submenu"
-    },
-    "children": [
-      "menu-item#madu-box",
-      "menu-item#madu-expand",
-      "menu-item#madu-express",
-      "menu-item#madu-extra",
-      "menu-item#madu-one"
-    ]
-  },
   "menu-item#madu-box": {
     "props": {
       "id": "menu-item-madu-box",
@@ -776,7 +732,7 @@
       "menu-item#maduExtra-550"
     ]
   },
-    // SUBMENU DA EXPAND
+  // SUBMENU DA EXPAND
   "menu-item#linhas-maduOne-expand-mobile": {
     "props": {
       "blockClass": "menu-principal-item",
@@ -807,7 +763,7 @@
       }
     }
   },
-    "menu-item#cat-ver-todos-mobile": {
+  "menu-item#cat-ver-todos-mobile": {
     "props": {
       "type": "custom",
       "id": "menu-item-nossas-linhas",

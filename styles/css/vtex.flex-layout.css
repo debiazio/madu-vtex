@@ -1,3 +1,11 @@
+.flexCol--coluna-tam4,
+.flexCol--coluna-tam6,
+.flexCol--coluna-tam8,
+.flexCol--coluna-tam10,
+.flexCol--coluna-tam12{
+  display: none;
+}
+
 .flexRow--linha-imagem-tamanhos {
   margin: 0 100px;
   background-color: white;
@@ -18,6 +26,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  width: 380px;
 }
 
 .flexCol--coluna-accordion-detalhes-tecnicos {
