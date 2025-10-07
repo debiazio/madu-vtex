@@ -25,6 +25,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
+        "href": "moveis/carrinhos",
         "noFollow": false,
         "tagTitle": "Carrinhos",
         "text": "Carrinhos"
@@ -40,6 +41,7 @@
         "type": "internal",
         "noFollow": false,
         "tagTitle": "Estantes",
+
         "text": "Estantes",
         "href": "/moveis/estantes"
       },
@@ -52,7 +54,6 @@
       "type": "custom",
       "id": "menu-item-nossas-linhas",
       "itemProps": {
-        "href": "/acessorios",
         "type": "internal",
         "noFollow": false,
         "tagTitle": "Acessórios",
@@ -97,7 +98,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/acessorios-linha-extra",
         "noFollow": false,
         "tagTitle": "Linha Extra",
         "text": "Linha Extra"
@@ -111,7 +112,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/acessorios-linha-one",
         "noFollow": false,
         "tagTitle": "Linha One",
         "text": "Linha One"
@@ -126,7 +127,8 @@
         "type": "internal",
         "noFollow": false,
         "tagTitle": "Armários",
-        "text": "Armários"
+        "text": "Armários",
+        "href": "/moveis/armarios"
       },
       "blockClass": "menu-principal-item"
     }
@@ -226,7 +228,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/madu-one-560",
         "noFollow": false,
         "tagTitle": "One 560",
         "text": "One 560"
@@ -240,7 +242,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/madu-one-740",
         "noFollow": false,
         "tagTitle": "One 740",
         "text": "One 740"
@@ -297,7 +299,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/madu-extra-380",
         "noFollow": false,
         "tagTitle": "Extra 380",
         "text": "Extra 380"
@@ -311,7 +313,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/madu-extra-550",
         "noFollow": false,
         "tagTitle": "Extra 550",
         "text": "Extra 550"
@@ -326,7 +328,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/mad-u-expand",
         "noFollow": false,
         "tagTitle": "MAD.U Expand",
         "text": "MAD.U Expand"
@@ -340,7 +342,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/mad-u-express",
         "noFollow": false,
         "tagTitle": "MAD.U Express",
         "text": "MAD.U Express"
@@ -367,6 +369,7 @@
       "itemProps": {
         "type": "internal",
         "noFollow": false,
+        "href": "/moveis/organizadores",
         "tagTitle": "Organizadores",
         "text": "Organizadores"
       },
@@ -564,7 +567,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/carrinhos",
+        "href": "moveis/carrinhos",
         "noFollow": false,
         "tagTitle": "Carrinhos",
         "text": "Carrinhos"
@@ -579,7 +582,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/armarios",
+        "href": "moveis/armarios",
         "noFollow": false,
         "tagTitle": "Armários",
         "text": "Armários"
@@ -594,7 +597,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/estantes",
+        "href": "/moveis/estantes",
         "noFollow": false,
         "tagTitle": "Estantes",
         "text": "Estantes"
@@ -610,7 +613,6 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/moveis/modulos",
         "noFollow": false,
         "tagTitle": "Acessórios",
         "text": "Acessórios"
@@ -648,7 +650,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/organizadores",
+        "href": "moveis/organizadores",
         "noFollow": false,
         "tagTitle": "Organizadores",
         "text": "Organizadores"
