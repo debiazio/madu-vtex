@@ -23,19 +23,24 @@
       "height": 570,
       "images": [
         {
-          "mobileImage": "assets/Banner-mobile-20OFF.webp",
-          "image": "assets/20%-off-desktop.webp",
-          "description": "Banner 1",
+          "mobileImage": "assets/banners/mobile/01-Banner-mobile-Restaurante.webp",
+          "image": "assets/banners/desktop/Banner-desktop-Restaurante-scaled.webp",
           "link": {
-            "url": "/categoria-produto/madu-one"
+            "url": "/moveis/carrinhos"
           }
         },
         {
-          "mobileImage": "assets/Banner-Mobile.webp",
-          "image": "assets/primeira-compra-desktop.webp",
-          "description": "Banner 2",
+          "mobileImage": "assets/banners/mobile/02-Banner-mobile-Escritorio.webp",
+          "image": "assets/banners/desktop/02-Banner-desktop-Escritorio-scaled.webp",
           "link": {
-            "url": "/produtos"
+            "url": "/moveis/carrinhos"
+          }
+        },
+        {
+          "mobileImage": "assets/banners/mobile/03-Banner-mobile-Clinicas.webp",
+          "image": "assets/banners/desktop/03-Banner-desktop-Escritorio-clinicas-scaled.webp",
+          "link": {
+            "url": "/moveis/carrinhos"
           }
         },
         {
@@ -47,7 +52,7 @@
           }
         }
       ],
-      "title": "List-context-Images"
+      "title": "Banner home"
     }
   },
   "slider-layout#home": {
