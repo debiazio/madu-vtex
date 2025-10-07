@@ -183,7 +183,6 @@
 }
 
 .flexRow--breadcrumb {
-  background: linear-gradient(to right, rgb(222, 229, 252), rgb(210, 215, 228), rgb(223, 228, 240), rgb(221, 219, 219));
   padding-left: 10px;
 }
 
@@ -194,9 +193,6 @@
   box-shadow: 0 0 10px 0 rgb(0 0 0 / .05);
 }
 
-.flexCol--filterCol {
-  margin-top: 20px;
-}
 
 .flexRow--linha-compre-por-categorias {
   margin-bottom: 40px;
@@ -243,13 +239,7 @@
 }
 
 .flexRow--banner-pesquisa {
-  padding: 10px;
-  background: linear-gradient(90deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(230, 230, 235, 0.9) 25%,
-      rgba(200, 205, 220, 0.9) 50%,
-      rgba(180, 190, 200, 0.9) 75%,
-      rgba(210, 220, 225, 0.9) 100%);
+  padding: 0px;
 }
 
 
@@ -705,7 +695,8 @@
 }
 
 .flexRow--searchinfo {
-  padding: 30px 0 0;
+  padding: 10px 0px;
+  margin-bottom: -25px;
 }
 
 /* PDP */

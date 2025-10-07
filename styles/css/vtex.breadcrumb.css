@@ -1,84 +1,88 @@
-
-
-.link--2{
+.link--2 {
   text-wrap: nowrap;
 }
 
-.container{
+.container {
   text-transform: capitalize;
-  padding:15px 0;
-  align-items:center;
+  padding-top: 15px;
+  align-items: center;
 }
 
-.breadcrumb-1-x-link--1{
+.breadcrumb-1-x-link--1 {
   font-size: 12px;
 }
 
-.homeIcon{
-    display:none;
-}
-.homeLink{
-    padding:0;
-}
-.homeLink::before{
-    content:"Home";
-    font-size:.92em;
-    padding:0;
-    line-height:1;
-    color: #161616;
-    font-family: "Montserrat", Sans-serif;
-    font-weight: 500;
-    text-align: left;
+.homeIcon {
+  display: none;
 }
 
-.term{
-    font-size:.92em;
-    padding:0;
-    line-height:1;
-    color: #636363;
-    font-family: "Montserrat", Sans-serif;
-    font-weight: 500;
-    text-align: left;
+.homeLink {
+  padding: 0;
 }
 
-.link{
-    font-size:.92em;
-    padding:0;
-    line-height:1;
-    color: #161616;
-    font-family: "Montserrat", Sans-serif;
-    font-weight: 500;
-    text-align: left;
+.homeLink::before {
+  content: "Home";
+  font-size: .92em;
+  padding: 0;
+  line-height: 1;
+  color: #161616;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 500;
+  text-align: left;
 }
 
-.arrow{
-    padding:0 5px;
+.term {
+  font-size: .92em;
+  padding: 0;
+  line-height: 1;
+  color: #636363;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 500;
+  text-align: left;
 }
-.arrow::before{
-    content:"/";
-    font-size:13px;
-    color:black;
-    padding-right:5px;
-    line-height:1;
+
+.link {
+  font-size: .92em;
+  padding: 0;
+  line-height: 1;
+  color: #161616;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 500;
+  text-align: left;
 }
+
+.arrow {
+  padding: 0 5px;
+}
+
+.arrow::before {
+  content: "/";
+  font-size: 13px;
+  color: black;
+  padding-right: 5px;
+  line-height: 1;
+}
+
 .link:hover,
 .arrow:last-child .link,
-.term{
-    color:#636363;
+.term {
+  color: #636363;
 }
 
-.caretIcon{
-    display:none;
+.caretIcon {
+  display: none;
 }
 
 /* MOBILE */
-@media screen and (max-width: 1024px){
-    .link:hover,
-    .arrow:last-child .link{
-        color:#43483B;
-    }
-    .container{
-        text-align: center;
-        padding: 10px 0;
-    }
+@media screen and (max-width: 1024px) {
+
+  .link:hover,
+  .arrow:last-child .link {
+    color: #43483B;
+  }
+
+  .container {
+    text-align: center;
+    padding: 10px 0;
+  }
 }

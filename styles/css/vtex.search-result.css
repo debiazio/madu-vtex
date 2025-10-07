@@ -269,7 +269,7 @@
   color: black;
   font-weight: bold;
   text-transform: capitalize;
-  font-size: medium;
+  font-size: 22px;
 }
 
 .galleryTitle--layout::before {
@@ -285,7 +285,7 @@
 
   .galleryTitle--layout {
     color: #3A3434;
-    margin: 0 0 13px;
+    margin: 10px 0;
     text-transform: capitalize;
   }
 

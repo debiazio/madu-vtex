@@ -1,9 +1,15 @@
-.imageElement--imagem-tamanhos{
+.imageElement--banner-search-image {
+  border-radius: 15px;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+.imageElement--imagem-tamanhos {
   width: 123px;
   height: 88px;
 }
 
-.imageElement--imagem-detalhes-tecnicos{
+.imageElement--imagem-detalhes-tecnicos {
   margin-top: -80px;
   width: 390px;
   height: 301px;
@@ -634,6 +640,7 @@
 } */
 
 :global(.vtex-address-form__postalCode-forgottenURL) {
+  margin: 10px 0;
   padding: 0;
 }
 
