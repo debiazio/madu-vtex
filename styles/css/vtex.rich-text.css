@@ -1,3 +1,20 @@
+.paragraph--informativo-texto{
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  color: #868686;
+}
+
+.paragraph--label-cores{
+  font-family: "Rubik Bold";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: wrap;
+  text-align: center;
+}
+
 .container--textos-tamanhos {
   display: flex;
   align-items: center;
@@ -42,14 +59,16 @@
 }
 
 
-
+.paragraph--titulo-cores,
 .paragraph--titulo-detalhes-tecnicos {
   font-family: "Rubik Bold";
   font-size: 36px;
   margin: 0;
   text-transform: uppercase;
   color: #3F3F3F;
+  white-space: nowrap;
 }
+
 
 .paragraph--titulo-caracteristicas {
   font-family: "Rubik Bold";
@@ -59,11 +78,14 @@
   color: #3F3F3F;
 }
 
+.paragraph--subtitulo-cores,
 .paragraph--subtitulo-detalhes-tecnicos {
   font-family: "Rubik";
   font-size: 22px;
   margin: 0 0 20px 0;
   color: #AEAEAE;
+  margin-bottom: 40px;
+  white-space: nowrap;
 }
 
 .paragraph--subtitulo-caracteristicas {

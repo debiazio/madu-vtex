@@ -6,7 +6,8 @@
       "flex-layout.row#desktop-banner3-caracteristicas-madubox",
       "handler-visualization",
       "flex-layout.row#desktop-detalhes-tecnicos-titulo",
-      "flex-layout.row#desktop-detalhes-tecnicos-conteudo"
+      "flex-layout.row#desktop-detalhes-tecnicos-conteudo",
+      "flex-layout.row#desktop-cores"
     ]
   },
   "flex-layout.row#desktop-banner-madubox": {
@@ -1635,7 +1636,10 @@
   },
   "disclosure-trigger#tam12": {
     "props": {
-      "blockClass": ["trigger-tam12", "trigger-class-12"]
+      "blockClass": [
+        "trigger-tam12",
+        "trigger-class-12"
+      ]
     },
     "children": [
       "rich-text#label-tam12",
@@ -1781,6 +1785,239 @@
     "props": {
       "text": "O maior modelo da linha — máxima capacidade para guardar e organizar objetos de todos os tipos com praticidade e estilo.",
       "blockClass": "content-text"
+    }
+  },
+  // FINAL BLOCO DETALHES
+  // BLOCO CORES QUE INSPIRAM
+  "flex-layout.row#desktop-cores": {
+    "props": {
+      "blockClass": "content-cores",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.col#textos-cores",
+      "flex-layout.row#imagens-cores",
+      "flex-layout.row#informativo-cores"
+    ]
+  },
+  // BLOCO TEXTOS CORES QUE INSPIRAM
+  "flex-layout.col#textos-cores": {
+    "props": {
+      "blockClass": "linha-textos-cores",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#titulo-cores",
+      "rich-text#subtitulo-cores"
+    ]
+  },
+  "rich-text#titulo-cores": {
+    "props": {
+      "text": "Cores que organizam e inspiram",
+      "blockClass": "titulo-cores"
+    }
+  },
+  "rich-text#subtitulo-cores": {
+    "props": {
+      "text": "Mais do que organizar, a MaduBox ajuda a criar sistemas inteligentes de sinalização. ",
+      "blockClass": "subtitulo-cores"
+    }
+  },
+  // BLOCO IMAGENS CORES QUE INSPIRAM
+  "flex-layout.row#imagens-cores": {
+    "props": {
+      "blockClass": "linha-imagens-cores",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#colunas-preto",
+      "flex-layout.col#colunas-cinza",
+      "flex-layout.col#colunas-verde",
+      "flex-layout.col#colunas-amarelo",
+      "flex-layout.col#colunas-laranja",
+      "flex-layout.col#colunas-vermelho",
+      "flex-layout.col#colunas-pink",
+      "flex-layout.col#colunas-azul",
+      "flex-layout.col#colunas-azul-marinho"
+    ]
+  },
+  // COLUNAS DAS CORES
+  "flex-layout.col#colunas-preto": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-preto"
+      ]
+    },
+    "children": [
+      "rich-text#cores-preto"
+    ]
+  },
+  "flex-layout.col#colunas-cinza": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-cinza"
+      ]
+    },
+    "children": [
+      "rich-text#cores-cinza"
+    ]
+  },
+  "flex-layout.col#colunas-verde": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-verde"
+      ]
+    },
+    "children": [
+      "rich-text#cores-verde"
+    ]
+  },
+  "flex-layout.col#colunas-amarelo": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-amarelo"
+      ]
+    },
+    "children": [
+      "rich-text#cores-amarelo"
+    ]
+  },
+  "flex-layout.col#colunas-laranja": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-laranja"
+      ]
+    },
+    "children": [
+      "rich-text#cores-laranja"
+    ]
+  },
+  "flex-layout.col#colunas-vermelho": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-vermelho"
+      ]
+    },
+    "children": [
+      "rich-text#cores-vermelho"
+    ]
+  },
+  "flex-layout.col#colunas-pink": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-pink"
+      ]
+    },
+    "children": [
+      "rich-text#cores-pink"
+    ]
+  },
+  "flex-layout.col#colunas-azul": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-azul"
+      ]
+    },
+    "children": [
+      "rich-text#cores-azul"
+    ]
+  },
+  "flex-layout.col#colunas-azul-marinho": {
+    "props": {
+      "blockClass": [
+        "colunas-imagens-cores",
+        "coluna-azul-marinho"
+      ]
+    },
+    "children": [
+      "rich-text#cores-azul-marinho"
+    ]
+  },
+  // TEXTOS DAS CORES
+  "rich-text#cores-preto": {
+    "props": {
+      "text": "preto",
+      "blockClass": "label-cores"
+    }
+  },
+  "rich-text#cores-cinza": {
+    "props": {
+      "text": "cinza",
+      "blockClass": "label-cores"
+    }
+  },
+  "rich-text#cores-verde": {
+    "props": {
+      "text": "verde",
+      "blockClass": "label-cores"
+    }
+  },
+  "rich-text#cores-amarelo": {
+    "props": {
+      "text": "amarelo",
+      "blockClass": "label-cores"
+    }
+  },
+  "rich-text#cores-laranja": {
+    "props": {
+      "text": "laranja",
+      "blockClass": "label-cores"
+    }
+  },
+  "rich-text#cores-vermelho": {
+    "props": {
+      "text": "vermelho",
+      "blockClass": "label-cores"
+    }
+  },
+  "rich-text#cores-pink": {
+    "props": {
+      "text": "pink",
+      "blockClass": "label-cores"
+    }
+  },
+  "rich-text#cores-azul": {
+    "props": {
+      "text": "azul",
+      "blockClass": "label-cores"
+    }
+  },
+  "rich-text#cores-azul-marinho": {
+    "props": {
+      "text": "azul marinho",
+      "blockClass": "label-cores"
+    }
+  },
+  // INFORMATIVO CORES
+  "flex-layout.row#informativo-cores": {
+    "props": {
+      "blockClass": "informativo-cores",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#icone-lampada",
+      "rich-text#informativo-texto"
+    ]
+  },
+  "image#icone-lampada": {
+    "props": {
+      "blockClass": "icone-lampada",
+      "src": "assets/madu-box/cores/lampada.webp"
+    }
+  },
+  "rich-text#informativo-texto": {
+    "props": {
+      "blockClass": "informativo-texto",
+      "text": "Escolha suas cores favoritas para identificar categorias, separar materiais ou simplesmente deixar seu espaço mais bonito. Afinal, organização também pode ser divertida e cheia de estilo!"
     }
   }
 }
