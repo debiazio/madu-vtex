@@ -1,3 +1,17 @@
+.flexRowContent--banner-final-madu-box {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.flexRow--banner-final-madu-box {
+  background-image: url(assets/madu-box/banner-final/banner-final-sombra.webp);
+  background-repeat: no-repeat;
+  height: 540px;
+  margin-top: 140px;
+  background-size: cover;
+}
+
 .flexRowContent--linha-textos-combinam {
   display: flex;
   flex-direction: column;
@@ -19,7 +33,7 @@
 }
 
 .flexCol--col-combinan-expand {
-  background-image: url(assets/madu-box/combinam/madu-set.webp);
+  background-image: url(assets/madu-box/combinam/expand.webp);
 }
 
 .flexCol--col-combinan-extra {

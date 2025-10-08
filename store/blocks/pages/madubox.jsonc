@@ -8,7 +8,9 @@
       "flex-layout.row#desktop-detalhes-tecnicos-titulo",
       "flex-layout.row#desktop-detalhes-tecnicos-conteudo",
       "flex-layout.row#desktop-cores",
-      "flex-layout.row#desktop-combinam-combinam"
+      "flex-layout.row#desktop-combinam-combinam",
+      "flex-layout.row#desktop-banner-final"
+
     ]
   },
   "flex-layout.row#desktop-banner-madubox": {
@@ -2155,6 +2157,31 @@
     "props": {
       "blockClass": "label-combinam-se",
       "text": "Carrinho\n kart"
+    }
+  },
+  // BANNER FINAL
+  "flex-layout.row#desktop-banner-final":{
+    "props": {
+      "blockClass": "banner-final-madu-box"
+    },
+    "children": [
+      "rich-text#texto-banner-final",
+      "link#fale-especialista"
+    ]
+  },
+  // TEXTO BANNER FINAL
+  "rich-text#texto-banner-final":{
+    "props": {
+      "blockClass": "texto-banner-final-madubox",
+      "text": "tenha sua\n maleta madu\nbox agora\n mesmo."
+    }
+  },
+  // LINK FALE COM
+  "link#fale-especialista":{
+    "props": {
+      "href": "https://api.whatsapp.com/send?phone=5541996878783&text=Ol%C3%A1%2C%20estou%20vindo%20do%20site%20da%20MAD.U!",
+      "label": "Falar com consultora",
+      "blockClass": "link-banner-final-madubox"
     }
   }
 }
