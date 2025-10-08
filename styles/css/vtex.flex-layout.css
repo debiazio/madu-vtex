@@ -1,3 +1,56 @@
+.flexRowContent--linha-textos-combinam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexColChild--coluna-combinam {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flexCol--col-combinan-express {
+  background-image: url(assets/madu-box/combinam/carrinho-express.webp);
+}
+
+.flexCol--col-combinan-set {
+  background-image: url(assets/madu-box/combinam/madu-set.webp);
+}
+
+.flexCol--col-combinan-expand {
+  background-image: url(assets/madu-box/combinam/madu-set.webp);
+}
+
+.flexCol--col-combinan-extra {
+  background-image: url(assets/madu-box/combinam/carrinho-extra.webp);
+}
+
+.flexCol--col-combinan-kart {
+  background-image: url(assets/madu-box/combinam/kart.webp);
+}
+
+.flexRowContent--linha-imagens-combinam {
+  gap: 16px;
+}
+
+.flexCol--col-combinan-kart,
+.flexCol--col-combinan-extra,
+.flexCol--col-combinan-expand,
+.flexCol--col-combinan-set,
+.flexCol--col-combinan-express {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(1136px / 5);
+  height: 389px;
+}
+
+
+.flexRowContent--conteiner-combinam-madubox {
+  display: flex;
+  flex-direction: column;
+}
+
 .flexRow--informativo-cores {
   background-color: #F5F5F5;
   margin: 24px 0;
@@ -59,10 +112,11 @@
 .flexCol--coluna-azul-marinho {
   background-repeat: no-repeat;
   background-size: cover;
-  width: calc(1190px / 9);
+  width: calc(1200px / 9);
   height: 189px;
 }
 
+.flexRow--linha-textos-combinam,
 .flexCol--linha-textos-cores {
   height: 250px;
   display: flex;

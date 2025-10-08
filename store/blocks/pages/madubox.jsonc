@@ -7,7 +7,8 @@
       "handler-visualization",
       "flex-layout.row#desktop-detalhes-tecnicos-titulo",
       "flex-layout.row#desktop-detalhes-tecnicos-conteudo",
-      "flex-layout.row#desktop-cores"
+      "flex-layout.row#desktop-cores",
+      "flex-layout.row#desktop-combinam-combinam"
     ]
   },
   "flex-layout.row#desktop-banner-madubox": {
@@ -2018,6 +2019,142 @@
     "props": {
       "blockClass": "informativo-texto",
       "text": "Escolha suas cores favoritas para identificar categorias, separar materiais ou simplesmente deixar seu espaço mais bonito. Afinal, organização também pode ser divertida e cheia de estilo!"
+    }
+  },
+  // BLOCO COMBINAM E SE COMBIANAM
+  "flex-layout.row#desktop-combinam-combinam": {
+    "props": {
+      "blockClass": "conteiner-combinam-madubox",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.row#linha-textos-combinam",
+      "flex-layout.row#linha-imagens-combinam"
+    ]
+  },
+  // LINHA COM OS TEXTOS - COMBIANM E SE COMBINAM
+  "flex-layout.row#linha-textos-combinam": {
+    "props": {
+      "blockClass": "linha-textos-combinam",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#titulo-combinam-e-combinam",
+      "rich-text#subtitulo-combinam-e-combinam"
+    ]
+  },
+  // LINHA COM AS COLUNAS - COMBIAM E SE COMBINAM
+  "flex-layout.row#linha-imagens-combinam": {
+    "props": {
+      "blockClass": "linha-imagens-combinam",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.col#madubox-prat-exppress",
+      "flex-layout.col#madubox-linha-madu-set",
+      "flex-layout.col#madubox-carrinhos-expand",
+      "flex-layout.col#madubox-carrinhos-extra",
+      "flex-layout.col#madubox-carrinhos-kart"
+    ]
+  },
+  // TEXTOS COMBINAM E SE COMBINAM
+  "rich-text#titulo-combinam-e-combinam": {
+    "props": {
+      "blockClass": "titulo-combinam",
+      "text": "combinam e se combinam"
+    }
+  },
+  "rich-text#subtitulo-combinam-e-combinam": {
+    "props": {
+      "blockClass": "subtitulo-combinam",
+      "text": "As Maletas MaduBox foram pensadas para dialogar com toda a linha de organização da marca. Elas combinam (e se combinam) com:"
+    }
+  },
+  // COLUNAS COMBINAM
+  "flex-layout.col#madubox-prat-exppress": {
+    "props": {
+      "blockClass": [
+        "coluna-combinam",
+        "col-combinan-express"
+      ]
+    },
+    "children": [
+      "rich-text#label-express"
+    ]
+  },
+  "flex-layout.col#madubox-linha-madu-set": {
+    "props": {
+      "blockClass": [
+        "coluna-combinam",
+        "col-combinan-set"
+      ]
+    },
+    "children": [
+      "rich-text#label-set"
+    ]
+  },
+  "flex-layout.col#madubox-carrinhos-expand": {
+    "props": {
+      "blockClass": [
+        "coluna-combinam",
+        "col-combinan-expand"
+      ]
+    },
+    "children": [
+      "rich-text#label-expand"
+    ]
+  },
+  "flex-layout.col#madubox-carrinhos-extra": {
+    "props": {
+      "blockClass": [
+        "coluna-combinam",
+        "col-combinan-extra"
+      ]
+    },
+    "children": [
+      "rich-text#label-extra"
+    ]
+  },
+  "flex-layout.col#madubox-carrinhos-kart": {
+    "props": {
+      "blockClass": [
+        "coluna-combinam",
+        "col-combinan-kart"
+      ]
+    },
+    "children": [
+      "rich-text#label-kart"
+    ]
+  },
+  // TEXTOS LABEL DAS IMAGENS
+  "rich-text#label-express": {
+    "props": {
+      "blockClass": "label-combinam-se",
+      "text": "Prateleiras\n Express"
+    }
+  },
+  "rich-text#label-set": {
+    "props": {
+      "blockClass": "label-combinam-se",
+      "text": "Linha\n MadU SET"
+    }
+  },
+  "rich-text#label-expand": {
+    "props": {
+      "blockClass": "label-combinam-se",
+      "text": "Carrinhos\n Expand"
+    }
+  },
+  "rich-text#label-extra": {
+    "props": {
+      "blockClass": "label-combinam-se",
+      "text": "Carrinhos\n Extra"
+    }
+  },
+  "rich-text#label-kart": {
+    "props": {
+      "blockClass": "label-combinam-se",
+      "text": "Carrinho\n kart"
     }
   }
 }

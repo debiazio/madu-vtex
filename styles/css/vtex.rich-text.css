@@ -1,11 +1,32 @@
-.paragraph--informativo-texto{
+.container--label-combinam-se {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 24px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+.container--label-combinam-se:hover {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 80%);
+}
+
+.paragraph--informativo-texto {
   font-family: "Rubik";
   font-weight: 400;
   font-size: 16px;
   color: #868686;
 }
 
-.paragraph--label-cores{
+.paragraph--label-combinam-se {
+  font-family: "Rubik Bold";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.paragraph--label-cores {
   font-family: "Rubik Bold";
   text-transform: uppercase;
   color: #fff;
@@ -58,7 +79,7 @@
   color: #686868;
 }
 
-
+.paragraph--titulo-combinam,
 .paragraph--titulo-cores,
 .paragraph--titulo-detalhes-tecnicos {
   font-family: "Rubik Bold";
@@ -77,6 +98,17 @@
   text-transform: uppercase;
   color: #3F3F3F;
 }
+
+.paragraph--subtitulo-combinam {
+  font-family: "Rubik";
+  font-size: 22px;
+  margin: 0 0 20px 0;
+  color: #686868;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0 128px;
+}
+
 
 .paragraph--subtitulo-cores,
 .paragraph--subtitulo-detalhes-tecnicos {
