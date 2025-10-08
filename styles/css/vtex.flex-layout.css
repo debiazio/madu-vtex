@@ -1290,4 +1290,120 @@
   .flexRow--pagina-institucional {
     margin: 2
   }
+
+  .flexRowContent--linha-banner-madubox {
+    display: unset;
+  }
+
+  .flexRowContent--linha-frente-banner-1 {
+    margin: 64px 35px;
+    width: auto;
+    max-width: unset;
+    height: unset;
+  }
+
+  .flexColChild--coluna-esquerda-banner1-madubox {
+    display: unset;
+  }
+
+  .flexColChild--coluna-esquerda-maletas-madubox {
+    padding: 50px;
+  }
+
+  .flexRowContent--linha-maletas-frente-madubox {
+    height: unset;
+  }
+
+  .flexRowContent--boxes-maletas {
+    width: calc(50vw - 10px);
+    height: 100px;
+  }
+
+  .flexCol--coluna-direita-maletas-madubox {
+    margin: 0 20px;
+  }
+
+  .flexRowContent--caracteristicas {
+    height: unset;
+  }
+
+  .flexRowContent--linha-caracteristicas-madubox {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 15px;
+    align-content: center;
+  }
+
+  .flexRowContent--caracteristicas {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexRowContent--linha-detalhes-tecnicos-madubox {
+    background-position-x: 215px;
+    height: 200px;
+    margin-left: 15px;
+  }
+
+  .flexCol--coluna-accordion-detalhes-tecnicos {
+    padding: 13px;
+  }
+
+  .flexCol--coluna-tam3 {
+    display: none;
+  }
+
+  .flexCol--coluna-imagem-detalhes-tecnicos-tam10 {
+    margin-bottom: 20px;
+  }
+
+  .flexCol--linha-textos-cores {
+
+    margin: 11px;
+  }
+
+  .flexRowContent--linha-imagens-cores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .flexCol--coluna-preto,
+  .flexCol--coluna-cinza,
+  .flexCol--coluna-verde,
+  .flexCol--coluna-amarelo,
+  .flexCol--coluna-laranja,
+  .flexCol--coluna-vermelho,
+  .flexCol--coluna-pink,
+  .flexCol--coluna-azul,
+  .flexCol--coluna-azul-marinho {
+    width: calc(96vw / 3);
+  }
+
+  .flexRowContent--linha-textos-combinam {
+    align-items: flex-start;
+  }
+
+  .flexRow--linha-textos-combinam {
+    padding: 11px;
+    height: 200px;
+  }
+
+  .flexRow--banner-final-madu-box {
+    background-image: url(assets/madu-box/banner-final/banner-final-mobile-sombra.webp);
+    background-repeat: no-repeat;
+    height: 460px;
+    margin-top: 140px;
+    background-size: cover;
+  }
+
+  .flexRowContent--banner-final-madu-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+  }
+
+
+
 }

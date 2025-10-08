@@ -1,4 +1,4 @@
-.paragraph--texto-banner-final-madubox{
+.paragraph--texto-banner-final-madubox {
   font-family: "Rubik Bold";
   font-weight: 700;
   text-transform: uppercase;
@@ -738,4 +738,84 @@
     font-size: 12px;
 
   }
+
+  .paragraph--titulo-mobile-banner-inicial-madubox {
+    font-family: "Robik Bold";
+  }
+
+  .container--subtitulo-banner1-madubox {
+    white-space: wrap;
+  }
+
+  .paragraph--descricao-banner1-madubox {
+    margin-top: 50px;
+  }
+
+  .paragraph--subtitulo-banner1-madubox {
+    margin-top: 10px;
+  }
+
+  .flexRowContent--linha-frente-banner-1 {
+    white-space: wrap;
+  }
+
+  .paragraph--textos-boxes-maletas {
+    font-size: 14px;
+  }
+
+  .paragraph--titulo-caracteristicas {
+    margin: 30px 20px 0 10px;
+    font-size: unset;
+  }
+
+  .paragraph--subtitulo-caracteristicas {
+    margin: 10px 10px 40px;
+  }
+
+  .paragraph--titulo-detalhes-tecnicos{
+    font-size: 20px;
+    white-space: wrap;
+  }
+
+  .paragraph--subtitulo-detalhes-tecnicos{
+    font-size: 18px;
+  }
+
+  .paragraph--subtitulo-detalhes-tecnicos{
+    margin-bottom: 20px;
+  }
+
+  .paragraph--titulo-cores{
+    font-size: 20px;
+    white-space: unset;
+    margin-bottom: 15px;
+  }
+
+  .paragraph--subtitulo-cores{
+    font-size: 18px;
+    white-space: unset;
+  }
+
+  .container--informativo-texto{
+    padding: 20px;
+  }
+
+  .paragraph--titulo-combinam{
+    font-size: 20px;
+    white-space: unset;
+  }
+
+  .paragraph--subtitulo-combinam{
+    font-size: 18px;
+    white-space: unset;
+    margin: unset;
+    text-align: left;
+    padding: unset;
+  }
+
+  .paragraph--texto-banner-final-madubox{
+    font-size: 32px;
+  }
+
+
 }

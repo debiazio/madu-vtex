@@ -4,13 +4,18 @@
       "flex-layout.row#desktop-banner-madubox",
       "flex-layout.row#desktop-banner2-maletas-madubox",
       "flex-layout.row#desktop-banner3-caracteristicas-madubox",
-      "handler-visualization",
+      "responsive-layout.desktop#handler",
       "flex-layout.row#desktop-detalhes-tecnicos-titulo",
       "flex-layout.row#desktop-detalhes-tecnicos-conteudo",
       "flex-layout.row#desktop-cores",
       "flex-layout.row#desktop-combinam-combinam",
       "flex-layout.row#desktop-banner-final"
-
+    ]
+  },
+  // APP CUSTOM PARA O DISCLOSURE -  CHAMDO APENASD NO LAYOUT DESKTOP
+  "responsive-layout.desktop#handler":{
+    "children": [
+      "handler-visualization"
     ]
   },
   "flex-layout.row#desktop-banner-madubox": {
@@ -30,6 +35,12 @@
     },
     "children": [
       "flex-layout.col#banner1-coluna-esquerda",
+      "responsive-layout.desktop#coluna-direita",
+      "responsive-layout.mobile#imagem-mobile-banner1-madubox"
+    ]
+  },
+  "responsive-layout.desktop#coluna-direita": {
+    "children": [
       "flex-layout.col#banner1-coluna-direita"
     ]
   },
@@ -50,9 +61,16 @@
       "colSizing": "auto"
     },
     "children": [
-      "image#titulo-banner1-madubox",
+      "responsive-layout.desktop#titulo-madubox",
+      "responsive-layout.mobile#titulo-madubox",
       "rich-text#subtitulo-banner1-madubox",
       "rich-text#descricao-banner1-madubox"
+    ]
+  },
+  // TITULO DESKTOP BANNER INICIAL
+  "responsive-layout.desktop#titulo-madubox": {
+    "children": [
+      "image#titulo-banner1-madubox"
     ]
   },
   "image#titulo-banner1-madubox": {
@@ -61,6 +79,19 @@
       "blockClass": "titulo-banner1-madubox"
     }
   },
+  // TITULO MOBILE
+  "responsive-layout.mobile#titulo-madubox": {
+    "children": [
+      "image#titulo-mobile-banner-inicial-madubox"
+    ]
+  },
+  "image#titulo-mobile-banner-inicial-madubox": {
+    "props": {
+      "blockClass": "titulo-mobile-banner1-madu-box",
+      "src": "assets/madu-box/banner-inicial/titulo-mobile-madubox.webp"
+    }
+  },
+  // SUBTITULO BANNER 1
   "rich-text#subtitulo-banner1-madubox": {
     "props": {
       "text": "Organização, Estilo e Versatilidade em um só produto",
@@ -79,6 +110,12 @@
       "href": "#",
       "blockClass": "compreagora-madubox"
     }
+  },
+  // IMAGEM FINAL DO BANNER 1 MOBILE
+  "responsive-layout.mobile#imagem-mobile-banner1-madubox": {
+    "children": [
+      "image#imagem-banner1-madubox"
+    ]
   },
   // COLUNA DA DIREITA BANNER 1
   "flex-layout.col#banner1-coluna-direita": {
@@ -104,11 +141,17 @@
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.row#titulo-banner-maletas",
+      "responsive-layout.desktop#titulo-maletas",
+      "responsive-layout.mobile#titulo-maletas",
       "flex-layout.row#linha-maletas-frente"
     ]
   },
-  // TITULO MALETAS
+  // TITULO MALETAS - DESKTOP
+  "responsive-layout.desktop#titulo-maletas": {
+    "children": [
+      "flex-layout.row#titulo-banner-maletas"
+    ]
+  },
   "flex-layout.row#titulo-banner-maletas": {
     "props": {
       "blockClass": "linha-titulo-maletas-madubox",
@@ -120,6 +163,13 @@
       "image#interrogacao"
     ]
   },
+  // TITULO MALETAS - MOBILE
+  "responsive-layout.mobile#titulo-maletas": {
+    "children": [
+      "image#titulo-maletas-mobile-madubox"
+    ]
+  },
+  // TITULO DESKTOP MALETAS
   "rich-text#titulo-maletas": {
     "props": {
       "text": "Por que escolher as maletas",
@@ -138,6 +188,13 @@
       "src": "assets/interrogacao.webp",
       "alt": "Interrogação",
       "blockClass": "interrogacao"
+    }
+  },
+  // IMAGEM TITULO MALETAS MOBILE
+  "image#titulo-maletas-mobile-madubox": {
+    "props": {
+      "blockClass": "titulo-maletas-mobile",
+      "src": "assets/madu-box/banner-maletas/maletas-titulo-mobile.webp"
     }
   },
   // LINHA DA FRENTE DAS MALETAS
@@ -640,14 +697,51 @@
       "blockClass": "linha-detalhes-tecnicos-madubox"
     },
     "children": [
-      "rich-text#titulo-detalhes-tecnicos",
-      "rich-text#subtitulo-detalhes-tecnicos"
+      "responsive-layout.mobile#titulo-detalhes-tecnicos",
+      "responsive-layout.desktop#titulo-detalhes-tecnicos",
+      "responsive-layout.mobile#subtitulo-detalhes-tecnicos",
+      "responsive-layout.desktop#subtitulo-detalhes-tecnicos"
     ]
+  },
+  // RESPONSIVE TITULO DETALHES TECNICOS
+  "responsive-layout.mobile#titulo-detalhes-tecnicos": {
+    "children": [
+      "rich-text#mobile-titulo-detalhes-tecnicos"
+    ]
+  },
+  "responsive-layout.desktop#titulo-detalhes-tecnicos": {
+    "children": [
+      "rich-text#titulo-detalhes-tecnicos"
+    ]
+  },
+  // TITULO DETALHES TECNICOS
+  "rich-text#mobile-titulo-detalhes-tecnicos": {
+    "props": {
+      "blockClass": "titulo-detalhes-tecnicos",
+      "text": "DETALHES\n TÉCNICOS da linha"
+    }
   },
   "rich-text#titulo-detalhes-tecnicos": {
     "props": {
       "blockClass": "titulo-detalhes-tecnicos",
       "text": "DETALHES TÉCNICOS da linha"
+    }
+  },
+  // RESPONSIVE SUBTITULO
+  "responsive-layout.mobile#subtitulo-detalhes-tecnicos": {
+    "children": [
+      "rich-text#subtitulo-mobile-detalhes-tecnicos"
+    ]
+  },
+  "responsive-layout.desktop#subtitulo-detalhes-tecnicos": {
+    "children": [
+      "rich-text#subtitulo-detalhes-tecnicos"
+    ]
+  },
+  "rich-text#subtitulo-mobile-detalhes-tecnicos": {
+    "props": {
+      "blockClass": "subtitulo-detalhes-tecnicos",
+      "text": "Explicação de como\n a linha é organizada:"
     }
   },
   "rich-text#subtitulo-detalhes-tecnicos": {
@@ -683,6 +777,20 @@
       "disclosure-layout-group#group"
     ]
   },
+  // COLUNA DIREITA DETALHES TÉCNICOS ** MOBILE ** - IMAGENS TAM3
+  "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam3": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam3",
+      "flex-layout.row#linha-tamanhos-tam3"
+    ]
+  },
   // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM3
   "flex-layout.col#detalhes-tecnicos-coluna-direita-tam3": {
     "props": {
@@ -713,6 +821,34 @@
       "flex-layout.row#linha-tamanhos-tam4"
     ]
   },
+  // COLUNA DIREITA DETALHES TÉCNICOS ** MOBILE **- IMAGENS TAM4
+  "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam4": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam4"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam4",
+      "flex-layout.row#linha-tamanhos-tam4"
+    ]
+  },
+  // COLUNA DIREITA DETALHES TÉCNICOS - ** MOBILE ** IMAGENS TAM6
+  "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam6": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam6"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam6",
+      "flex-layout.row#linha-tamanhos-tam6"
+    ]
+  },
   // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM6
   "flex-layout.col#detalhes-tecnicos-coluna-direita-tam6": {
     "props": {
@@ -726,6 +862,20 @@
     "children": [
       "flex-layout.row#linha-imagem-superior-tam6",
       "flex-layout.row#linha-tamanhos-tam6"
+    ]
+  },
+  // COLUNA DIREITA DETALHES TÉCNICOS - **MOBILE** IMAGENS TAM8
+  "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam8": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam8"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam8",
+      "flex-layout.row#linha-tamanhos-tam8"
     ]
   },
   // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM8
@@ -743,6 +893,20 @@
       "flex-layout.row#linha-tamanhos-tam8"
     ]
   },
+  // COLUNA DIREITA DETALHES TÉCNICOS - **MOBILE** IMAGENS TAM10
+  "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam10": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam10"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam10",
+      "flex-layout.row#linha-tamanhos-tam10"
+    ]
+  },
   // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM10
   "flex-layout.col#detalhes-tecnicos-coluna-direita-tam10": {
     "props": {
@@ -756,6 +920,20 @@
     "children": [
       "flex-layout.row#linha-imagem-superior-tam10",
       "flex-layout.row#linha-tamanhos-tam10"
+    ]
+  },
+  // COLUNA DIREITA DETALHES TÉCNICOS - **MOBILE** IMAGENS TAM12
+  "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam12": {
+    "props": {
+      "blockClass": [
+        "coluna-imagem-detalhes-tecnicos-tam12"
+      ],
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linha-imagem-superior-tam12",
+      "flex-layout.row#linha-tamanhos-tam12"
     ]
   },
   // COLUNA DIREITA DETALHES TÉCNICOS - IMAGENS TAM12
@@ -1658,7 +1836,14 @@
       ]
     },
     "children": [
-      "rich-text#content-tam3"
+      "rich-text#content-tam3",
+      "responsive-layout.mobile#mobile-disclosure-tam3"
+    ]
+  },
+  // CHAMADA MOBILE DISCLOSUTE TAM3
+  "responsive-layout.mobile#mobile-disclosure-tam3":{
+    "children": [
+      "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam3"
     ]
   },
   "disclosure-content#tam4": {
@@ -1669,7 +1854,14 @@
       ]
     },
     "children": [
-      "rich-text#content-tam4"
+      "rich-text#content-tam4",
+      "responsive-layout.mobile#mobile-disclosure-tam4"
+    ]
+  },
+   // CHAMADA MOBILE DISCLOSUTE TAM4
+  "responsive-layout.mobile#mobile-disclosure-tam4":{
+    "children": [
+      "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam4"
     ]
   },
   "disclosure-content#tam6": {
@@ -1680,7 +1872,14 @@
       ]
     },
     "children": [
-      "rich-text#content-tam6"
+      "rich-text#content-tam6",
+      "responsive-layout.mobile#mobile-disclosure-tam6"
+    ]
+  },
+     // CHAMADA MOBILE DISCLOSUTE TAM6
+  "responsive-layout.mobile#mobile-disclosure-tam6":{
+    "children": [
+      "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam6"
     ]
   },
   "disclosure-content#tam8": {
@@ -1691,7 +1890,14 @@
       ]
     },
     "children": [
-      "rich-text#content-tam8"
+      "rich-text#content-tam8",
+      "responsive-layout.mobile#mobile-disclosure-tam8"
+    ]
+  },
+    // CHAMADA MOBILE DISCLOSUrE TAM8
+  "responsive-layout.mobile#mobile-disclosure-tam8":{
+    "children": [
+      "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam8"
     ]
   },
   "disclosure-content#tam10": {
@@ -1702,7 +1908,15 @@
       ]
     },
     "children": [
-      "rich-text#content-tam10"
+      "rich-text#content-tam10",
+      "responsive-layout.mobile#mobile-disclosure-tam10"
+
+    ]
+  },
+      // CHAMADA MOBILE DISCLOSUrE TAM10
+  "responsive-layout.mobile#mobile-disclosure-tam10":{
+    "children": [
+      "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam10"
     ]
   },
   "disclosure-content#tam12": {
@@ -1713,7 +1927,14 @@
       ]
     },
     "children": [
-      "rich-text#content-tam12"
+      "rich-text#content-tam12",
+       "responsive-layout.mobile#mobile-disclosure-tam12"
+    ]
+  },
+        // CHAMADA MOBILE DISCLOSUrE TAM12
+  "responsive-layout.mobile#mobile-disclosure-tam12":{
+    "children": [
+      "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam12"
     ]
   },
   // LABEL DISCLOSURE
@@ -2160,7 +2381,7 @@
     }
   },
   // BANNER FINAL
-  "flex-layout.row#desktop-banner-final":{
+  "flex-layout.row#desktop-banner-final": {
     "props": {
       "blockClass": "banner-final-madu-box"
     },
@@ -2170,14 +2391,14 @@
     ]
   },
   // TEXTO BANNER FINAL
-  "rich-text#texto-banner-final":{
+  "rich-text#texto-banner-final": {
     "props": {
       "blockClass": "texto-banner-final-madubox",
       "text": "tenha sua\n maleta madu\nbox agora\n mesmo."
     }
   },
   // LINK FALE COM
-  "link#fale-especialista":{
+  "link#fale-especialista": {
     "props": {
       "href": "https://api.whatsapp.com/send?phone=5541996878783&text=Ol%C3%A1%2C%20estou%20vindo%20do%20site%20da%20MAD.U!",
       "label": "Falar com consultora",

@@ -1,4 +1,4 @@
-.imageElement--icone-lampada{
+.imageElement--icone-lampada {
   width: 48px;
   height: 48px;
   margin: 17px;
@@ -1042,4 +1042,21 @@
   .swiperBullet--active {
     background: #D9D8D7;
   }
+
+  .imageElement--titulo-mobile-banner1-madu-box {
+    margin: 15px 0;
+  }
+
+  .imageElement--imagens-caracteristicas {
+    max-width: 80%;
+  }
+
+  .imageElement--imagem-detalhes-tecnicos {
+    margin-top: 0;
+  }
+
+  .imageElement--icone-lampada{
+    margin: 22px;
+  }
+
 }
