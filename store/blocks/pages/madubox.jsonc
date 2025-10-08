@@ -13,7 +13,7 @@
     ]
   },
   // APP CUSTOM PARA O DISCLOSURE -  CHAMDO APENASD NO LAYOUT DESKTOP
-  "responsive-layout.desktop#handler":{
+  "responsive-layout.desktop#handler": {
     "children": [
       "handler-visualization"
     ]
@@ -31,7 +31,8 @@
   // LINHA DA FRENTE DO BANNER 1
   "flex-layout.row#linha-front-banner1-banner-box": {
     "props": {
-      "blockClass": "linha-frente-banner-1"
+      "blockClass": "linha-frente-banner-1",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#banner1-coluna-esquerda",
@@ -1841,7 +1842,7 @@
     ]
   },
   // CHAMADA MOBILE DISCLOSUTE TAM3
-  "responsive-layout.mobile#mobile-disclosure-tam3":{
+  "responsive-layout.mobile#mobile-disclosure-tam3": {
     "children": [
       "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam3"
     ]
@@ -1858,8 +1859,8 @@
       "responsive-layout.mobile#mobile-disclosure-tam4"
     ]
   },
-   // CHAMADA MOBILE DISCLOSUTE TAM4
-  "responsive-layout.mobile#mobile-disclosure-tam4":{
+  // CHAMADA MOBILE DISCLOSUTE TAM4
+  "responsive-layout.mobile#mobile-disclosure-tam4": {
     "children": [
       "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam4"
     ]
@@ -1876,8 +1877,8 @@
       "responsive-layout.mobile#mobile-disclosure-tam6"
     ]
   },
-     // CHAMADA MOBILE DISCLOSUTE TAM6
-  "responsive-layout.mobile#mobile-disclosure-tam6":{
+  // CHAMADA MOBILE DISCLOSUTE TAM6
+  "responsive-layout.mobile#mobile-disclosure-tam6": {
     "children": [
       "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam6"
     ]
@@ -1894,8 +1895,8 @@
       "responsive-layout.mobile#mobile-disclosure-tam8"
     ]
   },
-    // CHAMADA MOBILE DISCLOSUrE TAM8
-  "responsive-layout.mobile#mobile-disclosure-tam8":{
+  // CHAMADA MOBILE DISCLOSUrE TAM8
+  "responsive-layout.mobile#mobile-disclosure-tam8": {
     "children": [
       "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam8"
     ]
@@ -1910,11 +1911,10 @@
     "children": [
       "rich-text#content-tam10",
       "responsive-layout.mobile#mobile-disclosure-tam10"
-
     ]
   },
-      // CHAMADA MOBILE DISCLOSUrE TAM10
-  "responsive-layout.mobile#mobile-disclosure-tam10":{
+  // CHAMADA MOBILE DISCLOSUrE TAM10
+  "responsive-layout.mobile#mobile-disclosure-tam10": {
     "children": [
       "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam10"
     ]
@@ -1928,11 +1928,11 @@
     },
     "children": [
       "rich-text#content-tam12",
-       "responsive-layout.mobile#mobile-disclosure-tam12"
+      "responsive-layout.mobile#mobile-disclosure-tam12"
     ]
   },
-        // CHAMADA MOBILE DISCLOSUrE TAM12
-  "responsive-layout.mobile#mobile-disclosure-tam12":{
+  // CHAMADA MOBILE DISCLOSUrE TAM12
+  "responsive-layout.mobile#mobile-disclosure-tam12": {
     "children": [
       "flex-layout.col#detalhes-tecnicos-mobile-coluna-direita-tam12"
     ]
@@ -2252,7 +2252,8 @@
     },
     "children": [
       "flex-layout.row#linha-textos-combinam",
-      "flex-layout.row#linha-imagens-combinam"
+      "responsive-layout.mobile#imagens-combinam",
+      "responsive-layout.desktop#imagens-combinam"
     ]
   },
   // LINHA COM OS TEXTOS - COMBIANM E SE COMBINAM
@@ -2266,7 +2267,60 @@
       "rich-text#subtitulo-combinam-e-combinam"
     ]
   },
-  // LINHA COM AS COLUNAS - COMBIAM E SE COMBINAM
+  // LINHA COM AS COLUNAS - COMBIAM E SE COMBINAM MOBILE
+  "responsive-layout.mobile#imagens-combinam": {
+    "children": [
+      "list-context.image-list#combinam-mobile-madubox"
+    ]
+  },
+  "list-context.image-list#combinam-mobile-madubox": {
+    "children": [
+      "slider-layout#madubox"
+    ],
+    "props": {
+      "height": 333,
+      "images": [
+        {
+          "mobileImage": "assets/madu-box/combinam/carrinho-express.webp"
+        },
+        {
+          "mobileImage": "assets/madu-box/combinam/carrinho-extra.webp"
+        },
+        {
+          "mobileImage": "assets/madu-box/combinam/expand.webp"
+        },
+        {
+          "mobileImage": "assets/madu-box/combinam/kart.webp"
+        },
+        {
+          "mobileImage": "assets/madu-box/combinam/madu-set.webp"
+        }
+      ]
+    }
+  },
+  "slider-layout#madubox": {
+    "props": {
+      "title": "Slider MADUBOX Mobile",
+      "blockClass": "slider-madubox-mobile",
+      "itemsPerPage": {
+        "phone": 3
+      },
+      "arrowSize": 50,
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "autoplay": {
+        "timeout": 8000,
+        "stopOnHover": true
+      }
+    }
+  },
+  // LINHA COM AS COLUNAS - COMBIAM E SE COMBINAM DESKTOP
+  "responsive-layout.desktop#imagens-combinam": {
+    "children": [
+      "flex-layout.row#linha-imagens-combinam"
+    ]
+  },
   "flex-layout.row#linha-imagens-combinam": {
     "props": {
       "blockClass": "linha-imagens-combinam",
