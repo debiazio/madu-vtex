@@ -1,3 +1,25 @@
+.flexCol--colunas-textos-diferencas{
+  padding-left: 26px;
+}
+
+.flexCol--colunas-textos-diferencas{
+  padding-right: 26px;
+  border-right: 1px solid #DBDBDB;
+}
+
+.flexRow--linha-diferencas{
+  margin-bottom: 57px;
+}
+
+.flexRowContent--linha-diferencas{
+  display: flow-root;
+  background-color: #F5F5F5;
+}
+
+.flexRowContent--textos-coluna-esquerda-banner1-madubox .stretchChildrenWidth{
+  display: flow-root;
+}
+
 .flexRowContent--banner-final-madu-box {
   display: flex;
   flex-direction: column;

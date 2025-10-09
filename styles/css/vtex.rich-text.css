@@ -1,5 +1,9 @@
+.paragraph--maleta-textos-diferencas-madubox{
+  text-align: end;
+}
+
 .container--descricao-banner1-madubox{
-  width: 40vw;
+  width: 30vw!important;
 }
 
 .paragraph--texto-banner-final-madubox {
@@ -162,7 +166,7 @@
 
 .container--subtitulo-banner1-madubox {
   white-space: nowrap;
-  height: 51px;
+  height: 41px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -171,7 +175,7 @@
 .paragraph--subtitulo-banner1-madubox {
   font-family: "Rubik Medium";
   font-weight: 500;
-  font-size: 19px;
+  font-size: 17px;
   margin: 0;
   color: #5D5D5D;
 }
@@ -179,7 +183,7 @@
 .paragraph--descricao-banner1-madubox {
   margin: 0;
   color: #999999;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 

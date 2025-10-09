@@ -3,6 +3,7 @@
     "blocks": [
       "flex-layout.row#desktop-banner-madubox",
       "flex-layout.row#desktop-banner2-maletas-madubox",
+      "flex-layout.row#banner-sobre-banner3-diferencas",
       "flex-layout.row#desktop-banner3-caracteristicas-madubox",
       "responsive-layout.desktop#handler",
       "flex-layout.row#desktop-detalhes-tecnicos-titulo",
@@ -71,13 +72,22 @@
   // TITULO DESKTOP BANNER INICIAL
   "responsive-layout.desktop#titulo-madubox": {
     "children": [
-      "image#titulo-banner1-madubox"
+      "image#titulo1-banner1-madubox",
+      "image#titulo2-banner1-madubox"
     ]
   },
-  "image#titulo-banner1-madubox": {
+  "image#titulo1-banner1-madubox": {
     "props": {
-      "src": "assets/titulo-maletas.webp",
-      "blockClass": "titulo-banner1-madubox"
+      "src": "assets/madu-box/banner-inicial/caixas-maletas-desktop.webp",
+      "blockClass": "titulo-banner1-madubox",
+      "alt": "Título MaduBox"
+    }
+  },
+  "image#titulo2-banner1-madubox": {
+    "props": {
+      "src": "assets/madu-box/banner-inicial/madubox-desktop.webp",
+      "blockClass": "titulo-banner1-madubox",
+      "alt": "Título MaduBox"
     }
   },
   // TITULO MOBILE
@@ -101,7 +111,7 @@
   },
   "rich-text#descricao-banner1-madubox": {
     "props": {
-      "text": "As Maletas MaduBox chegaram para transformar sua rotina, unindo praticidade, resistência e design inteligente. Produzidas em plástico PSI de alta qualidade, com tampa de acrílico transparente, elas permitem visualizar facilmente o conteúdo, manter tudo em ordem e ainda transportar seus itens com segurança e estilo.",
+      "text": "As Maletas e Caixas MaduBox chegaram para transformar sua rotina, unindo praticidade, resistência e design inteligente. Produzidas em plástico PSI de alta qualidade, com tampa de acrílico transparente, elas permitem visualizar facilmente o conteúdo, manter tudo em ordem e ainda transportar seus itens com segurança e estilo.",
       "blockClass": "descricao-banner1-madubox"
     }
   },
@@ -173,7 +183,7 @@
   // TITULO DESKTOP MALETAS
   "rich-text#titulo-maletas": {
     "props": {
-      "text": "Por que escolher as maletas",
+      "text": "Por que escolher as",
       "blockClass": "titulo-maletas-madubox"
     }
   },
@@ -482,6 +492,91 @@
     "props": {
       "blockClass": "textos-boxes-maletas",
       "text": "Facilidade\n de limpeza "
+    }
+  },
+  //INICIO BLOCO -  NOVO BANNER -DIFERENCAS
+  "flex-layout.row#banner-sobre-banner3-diferencas": {
+    "props": {
+      "blockClass": "linha-diferencas",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#diferencas-linha-imagens",
+      "flex-layout.row#diferencas-linha-textos"
+    ]
+  },
+  // LINHA DE IMAGENS -DIFERENCAS
+  "flex-layout.row#diferencas-linha-imagens":{
+    "props": {
+      "blockClass": "linha-imagens"
+    },
+    "children": [
+      "image#maleta-preta-diferencas",
+      "image#texto-diferencas",
+      "image#caixa-vermelha-diferencas"
+    ]
+  },
+  // IMAGENS - DIFERENCAS
+  "image#maleta-preta-diferencas":{
+    "props": {
+      "blockClass": "imagens-diferencas-madubox",
+      "alt": "Imagens diferenças",
+      "src": "assets/madu-box/banner-maletas/maleta-preta.webp"
+    }
+  },
+  "image#texto-diferencas":{
+    "props": {
+      "blockClass": "imagens-diferencas-madubox",
+      "alt": "Imagens diferenças",
+      "src": "assets/madu-box/banner-maletas/maletasXcaixas.webp"
+    }
+  },
+  "image#caixa-vermelha-diferencas":{
+    "props": {
+      "blockClass": "imagens-diferencas-madubox",
+      "alt": "Imagens diferenças",
+      "src": "assets/madu-box/banner-maletas/caixa-vermelha.webp"
+    }
+  },
+  // LINHA TEXTOS - DIFERENCAS
+  "flex-layout.row#diferencas-linha-textos":{
+    "props": {
+      "blockClass": "linha-textos-diferencas",
+      "colSizing": "equal"
+    },
+    "children": [
+      "flex-layout.col#diferencas-madubox-coluna-esquerda",
+      "flex-layout.col#diferencas-madubox-coluna-direita"
+    ]
+  },
+  // COLUNAS TEXTOS DIFERENCAS
+  "flex-layout.col#diferencas-madubox-coluna-esquerda":{
+    "props": {
+      "blockClass":"colunas-textos-diferencas"
+    },
+    "children": [
+      "rich-text#texto-maletas-diferencas-madubox"
+    ]
+  },
+  "flex-layout.col#diferencas-madubox-coluna-direita":{
+    "props": {
+      "blockClass":"colunas-textos-diferencas"
+    },
+    "children": [
+      "rich-text#texto-caixas-diferencas-madubox"
+    ]
+  },
+  // TEXTOS DIFERENCAS
+  "rich-text#texto-maletas-diferencas-madubox":{
+    "props": {
+      "blockClass": "maleta-textos-diferencas-madubox",
+      "text": "Modelos compactos e fáceis de transportar. Todas as maletas possuem alça de transporte e fechos frontais, ideais para levar seus objetos com praticidade e segurança."
+    }
+  },
+  "rich-text#texto-caixas-diferencas-madubox":{
+    "props": {
+      "blockClass": "caixa-textos-diferencas-madubox",
+      "text": "Modelos maiores para quem precisa de mais espaço. As caixas não possuem alça de transporte, sendo perfeitas para organizar e armazenar itens em casa, no trabalho ou em qualquer ambiente."
     }
   },
   // CARACTERISTICAS MADUBOX banner 3
