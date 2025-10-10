@@ -1073,6 +1073,8 @@
 
   .imageElement--imagens-caracteristicas {
     max-width: 80%;
+    max-height: 150px;
+    margin-top: 25px;
   }
 
   .imageElement--imagem-detalhes-tecnicos {
@@ -1081,6 +1083,24 @@
 
   .imageElement--icone-lampada{
     margin: 22px;
+  }
+
+  .imageElement--imagem-maleta-preta{
+    position: unset;
+    top: unset;
+    width: 108px;
+    height: 108px;
+  }
+
+  .imageElement--imagem-caixa-vermelha{
+    position: unset;
+    top: unset;
+    width: 178px;
+    height: 114px;
+  }
+
+  .imageElement--slider-madubox-mobile{
+    height: 233px;
   }
 
 }

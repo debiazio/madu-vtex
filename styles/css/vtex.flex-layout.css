@@ -190,7 +190,7 @@
 .flexCol--coluna-azul,
 .flexCol--coluna-azul-marinho {
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   width: calc(1200px / 9);
   height: 189px;
 }
@@ -1394,15 +1394,20 @@
 
   .flexRowContent--linha-caracteristicas-madubox {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 15px;
     align-content: center;
   }
 
+  .flexRowContent--linha-caracteristicas-madubox .stretchChildrenWidth {
+    height: 100%;
+  }
+
   .flexRowContent--caracteristicas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: 100%;
   }
 
   .flexRowContent--linha-detalhes-tecnicos-madubox {
@@ -1424,7 +1429,7 @@
   }
 
   .flexCol--linha-textos-cores {
-
+    height: 200px;
     margin: 11px;
   }
 
@@ -1472,6 +1477,109 @@
   .flexRow--linha-deslocada-diferencas-madubox {
     height: unset;
   }
+
+  .flexRowContent--linha-inferior-diferencas-maletas-caixas-mobile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexRowContent--linha-meio-diferencas-maletas-caixas-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .flexRow--conteiner-diferencas-maletas-caixas-mobile {
+    background-color: #F5F5F5;
+    margin-bottom: 43px;
+  }
+
+  .flexRow--conteiner-diferencas-maletas-caixas-mobile {
+    padding: 25px 0;
+  }
+
+  .flexRowContent--mobile-banner3-caracteristicas-madubox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .flexRowContent--mobile-linhas-caracteristicas {
+    background-color: #F5F5F5;
+    height: 100%;
+  }
+
+  .flexRowContent--linha-titulo-status-dropdown {
+    display: flex;
+  }
+
+  .flexRowContent--mobile-cores-madubox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .flexRowContent--mobile-preto-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-preto.webp);
+  }
+
+  .flexRowContent--mobile-preto-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-preto.webp);
+  }
+
+  .flexRowContent--mobile-cinza-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-cinza.webp);
+  }
+
+  .flexRowContent--mobile-verde-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-verde.webp);
+  }
+
+  .flexRowContent--mobile-amarelo-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-amarelo.webp);
+  }
+
+  .flexRowContent--mobile-laranja-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-laranja.webp);
+  }
+
+  .flexRowContent--mobile-vermelho-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-vermelho.webp);
+  }
+
+  .flexRowContent--mobile-pink-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-rosa.webp);
+  }
+
+  .flexRowContent--mobile-azul-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-azul.webp);
+  }
+
+  .flexRowContent--mobile-azul-marinho-fundo {
+    background-image: url(assets/madu-box/cores/cores-mobile/mobile-azul-marinho.webp);
+
+  }
+
+  .flexRowContent--cores-mobile .stretchChildrenWidth {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .flexRowContent--cores-mobile {
+    height: 122px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .flexRow--linha-textos-combinam{
+    height: 150px;
+  }
+
+  .flexRow--banner-final-madu-box{
+    margin-top: 65px;
+  }
+
 
 
 }

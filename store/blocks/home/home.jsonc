@@ -75,80 +75,6 @@
       }
     }
   },
-  "slider-layout#mais-vendidos": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 2,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "always",
-      "blockClass": "shelf"
-    }
-  },
-  "flex-layout.col#carrinhos": {
-    "props": {
-      "blockClass": "colunas-categorias",
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "image#carrinho",
-      "rich-text#carrinho"
-    ]
-  },
-  "flex-layout.col#armarios": {
-    "props": {
-      "blockClass": "colunas-categorias",
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "image#armarios",
-      "rich-text#armarios"
-    ]
-  },
-  "flex-layout.col#estantes": {
-    "props": {
-      "blockClass": "colunas-categorias",
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "image#estantes",
-      "rich-text#estantes"
-    ]
-  },
-  "flex-layout.col#acessorios": {
-    "props": {
-      "blockClass": "colunas-categorias",
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "image#acessorios",
-      "rich-text#acessorios"
-    ]
-  },
-  "flex-layout.col#lancamentos": {
-    "props": {
-      "blockClass": "colunas-categorias",
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "image#lancamentos",
-      "rich-text#lancamentos"
-    ]
-  },
-  "flex-layout.col#feira-hospitalar": {
-    "props": {
-      "blockClass": "colunas-categorias",
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "image#feira-hospitalar",
-      "rich-text#feira-hospitalar"
-    ]
-  },
   // imagens categorias
   "image#carrinho": {
     "props": {
@@ -353,20 +279,6 @@
         "prateleira-home-madu-extra",
         "prateleira-home-madu-one"
       ]
-    }
-  },
-  "slider-layout#prateleira-home-final": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 2,
-        "phone": 2
-      },
-      "infinite": false,
-      "fullWidth": false,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "always",
-      "blockClass": "shelf"
     }
   }
 }

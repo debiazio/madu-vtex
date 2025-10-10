@@ -1,4 +1,4 @@
-.paragraph--subtitulo-dropdow{
+.paragraph--subtitulo-dropdow {
   font-size: 18px;
   text-transform: uppercase;
   font-family: "Rubik";
@@ -94,7 +94,7 @@
   font-family: "Rubik Bold";
   font-weight: 700;
   font-size: 24px;
-  margin: 15px 20px 0 0!important;
+  margin: 15px 20px 0 0 !important;
 }
 
 .paragraph--content-text {
@@ -830,6 +830,7 @@
   .paragraph--subtitulo-cores {
     font-size: 18px;
     white-space: unset;
+    margin-bottom: 20px;
   }
 
   .container--informativo-texto {
@@ -857,5 +858,35 @@
     width: unset !important;
   }
 
+  .paragraph--caixa-textos-diferencas-madubox {
+    padding-left: 26px;
+  }
+
+  .paragraph--maleta-textos-diferencas-madubox {
+    margin-left: 10px;
+  }
+
+  .paragraph--caixa-textos-diferencas-madubox {
+    margin-right: 10px;
+  }
+
+  .container--titulo-caracteristicas {
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .container--subtitulo-caracteristicas {
+    text-align: center;
+  }
+
+  .wrapper--titulo-cores {
+    width: 250px;
+  }
+
+  .container--label-cores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
 }
