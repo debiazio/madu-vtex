@@ -1,9 +1,34 @@
-.paragraph--maleta-textos-diferencas-madubox{
-  text-align: end;
+.paragraph--subtitulo-dropdow{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Rubik";
+  font-weight: 500;
+  color: #707070;
+  margin: 3px 10px 0;
+  padding: 0;
 }
 
-.container--descricao-banner1-madubox{
-  width: 30vw!important;
+.container--maleta-textos-diferencas-madubox {
+  padding-right: 26px;
+  border-right: 1px solid #DBDBDB;
+}
+
+.paragraph--caixa-textos-diferencas-madubox {
+  font-family: "Rubik";
+  font-size: 16px;
+  color: #686868;
+}
+
+.paragraph--maleta-textos-diferencas-madubox {
+  font-family: "Rubik";
+  font-size: 16px;
+  text-align: end;
+  color: #686868;
+}
+
+
+.container--descricao-banner1-madubox {
+  width: 30vw !important;
 }
 
 .paragraph--texto-banner-final-madubox {
@@ -66,8 +91,10 @@
 
 .paragraph--label-text {
   text-transform: uppercase;
-  font-family: "Rubik";
+  font-family: "Rubik Bold";
+  font-weight: 700;
   font-size: 24px;
+  margin: 15px 20px 0 0!important;
 }
 
 .paragraph--content-text {
@@ -75,6 +102,7 @@
   font-size: 16px;
   color: #636363;
   max-width: 480px;
+  margin-top: 0 !important;
 }
 
 .paragraph--label-text,
@@ -780,40 +808,40 @@
     margin: 10px 10px 40px;
   }
 
-  .paragraph--titulo-detalhes-tecnicos{
+  .paragraph--titulo-detalhes-tecnicos {
     font-size: 20px;
     white-space: wrap;
   }
 
-  .paragraph--subtitulo-detalhes-tecnicos{
+  .paragraph--subtitulo-detalhes-tecnicos {
     font-size: 18px;
   }
 
-  .paragraph--subtitulo-detalhes-tecnicos{
+  .paragraph--subtitulo-detalhes-tecnicos {
     margin-bottom: 20px;
   }
 
-  .paragraph--titulo-cores{
+  .paragraph--titulo-cores {
     font-size: 20px;
     white-space: unset;
     margin-bottom: 15px;
   }
 
-  .paragraph--subtitulo-cores{
+  .paragraph--subtitulo-cores {
     font-size: 18px;
     white-space: unset;
   }
 
-  .container--informativo-texto{
+  .container--informativo-texto {
     padding: 20px;
   }
 
-  .paragraph--titulo-combinam{
+  .paragraph--titulo-combinam {
     font-size: 20px;
     white-space: unset;
   }
 
-  .paragraph--subtitulo-combinam{
+  .paragraph--subtitulo-combinam {
     font-size: 18px;
     white-space: unset;
     margin: unset;
@@ -821,8 +849,12 @@
     padding: unset;
   }
 
-  .paragraph--texto-banner-final-madubox{
+  .paragraph--texto-banner-final-madubox {
     font-size: 32px;
+  }
+
+  .container--descricao-banner1-madubox {
+    width: unset !important;
   }
 
 

@@ -93,10 +93,17 @@
   // TITULO MOBILE
   "responsive-layout.mobile#titulo-madubox": {
     "children": [
-      "image#titulo-mobile-banner-inicial-madubox"
+      "image#titulo-mobile-banner-inicial-madubox",
+      "image#subtitulo-mobile-banner-inicial-madubox"
     ]
   },
   "image#titulo-mobile-banner-inicial-madubox": {
+    "props": {
+      "blockClass": "titulo-mobile-banner1-madu-box",
+      "src": "assets/madu-box/banner-inicial/subtitulo-caixas-maletas-mobile.webp"
+    }
+  },
+  "image#subtitulo-mobile-banner-inicial-madubox": {
     "props": {
       "blockClass": "titulo-mobile-banner1-madu-box",
       "src": "assets/madu-box/banner-inicial/titulo-mobile-madubox.webp"
@@ -253,7 +260,8 @@
   // BOXES MALETAS
   "flex-layout.row#material-qualidade": {
     "props": {
-      "blockClass": "boxes-maletas"
+      "blockClass": "boxes-maletas",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#imagem-diamante",
@@ -262,7 +270,8 @@
   },
   "flex-layout.row#transporte-praticidade": {
     "props": {
-      "blockClass": "boxes-maletas"
+      "blockClass": "boxes-maletas",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#imagem-praticidade",
@@ -271,7 +280,8 @@
   },
   "flex-layout.row#diversos-tamanhos": {
     "props": {
-      "blockClass": "boxes-maletas"
+      "blockClass": "boxes-maletas",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#imagem-tamanhos",
@@ -280,7 +290,8 @@
   },
   "flex-layout.row#transparencia-visibilidade": {
     "props": {
-      "blockClass": "boxes-maletas"
+      "blockClass": "boxes-maletas",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#imagem-transparencia",
@@ -289,7 +300,8 @@
   },
   "flex-layout.row#paleta-cores": {
     "props": {
-      "blockClass": "boxes-maletas"
+      "blockClass": "boxes-maletas",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#imagem-paleta",
@@ -298,7 +310,8 @@
   },
   "flex-layout.row#limpeza": {
     "props": {
-      "blockClass": "boxes-maletas"
+      "blockClass": "boxes-maletas",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#imagem-limpeza",
@@ -501,45 +514,91 @@
       "colSizing": "auto"
     },
     "children": [
+      "flex-layout.row#banner-diferencas-linha-deslocada"
+    ]
+  },
+  "flex-layout.row#banner-diferencas-linha-deslocada": {
+    "props": {
+      "blockClass": "linha-deslocada-diferencas-madubox",
+      "colSizing": "auto"
+    },
+    "children": [
       "flex-layout.row#diferencas-linha-imagens",
       "flex-layout.row#diferencas-linha-textos"
     ]
   },
   // LINHA DE IMAGENS -DIFERENCAS
-  "flex-layout.row#diferencas-linha-imagens":{
+  "flex-layout.row#diferencas-linha-imagens": {
     "props": {
-      "blockClass": "linha-imagens"
+      "blockClass": "linha-imagens",
+      "colSizing": "equal"
     },
     "children": [
-      "image#maleta-preta-diferencas",
-      "image#texto-diferencas",
-      "image#caixa-vermelha-diferencas"
+      "flex-layout.col#coluna-imagem-maleta-preta",
+      "flex-layout.col#coluna-imagem-diferencas",
+      "flex-layout.col#coluna-imagem-caixa-vermelha"
     ]
   },
   // IMAGENS - DIFERENCAS
-  "image#maleta-preta-diferencas":{
+  "flex-layout.col#coluna-imagem-maleta-preta": {
     "props": {
-      "blockClass": "imagens-diferencas-madubox",
+      "blockClass": "coluna-imagem-maleta-preta",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#maleta-preta-diferencas"
+    ]
+  },
+  "image#maleta-preta-diferencas": {
+    "props": {
+      "blockClass": [
+        "imagens-diferencas-madubox",
+        "imagem-maleta-preta"
+      ],
       "alt": "Imagens diferenças",
       "src": "assets/madu-box/banner-maletas/maleta-preta.webp"
     }
   },
-  "image#texto-diferencas":{
+  "flex-layout.col#coluna-imagem-diferencas": {
     "props": {
-      "blockClass": "imagens-diferencas-madubox",
+      "blockClass": "coluna-diferencas",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#texto-diferencas"
+    ]
+  },
+  "image#texto-diferencas": {
+    "props": {
+      "blockClass": [
+        "imagens-diferencas-madubox",
+        "diferencas-texto"
+      ],
       "alt": "Imagens diferenças",
-      "src": "assets/madu-box/banner-maletas/maletasXcaixas.webp"
+      "src": "assets/madu-box/banner-maletas/diferencas.webp"
     }
   },
-  "image#caixa-vermelha-diferencas":{
+  "flex-layout.col#coluna-imagem-caixa-vermelha": {
     "props": {
-      "blockClass": "imagens-diferencas-madubox",
+      "blockClass": "coluna-imagem-caixa-vermelha",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#caixa-vermelha-diferencas"
+    ]
+  },
+  "image#caixa-vermelha-diferencas": {
+    "props": {
+      "blockClass": [
+        "imagens-diferencas-madubox",
+        "imagem-caixa-vermelha"
+      ],
       "alt": "Imagens diferenças",
       "src": "assets/madu-box/banner-maletas/caixa-vermelha.webp"
     }
   },
   // LINHA TEXTOS - DIFERENCAS
-  "flex-layout.row#diferencas-linha-textos":{
+  "flex-layout.row#diferencas-linha-textos": {
     "props": {
       "blockClass": "linha-textos-diferencas",
       "colSizing": "equal"
@@ -550,30 +609,30 @@
     ]
   },
   // COLUNAS TEXTOS DIFERENCAS
-  "flex-layout.col#diferencas-madubox-coluna-esquerda":{
+  "flex-layout.col#diferencas-madubox-coluna-esquerda": {
     "props": {
-      "blockClass":"colunas-textos-diferencas"
+      "blockClass": "colunas-textos-diferencas"
     },
     "children": [
       "rich-text#texto-maletas-diferencas-madubox"
     ]
   },
-  "flex-layout.col#diferencas-madubox-coluna-direita":{
+  "flex-layout.col#diferencas-madubox-coluna-direita": {
     "props": {
-      "blockClass":"colunas-textos-diferencas"
+      "blockClass": "colunas-textos-diferencas"
     },
     "children": [
       "rich-text#texto-caixas-diferencas-madubox"
     ]
   },
   // TEXTOS DIFERENCAS
-  "rich-text#texto-maletas-diferencas-madubox":{
+  "rich-text#texto-maletas-diferencas-madubox": {
     "props": {
       "blockClass": "maleta-textos-diferencas-madubox",
       "text": "Modelos compactos e fáceis de transportar. Todas as maletas possuem alça de transporte e fechos frontais, ideais para levar seus objetos com praticidade e segurança."
     }
   },
-  "rich-text#texto-caixas-diferencas-madubox":{
+  "rich-text#texto-caixas-diferencas-madubox": {
     "props": {
       "blockClass": "caixa-textos-diferencas-madubox",
       "text": "Modelos maiores para quem precisa de mais espaço. As caixas não possuem alça de transporte, sendo perfeitas para organizar e armazenar itens em casa, no trabalho ou em qualquer ambiente."
@@ -589,8 +648,8 @@
     "children": [
       "flex-layout.row#modulos-empilhaveis",
       "flex-layout.row#fecho-duplo",
-      "flex-layout.row#tampa-transparente",
-      "flex-layout.row#alca-transparente"
+      "flex-layout.row#alca-transparente",
+      "flex-layout.row#tampa-transparente"
     ]
   },
   // LINHAS CARACTERISTICAS MADUBOX
@@ -1713,28 +1772,28 @@
   "rich-text#tam-p": {
     "props": {
       "blockClass": "textos-tamanhos",
-      "text": "**P:**\n6,3 Litros - 22,5x24,3x11,5cm"
+      "text": "**P:**\n6,3 Litros\n(L)24,3cm X (A)11,5cm (P)22,5cm"
     }
   },
   // TEXTO M
   "rich-text#tam-m": {
     "props": {
       "blockClass": "textos-tamanhos",
-      "text": "**M:**\n8,2 Litros - 22,5x24,3x15cm"
+      "text": "**M:**\n8,2 Litros\n(L)24,3cm X (A)15cm X (P)22,5cm"
     }
   },
   // TEXTO G
   "rich-text#tam-g": {
     "props": {
       "blockClass": "textos-tamanhos",
-      "text": "**G:**\n10,1 Litros - 22,5x24,3x18,5cm"
+      "text": "**G:**\n10,1 Litros\n(L)24,3cm X (A)18,5cm X (P)22,5cm"
     }
   },
   // TEXTO GG
   "rich-text#tam-gg": {
     "props": {
       "blockClass": "textos-tamanhos",
-      "text": "**GG:**\n12 Litros - 22,5x24,3x22cm"
+      "text": "**GG:**\n12 Litros\n(L)24,3cm X (A)22cm (P)22,5cm"
     }
   },
   // SESSÃO disclosure
@@ -1859,8 +1918,8 @@
       ]
     },
     "children": [
-      "rich-text#label-tam3",
-      "disclosure-state-indicator#detalhes-tec"
+      "flex-layout.row#titulo-status-dropdown-tam3",
+      "flex-layout.row#subtitulo-dropdown-tam3"
     ]
   },
   "disclosure-trigger#tam4": {
@@ -1871,8 +1930,8 @@
       ]
     },
     "children": [
-      "rich-text#label-tam4",
-      "disclosure-state-indicator#detalhes-tec"
+      "flex-layout.row#titulo-status-dropdown-tam4",
+      "flex-layout.row#subtitulo-dropdown-tam4"
     ]
   },
   "disclosure-trigger#tam6": {
@@ -1883,8 +1942,8 @@
       ]
     },
     "children": [
-      "rich-text#label-tam6",
-      "disclosure-state-indicator#detalhes-tec"
+      "flex-layout.row#titulo-status-dropdown-tam6",
+      "flex-layout.row#subtitulo-dropdown-tam6"
     ]
   },
   "disclosure-trigger#tam8": {
@@ -1895,8 +1954,8 @@
       ]
     },
     "children": [
-      "rich-text#label-tam8",
-      "disclosure-state-indicator#detalhes-tec"
+      "flex-layout.row#titulo-status-dropdown-tam8",
+      "flex-layout.row#subtitulo-dropdown-tam8"
     ]
   },
   "disclosure-trigger#tam10": {
@@ -1907,8 +1966,8 @@
       ]
     },
     "children": [
-      "rich-text#label-tam10",
-      "disclosure-state-indicator#detalhes-tec"
+      "flex-layout.row#titulo-status-dropdown-tam10",
+      "flex-layout.row#subtitulo-dropdown-tam10"
     ]
   },
   "disclosure-trigger#tam12": {
@@ -1919,8 +1978,8 @@
       ]
     },
     "children": [
-      "rich-text#label-tam12",
-      "disclosure-state-indicator#detalhes-tec"
+      "flex-layout.row#titulo-status-dropdown-tam12",
+      "flex-layout.row#subtitulo-dropdown-tam12"
     ]
   },
   // DISCLOSURE CONTENT
@@ -2033,11 +2092,33 @@
     ]
   },
   // LABEL DISCLOSURE
+  "flex-layout.row#titulo-status-dropdown-tam3": {
+    "props": {
+      "blockClass": "linha-titulo-status-dropdown",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#label-tam3",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
   "rich-text#label-tam3": {
     "props": {
       "text": "Tamanho **3**",
       "blockClass": "label-text"
     }
+  },
+  "flex-layout.row#titulo-status-dropdown-tam4": {
+    "props": {
+      "blockClass": "linha-titulo-status-dropdown",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#label-tam4",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
   },
   "rich-text#label-tam4": {
     "props": {
@@ -2045,11 +2126,33 @@
       "blockClass": "label-text"
     }
   },
+  "flex-layout.row#titulo-status-dropdown-tam6": {
+    "props": {
+      "blockClass": "linha-titulo-status-dropdown",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#label-tam6",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
   "rich-text#label-tam6": {
     "props": {
       "text": "Tamanho **6**",
       "blockClass": "label-text"
     }
+  },
+  "flex-layout.row#titulo-status-dropdown-tam8": {
+    "props": {
+      "blockClass": "linha-titulo-status-dropdown",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#label-tam8",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
   },
   "rich-text#label-tam8": {
     "props": {
@@ -2057,11 +2160,33 @@
       "blockClass": "label-text"
     }
   },
+  "flex-layout.row#titulo-status-dropdown-tam10": {
+    "props": {
+      "blockClass": "linha-titulo-status-dropdown",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#label-tam10",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
+  },
   "rich-text#label-tam10": {
     "props": {
       "text": "Tamanho **10**",
       "blockClass": "label-text"
     }
+  },
+    "flex-layout.row#titulo-status-dropdown-tam12": {
+    "props": {
+      "blockClass": "linha-titulo-status-dropdown",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#label-tam12",
+      "disclosure-state-indicator#detalhes-tec"
+    ]
   },
   "rich-text#label-tam12": {
     "props": {
@@ -2069,10 +2194,96 @@
       "blockClass": "label-text"
     }
   },
+  // linha subtitulo tam3
+  "flex-layout.row#subtitulo-dropdown-tam3": {
+    "props": {
+      "blockClass": "linha-subt-dropdown",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#icone-maleta-dropdown",
+      "rich-text#maleta-dropdown"
+    ]
+  },
+  // linha subtitulo tam4
+  "flex-layout.row#subtitulo-dropdown-tam4": {
+    "props": {
+      "blockClass": "linha-subt-dropdown",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#icone-maleta-dropdown",
+      "rich-text#maleta-dropdown"
+    ]
+  },
+  // linha subtitulo tam6
+  "flex-layout.row#subtitulo-dropdown-tam6": {
+    "props": {
+      "blockClass": "linha-subt-dropdown",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#icone-maleta-dropdown",
+      "rich-text#caixa-dropdown"
+    ]
+  },
+  // linha subtitulo tam8
+  "flex-layout.row#subtitulo-dropdown-tam8": {
+    "props": {
+      "blockClass": "linha-subt-dropdown",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#icone-maleta-dropdown",
+      "rich-text#caixa-dropdown"
+    ]
+  },
+  // linha subtitulo tam10
+  "flex-layout.row#subtitulo-dropdown-tam10": {
+    "props": {
+      "blockClass": "linha-subt-dropdown",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#icone-maleta-dropdown",
+      "rich-text#caixa-dropdown"
+    ]
+  },
+  // linha subtitulo tam12
+  "flex-layout.row#subtitulo-dropdown-tam12": {
+    "props": {
+      "blockClass": "linha-subt-dropdown",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#icone-maleta-dropdown",
+      "rich-text#caixa-dropdown"
+    ]
+  },
+  // ICONE MALETA
+  "image#icone-maleta-dropdown": {
+    "props": {
+      "blockClass": "icone-maleta",
+      "src": "assets/icons/icon-maletas.webp"
+    }
+  },
+  // TEXTO MALETA
+  "rich-text#maleta-dropdown": {
+    "props": {
+      "blockClass": "subtitulo-dropdow",
+      "text": "maletas"
+    }
+  },
+  "rich-text#caixa-dropdown": {
+    "props": {
+      "blockClass": "subtitulo-dropdow",
+      "text": "caixas"
+    }
+  },
   // TEXTO CONTENT DISCLOSURE
   "rich-text#content-tam3": {
     "props": {
-      "text": "Formato quadrado, compacto e prático — ideal para guardar pequenos itens com leveza e estilo.",
+      "text": "Formato quadrado, compacto e prático, ideal para guardar pequenos itens com leveza e estilo, possui alça para transporte.",
       "blockClass": "content-text"
     }
   },
@@ -2138,7 +2349,7 @@
   },
   "rich-text#subtitulo-cores": {
     "props": {
-      "text": "Mais do que organizar, a MaduBox ajuda a criar sistemas inteligentes de sinalização. ",
+      "text": "Mais do que organizar, a MaduBox ajuda a criar sistemas inteligentes de sinalização.",
       "blockClass": "subtitulo-cores"
     }
   },
@@ -2439,7 +2650,7 @@
   "rich-text#subtitulo-combinam-e-combinam": {
     "props": {
       "blockClass": "subtitulo-combinam",
-      "text": "As Maletas MaduBox foram pensadas para dialogar com toda a linha de organização da marca. Elas combinam (e se combinam) com:"
+      "text": "A linha MaduBox foi pensada para dialogar com toda a linha de organização da marca. Elas combinam (e se combinam) com:"
     }
   },
   // COLUNAS COMBINAM
@@ -2543,7 +2754,7 @@
   "rich-text#texto-banner-final": {
     "props": {
       "blockClass": "texto-banner-final-madubox",
-      "text": "tenha sua\n maleta madu\nbox agora\n mesmo."
+      "text": "adquira a sua\nMadu Box\n agora mesmo. "
     }
   },
   // LINK FALE COM

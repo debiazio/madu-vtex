@@ -1,3 +1,27 @@
+.imageElement--icone-maleta{
+  width: 18px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.imageElement--imagem-caixa-vermelha{
+  position: relative;
+  right: 33px;
+  top: 10px;
+}
+.imageElement--imagem-maleta-preta{
+  position: relative;
+  left: 33px;
+}
+
+.imageElement--diferencas-texto{
+  width: 300px;
+  height: 77px;
+  margin-bottom: 20px;
+}
+
+
 .imageElement--icone-lampada {
   width: 48px;
   height: 48px;
@@ -1044,7 +1068,7 @@
   }
 
   .imageElement--titulo-mobile-banner1-madu-box {
-    margin: 15px 0;
+    margin: 0;
   }
 
   .imageElement--imagens-caracteristicas {

@@ -5,7 +5,7 @@
 
 .trigger--trigger-class {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: none;
   border: none;
   cursor: pointer;
@@ -24,7 +24,7 @@
 .trigger--trigger-class-12 {
   border-bottom: none !important;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: none;
   border: none;
   justify-content: space-between;
