@@ -1,13 +1,13 @@
 {
   "store.custom#madubox": {
     "blocks": [
+      "responsive-layout.mobile#handler-simples",
       "flex-layout.row#desktop-banner-madubox",
       "flex-layout.row#desktop-banner2-maletas-madubox",
       "responsive-layout.mobile#diferencas-maletas-caixas",
       "responsive-layout.desktop#diferencas-maletas-caixas",
       "responsive-layout.mobile#banner3-caracteristicas-madubox",
       "responsive-layout.desktop#banner3-caracteristicas-madubox",
-      // "responsive-layout.mobile#handler-simples",
       "responsive-layout.desktop#handler",
       "flex-layout.row#desktop-detalhes-tecnicos-titulo",
       "flex-layout.row#desktop-detalhes-tecnicos-conteudo",
@@ -17,12 +17,12 @@
       "flex-layout.row#desktop-banner-final"
     ]
   },
-  // "responsive-layout.mobile#handler-simples":{
-  //   "children": [
-  //     "dropdownmobile"
-  //   ]
-  // },
-
+  "responsive-layout.mobile#handler-simples": {
+    "children": [
+      "dropdownmobile"
+    ]
+  },
+  "dropdownmobile": {},
   // APP CUSTOM PARA O DISCLOSURE -  CHAMDO APENASD NO LAYOUT DESKTOP
   "responsive-layout.desktop#handler": {
     "children": [
