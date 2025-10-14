@@ -632,6 +632,10 @@
   padding: 0 20px;
 }
 
+.flexRowContent--linha-veja-mais-produtos{
+  padding-bottom: 60px;
+}
+
 .flexRowContent--content-madu-cat .stretchChildrenWidth,
 .flexRowContent--linha-veja-mais-produtos .stretchChildrenWidth,
 .flexRowContent--linha-possibilidades .stretchChildrenWidth {

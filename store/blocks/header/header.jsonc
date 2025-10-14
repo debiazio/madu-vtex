@@ -155,7 +155,8 @@
       "alt": "Ícone telefone",
       "blockClass": [
         "icone-telefone",
-        "icone-notification"
+        "icone-notification",
+        "telefone-header"
       ]
     }
   },
