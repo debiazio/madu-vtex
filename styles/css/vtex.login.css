@@ -8,8 +8,9 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--topbar) .profileIcon {
-  width: 1px;
+  width: 0.8px;
   height: 1px;
+  margin-top: 4px;
   overflow: visible;
 }
 
@@ -61,6 +62,9 @@
     height: 0.05rem;
     overflow: visible;
     margin-top: 4px;
+    margin-left: 5px;
   }
+
+
 
 }

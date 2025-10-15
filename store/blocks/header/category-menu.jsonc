@@ -56,7 +56,8 @@
         "type": "internal",
         "noFollow": false,
         "tagTitle": "Acessórios",
-        "text": "Acessórios"
+        "text": "Acessórios",
+        "href": "/moveis/modulos"
       },
       "blockClass": "menu-principal-item",
       "iconProps": {
@@ -574,7 +575,7 @@
         "noFollow": false,
         "tagTitle": "Acessórios",
         "text": "Acessórios",
-        "href": "/moveis"
+        "href": "/moveis/modulos"
       },
       "blockClass": "menu-principal-item"
     },

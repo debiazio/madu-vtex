@@ -28,13 +28,13 @@
   },
   "rich-text#contato-titulo": {
     "props": {
-      "text": "Quer saber mais? Entre em\n contato com a gente!",
+      "text": "Quer saber mais? Entre em contato com a gente!",
       "blockClass": "contato-titulo"
     }
   },
   "rich-text#contato-texto": {
     "props": {
-      "text": "A **MAD.U** inova com **a maior linha de mobiliário técnico do\n mundo.** São milhões de possibilidades de configurações, através de\n módulos, acessórios e cores, criando o mobiliário perfeito para as\n mais diversas necessidades.",
+      "text": "A **MAD.U** inova com **a maior linha de mobiliário técnico do mundo.** São milhões de possibilidades de configurações, através de módulos, acessórios e cores, criando o mobiliário perfeito para as mais diversas necessidades.",
       "blockClass": "contato-texto"
     }
   },
