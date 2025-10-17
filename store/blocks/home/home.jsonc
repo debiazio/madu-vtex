@@ -8,7 +8,8 @@
       "__fold__",
       "flex-layout.row#mais-vendidos-madu-extra",
       "flex-layout.row#mais-vendidos-madu-one",
-      "flex-layout.row#banner-final"
+      "flex-layout.row#banner-final",
+      "flex-layout.row#banner-nossos-clientes"
     ],
     "parent": {
       "header": "header"
@@ -73,86 +74,6 @@
         "timeout": 8000,
         "stopOnHover": true
       }
-    }
-  },
-  // imagens categorias
-  "image#carrinho": {
-    "props": {
-      "src": "assets/cat-carrinho.webp",
-      "alt": "imagem categoria",
-      "blockClass": "imagem-categorias"
-    }
-  },
-  "image#armarios": {
-    "props": {
-      "src": "assets/cat-armarios.webp",
-      "alt": "imagem categoria",
-      "blockClass": "imagem-categorias"
-    }
-  },
-  "image#estantes": {
-    "props": {
-      "src": "assets/estantes.webp",
-      "alt": "imagem categoria",
-      "blockClass": "imagem-categorias"
-    }
-  },
-  "image#acessorios": {
-    "props": {
-      "src": "assets/cat-acessorios.webp",
-      "alt": "imagem categoria",
-      "blockClass": "imagem-categorias"
-    }
-  },
-  "image#lancamentos": {
-    "props": {
-      "src": "assets/kids.webp",
-      "alt": "imagem categoria",
-      "blockClass": "imagem-categorias"
-    }
-  },
-  "image#feira-hospitalar": {
-    "props": {
-      "src": "assets/ico-hospitalar-400x400.webp",
-      "alt": "imagem categoria",
-      "blockClass": "imagem-categorias"
-    }
-  },
-  // titulo categorias
-  "rich-text#carrinho": {
-    "props": {
-      "text": "Carrinhos",
-      "blockClass": "titulo-categorias"
-    }
-  },
-  "rich-text#armarios": {
-    "props": {
-      "text": "Armários",
-      "blockClass": "titulo-categorias"
-    }
-  },
-  "rich-text#estantes": {
-    "props": {
-      "text": "Estantes",
-      "blockClass": "titulo-categorias"
-    }
-  },
-  "rich-text#acessorios": {
-    "props": {
-      "text": "Acessórios",
-      "blockClass": "titulo-categorias"
-    }
-  },
-  "rich-text#lancamentos": {
-    "props": {
-      "text": "Lançamentos",
-      "blockClass": "titulo-categorias"
-    }
-  },
-  "rich-text#feira-hospitalar": {
-    "props": {
-      "text": "Feira Hospitalar",
-      "blockClass": "titulo-categorias"
     }
   },
   // MADU ONE
@@ -279,6 +200,121 @@
         "prateleira-home-madu-extra",
         "prateleira-home-madu-one"
       ]
+    }
+  },
+  // LINHA NOSSOS CLIENTES
+  "flex-layout.row#banner-nossos-clientes": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "linha-nossos-clientes"
+    },
+    "children": [
+      "slider-layout#nossos-clientes"
+    ]
+  },
+  "slider-layout#nossos-clientes": {
+    "props": {
+      "blockClass": "slider-nossos-clientes",
+
+      "itemsPerPage": {
+        "desktop": 5,
+        "phone": 3
+      },
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "arrowSize": 50,
+      "infinite": true,
+      "autoplay": {
+        "timeout": 8000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "flex-layout.row#linha-unimed",
+      "flex-layout.row#linha-einstein",
+      "flex-layout.row#linha-hc-londrina",
+      "flex-layout.row#linha-ibirapuera",
+      "flex-layout.row#linha-mackenzie"
+    ]
+  },
+  "flex-layout.row#linha-unimed": {
+    "props": {
+      "blockClass": "linha-img-nossos-clientes",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#unimed"
+    ]
+  },
+  "flex-layout.row#linha-einstein": {
+    "props": {
+      "blockClass": "linha-img-nossos-clientes",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#einstein"
+    ]
+  },
+  "flex-layout.row#linha-hc-londrina": {
+    "props": {
+      "blockClass": "linha-img-nossos-clientes",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#hc-londrina"
+    ]
+  },
+  "flex-layout.row#linha-ibirapuera": {
+    "props": {
+      "blockClass": "linha-img-nossos-clientes",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#ibirapuera"
+    ]
+  },
+  "flex-layout.row#linha-mackenzie": {
+    "props": {
+      "blockClass": "linha-img-nossos-clientes",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#mackenzie"
+    ]
+  },
+  "image#unimed":{
+    "props": {
+      "blockClass": "img-nossos-clientes",
+      "src": "assets/home/nossos-clientes/unimed.webp"
+    }
+  },
+  "image#einstein":{
+    "props": {
+      "blockClass": "img-nossos-clientes",
+      "src": "assets/home/nossos-clientes/einstein.webp"
+    }
+  },
+  "image#hc-londrina":{
+    "props": {
+      "blockClass": "img-nossos-clientes",
+      "src": "assets/home/nossos-clientes/hc-londrina.webp"
+    }
+  },
+  "image#ibirapuera":{
+    "props": {
+      "blockClass": "img-nossos-clientes",
+      "src": "assets/home/nossos-clientes/ibirapuera.webp"
+    }
+  },
+  "image#mackenzie":{
+    "props": {
+      "blockClass": "img-nossos-clientes",
+      "src": "assets/home/nossos-clientes/mackenzie.webp"
     }
   }
 }
