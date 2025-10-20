@@ -1,3 +1,21 @@
+.paragraph--texto-subtitulo-prateleira-madubox {
+  font-family: "Rubik";
+  font-size: 22px;
+  margin: 0 0 20px 0;
+  color: #AEAEAE;
+  margin-bottom: 40px;
+  white-space: nowrap;
+}
+
+.paragraph--texto-titulo-prateleira-madubox {
+  font-family: "Rubik Bold";
+  font-size: 36px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #3F3F3F;
+  white-space: nowrap;
+}
+
 .paragraph--subtitulo-dropdow {
   font-size: 18px;
   text-transform: uppercase;
@@ -837,11 +855,14 @@
     padding: 20px;
   }
 
+  .paragraph--texto-titulo-prateleira-madubox,
   .paragraph--titulo-combinam {
     font-size: 20px;
     white-space: unset;
   }
 
+
+  .paragraph--texto-subtitulo-prateleira-madubox,
   .paragraph--subtitulo-combinam {
     font-size: 18px;
     white-space: unset;

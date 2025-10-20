@@ -14,6 +14,7 @@
       "responsive-layout.mobile#cores-madubox",
       "responsive-layout.desktop#cores-madubox",
       "flex-layout.row#desktop-combinam-combinam",
+      "flex-layout.row#slider-madubox",
       "flex-layout.row#desktop-banner-final"
     ]
   },
@@ -2571,25 +2572,6 @@
       "rich-text#cores-azul-marinho"
     ]
   },
-  // IMAGENS MOBILE
-  "image#mobile-preto": {
-    "props": {
-      "blockClass": "cores-mobile-img",
-      "src": "assets/madu-box/cores/cores-mobile/mobile-preto.webp"
-    }
-  },
-  "image#mobile-cinza": {
-    "props": {
-      "blockClass": "cores-mobile-img",
-      "src": "assets/madu-box/cores/cores-mobile/mobile-cinza.webp"
-    }
-  },
-  "image#mobile-verde": {
-    "props": {
-      "blockClass": "cores-mobile-img",
-      "src": "assets/madu-box/cores/cores-mobile/mobile-verde.webp"
-    }
-  },
   // BLOCO CORES QUE INSPIRAM desktop
   "responsive-layout.desktop#cores-madubox": {
     "children": [
@@ -3017,6 +2999,78 @@
       "text": "Carrinho\n kart"
     }
   },
+  // LINHA SLIDER MADU BOX
+  "flex-layout.row#slider-madubox":{
+    "props": {
+      "blockClass": "slider-madubox",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#titulo-prateleira-madubox",
+      "flex-layout.row#shelf-madubox"
+    ]
+  },
+  // linha TITULO PRATELEIRA MADUBOX
+  "flex-layout.row#titulo-prateleira-madubox":{
+    "props": {
+      "blockClass": "titulo-prateleiras-madubox"
+    },
+    "children": [
+      "rich-text#titulo-prateleiras",
+      "rich-text#subtitulo-prateleiras"
+    ]
+  },
+  // TITULO PRATELIRA
+  "rich-text#titulo-prateleiras":{
+    "props": {
+      "blockClass": "texto-titulo-prateleira-madubox",
+      "text": "COMPRE A SUA MADU BOX"
+    }
+  },
+  // SUBTITULO PRATELEIRA
+  "rich-text#subtitulo-prateleiras":{
+    "props": {
+      "blockClass": "texto-subtitulo-prateleira-madubox",
+      "text": "Conheça nossos modelos abaixo:"
+    }
+  },
+  // linha prateleira madubox
+  "flex-layout.row#shelf-madubox":{
+    "props": {
+      "blockClass": "linha-prateleira-madubox"
+    },
+    "children": [
+      "list-context.product-list#prateleira-madubox"
+    ]
+  },
+  "list-context.product-list#prateleira-madubox":{
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#prateleira-madubox"
+    ],
+    "props": {
+      "orderBy": "OrderByNameDESC",
+      "category": "29/49/51",
+      "blockClass": "list-prateleira-home-madu-extra"
+    }
+  },
+  "slider-layout#prateleira-madubox":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "prateleira-home-madu-extra"
+    }
+  },
+
   // BANNER FINAL
   "flex-layout.row#desktop-banner-final": {
     "props": {

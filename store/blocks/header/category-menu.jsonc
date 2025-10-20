@@ -175,7 +175,9 @@
       "menu-item#linhas-madu-one",
       "menu-item#linhas-madu-extra",
       "menu-item#linhas-maduOne-expand",
-      "menu-item#linhas-maduOne-express"
+      "menu-item#linhas-maduOne-express",
+      "menu-item#linhas-madubox"
+
     ]
   },
   // SUBMENU MADU ONE
@@ -347,6 +349,20 @@
         "noFollow": false,
         "tagTitle": "MAD.U Express",
         "text": "MAD.U Express"
+      }
+    }
+  },
+  "menu-item#linhas-madubox":{
+    "props": {
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/madubox",
+        "noFollow": false,
+        "tagTitle": "Caixas e Maletas MADUBOX",
+        "text": "Caixas e Maletas MADUBOX"
       }
     }
   },
@@ -658,7 +674,8 @@
       "menu-item#linhas-madu-one-mobile",
       "menu-item#linhas-madu-extra-mobile",
       "menu-item#linhas-maduOne-expand-mobile",
-      "menu-item#linhas-maduOne-express-mobile"
+      "menu-item#linhas-maduOne-express-mobile",
+      "menu-item#madubox-mobile"
     ]
   },
   "menu-item#linhas-madu-one-mobile": {
@@ -764,6 +781,21 @@
         "noFollow": false,
         "tagTitle": "MAD.U Express",
         "text": "MAD.U Express"
+      }
+    }
+  },
+  "menu-item#madubox-mobile": {
+    "props": {
+      "blockClass": "menu-principal-item",
+      "type": "custom",
+      "id": "menu-item-linhas",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/madubox",
+        "noFollow": false,
+        "tagTitle": "Caixas e Maletas MADUBOX",
+        "text": "Caixas e Maletas MADUBOX"
       }
     }
   },

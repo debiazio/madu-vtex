@@ -1,4 +1,16 @@
-.flexRowContent--linha-img-nossos-clientes{
+.flexRowContent--titulo-prateleiras-madubox {
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: column;
+  height: 250px;
+}
+
+.flexRowContent--slider-madubox {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--linha-img-nossos-clientes {
   box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
   padding: 30px;
   margin: 10px;
@@ -84,7 +96,7 @@
   background-image: url(assets/madu-box/banner-final/banner-final-sombra.webp);
   background-repeat: no-repeat;
   height: 540px;
-  margin-top: 140px;
+  margin-top: 100px;
   background-size: cover;
 }
 
@@ -643,7 +655,7 @@
   padding: 0 20px;
 }
 
-.flexRowContent--linha-veja-mais-produtos{
+.flexRowContent--linha-veja-mais-produtos {
   padding-bottom: 60px;
 }
 
@@ -1489,6 +1501,11 @@
     height: 420px;
   }
 
+  .flexRowContent--titulo-prateleiras-madubox{
+    height: 150px;
+    padding: 11px;
+  }
+
   .flexRow--linha-deslocada-diferencas-madubox {
     height: unset;
   }
@@ -1587,11 +1604,11 @@
     background-size: cover;
   }
 
-  .flexRow--linha-textos-combinam{
+  .flexRow--linha-textos-combinam {
     height: 150px;
   }
 
-  .flexRow--banner-final-madu-box{
+  .flexRow--banner-final-madu-box {
     margin-top: 65px;
   }
 
