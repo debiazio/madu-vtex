@@ -1,3 +1,13 @@
+.paragraph--titulo-nossos-clientes {
+  font-family: "Montserrat Bold";
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #5F5F5F;
+  margin: 20px 5px;
+  text-align: center;
+}
+
 .paragraph--texto-subtitulo-prateleira-madubox {
   font-family: "Rubik";
   font-size: 22px;

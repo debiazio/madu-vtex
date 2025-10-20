@@ -1,3 +1,14 @@
+.imageElement--image-list-nossos-clientes {
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+  height: 220px;
+  max-height: 300px;
+  border-radius: 25px;
+}
+
+.sliderTrack--image-list-nossos-clientes {
+  gap: 15px;
+}
 
 .sliderTrack--prateleira-home-madu-extra {
   gap: 20px;
@@ -263,7 +274,13 @@
     padding: 10px 0;
   }
 
-  .sliderTrack--slider-madubox-mobile{
+  .sliderTrack--slider-madubox-mobile {
     gap: 9px;
   }
+
+  .imageElement--image-list-nossos-clientes {
+    max-height: 100%;
+    height: unset;
+  }
+
 }

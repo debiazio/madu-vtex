@@ -39,16 +39,7 @@
       "search-bar"
     ]
   },
-  "modal-trigger#popup-botoes": {
-    "props": {
-      "trigger": "click",
-      "blockClass": "botao-contatos"
-    },
-    "children": [
-      "rich-text#botao-atendimento",
-      "modal-layout#botoes-contatos"
-    ]
-  },
+
   "rich-text#botao-atendimento": {
     "props": {
       "text": "Atendimento MAD.U",
@@ -178,12 +169,6 @@
       "maxWidth": "35px",
       "maxHeight": "20px"
     }
-  },
-  "vtex.menu@2.x:menu#top-menu": {
-    "props": {
-      "blockClass": "topbar"
-    },
-    "children": []
   },
   "flex-layout.col#2-desktop-col-2": {
     "props": {
