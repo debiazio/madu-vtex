@@ -170,7 +170,7 @@
   },
   "minicart-checkout-button": {
     "props": {
-      "finishShoppingButtonLink": "/checkout/#/orderform"
+      "finishShoppingButtonLink": "/checkout/#/cart"
     }
   },
   "checkout-summary.compact#minicart": {
