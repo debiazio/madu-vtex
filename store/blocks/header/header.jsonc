@@ -59,8 +59,8 @@
   "header-layout.desktop": {
     "children": [
       // "slider-layout#home-banner",
-      "modal-trigger#popup-cupom", //cupom popup
-      "flex-layout.row#linha-cupom-top",
+      // "modal-trigger#popup-cupom", //cupom popup
+      // "flex-layout.row#linha-cupom-top",
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "sticky-layout#3-desktop"

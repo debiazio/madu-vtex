@@ -279,7 +279,8 @@
   },
   "flex-layout.row#redes-sociais": {
     "props": {
-      "blockClass": "conteiner-redes-sociais"
+      "blockClass": "conteiner-redes-sociais",
+      "colSizing": "auto"
     },
     "children": [
       "image#footer-facebook",
@@ -291,7 +292,7 @@
   "image#footer-facebook": {
     "props": {
       "blockClass": "logo-rede-social",
-      "src": "assets/facebook-icon-footer.svg",
+      "src": "assets/icons/fb.svg",
       "alt": "Facebook",
       "link": {
         "openNewTab": true,
@@ -302,7 +303,7 @@
   "image#footer-instagram": {
     "props": {
       "blockClass": "logo-rede-social",
-      "src": "assets/instagram-icon-footer.svg",
+      "src": "assets/icons/insta.svg",
       "alt": "Instagram",
       "link": {
         "openNewTab": true,
@@ -313,7 +314,7 @@
   "image#footer-vimeo": {
     "props": {
       "blockClass": "logo-rede-social",
-      "src": "assets/vimeo-icon-footer.svg",
+      "src": "assets/icons/vimeo.svg",
       "alt": "Vimeo",
       "link": {
         "openNewTab": true,
@@ -324,7 +325,7 @@
   "image#footer-linkedin": {
     "props": {
       "blockClass": "logo-rede-social",
-      "src": "assets/linkedin-icon-footer.svg",
+      "src": "assets/icons/linked in.svg",
       "alt": "Linkedin",
       "link": {
         "openNewTab": true,

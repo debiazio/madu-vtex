@@ -11,7 +11,7 @@
   "minicart.v2": {
     "props": {
       "customPixelEventId": "add-to-cart-button",
-      "maxDrawerWidth": "328px",
+      "maxDrawerWidth": 328,
       "quantityDisplay": "always",
       "itemCountMode": "total"
     },

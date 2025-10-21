@@ -1,10 +1,9 @@
-{
-  // PÁGINA DE PEDIDO CONFIRMADO
+
+ {
   "store.orderplaced": {
     "blocks": ["order-placed"]
   },
 
-  // PÁGINA MINHA CONTA
   "store.account": {
     "blocks": ["my-account"],
     "parent": {
@@ -12,40 +11,36 @@
     }
   },
 
-  // LOGIN
   "store.login": {
-    "blocks": [
-      "login-content#default"
-    ]
+    "blocks": ["login-content#default"]
   },
+
   "login-content#default": {
     "props": {
-      "optionsTitle":"Acesse sua conta",
-      "emailPlaceholder": "E-mail",
-      "passwordPlaceholder": "Senha",
-      "accessCodePlaceholder":"Insira o código de acesso",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true
     }
   },
 
-  // AVALIAÇÕES NATIVA DA VTEX (NÃO É BOA, SUGIRA PARA O CLIENTE CONTRATAR UMA FERRAMENTA TERCEIRA)
   "store.product-review-form": {
     "blocks": ["product-review-form"]
   },
 
-  // PRODUTO NÃO ENCONTRADO
   "store.not-found#product": {
-    "blocks": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#notfound"      
-    ]
+    "blocks": ["rich-text#not-found"]
   },
 
-  // BUSCA NÃO ENCONTRADA
   "store.not-found#search": {
-    "blocks": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#notfound"      
-    ]
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PÁGINA NÃO ENCONTRADA**",
+      "font": "t-heading-1"
+    }
   }
 }

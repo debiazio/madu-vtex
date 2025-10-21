@@ -5,7 +5,7 @@
     ],
     "props": {
       "context": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField":"OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 30,
         "skusFilter": "ALL_AVAILABLE",
@@ -19,7 +19,7 @@
     ],
     "props": {
       "context": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField":"OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 9,
         "skusFilter": "ALL_AVAILABLE",
@@ -33,7 +33,7 @@
     ],
     "props": {
       "context": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField":"OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 9,
         "skusFilter": "ALL_AVAILABLE",
@@ -47,7 +47,7 @@
     ],
     "props": {
       "context": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField":"OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 9,
         "skusFilter": "ALL_AVAILABLE",
@@ -61,7 +61,7 @@
     ],
     "props": {
       "context": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField":"OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 9,
         "skusFilter": "ALL_AVAILABLE",
@@ -99,8 +99,8 @@
       "fullWidth": true
     },
     "children": [
-      "search-title.v2",
-      "image#banner-search"
+      "search-title.v2"
+      // "image#banner-search"
     ]
   },
   "image#banner-search": {

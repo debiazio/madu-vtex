@@ -24,6 +24,13 @@
       "height": 570,
       "images": [
         {
+          "mobileImage": "assets/banners/mobile/Banner-lancamento-madubox-mobile-1.webp",
+          "image": "assets/banners/desktop/Banner-lancamento-madubox-desktop-scaled.webp",
+          "link": {
+            "url": "/madubox"
+          }
+        },
+        {
           "mobileImage": "assets/banners/mobile/01-Banner-mobile-Restaurante.webp",
           "image": "assets/banners/desktop/Banner-desktop-Restaurante-scaled.webp",
           "link": {

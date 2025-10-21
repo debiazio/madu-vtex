@@ -119,7 +119,7 @@
       "flex-layout.row#quantidade-seletor-comprar",
       // "similares",
       "change-text-pdp-app",
-      "bundle",
+      // "bundle",
       "flex-layout.row#busca-cep",
       "flex-layout.row#metodos-pagamento-pdp",
       "image#bandeiras",
