@@ -178,19 +178,15 @@
     ],
     "props": {
       "blockClass": "product-name",
-      "colSizing": "auto",
-      "showProductReference": false,
-      "showSku": false
+      "colSizing": "auto"
     }
   },
-  // AVISO VALOR UNITÁRIO
-  "flex-layout.row#aviso-valor-unitario": {
+  "vtex.store-components:product-name":{
     "props": {
-      "blockClass": "linha-valor-unitario"
-    },
-    "children": [
-      "rich-text#texto-valor-unitario"
-    ]
+      "showSku": true,
+      "showProductReference": true,
+      "showBrandName": false
+    }
   },
   "rich-text#texto-valor-unitario": {
     "props": {
@@ -299,11 +295,6 @@
       "blockClass": "imagem-metodos-pgto-pdp"
     }
   },
-  "bundle": {
-    "props": {
-      "blockClass": "bundle-acessorios"
-    }
-  },
   // IMAGEM BANDEIRAS DE PAGAMENTO
   "image#bandeiras": {
     "props": {
@@ -353,7 +344,7 @@
       "blockClass": "buy-button-pdp"
     },
     "children": [
-      "add-to-cart-button"
+      "add-to-cart-button#pdp"
     ]
   },
   // LINHA DAS ABAS

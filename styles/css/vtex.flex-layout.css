@@ -1037,12 +1037,12 @@
   border: 0;
   border-radius: 4px;
   min-height: auto;
-  background-color: black;
-  margin: 0 10px;
+  background-color: #00b280;
+  margin: 0 15px;
 }
 
 .flexRowContent--buy-button-pdp :global(.vtex-button__label) {
-  padding: 12px !important;
+  padding: 8px 30px !important;
   text-transform: capitalize;
 }
 

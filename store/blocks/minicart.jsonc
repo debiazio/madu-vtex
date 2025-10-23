@@ -1,8 +1,8 @@
 {
-  "add-to-cart-button": {
+  "add-to-cart-button#pdp": {
     "props": {
       "addToCartFeedback": "customEvent",
-      "customPixelEventId": "add-to-cart-button",
+      "customPixelEventId": "evento-add-ao-carrinho",
       "text": "COMPRAR",
       "unavailableText": "Produto indisponível",
       "blockClass": "botao-comprar-summary"
@@ -10,10 +10,8 @@
   },
   "minicart.v2": {
     "props": {
-      "customPixelEventId": "add-to-cart-button",
-      "maxDrawerWidth": 328,
-      "quantityDisplay": "always",
-      "itemCountMode": "total"
+      "customPixelEventId": "evento-add-ao-carrinho",
+      "drawerSlideDirection": "rightToLeft"
     },
     "children": [
       "minicart-base-content"

@@ -1,7 +1,7 @@
 
 .buttonText::before {
   content: "Comprar";
-  font-size: 13px;
+  font-size: 20px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--buy-button-pdp) .buttonText {

@@ -1,4 +1,8 @@
 
+.productReference {
+  margin-bottom: 1rem;
+  display: none;
+}
 
 .imageElement--telefone-header{
   width: 14px;
