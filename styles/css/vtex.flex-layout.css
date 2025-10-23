@@ -1288,11 +1288,10 @@
 
   .flexRowContent--main-header-mobile {
     align-items: center;
-    padding: 5px 0;
+    padding: 5px 15px;
     background-color: #fff;
     border-bottom: 1px solid #DFDFDF;
     justify-content: center;
-    margin-left: 5px;
   }
 
   .flexRowContent--main-header-mobile-2 {
@@ -1617,6 +1616,10 @@
 
   .flexRow--banner-final-madu-box {
     margin-top: 65px;
+  }
+
+  .flexRow--buy-button-pdp{
+    margin-bottom: 8px;
   }
 
 
