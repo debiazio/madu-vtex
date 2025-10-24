@@ -473,7 +473,7 @@
   },
   "rich-text#produtos-relacionados": {
     "props": {
-      "text": "Conheça nossos acessorios!",
+      "text": "Conheça nossos acessórios!",
       "blockClass": "produtos-relacionados"
     }
   },
