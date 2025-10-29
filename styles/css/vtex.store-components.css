@@ -1,8 +1,21 @@
 
+
 .productReference {
-  margin-bottom: 1rem;
-  display: none!important;
+  font-size: 0.7rem;
+  font-weight: 200;
 }
+
+
+.productReference::before {
+  content: "CÓDIGO DO PRODUTO ";
+}
+
+.productBrand {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .imageElement--telefone-header{
   width: 14px;

@@ -183,9 +183,8 @@
   },
   "vtex.store-components:product-name":{
     "props": {
-      "showSku": true,
-      "showProductReference": true,
-      "showBrandName": false
+      // "showSku": true,
+      "showProductReference": true
     }
   },
   "rich-text#texto-valor-unitario": {
