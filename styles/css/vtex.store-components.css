@@ -1,4 +1,11 @@
-
+.productNameContainer .productBrand:last-child {
+  font-size: 0.7rem;
+  font-weight: 200;
+  white-space: nowrap;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
 
 .productReference {
   font-size: 0.7rem;
@@ -6,9 +13,11 @@
 }
 
 
-.productReference::before {
-  content: "CÓDIGO DO PRODUTO ";
+.productNameContainer .productBrand:last-child::before {
+  content: "CÓDIGO DO PRODUTO: ";
+  white-space: pre;
 }
+
 
 .productBrand {
   display: flex;
@@ -17,28 +26,29 @@
 
 
 
-.imageElement--telefone-header{
+.imageElement--telefone-header {
   width: 14px;
 }
 
-.imageElement--icone-maleta{
+.imageElement--icone-maleta {
   width: 18px;
   height: 14px;
   margin: 0;
   padding: 0;
 }
 
-.imageElement--imagem-caixa-vermelha{
+.imageElement--imagem-caixa-vermelha {
   position: relative;
   right: 33px;
   top: 10px;
 }
-.imageElement--imagem-maleta-preta{
+
+.imageElement--imagem-maleta-preta {
   position: relative;
   left: 33px;
 }
 
-.imageElement--diferencas-texto{
+.imageElement--diferencas-texto {
   width: 300px;
   height: 77px;
   margin-bottom: 20px;
@@ -1104,25 +1114,25 @@
     margin-top: 0;
   }
 
-  .imageElement--icone-lampada{
+  .imageElement--icone-lampada {
     margin: 22px;
   }
 
-  .imageElement--imagem-maleta-preta{
+  .imageElement--imagem-maleta-preta {
     position: unset;
     top: unset;
     width: 108px;
     height: 108px;
   }
 
-  .imageElement--imagem-caixa-vermelha{
+  .imageElement--imagem-caixa-vermelha {
     position: unset;
     top: unset;
     width: 178px;
     height: 114px;
   }
 
-  .imageElement--slider-madubox-mobile{
+  .imageElement--slider-madubox-mobile {
     height: 233px;
   }
 
