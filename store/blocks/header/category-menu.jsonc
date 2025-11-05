@@ -452,7 +452,7 @@
       "blockClass": "menu-principal-mobile"
     },
     "children": [
-      "menu-item#cat-carrinhos-mobile",
+      "menu-item#cat-carrinhos-mobile-alterado",
       "menu-item#cat-armarios-mobile",
       "menu-item#cat-estantes-mobile",
       "menu-item#cat-acessorios-n-mobile",
@@ -464,14 +464,14 @@
       "menu-item#atendimento"
     ]
   },
-  "menu-item#cat-carrinhos-mobile": {
+  "menu-item#cat-carrinhos-mobile-alterado": {
     "props": {
       "id": "menu-item-produtos-mobile",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "moveis/carrinhos",
+        "href": "/moveis/carrinhos",
         "noFollow": false,
         "tagTitle": "Carrinhos",
         "text": "Carrinhos"
@@ -486,7 +486,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "moveis/armarios",
+        "href": "/moveis/armarios",
         "noFollow": false,
         "tagTitle": "Armários",
         "text": "Armários"
