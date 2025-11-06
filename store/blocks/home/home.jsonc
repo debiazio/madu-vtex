@@ -118,7 +118,9 @@
   },
   "flex-layout.row#shelf": {
     "props": {
-      "blockClass": "prateleira-madu-extra"
+      "blockClass": "prateleira-madu-extra",
+      "fullWidth": false,
+      "colSizing": "auto"
     },
     "children": [
       "list-context.product-list#prateleira-home-madu-extra1"
@@ -153,7 +155,9 @@
   // MADU ONE
   "flex-layout.row#mais-vendidos-madu-one": {
     "props": {
-      "blockClass": "content-madu-cat"
+      "blockClass": "content-madu-cat",
+      "fullWidth": false,
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.row#titulo-prateleiras-madu-one",

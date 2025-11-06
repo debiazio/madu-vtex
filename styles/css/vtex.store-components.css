@@ -1136,4 +1136,8 @@
     height: 233px;
   }
 
+  .imageElement--slider-home-desktop{
+    width: 100vw!important;
+  }
+
 }

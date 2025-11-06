@@ -1,3 +1,21 @@
+.flexRowContent--mobile-notification-bar {
+  background-color: #04264b;
+}
+
+
+.flexRowContent--linha-cupom-top {
+  background-color: black;
+}
+
+
+.flexRowContent--linha-cupom-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .flexRowContent--linha-nossos-clientes {
   display: flex;
   flex-direction: column;
@@ -459,8 +477,7 @@
 }
 
 .flexRowContent--prateleira-madu-extra {
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 60px;
 }
 
 .flexRowContent--titulo-prateleiras {
@@ -1618,8 +1635,14 @@
     margin-top: 65px;
   }
 
-  .flexRow--buy-button-pdp{
+  .flexRow--buy-button-pdp {
     margin-bottom: 8px;
+  }
+
+  .container--frase-notification-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
 

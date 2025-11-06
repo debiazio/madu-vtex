@@ -5,7 +5,7 @@
     ],
     "props": {
       "context": {
-        "orderByField":"OrderByScoreDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 30,
         "skusFilter": "ALL_AVAILABLE",
@@ -19,7 +19,7 @@
     ],
     "props": {
       "context": {
-        "orderByField":"OrderByScoreDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 9,
         "skusFilter": "ALL_AVAILABLE",
@@ -33,7 +33,7 @@
     ],
     "props": {
       "context": {
-        "orderByField":"OrderByScoreDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 9,
         "skusFilter": "ALL_AVAILABLE",
@@ -47,7 +47,7 @@
     ],
     "props": {
       "context": {
-        "orderByField":"OrderByScoreDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 9,
         "skusFilter": "ALL_AVAILABLE",
@@ -61,7 +61,7 @@
     ],
     "props": {
       "context": {
-        "orderByField":"OrderByScoreDESC",
+        "orderByField": "OrderByScoreDESC",
         "hideUnavailableItems": false,
         "maxItemsPerPage": 9,
         "skusFilter": "ALL_AVAILABLE",
@@ -89,7 +89,8 @@
       "preventRouteChange": true,
       "showFacetQuantity": true,
       "blockClass": "busca-desktop",
-      "defaultGalleryLayout": "grid"
+      "defaultGalleryLayout": "grid",
+      "showFacetTitle": true
     }
   },
   // BANNER PESQUISA
@@ -317,9 +318,7 @@
       "blockClass": "texto-explicativo"
     }
   },
-
-
-// EXIBE OS RESULTADOS
+  // EXIBE OS RESULTADOS
   "flex-layout.row#result": {
     "children": [
       "flex-layout.col#filter",
@@ -544,7 +543,7 @@
       "flex-layout.col#notfound"
     ],
     "props": {
-      "fullWidth": true
+      "fullWidth": false
     }
   },
   "flex-layout.col#notfound": {

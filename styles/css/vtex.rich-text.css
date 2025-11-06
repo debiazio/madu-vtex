@@ -1,3 +1,16 @@
+.paragraph--logo-nome-madu {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  color: #FFFFFF;
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+.strong--logo-nome-madu {
+  font-family: "Montserrat Bold";
+  color: #FFFFFF;
+}
+
 .paragraph--titulo-nossos-clientes {
   font-family: "Montserrat Bold";
   font-size: 26px;
@@ -344,10 +357,11 @@
 }
 
 .paragraph--frase-cupom-top {
+  font-family: "Montserrat";
   margin: 0;
   color: white;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 400;
   padding: 5px;
 }
 
@@ -918,6 +932,24 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .container--frase-notification-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paragraph--frase-cupom-top,
+  .paragraph--logo-nome-madu{
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .paragraph--logo-nome-madu{
+    padding-right: 20px;
+
   }
 
 }
